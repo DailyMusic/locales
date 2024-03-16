@@ -20,5 +20,6 @@ This is the GitHub repository containing all Daily Music translation files.
 > **Do NOT** modify/translate/delete words with % at the beginning and end. **Do NOT** delete the `\n` or the emojis.
 - Validate Your JSON: Before submitting, ensure that your translated JSON file is valid. You can use online JSON validators or tools like [jsonlint](https://jsonlint.com/) to check for syntax errors.
 - Save Your Changes: Once you've completed the translation, save the file with your changes.
+- Upload your JSON: Please upload your JSON file to [npoint.io](https://www.npoint.io/).
 - Submit Your Translation: Return to the repository on GitHub. Click on the "Issues" tab and choose the template corresponding to your contribution.
 - Wait for Review: A project maintainer will review your translation. If any changes are needed, they will provide feedback.
