@@ -1,5 +1,5 @@
 ---
-name: New language
+name: New Translation File Submission
 about: Submit a new language for the project.
 title: ''
 labels: enhancement
@@ -11,7 +11,7 @@ assignees: ''
 [Yes/No]
 
 **Language:**
-[Specify the language of the translation file, the language code (French → fr) and the full language name] 
+[Specify the language code (French → fr) and the full language name] 
 
 **Translation File:**
 [Attach or link to the new translation file.]
