@@ -212,13 +212,13 @@
           }
         },
         "60%": {
-          "description": "You are **60**% of the way through the process. Well done! 🎉 \n📱 You'll need to choose a display mode. You can see what they look like by clicking on their respective buttons. \nContinue by clicking on the menu below."
+          "description": "You are **60**% of the way through the process. Well done! 🎉 \n📱 You need to choose a display mode. You can see what they look like by clicking on their respective buttons. \nContinue by clicking on the menu below."
         },
         "80%": {
-          "description": "You are **80**% of the way through the process. Well done! 🎉 \n🧵 You'll need to choose whether you want a thread to be automatically created and managed by the bot for the MOTD. \nContinue by clicking on one of the buttons below"
+          "description": "You are **80**% of the way through the process. Well done! 🎉 \n🧵 You need to choose whether you want a thread to be automatically created and managed by the bot for the MOTD. \nContinue by clicking on one of the buttons below"
         },
         "+80%": {
-          "description": "You are **+80**% of the way through the process. Well done! 🎉 \n🏆 You'll need to choose whether you want a Trivia game to be sent every day. \nThe concept  is simple: every day, you receive an audio file of music to listen to, and you have to guess its title! \nContinue by clicking on one of the buttons below"
+          "description": "You are **+80**% of the way through the process. Well done! 🎉 \n🏆 You need to choose whether you want a Trivia game to be sent every day. \nThe concept  is simple: every day, you receive an audio file of music to listen to, and you have to guess its title! \nContinue by clicking on one of the buttons below"
         },
         "100%_full": {
           "description": "You're done! You're at **100**%. Well done! 🎉\n🎶 Your server is ready to receive the MOTD and the TOTD. \nHere is a quick overview of your configuration"
@@ -233,10 +233,10 @@
           "description": "⚠️ Please ensure that Daily Music has all the necessary permissions to work (those available in the [invitation link](%{InvitationLink})). \nCheck the permissions for :\n    - the bot's role\n    \n- the defined channel (%{channel}). \nIf a permission is missing, you will not receive the MOTD and your server will be deleted from the database after a few days if the issue is not fixed."
         },
         "advanced_card": {
-          "description": "Welcome to the advanced configuration menu! 🤓 \n🃏 You'll need to choose what type of card you want for the MOTD.\nContinue by clicking on the menu below"
+          "description": "Welcome to the advanced configuration menu! 🤓 \n🃏 You need to choose what type of card you want for the MOTD.\nContinue by clicking on the menu below"
         },
         "advanced_trivia": {
-          "description": "Welcome to the advanced configuration menu! 🤓\n🏆 You'll need to choose which type of Trivia game you want. \nContinue by clicking on one of the options below"
+          "description": "Welcome to the advanced configuration menu! 🤓\n🏆 You need to choose which type of Trivia game you want. \nContinue by clicking on one of the options below"
         },
         "vote_wumpus": {
           "description": "❌ You need to vote on [Wumpus.store](https://wumpus.store/bot/1115972980984516719/vote) to use this feature"
