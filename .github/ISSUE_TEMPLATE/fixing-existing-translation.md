@@ -1,9 +1,9 @@
 ---
 name: Fixing Existing Translation
 about: Fix an existing language for the project.
-title: ''
+title: "[NEW] Adding a new language"
 labels: bug
-assignees: ''
+assignees: blurwind
 
 ---
 
