@@ -444,8 +444,8 @@
       "error_messages": {
         "date_is_banned": "❌ Cette date est interdite. Veuillez utiliser une autre date.",
         "date_format": "❌ Veuillez utiliser le format de date JJ-MM-AAAA",
-        "date_on_before": "❌ Veuillez fournir une date le jour même ou antérieure à la date actuelle",
-        "date_feb_28": "❌ Veuillez fournir une date le 28 février 2023 ou après.",
+        "date_on_before": "❌ Veuillez fournir une date égale ou antérieure à la date actuelle.",
+        "date_feb_28": "❌ Veuillez fournir une date avant le 28 février 2023 ou après.",
         "day_not_valid": "❌ Veuillez fournir un jour valide pour %moment(month, 'MM').format('MMMM')% (01 à %maxDaysInMonth%)",
         "month_not_valid": "❌ Veuillez fournir un mois valide (01 à 12).",
         "year_not_valid": "❌ Veuillez fournir une année valide (2023 à %moment().year()%).",
