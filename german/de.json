@@ -30,18 +30,18 @@
         "debugging_guide": {
           "title": "Fehlerbehebungsanleitung",
           "question_one_title": "Warum erhalte ich die Musik des Tages nicht sofort nach der Einrichtung?",
-          "question_one_description": "<@1115972980984516719> folgt einem bestimmten Zeitplan für den Versand der MDT, der derzeit um **20:00** Uhr (America/Toronto-Zeit) an alle Server gesendet wird. Dieser Zeitplan kann nicht geändert werden und gilt für alle.",
+          "question_one_description": "<@1115972980984516719> folgt einem bestimmten Zeitplan für den Versand der MDT, der derzeit um **21:00** Uhr (America/Toronto-Zeit) an alle Server gesendet wird. Dieser Zeitplan kann nicht geändert werden und gilt für alle.",
           "question_two_title": "Warum erhalte ich die Trivia des Tages nicht sofort nach der Einrichtung?",
-          "question_two_description": "<@1115972980984516719> folgt einem bestimmten Zeitplan für den Versand der TDT, der derzeit um **09:00** Uhr (America/Toronto-Zeit) an alle Server gesendet wird. Dieser Zeitplan kann nicht geändert werden und gilt für alle.",
+          "question_two_description": "<@1115972980984516719> folgt einem bestimmten Zeitplan für den Versand der TDT, der derzeit um **10:00** Uhr (America/Toronto-Zeit) an alle Server gesendet wird. Dieser Zeitplan kann nicht geändert werden und gilt für alle.",
           "question_three_title": "Die Zeit zum Erhalt der MDT / TDT ist abgelaufen, aber ich habe nichts erhalten. Warum?",
           "question_three_description": "Dies liegt höchstwahrscheinlich an einem Berechtigungsproblem. Überprüfen Sie, ob die Rolle von <@1115972980984516719> die erforderlichen Berechtigungen hat. Überprüfen Sie auch die Berechtigungen des Kanals, der für MDT / TDT verwendet wird. Erhalten Sie immer noch nichts? Treten Sie dem offiziellen Support-Server bei, indem Sie [hier](%SupportLink%) klicken!"
         },
         "about_guide": {
           "title": "Über Anleitung",
           "question_one_title": "Was ist die Musik des Tages?",
-          "question_one_description": "Die Musik des Tages ist ein zufällig ausgewähltes Lied von <@1115972980984516719> und wird um **20:00** Uhr America/Toronto-Zeit an alle Server gesendet.",
+          "question_one_description": "Die Musik des Tages ist ein zufällig ausgewähltes Lied von <@1115972980984516719> und wird um **21:00** Uhr America/Toronto-Zeit an alle Server gesendet.",
           "question_two_title": "Was ist die Trivia des Tages?",
-          "question_two_description": "Die Trivia des Tages ist eine Musik-Triviafrage, die zufällig von <@1115972980984516719> ausgewählt und um **09:00** Uhr America/Toronto-Zeit an alle Server gesendet wird."
+          "question_two_description": "Die Trivia des Tages ist eine Musik-Triviafrage, die zufällig von <@1115972980984516719> ausgewählt und um **10:00** Uhr America/Toronto-Zeit an alle Server gesendet wird."
         },
         "other_guide": {
           "title": "Andere Anleitung",
