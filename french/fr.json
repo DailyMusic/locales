@@ -23,7 +23,7 @@
           "question_one_title": "Comment puis-je recevoir automatiquement la Musique du Jour ?",
           "question_one_description": "Pour recevoir la MDJ automatiquement, utilisez la commande </setup:1199447395700842526>. Ensuite, suivez le processus qui vous guidera.",
           "question_two_title": "Quels types de canaux puis-je sélectionner pour la Musique du Jour ?",
-          "question_two_description": "Presque tous les types de canaux disponibles sur Discord !\n - canal de texte\n- fil public / privé appartenant à un canal de texte\n- canal d'annonce\n- fil public appartenant à un canal d'annonce\n- message de forum",
+          "question_two_description": "Presque tous les types de canaux disponibles sur Discord !\n - canal de texte\n- fil public / privé appartenant à un canal de texte\n- canal d'annonce\n- fil public appartenant à un canal d'annonce\n- post appartenant à un forum",
           "question_three_title": "Comment savoir qui notifier pour la Musique du Jour ?",
           "question_three_description": "Vous devez déterminer qui pourrait être intéressé par la MDJ. Si votre communauté est axée sur la musique, vous pouvez choisir de notifier un rôle que tous les membres du serveur ont en commun (par exemple, un rôle 'Membres'). Sinon, si votre communauté n'est pas axée sur la musique, vous pourriez définir un rôle spécifiquement pour les personnes intéressées par la musique."
         },
