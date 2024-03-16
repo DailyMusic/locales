@@ -14,7 +14,7 @@ assignees: blurwind
 [Describe the proposed fix.]
 
 **Translation File:**
-[Attach or link to the new translation file.]
+[Link to the new translation file using npoint.io]
 
 **Additional Information:**
 [Any additional information or notes about the translation file.]
