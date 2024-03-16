@@ -1,0 +1,594 @@
+{
+  "general": {
+    "why": "🤔 Why?",
+    "none": "None",
+    "unknown": "Unknown",
+    "by": "by",
+    "motd": "Music of the Day : ",
+    "totd": "Trivia of the Day : Can you guess the music?"
+  },
+  "events": {
+    "interactionCreate": {
+      "error_messages": {
+        "guild_only": "❌ This command is a guild-only command!",
+        "dev_only": "❌ This command is a developer-only command.",
+        "cmd_not_found": "❌ This command can't be found.",
+        "bot_permissions": "❌ I need to have the `%command.perms.BotPermissions.map((p) => p.toUpperCase()).join(', ')%` permission to use this command.",
+        "user_permissions": "❌ You need to have the `%command.perms.UserPermissions.map((p) => p.toUpperCase()).join(', ')%` permission to use this command.",
+        "already_played_today": "❌ You have already played today!"
+      },
+      "guides": {
+        "setup_guide": {
+          "title": "Setting Up Guide",
+          "question_one_title": "How can I automatically receive the Music Of The Day?",
+          "question_one_description": "To receive the MOTD automatically, use the </setup:1199447395700842526> command. Then, let the process guide you.",
+          "question_two_title": "What types of channels can I select for the Music Of The Day?",
+          "question_two_description": "Almost every type of channel available on Discord!\n - text channel\n- public / private thread belonging to a text channel\n- announcement channel\n- public thread belonging to an announcement channel\n- forum post",
+          "question_three_title": "How do I know who to notify for the Music Of The Day?",
+          "question_three_description": "You need to determine who might be interested in the MOTD. If your community is focused on music, then you can choose to notify a role that all server members have in common (i.e. a 'Members' role). Otherwise, if your community is not music-focused, you could set a role specifically for people interested in music."
+        },
+        "debugging_guide": {
+          "title": "Debugging Guide",
+          "question_one_title": "Why don't I receive the Music Of The Day immediately after setting up?",
+          "question_one_description": "<@1115972980984516719> follows a specific schedule to send the MOTD, which is currently sent to all servers at **8:00** PM America/Toronto time. This schedule cannot be changed and is the same for everyone.",
+          "question_two_title": "Why don't I receive the Trivia Of The Day immediately after setting up?",
+          "question_two_description": "<@1115972980984516719> follows a specific schedule to send the TOTD, which is currently sent to all servers at **9:00** AM America/Toronto time. This schedule cannot be changed and is the same for everyone.",
+          "question_three_title": "The time to receive the MOTD / TOTD has passed but I haven't received anything. Why?",
+          "question_three_description": "This is most likely due to a permissions issue. Check that the role of <@1115972980984516719> has the necessary permissions. Also check the permissions of the channel used for MOTD / TOTD. Still not receiving anything? Join the official support server by clicking [here](%SupportLink%)!"
+        },
+        "about_guide": {
+          "title": "About Guide",
+          "question_one_title": "What is the Music Of The Day?",
+          "question_one_description": "The Music Of The Day is a song that is chosen randomly by <@1115972980984516719> and sent to all servers at **8:00** PM America/Toronto time.",
+          "question_two_title": "What is the Trivia Of The Day?",
+          "question_two_description": "The Trivia Of The Day is a trivia question about music that is chosen randomly by <@1115972980984516719> and sent to all servers at **9:00** AM America/Toronto time."
+        },
+        "other_guide": {
+          "title": "Other Guide",
+          "question_one_title": "🤔 Your question has not been answered?",
+          "question_one_description": "You can ask your question in the official support server by clicking [here](%SupportLink%)."
+        }
+      },
+      "menus": {
+        "display_select_menu": {
+          "placeholder": "Choose your display for the MOTD!",
+          "options": {
+            "complete": {
+              "label": "Complete",
+              "description": "A detailed embed with information about MOTD and the artist.",
+              "value": "complete"
+            },
+            "simple": {
+              "label": "Simple",
+              "description": "An integration with MOTD's Spotify link.",
+              "value": "simple"
+            },
+            "card": {
+              "label": "Card",
+              "description": "A nice card for MOTD.",
+              "value": "card"
+            }
+          }
+        },
+        "card_mode_select_menu": {
+          "placeholder": "Choose your card mode for the MOTD!",
+          "options": {
+            "classic": {
+              "label": "Classic",
+              "description": "A classic card.",
+              "value": "classic"
+            },
+            "pro": {
+              "label": "Classic Pro",
+              "description": "A classic card, but with a professional touch.",
+              "value": "pro"
+            },
+            "mini": {
+              "label": "Mini Pro",
+              "description": "A mini card, but with a professional touch.",
+              "value": "mini"
+            }
+          }
+        },
+        "trivia_mode_select_menu": {
+          "placeholder": "Choose your trivia mode for the TOTD!",
+          "options": {
+            "audio_title": {
+              "label": "Audio Title",
+              "description": "Guess the title of the music by listening to a short extract.",
+              "value": "audio-title"
+            },
+            "audio_genre": {
+              "label": "Audio Genre",
+              "description": "Guess the genre of the music by listening to a short extract.",
+              "value": "audio-genre"
+            },
+            "image_title": {
+              "label": "Image Title",
+              "description": "Guess the title of the music by looking at the cover.",
+              "value": "image-title"
+            },
+            "image_genre": {
+              "label": "Image Genre",
+              "description": "Guess the genre of the music by looking at the cover.",
+              "value": "image-genre"
+            }
+          }
+        }
+      },
+      "modals": {
+        "trivia_modal": {
+          "title": "Guess the music!",
+          "input": "What is the title of this music?"
+        }
+      },
+      "buttons": {
+        "display_modes": {
+          "complete_display_preview": {
+            "label": "Complete Preview"
+          },
+          "simple_display_preview": {
+            "label": "Simple Preview"
+          },
+          "card_display_preview": {
+            "label": "Card Preview"
+          }
+        },
+        "card_modes": {
+          "classic_card_display": {
+            "label": "Classic Preview"
+          },
+          "pro_card_display": {
+            "label": "Classic Pro Preview"
+          },
+          "mini_card_display": {
+            "label": "Mini Pro Preview"
+          }
+        },
+        "threads": {
+          "threads_on": {
+            "label": "Yes"
+          },
+          "threads_off": {
+            "label": "No"
+          }
+        },
+        "when": {
+          "when_motd": {
+            "label": "When is the next MOTD?"
+          },
+          "when_totd": {
+            "label": "When is the next TOTD?"
+          }
+        },
+        "vote": {
+          "unlock_feature": {
+            "label": "Unlock this feature"
+          }
+        },
+        "artists": {
+          "are_you_an_artist": {
+            "label": "Are you an artist?"
+          }
+        }
+      },
+      "embeds": {
+        "audio_analysis": {
+          "description": "📊 Here is an audio analysis for %songOfTodayRequest['title']% by %songOfTodayRequest['artist']%:",
+          "fields": {
+            "field_title_one": "💃 Is it good for dancing?",
+            "field_description_one_true": "Yes! %songOfTodayRequest['title']% is good for dancing with your friends!",
+            "field_description_one_false": "No. %songOfTodayRequest['title']% is not good for dancing with your friends.",
+            "field_title_two": "⚡ Is it energetic?",
+            "field_description_two_true": "Yes! %songOfTodayRequest['title']% is energetic, with plenty of bass!",
+            "field_description_two_false": "No. %songOfTodayRequest['title']% is not energetic.",
+            "field_title_three": "🚀 Was it done live?",
+            "field_description_three_true": "Yes! %songOfTodayRequest['title']% was perfomed live.",
+            "field_description_three_false": "No. %songOfTodayRequest['title']% was not perfomed live.",
+            "field_title_four": "📊 Composition",
+            "field_description_four_true": "%songOfTodayRequest['title']% is mainly composed of lyrics.",
+            "field_description_four_false": "%songOfTodayRequest['title']% is mainly composed of melody.",
+            "field_title_five": "🔊 Acousticness",
+            "field_description_five_true": "%songOfTodayRequest['title']% is mainly played with acoustic instruments.",
+            "field_description_five_false": "%songOfTodayRequest['title']% is not mainly played with acoustic instruments.",
+            "field_title_six": "🤪 Mood",
+            "field_description_six_true": "%songOfTodayRequest['title']% is a music with a positive mood.",
+            "field_description_six_false": "%songOfTodayRequest['title']% is a music with a negative mood."
+          }
+        },
+        "are_you_an_artist": {
+          "description": "Are you a musical artist? If yes, you can ask to be featured on preview messages like the one you've just clicked on. You don't have to pay to be featured, it's free.\n➡️ Here are the requirements",
+          "fields": {
+            "field_title_one": "🎧 Be present",
+            "field_description_one": "On a streaming platform (Spotify, Deezer, Apple Music, Soundcloud...).",
+            "field_title_two": "🤚 Prove your identity",
+            "field_description_two": "By providing proof that you really are the artist you claim to be.",
+            "field_title_three": "🎵 Have a musical genre",
+            "field_description_three": "That is one of those proposed by the bot (Global, Pop, Rock, Electro, KPOP, Hardstyle, Metal, German).",
+            "field_title_four": "🤝 Why are we doing this?",
+            "field_description_four": "To showcase talent that doesn't get the recognition it deserves, and because music is a world where everyone should be recognised for their artistic contribution.",
+            "field_title_five": "🤔 What's next?",
+            "field_description_five": "Join our [official server](%SupportLink%) and make a request. If your application is accepted, you will be featured on the preview messages and you will get a role on our server."
+          }
+        },
+        "60%": {
+          "description": "You are **60**% of the way through the process. Well done! 🎉 \n📱 You'll need to choose a display mode. You can see what they look like by clicking on their respective buttons. \nContinue by clicking on the menu below."
+        },
+        "80%": {
+          "description": "You are **80**% of the way through the process. Well done! 🎉 \n🧵 You'll need to choose whether you want a thread to be automatically created and managed by the bot for the MOTD. \nContinue by clicking on one of the buttons below"
+        },
+        "+80%": {
+          "description": "You are **+80**% of the way through the process. Well done! 🎉 \n🏆 You'll need to choose whether you want a Trivia game to be sent every day. \nThe concept  is simple: every day, you receive an audio file of music to listen to, and you have to guess its title! \nContinue by clicking on one of the buttons below"
+        },
+        "100%_full": {
+          "description": "You're done! You're at **100**%. Well done! 🎉\n🎶 Your server is ready to receive the MOTD and the TOTD. \nHere is a quick overview of your configuration"
+        },
+        "100%_partial": {
+          "description": "You're done! You're at **100**%. Well done! 🎉\n🎶 Your server is ready to receive the MOTD. \nHere is a quick overview of your configuration"
+        },
+        "warning_100%_full": {
+          "description": "⚠️ Please ensure that Daily Music has all the necessary permissions to work (those available in the [invitation link](%{InvitationLink})). \nCheck the permissions for :\n    - the bot's role\n    \n- the defined channel (%{channel}). \nIf a permission is missing, you will not receive the MOTD and the TOTD and your server will be deleted from the database after a few days if the issue is not fixed."
+        },
+        "warning_100%_partial": {
+          "description": "⚠️ Please ensure that Daily Music has all the necessary permissions to work (those available in the [invitation link](%{InvitationLink})). \nCheck the permissions for :\n    - the bot's role\n    \n- the defined channel (%{channel}). \nIf a permission is missing, you will not receive the MOTD and your server will be deleted from the database after a few days if the issue is not fixed."
+        },
+        "advanced_card": {
+          "description": "Welcome to the advanced configuration menu! 🤓 \n🃏 You'll need to choose what type of card you want for the MOTD.\nContinue by clicking on the menu below"
+        },
+        "advanced_trivia": {
+          "description": "Welcome to the advanced configuration menu! 🤓\n🏆 You'll need to choose which type of Trivia game you want. \nContinue by clicking on one of the options below"
+        },
+        "vote_wumpus": {
+          "description": "❌ You need to vote on [Wumpus.store](https://wumpus.store/bot/1115972980984516719/vote) to use this feature"
+        },
+        "voting_helps_us": {
+          "description": "Voting for Daily Music helps us to become more popular, and it only costs you 1 second of your day, with no ads."
+        },
+        "correct_title_trivia": {
+          "title": "You've found the title",
+          "description": "ℹ️ Here's some information about the music.",
+          "your_guess": "🤔 Your guess",
+          "exact_guess": "🎯 Exact guess",
+          "similarity": "🤷‍♂️ Similarity",
+          "close_enough": "You're close enough!",
+          "message_ephemeral": "👏 GG! You've found the title of the music.",
+          "message_public": "👏 <@%interaction.user.id%> guessed the title of the music with a precision of **%Math.round(similar * 100)%**%!"
+        },
+        "wrong_title_trivia": {
+          "title": "You've got the title wrong",
+          "description": "ℹ️ Here's some information about the music we're expecting.",
+          "your_guess": "🤔 Your guess",
+          "expected_guess": "🎯 Expected guess",
+          "similarity": "🤷‍♂️ Similarity",
+          "close_enough": "You're not close enough!",
+          "message_ephemeral": "😬 Errr... You've got the title wrong!",
+          "message_public": "😬 <@%interaction.user.id%> didn't guess the title of the music..."
+        },
+        "correct_genre_trivia": {
+          "title": "You've found the genre",
+          "message_ephemeral": "👏 GG! You've found the genre of the music.",
+          "message_public": "👏 <@%interaction.user.id%> guessed the genre of the music!"
+        },
+        "wrong_genre_trivia": {
+          "title": "You've got the genre wrong",
+          "message_ephemeral": "😬 Errr... You've got the genre wrong!",
+          "message_public": "😬 <@%interaction.user.id%> didn't guess the genre of the music..."
+        },
+        "hint": {
+          "description": "💡 Here is the hint : \n🤔 [The hint is not displayed? Click here to view it.](%songOfTodayRequest['previewUrl']%)"
+        }
+      }
+    }
+  },
+  "commands": {
+    "help": {
+      "menu": {
+        "placeholder": "What do you need help with?",
+        "options": {
+          "setting_up": {
+            "label": "Setting up",
+            "description": "A guide to configure Daily Music systems."
+          },
+          "debugging": {
+            "label": "Debugging",
+            "description": "The solution to the most common problems."
+          },
+          "about": {
+            "label": "About MOTD / TOTD",
+            "description": "Everything you need to know about MOTD and TOTD."
+          },
+          "other": {
+            "label": "Other",
+            "description": "Questions that are not answered here."
+          }
+        }
+      },
+      "embed": {
+        "description": "Welcome to the help menu! 👋\nContinue by clicking on one of the menus below. ⬇️",
+        "field_title_one": "🔧 Setting up",
+        "field_description_one": "A guide to configure Daily Music systems.",
+        "field_title_two": "🔍 Debugging",
+        "field_description_two": "The solution to the most common problems.",
+        "field_title_three": "🎵 About MOTD / TOTD",
+        "field_description_three": "Everything you need to know about MOTD and TOTD.",
+        "field_title_four": "❔ Other",
+        "field_description_four": "Questions that are not answered here."
+      }
+    },
+    "setup": {
+      "error_messages": {
+        "invalid_role": "❌ You cannot use a bot role for this command.",
+        "invalid_everyone_here_role": "❌ You are not allowed to use the %role% role for this command.",
+        "invalid_role_hierarchy": "❌ The specified role must be lower than your highest role and the bot's highest role.",
+        "existing_configuration": "❌ A configuration already exists for this server.",
+        "max_webhooks_exceeded": "❌ This channel already has the maximum number of webhooks allowed. Please delete one and try again."
+      },
+      "embed": {
+        "description": "Welcome to the configuration system! 👋\n🎵 You can now configure the **MOTD** (**M**usic **O**f **T**he **D**ay) system.\nContinue by clicking on the menu below!",
+        "configuration_exists": {
+          "fields": {
+            "field_title_one": "📰 Channel",
+            "field_title_two": "🌐 Lang",
+            "field_title_three": "🔔 Role",
+            "field_title_four": "🎵 Genre",
+            "field_title_five": "📱 Display",
+            "field_title_six": "🧵 Threads",
+            "field_title_seven": "🏆 Trivia"
+          },
+          "threads": {
+            "enabled": "Enabled",
+            "disabled": "Disabled"
+          },
+          "display": {
+            "description": "%Display% | %CardMode%"
+          }
+        }
+      },
+      "menu": {
+        "placeholder": "Choose your genre for the MOTD!",
+        "options": {
+          "global": {
+            "label": "Global",
+            "description": "The music of the day for the Global genre.",
+            "value": "global"
+          },
+          "pop": {
+            "label": "Pop",
+            "description": "The music of the day for the Pop genre.",
+            "value": "pop"
+          },
+          "rock": {
+            "label": "Rock",
+            "description": "The music of the day for the Rock genre.",
+            "value": "rock"
+          },
+          "electro": {
+            "label": "Electro",
+            "description": "The music of the day for the Electro genre.",
+            "value": "electro"
+          },
+          "kpop": {
+            "label": "KPOP",
+            "description": "The music of the day for the KPOP genre.",
+            "value": "kPOP"
+          },
+          "hardstyle": {
+            "label": "Hardstyle",
+            "description": "The music of the day for the Hardstyle genre.",
+            "value": "hardstyle"
+          },
+          "metal": {
+            "label": "Metal",
+            "description": "The music of the day for the Metal genre.",
+            "value": "metal"
+          },
+          "german": {
+            "label": "German",
+            "description": "The music of the day for the German genre.",
+            "value": "german"
+          }
+        }
+      },
+      "why_answers": {
+        "prevent_abuse": {
+          "description": "To prevent abuse."
+        },
+        "logistical_reasons": {
+          "description": "For logistical reasons."
+        },
+        "bot_role_mention": {
+          "description": "What's the point of mentioning a bot?"
+        }
+      }
+    },
+    "links": {
+      "buttons": {
+        "invite": {
+          "label": "Add to Discord"
+        },
+        "server": {
+          "label": "Join the support server"
+        },
+        "docs": {
+          "label": "Check the documentation"
+        }
+      },
+      "embed": {
+        "description": "Thank your for using Daily Music! ❤️\nHere are all the links related to the bot. ⬇️",
+        "field_title_one": "📥 Add the bot",
+        "field_description_one": "[Click here](%InvitationLink%) to invite Daily Music to your server.",
+        "field_title_two": "🚩 Join the support server",
+        "field_description_two": "[Click here](%SupportLink%) to join the support server.",
+        "field_title_three": "🗂️ Check the documentation",
+        "field_description_three": "[Click here](%DocumentationLink%) to check the documentation."
+      }
+    },
+    "artistinfo": {
+      "error_messages": {
+        "artist_cant_be_found": "❌ This artist can't be found."
+      },
+      "embed": {
+        "field_title_one": "🎺 Listeners",
+        "field_title_two": "🎵 Playcount",
+        "field_title_three": "🏷️ Tags",
+        "field_title_four": "🎶 Similar artists",
+        "field_title_five": "📅 Data published"
+      },
+      "why_answers": {
+        "artist_does_not_exist": {
+          "description": "Because this artist does not exist in our database! Maybe you mistyped his name."
+        }
+      }
+    },
+    "date": {
+      "error_messages": {
+        "date_is_banned": "❌ This date is banned. Please use another date.",
+        "date_format": "❌ Please use the DD-MM-YYYY date format",
+        "date_on_before": "❌ Please provide a date on or before the current date",
+        "date_feb_28": "❌ Please provide a date on or after February 28, 2023.",
+        "day_not_valid": "❌ Please provide a valid day for %moment(month, 'MM').format('MMMM')% (01 to %maxDaysInMonth%)",
+        "month_not_valid": "❌ Please provide a valid month (01 to 12).",
+        "year_not_valid": "❌ Please provide a valid year (2023 to %moment().year()%).",
+        "no_song_info": "❌ No song information available.",
+        "no_artist_info": "❌ No artist information available."
+      },
+      "embed": {
+        "field_title_one": "🎤 Artist",
+        "field_title_two": "👀 Title",
+        "field_title_three": "💿 Album",
+        "field_title_four": "🎧 Label",
+        "field_title_five": "🎵 Genre",
+        "field_title_six": "Popularity",
+        "field_title_seven": "📆 Date"
+      },
+      "buttons": {
+        "preview": {
+          "label": "Preview"
+        },
+        "play": {
+          "label": "Play on Spotify"
+        },
+        "save": {
+          "label": "Save on Spotify"
+        },
+        "follow": {
+          "label": "Follow the artist"
+        },
+        "analysis": {
+          "label": "Audio Analysis"
+        },
+        "cover": {
+          "label": "Cover"
+        },
+        "playlist": {
+          "label": "Playlist"
+        }
+      },
+      "why_answers": {
+        "no_music_generated": {
+          "description": "Because no music has been generated for this date, most likely due to an incident or maintenance."
+        },
+        "read_date_format": {
+          "description": "Because Daily Music is only able to read dates in the DD-MM-YYYY format."
+        },
+        "not_capable_future": {
+          "description": "Because we're not capable of generating music for the future!"
+        },
+        "service_didnt_exist": {
+          "description": "Because before that date, the service we use didn't exist!"
+        },
+        "service_didnt_exist_2023": {
+          "description": "Because before 2023, the service we're using didn't exist, and because we can't generate music for the future!"
+        },
+        "certain_numbers_of_day": {
+          "description": "Because there are a certain number of days in a month, we can't generate music for the 111th of December!"
+        },
+        "certain_numbers_of_month": {
+          "description": "Do I really need to explain?"
+        },
+        "api_down": {
+          "description": "The API seems to be down."
+        }
+      }
+    },
+    "reset": {
+      "error_messages": {
+        "no_config": "❌ No configuration found for this server."
+      },
+      "embed": {
+        "description": "✅ This server's configuration has been successfully reset."
+      },
+      "why_answers": {
+        "no_data": {
+          "description": "This means that Daily Music has no data linked to your server."
+        }
+      }
+    },
+    "settings": {
+      "embed": {
+        "description": "📚 Here is a summary of your server settings."
+      }
+    },
+    "stats": {
+      "embed": {
+        "description": "📊 Here is a summary of the statistics from Daily Music for your server.",
+        "field_title_one": "🎶 Number of musics sent",
+        "field_description_one": "Daily Music has sent a total of **%data.TotalSongsSent%** musics to this server.",
+        "field_title_two": "📆 Last music sent",
+        "field_description_two_true": "The last music sent to this server was on %timestamp:F% (%timestamp:R%)",
+        "field_description_two_false": "No music has yet been sent to this server."
+      }
+    },
+    "trivia": {
+      "buttons": {
+        "guess": {
+          "label": "Guess"
+        },
+        "hint": {
+          "label": "Hint"
+        },
+        "extract": {
+          "label": "Extract"
+        },
+        "cover": {
+          "label": "Cover"
+        }
+      },
+      "embed": {
+        "title": "Guess the music! 🎵",
+        "description": "Can you guess the %guess% of [this music](%songOfTodayRequest['previewUrl']%) ? 🤔",
+        "description_title": "title",
+        "description_genre": "genre"
+      },
+      "menu": {
+        "placeholder": "Choose a genre!",
+        "options": {
+          "pop": {
+            "label": "Pop",
+            "description": "If you think the genre of this song is Pop."
+          },
+          "rock": {
+            "label": "Rock",
+            "description": "If you think the genre of this song is Rock."
+          },
+          "electro": {
+            "label": "Electro",
+            "description": "If you think the genre of this song is Electro."
+          },
+          "kpop": {
+            "label": "KPOP",
+            "description": "If you think the genre of this song is KPOP."
+          },
+          "hardstyle": {
+            "label": "Hardstyle",
+            "description": "If you think the genre of this song is Hardstyle."
+          },
+          "metal": {
+            "label": "Metal",
+            "description": "If you think the genre of this song is Metal."
+          }
+        }
+      }
+    }
+  }
+}
