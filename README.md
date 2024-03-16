@@ -26,3 +26,5 @@ This is the GitHub repository containing all Daily Music translation files.
 - Upload your JSON: Please upload your JSON file to [npoint.io](https://www.npoint.io/).
 - Submit Your Translation: Return to the repository on GitHub. Click on the "Issues" tab and choose the template corresponding to your contribution, fill everything.
 - Wait for Review: A project maintainer will review your translation. If any changes are needed, they will provide feedback.
+> [!NOTE]
+> You can also make a request on our Discord server in our suggestions channel!
