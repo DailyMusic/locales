@@ -1,0 +1,594 @@
+{
+  "general": {
+    "why": "🤔 ¿Por qué?",
+    "none": "Ninguno",
+    "unknown": "Desconocido",
+    "by": "por",
+    "motd": "Música del Día: ",
+    "totd": "Trivia del Día: ¿Puedes adivinar la música?"
+  },
+  "events": {
+    "interactionCreate": {
+      "error_messages": {
+        "guild_only": "❌ ¡Este comando es exclusivo del servidor!",
+        "dev_only": "❌ Este comando es solo para desarrolladores.",
+        "cmd_not_found": "❌ No se puede encontrar este comando.",
+        "bot_permissions": "❌ Necesito tener el permiso `%command.perms.BotPermissions.map((p) => p.toUpperCase()).join(', ')%` para usar este comando.",
+        "user_permissions": "❌ Necesitas tener el permiso `%command.perms.UserPermissions.map((p) => p.toUpperCase()).join(', ')%` para usar este comando.",
+        "already_played_today": "❌ ¡Ya has jugado hoy!"
+      },
+      "guides": {
+        "setup_guide": {
+          "title": "Guía de Configuración",
+          "question_one_title": "¿Cómo puedo recibir automáticamente la Música Del Día?",
+          "question_one_description": "Para recibir automáticamente la MDD, usa el comando </setup:1199447395700842526>. Luego, deja que el proceso te guíe.",
+          "question_two_title": "¿Qué tipos de canales puedo seleccionar para la Música Del Día?",
+          "question_two_description": "¡Casi todos los tipos de canales disponibles en Discord!\n - canal de texto\n- hilo público/privado perteneciente a un canal de texto\n- canal de anuncios\n- hilo público perteneciente a un canal de anuncios\n- publicación en el foro",
+          "question_three_title": "¿Cómo sé a quién notificar sobre la Música Del Día?",
+          "question_three_description": "Necesitas determinar quién podría estar interesado en la MDD. Si tu comunidad se centra en la música, entonces puedes elegir notificar a un rol que todos los miembros del servidor tengan en común (por ejemplo, un rol de 'Miembros'). De lo contrario, si tu comunidad no está centrada en la música, podrías establecer un rol específicamente para personas interesadas en la música."
+        },
+        "debugging_guide": {
+          "title": "Guía de Depuración",
+          "question_one_title": "¿Por qué no recibo la Música Del Día inmediatamente después de configurar?",
+          "question_one_description": "<@1115972980984516719> sigue un horario específico para enviar la MDD, que actualmente se envía a todos los servidores a las **8:00** PM, hora de América/Toronto. Este horario no se puede cambiar y es el mismo para todos.",
+          "question_two_title": "¿Por qué no recibo la Trivia Del Día inmediatamente después de configurar?",
+          "question_two_description": "<@1115972980984516719> sigue un horario específico para enviar la TDD, que actualmente se envía a todos los servidores a las **9:00** AM, hora de América/Toronto. Este horario no se puede cambiar y es el mismo para todos.",
+          "question_three_title": "Ha pasado el tiempo para recibir la MDD / TDD pero no he recibido nada. ¿Por qué?",
+          "question_three_description": "Esto probablemente se deba a un problema de permisos. Verifica que el rol de <@1115972980984516719> tenga los permisos necesarios. También verifica los permisos del canal utilizado para la MDD / TDD. ¿Todavía no recibes nada? ¡Únete al servidor de soporte oficial haciendo clic [aquí](%SupportLink%)!"
+        },
+        "about_guide": {
+          "title": "Acerca de la Guía",
+          "question_one_title": "¿Qué es la Música Del Día?",
+          "question_one_description": "La Música Del Día es una canción elegida al azar por <@1115972980984516719> y enviada a todos los servidores a las **8:00** PM, hora de América/Toronto.",
+          "question_two_title": "¿Qué es la Trivia Del Día?",
+          "question_two_description": "La Trivia Del Día es una pregunta de trivia sobre música elegida al azar por <@1115972980984516719> y enviada a todos los servidores a las **9:00** AM, hora de América/Toronto."
+        },
+        "other_guide": {
+          "title": "Otra Guía",
+          "question_one_title": "🤔 ¿Tu pregunta no ha sido respondida?",
+          "question_one_description": "Puedes hacer tu pregunta en el servidor de soporte oficial haciendo clic [aquí](%SupportLink%)."
+        }
+      },
+      "menus": {
+        "display_select_menu": {
+          "placeholder": "¡Elige tu visualización para la MDD!",
+          "options": {
+            "complete": {
+              "label": "Completa",
+              "description": "Un incrustado detallado con información sobre la MDD y el artista.",
+              "value": "complete"
+            },
+            "simple": {
+              "label": "Simple",
+              "description": "Una integración con el enlace de Spotify de la MDD.",
+              "value": "simple"
+            },
+            "card": {
+              "label": "Tarjeta",
+              "description": "Una bonita tarjeta para la MDD.",
+              "value": "card"
+            }
+          }
+        },
+        "card_mode_select_menu": {
+          "placeholder": "¡Elige tu modo de tarjeta para la MDD!",
+          "options": {
+            "classic": {
+              "label": "Clásico",
+              "description": "Una tarjeta clásica.",
+              "value": "classic"
+            },
+            "pro": {
+              "label": "Clásico Pro",
+              "description": "Una tarjeta clásica, pero con un toque profesional.",
+              "value": "pro"
+            },
+            "mini": {
+              "label": "Mini Pro",
+              "description": "Una mini tarjeta, pero con un toque profesional.",
+              "value": "mini"
+            }
+          }
+        },
+        "trivia_mode_select_menu": {
+          "placeholder": "¡Elige tu modo de trivia para la TDD!",
+          "options": {
+            "audio_title": {
+              "label": "Título de Audio",
+              "description": "Adivina el título de la música escuchando un breve extracto.",
+              "value": "titulo-audio"
+            },
+            "audio_genre": {
+              "label": "Género de Audio",
+              "description": "Adivina el género de la música escuchando un breve extracto.",
+              "value": "genero-audio"
+            },
+            "image_title": {
+              "label": "Título de Imagen",
+              "description": "Adivina el título de la música mirando la portada.",
+              "value": "titulo-imagen"
+            },
+            "image_genre": {
+              "label": "Género de Imagen",
+              "description": "Adivina el género de la música mirando la portada.",
+              "value": "genero-imagen"
+            }
+          }
+        }
+      },
+      "modals": {
+        "trivia_modal": {
+          "title": "¡Adivina la música!",
+          "input": "¿Cuál es el título de esta música?"
+        }
+      },
+      "buttons": {
+        "display_modes": {
+          "complete_display_preview": {
+            "label": "Vista Completa"
+          },
+          "simple_display_preview": {
+            "label": "Vista Simple"
+          },
+          "card_display_preview": {
+            "label": "Vista de Tarjeta"
+          }
+        },
+        "card_modes": {
+          "classic_card_display": {
+            "label": "Vista Clásica"
+          },
+          "pro_card_display": {
+            "label": "Vista Clásica Pro"
+          },
+          "mini_card_display": {
+            "label": "Vista Mini Pro"
+          }
+        },
+        "threads": {
+          "threads_on": {
+            "label": "Sí"
+          },
+          "threads_off": {
+            "label": "No"
+          }
+        },
+        "when": {
+          "when_motd": {
+            "label": "¿Cuándo es el próximo MDD?"
+          },
+          "when_totd": {
+            "label": "¿Cuándo es el próximo TDD?"
+          }
+        },
+        "vote": {
+          "unlock_feature": {
+            "label": "Desbloquear esta función"
+          }
+        },
+        "artists": {
+          "are_you_an_artist": {
+            "label": "¿Eres un artista?"
+          }
+        }
+      },
+      "embeds": {
+        "audio_analysis": {
+          "description": "📊 Aquí tienes un análisis de audio para %songOfTodayRequest['title']% de %songOfTodayRequest['artist']%:",
+          "fields": {
+            "field_title_one": "💃 ¿Es bueno para bailar?",
+            "field_description_one_true": "¡Sí! %songOfTodayRequest['title']% es bueno para bailar con tus amigos!",
+            "field_description_one_false": "No. %songOfTodayRequest['title']% no es bueno para bailar con tus amigos.",
+            "field_title_two": "⚡ ¿Es enérgico?",
+            "field_description_two_true": "¡Sí! %songOfTodayRequest['title']% es enérgico, ¡con mucho bajo!",
+            "field_description_two_false": "No. %songOfTodayRequest['title']% no es enérgico.",
+            "field_title_three": "🚀 ¿Fue en vivo?",
+            "field_description_three_true": "¡Sí! %songOfTodayRequest['title']% fue interpretado en vivo.",
+            "field_description_three_false": "No. %songOfTodayRequest['title']% no fue interpretado en vivo.",
+            "field_title_four": "📊 Composición",
+            "field_description_four_true": "%songOfTodayRequest['title']% está compuesto principalmente de letras.",
+            "field_description_four_false": "%songOfTodayRequest['title']% está compuesto principalmente de melodía.",
+            "field_title_five": "🔊 Acousticness",
+            "field_description_five_true": "%songOfTodayRequest['title']% se toca principalmente con instrumentos acústicos.",
+            "field_description_five_false": "%songOfTodayRequest['title']% no se toca principalmente con instrumentos acústicos.",
+            "field_title_six": "🤪 Estado de Ánimo",
+            "field_description_six_true": "%songOfTodayRequest['title']% es una música con un estado de ánimo positivo.",
+            "field_description_six_false": "%songOfTodayRequest['title']% es una música con un estado de ánimo negativo."
+          }
+        },
+        "are_you_an_artist": {
+          "description": "¿Eres un artista musical? Si es así, puedes pedir ser destacado en mensajes de vista previa como el que acabas de hacer clic. No tienes que pagar para ser destacado, es gratis.\n➡️ Aquí están los requisitos",
+          "fields": {
+            "field_title_one": "🎧 Estar presente",
+            "field_description_one": "En una plataforma de streaming (Spotify, Deezer, Apple Music, Soundcloud...).",
+            "field_title_two": "🤚 Probar tu identidad",
+            "field_description_two": "Proporcionando pruebas de que realmente eres el artista que afirmas ser.",
+            "field_title_three": "🎵 Tener un género musical",
+            "field_description_three": "Que sea uno de los propuestos por el bot (Global, Pop, Rock, Electro, KPOP, Hardstyle, Metal, Alemán).",
+            "field_title_four": "🤝 ¿Por qué estamos haciendo esto?",
+            "field_description_four": "Para mostrar talento que no recibe el reconocimiento que merece, y porque la música es un mundo donde todos deberían ser reconocidos por su contribución artística.",
+            "field_title_five": "🤔 ¿Qué sigue?",
+            "field_description_five": "Únete a nuestro [servidor oficial](%SupportLink%) y haz una solicitud. Si tu solicitud es aceptada, serás destacado en los mensajes de vista previa y obtendrás un rol en nuestro servidor."
+          }
+        },
+        "60%": {
+          "description": "¡Estás al **60**% del proceso! ¡Bien hecho! 🎉 \n📱 Necesitarás elegir un modo de visualización. Puedes ver cómo se ven haciendo clic en sus respectivos botones. \nContinúa haciendo clic en el menú a continuación."
+        },
+        "80%": {
+          "description": "Estás **80**% del camino hecho en el proceso. ¡Bien hecho! 🎉 \n🧵 Deberás elegir si quieres que el bot cree y administre automáticamente un hilo para el MDD. \nContinúa haciendo clic en uno de los botones a continuación."
+        },
+        "+80%": {
+          "description": "Estás **+80**% del camino hecho en el proceso. ¡Bien hecho! 🎉 \n🏆 Deberás elegir si deseas recibir un juego de Trivia todos los días. \nEl concepto es simple: ¡todos los días recibirás un archivo de audio de música para escuchar y tendrás que adivinar su título! \nContinúa haciendo clic en uno de los botones a continuación."
+        },
+        "100%_full": {
+          "description": "¡Has terminado! Estás al **100**%. ¡Bien hecho! 🎉\n🎶 Tu servidor está listo para recibir el MDD y el TDD. \nAquí tienes un resumen rápido de tu configuración."
+        },
+        "100%_partial": {
+          "description": "¡Has terminado! Estás al **100**%. ¡Bien hecho! 🎉\n🎶 Tu servidor está listo para recibir el MDD. \nAquí tienes un resumen rápido de tu configuración."
+        },
+        "warning_100%_full": {
+          "description": "⚠️ Asegúrate de que Daily Music tenga todos los permisos necesarios para funcionar (los disponibles en el [enlace de invitación](%{InvitationLink})). \nVerifica los permisos para:\n    - el rol del bot\n    \n- el canal definido (%{channel}). \nSi falta algún permiso, no recibirás el MDD y el TDD, y tu servidor se eliminará de la base de datos después de unos días si el problema no se soluciona."
+        },
+        "warning_100%_partial": {
+          "description": "⚠️ Asegúrate de que Daily Music tenga todos los permisos necesarios para funcionar (los disponibles en el [enlace de invitación](%{InvitationLink})). \nVerifica los permisos para:\n    - el rol del bot\n    \n- el canal definido (%{channel}). \nSi falta algún permiso, no recibirás el MDD, y tu servidor se eliminará de la base de datos después de unos días si el problema no se soluciona."
+        },
+        "advanced_card": {
+          "description": "¡Bienvenido al menú de configuración avanzada! 🤓 \n🃏 Deberás elegir qué tipo de tarjeta quieres para el MDD. \nContinúa haciendo clic en el menú a continuación."
+        },
+        "advanced_trivia": {
+          "description": "¡Bienvenido al menú de configuración avanzada! 🤓\n🏆 Deberás elegir qué tipo de juego de Trivia deseas. \nContinúa haciendo clic en una de las opciones a continuación."
+        },
+        "vote_wumpus": {
+          "description": "❌ Necesitas votar en [Wumpus.store](https://wumpus.store/bot/1115972980984516719/vote) para usar esta función"
+        },
+        "voting_helps_us": {
+          "description": "Votar por Daily Music nos ayuda a ser más populares, y solo te cuesta 1 segundo de tu día, sin anuncios."
+        },
+        "correct_title_trivia": {
+          "title": "Has encontrado el título",
+          "description": "ℹ️ Aquí tienes alguna información sobre la música.",
+          "your_guess": "🤔 Tu conjetura",
+          "exact_guess": "🎯 Conjetura exacta",
+          "similarity": "🤷‍♂️ Similitud",
+          "close_enough": "¡Estás lo suficientemente cerca!",
+          "message_ephemeral": "👏 ¡Felicidades! Has encontrado el título de la música.",
+          "message_public": "👏 <@%interaction.user.id%> adivinó el título de la música con una precisión del **%Math.round(similar * 100)%**%!"
+        },
+        "wrong_title_trivia": {
+          "title": "Has obtenido el título incorrecto",
+          "description": "ℹ️ Aquí tienes alguna información sobre la música que esperamos.",
+          "your_guess": "🤔 Tu conjetura",
+          "expected_guess": "🎯 Conjetura esperada",
+          "similarity": "🤷‍♂️ Similitud",
+          "close_enough": "¡No estás lo suficientemente cerca!",
+          "message_ephemeral": "😬 ¡Ups... Has obtenido el título incorrecto!",
+          "message_public": "😬 <@%interaction.user.id%> no adivinó el título de la música..."
+        },
+        "correct_genre_trivia": {
+          "title": "Has encontrado el género",
+          "message_ephemeral": "👏 ¡Felicidades! Has encontrado el género de la música.",
+          "message_public": "👏 <@%interaction.user.id%> adivinó el género de la música!"
+        },
+        "wrong_genre_trivia": {
+          "title": "Has obtenido el género incorrecto",
+          "message_ephemeral": "😬 ¡Ups... Has obtenido el género incorrecto!",
+          "message_public": "😬 <@%interaction.user.id%> no adivinó el género de la música..."
+        },
+        "hint": {
+          "description": "💡 Aquí tienes la pista: \n🤔 [¿La pista no se muestra? Haz clic aquí para verla.](%songOfTodayRequest['previewUrl']%)"
+        }
+      }
+    }
+  },
+  "commands": {
+    "help": {
+      "menu": {
+        "placeholder": "¿En qué necesita ayuda?",
+        "options": {
+          "setting_up": {
+            "label": "Configuración",
+            "description": "Una guía para configurar los sistemas de Daily Music."
+          },
+          "debugging": {
+            "label": "Depuración",
+            "description": "La solución a los problemas más comunes."
+          },
+          "about": {
+            "label": "Acerca de MDD / TDD",
+            "description": "Todo lo que necesitas saber sobre MDD y TDD."
+          },
+          "other": {
+            "label": "Otro",
+            "description": "Preguntas que no se responden aquí."
+          }
+        }
+      },
+      "embed": {
+        "description": "¡Bienvenido al menú de ayuda! 👋\nContinúa haciendo clic en uno de los menús a continuación. ⬇️",
+        "field_title_one": "🔧 Configuración",
+        "field_description_one": "Una guía para configurar los sistemas de Daily Music.",
+        "field_title_two": "🔍 Depuración",
+        "field_description_two": "La solución a los problemas más comunes.",
+        "field_title_three": "🎵 Acerca de MDD / TDD",
+        "field_description_three": "Todo lo que necesitas saber sobre MDD y TDD.",
+        "field_title_four": "❔ Otro",
+        "field_description_four": "Preguntas que no se responden aquí."
+      }
+    },
+    "setup": {
+      "error_messages": {
+        "invalid_role": "❌ No puedes usar un rol de bot para este comando.",
+        "invalid_everyone_here_role": "❌ No tienes permitido usar el rol %role% para este comando.",
+        "invalid_role_hierarchy": "❌ El rol especificado debe ser inferior a tu rol más alto y al rol más alto del bot.",
+        "existing_configuration": "❌ Ya existe una configuración para este servidor.",
+        "max_webhooks_exceeded": "❌ Este canal ya tiene el número máximo de webhooks permitidos. Elimina uno e intenta nuevamente."
+      },
+      "embed": {
+        "description": "¡Bienvenido al sistema de configuración! 👋\n🎵 Ahora puedes configurar el sistema **MDD** (**M**úsica **D**el **D**ía).\nContinúa haciendo clic en el menú a continuación.",
+        "configuration_exists": {
+          "fields": {
+            "field_title_one": "📰 Canal",
+            "field_title_two": "🌐 Idioma",
+            "field_title_three": "🔔 Rol",
+            "field_title_four": "🎵 Género",
+            "field_title_five": "📱 Visualización",
+            "field_title_six": "🧵 Hilos",
+            "field_title_seven": "🏆 Trivia"
+          },
+          "threads": {
+            "enabled": "Activado",
+            "disabled": "Desactivado"
+          },
+          "display": {
+            "description": "%Display% | %CardMode%"
+          }
+        }
+      },
+      "menu": {
+        "placeholder": "¡Elige tu género para el MDD!",
+        "options": {
+          "global": {
+            "label": "Global",
+            "description": "La música del día para el género Global.",
+            "value": "global"
+          },
+          "pop": {
+            "label": "Pop",
+            "description": "La música del día para el género Pop.",
+            "value": "pop"
+          },
+          "rock": {
+            "label": "Rock",
+            "description": "La música del día para el género Rock.",
+            "value": "rock"
+          },
+          "electro": {
+            "label": "Electro",
+            "description": "La música del día para el género Electro.",
+            "value": "electro"
+          },
+          "kpop": {
+            "label": "KPOP",
+            "description": "La música del día para el género KPOP.",
+            "value": "kPOP"
+          },
+          "hardstyle": {
+            "label": "Hardstyle",
+            "description": "La música del día para el género Hardstyle.",
+            "value": "hardstyle"
+          },
+          "metal": {
+            "label": "Metal",
+            "description": "La música del día para el género Metal.",
+            "value": "metal"
+          },
+          "german": {
+            "label": "Alemán",
+            "description": "La música del día para el género Alemán.",
+            "value": "german"
+          }
+        }
+      },
+      "why_answers": {
+        "prevent_abuse": {
+          "description": "Para prevenir el abuso."
+        },
+        "logistical_reasons": {
+          "description": "Por razones logísticas."
+        },
+        "bot_role_mention": {
+          "description": "¿Cuál es el punto de mencionar a un bot?"
+        }
+      }
+    },
+    "links": {
+      "buttons": {
+        "invite": {
+          "label": "Agregar a Discord"
+        },
+        "server": {
+          "label": "Únete al servidor de soporte"
+        },
+        "docs": {
+          "label": "Consultar la documentación"
+        }
+      },
+      "embed": {
+        "description": "¡Gracias por usar Daily Music! ❤️\nAquí tienes todos los enlaces relacionados con el bot. ⬇️",
+        "field_title_one": "📥 Agregar el bot",
+        "field_description_one": "[Haz clic aquí](%InvitationLink%) para invitar a Daily Music a tu servidor.",
+        "field_title_two": "🚩 Únete al servidor de soporte",
+        "field_description_two": "[Haz clic aquí](%SupportLink%) para unirte al servidor de soporte.",
+        "field_title_three": "🗂️ Consultar la documentación",
+        "field_description_three": "[Haz clic aquí](%DocumentationLink%) para consultar la documentación."
+      }
+    },
+    "artistinfo": {
+      "error_messages": {
+        "artist_cant_be_found": "❌ No se puede encontrar este artista."
+      },
+      "embed": {
+        "field_title_one": "🎺 Oyentes",
+        "field_title_two": "🎵 Reproducciones",
+        "field_title_three": "🏷️ Etiquetas",
+        "field_title_four": "🎶 Artistas similares",
+        "field_title_five": "📅 Datos publicados"
+      },
+      "why_answers": {
+        "artist_does_not_exist": {
+          "description": "¡Porque este artista no existe en nuestra base de datos! Quizás escribiste mal su nombre."
+        }
+      }
+    },
+    "date": {
+      "error_messages": {
+        "date_is_banned": "❌ Esta fecha está prohibida. Por favor, usa otra fecha.",
+        "date_format": "❌ Por favor, usa el formato de fecha DD-MM-AAAA",
+        "date_on_before": "❌ Proporciona una fecha actual o anterior a la fecha actual.",
+        "date_feb_28": "❌ Proporciona una fecha el 28 de febrero de 2023 o después.",
+        "day_not_valid": "❌ Proporciona un día válido para %moment(month, 'MM').format('MMMM')% (01 al %maxDaysInMonth%).",
+        "month_not_valid": "❌ Proporciona un mes válido (01 al 12).",
+        "year_not_valid": "❌ Proporciona un año válido (2023 al %moment().year()).",
+        "no_song_info": "❌ No hay información disponible sobre la canción.",
+        "no_artist_info": "❌ No hay información disponible sobre el artista."
+      },
+      "embed": {
+        "field_title_one": "🎤 Artista",
+        "field_title_two": "👀 Título",
+        "field_title_three": "💿 Álbum",
+        "field_title_four": "🎧 Sello",
+        "field_title_five": "🎵 Género",
+        "field_title_six": "Popularidad",
+        "field_title_seven": "📆 Fecha"
+      },
+      "buttons": {
+        "preview": {
+          "label": "Vista previa"
+        },
+        "play": {
+          "label": "Reproducir en Spotify"
+        },
+        "save": {
+          "label": "Guardar en Spotify"
+        },
+        "follow": {
+          "label": "Seguir al artista"
+        },
+        "analysis": {
+          "label": "Análisis de audio"
+        },
+        "cover": {
+          "label": "Portada"
+        },
+        "playlist": {
+          "label": "Lista de reproducción"
+        }
+      },
+      "why_answers": {
+        "no_music_generated": {
+          "description": "¡Porque no se generó música para esta fecha, probablemente debido a un incidente o mantenimiento!"
+        },
+        "read_date_format": {
+          "description": "¡Porque Daily Music solo puede leer fechas en formato DD-MM-AAAA!"
+        },
+        "not_capable_future": {
+          "description": "¡Porque no podemos generar música para el futuro!"
+        },
+        "service_didnt_exist": {
+          "description": "¡Porque antes de esta fecha, el servicio que usamos no existía!"
+        },
+        "service_didnt_exist_2023": {
+          "description": "¡Porque antes de 2023, el servicio que usamos no existía, y porque no podemos generar música para el futuro!"
+        },
+        "certain_numbers_of_day": {
+          "description": "¡Porque hay un número fijo de días en un mes, no podemos generar música para el 111º día de diciembre!"
+        },
+        "certain_numbers_of_month": {
+          "description": "¿Realmente necesito explicarlo?"
+        },
+        "api_down": {
+          "description": "La API parece estar fuera de servicio."
+        }
+      }
+    },
+    "reset": {
+      "error_messages": {
+        "no_config": "❌ No se encontró ninguna configuración para este servidor."
+      },
+      "embed": {
+        "description": "✅ La configuración de este servidor se ha restablecido correctamente."
+      },
+      "why_answers": {
+        "no_data": {
+          "description": "Esto significa que Daily Music no tiene datos relacionados con tu servidor."
+        }
+      }
+    },
+    "settings": {
+      "embed": {
+        "description": "📚 Aquí tienes un resumen de los ajustes de tu servidor."
+      }
+    },
+    "stats": {
+      "embed": {
+        "description": "📊 Aquí tienes un resumen de las estadísticas de Daily Music para tu servidor.",
+        "field_title_one": "🎶 Número de canciones enviadas",
+        "field_description_one": "Daily Music ha enviado un total de **%data.TotalSongsSent%** canciones en este servidor.",
+        "field_title_two": "📆 Última canción enviada",
+        "field_description_two_true": "La última canción enviada en este servidor fue el %timestamp:F% (%timestamp:R%)",
+        "field_description_two_false": "Aún no se ha enviado ninguna canción en este servidor."
+      }
+    },
+    "trivia": {
+      "buttons": {
+        "guess": {
+          "label": "Adivinar"
+        },
+        "hint": {
+          "label": "Pista"
+        },
+        "extract": {
+          "label": "Extracto"
+        },
+        "cover": {
+          "label": "Portada"
+        }
+      },
+      "embed": {
+        "title": "¡Adivina la canción! 🎵",
+        "description": "¿Puedes adivinar el %guess% de [esta canción](%songOfTodayRequest['previewUrl']%)? 🤔",
+        "description_title": "título",
+        "description_genre": "género"
+      },
+      "menu": {
+        "placeholder": "¡Elige un género!",
+        "options": {
+          "pop": {
+            "label": "Pop",
+            "description": "Si crees que el género de esta canción es Pop."
+          },
+          "rock": {
+            "label": "Rock",
+            "description": "Si crees que el género de esta canción es Rock."
+          },
+          "electro": {
+            "label": "Electro",
+            "description": "Si crees que el género de esta canción es Electro."
+          },
+          "kpop": {
+            "label": "KPOP",
+            "description": "Si crees que el género de esta canción es KPOP."
+          },
+          "hardstyle": {
+            "label": "Hardstyle",
+            "description": "Si crees que el género de esta canción es Hardstyle."
+          },
+          "metal": {
+            "label": "Metal",
+            "description": "Si crees que el género de esta canción es Metal."
+          }
+        }
+      }
+    }
+  }
+}
