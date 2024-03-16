@@ -4,9 +4,12 @@
 
 ## 🤔 What is it?
 This is the GitHub repository containing all Daily Music translation files.
-<blockquote>
-  ℹ️ Would you like to add a new language or correct an existing one? Read on!
-</blockquote>
+
+
+## ℹ️ Information
+- There are currently no differences between `en-GB` - `en-US` files and `es-419 (LATAM)` - `es-ES` files.
+- Please, kindly contribute to add/modify languages with which you are fully comfortable.                                                                                                                                               
+- Contributing several times to the fix of an existing language, or once to the addition of a new language grants you the role of Contributor on our [official server](https://discord.gg/adbFVVxdus).
 
 ## 👤 How to contribute?
 - Download the Translation File: Download the JSON file `en-GB` in the `/english` directory. Click on it, then click the "Download" button to save it to your computer.
