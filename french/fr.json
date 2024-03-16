@@ -30,18 +30,18 @@
         "debugging_guide": {
           "title": "Guide de Débogage",
           "question_one_title": "Pourquoi ne reçois-je pas la Musique du Jour immédiatement après la configuration ?",
-          "question_one_description": "<@1115972980984516719> suit un horaire spécifique pour envoyer la MDJ, qui est actuellement envoyée à tous les serveurs à **20:00** heure de l'Amérique/Toronto. Cet horaire ne peut pas être modifié et est le même pour tout le monde.",
+          "question_one_description": "<@1115972980984516719> suit un horaire spécifique pour envoyer la MDJ, qui est actuellement envoyée à tous les serveurs à **21:00** heure de l'Amérique/Toronto. Cet horaire ne peut pas être modifié et est le même pour tout le monde.",
           "question_two_title": "Pourquoi ne reçois-je pas la Trivia du Jour immédiatement après la configuration ?",
-          "question_two_description": "<@1115972980984516719> suit un horaire spécifique pour envoyer la TDJ, qui est actuellement envoyée à tous les serveurs à **09:00** heure de l'Amérique/Toronto. Cet horaire ne peut pas être modifié et est le même pour tout le monde.",
+          "question_two_description": "<@1115972980984516719> suit un horaire spécifique pour envoyer la TDJ, qui est actuellement envoyée à tous les serveurs à **10:00** heure de l'Amérique/Toronto. Cet horaire ne peut pas être modifié et est le même pour tout le monde.",
           "question_three_title": "Le temps pour recevoir la MDJ / le TDJ est passé mais je n'ai rien reçu. Pourquoi ?",
           "question_three_description": "Cela est très probablement dû à un problème de permissions. Vérifiez que le rôle de <@1115972980984516719> a les permissions nécessaires. Vérifiez également les permissions du canal utilisé pour la MDJ / le TDJ. Vous ne recevez toujours rien ? Rejoignez le serveur de support officiel en cliquant [ici](%SupportLink%)!"
         },
         "about_guide": {
           "title": "Guide d'Information",
           "question_one_title": "Qu'est-ce que la Musique du Jour ?",
-          "question_one_description": "La Musique du Jour est une chanson choisie au hasard par <@1115972980984516719> envoyée à tous les serveurs à **20:00** heure de l'Amérique/Toronto.",
+          "question_one_description": "La Musique du Jour est une chanson choisie au hasard par <@1115972980984516719> envoyée à tous les serveurs à **21:00** heure de l'Amérique/Toronto.",
           "question_two_title": "Qu'est-ce que la Trivia du Jour ?",
-          "question_two_description": "Le Trivia du Jour est un challenge sur une musique choisie au hasard par <@1115972980984516719> envoyé à tous les serveurs à **09:00** heure de l'Amérique/Toronto."
+          "question_two_description": "Le Trivia du Jour est un challenge sur une musique choisie au hasard par <@1115972980984516719> envoyé à tous les serveurs à **10:00** heure de l'Amérique/Toronto."
         },
         "other_guide": {
           "title": "Guide Supplémentaire",
