@@ -17,7 +17,11 @@ This is the GitHub repository containing all Daily Music translation files.
 > [!IMPORTANT]
 > **Do NOT** modify the "value" fields / links in any way, they must remain as they are.
 > 
-> **Do NOT** modify/translate/delete words with % at the beginning and end. **Do NOT** delete the `\n` or the emojis.
+> **Do NOT** modify/translate/delete words with % at the beginning and end.
+>
+> **Do NOT** delete the `\n` or the emojis.
+>
+> **Do NOT** change the case, if something is in upper case, write in upper case, if something is in lower case, write in lower case.
 - Validate Your JSON: Before submitting, ensure that your translated JSON file is valid. You can use online JSON validators or tools like [jsonlint](https://jsonlint.com/) to check for syntax errors.
 - Save Your Changes: Once you've completed the translation, save the file with your changes.
 - Upload your JSON: Please upload your JSON file to [npoint.io](https://www.npoint.io/).
