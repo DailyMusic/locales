@@ -215,10 +215,10 @@
           "description": "Du bist **60**% des Weges durch den Prozess. Gut gemacht! 🎉 \n📱 Du musst einen Anzeigemodus auswählen. Du kannst sehen, wie sie aussehen, indem du auf die entsprechenden Schaltflächen klickst. \nFahren Sie fort, indem Sie auf das Menü unten klicken."
         },
         "80%": {
-          "description": "Du bist **80**% des Weges durch den Prozess. Gut gemacht! 🎉 \n🧵 Du musst wählen, ob du einen Thread automatisch erstellen und von dem Bot für die MDT verwalten lassen möchtest. \nFahren Sie fort, indem Sie eine der untenstehenden Schaltflächen klicken"
+          "description": "Du bist **80**% des Weges durch den Prozess. Gut gemacht! 🎉 \n🧵 Sie müssen wählen, ob du einen Thread automatisch erstellen und von dem Bot für die MDT verwalten lassen möchtest. \nFahren Sie fort, indem Sie eine der untenstehenden Schaltflächen klicken"
         },
         "+80%": {
-          "description": "Du bist **+80**% des Weges durch den Prozess. Gut gemacht! 🎉 \n🏆 Du musst wählen, ob täglich ein Trivia-Spiel verschickt werden soll. \nDas Konzept ist einfach: Jeden Tag erhalten Sie eine Audiodatei mit Musik zum Anhören und müssen ihren Titel erraten! \nFahren Sie fort, indem Sie eine der untenstehenden Schaltflächen klicken"
+          "description": "Du bist **+80**% des Weges durch den Prozess. Gut gemacht! 🎉 \n🏆 Sie müssen wählen, ob täglich ein Trivia-Spiel verschickt werden soll. \nDas Konzept ist einfach: Jeden Tag erhalten Sie eine Audiodatei mit Musik zum Anhören und müssen ihren Titel erraten! \nFahren Sie fort, indem Sie eine der untenstehenden Schaltflächen klicken"
         },
         "100%_full": {
           "description": "Du bist fertig! Du bist bei **100**%. Gut gemacht! 🎉\n🎶 Ihr Server ist bereit, die MDT und die TDT zu empfangen. \nHier ist eine schnelle Übersicht über Ihre Konfiguration"
@@ -233,10 +233,10 @@
           "description": "⚠️ Bitte stellen Sie sicher, dass Daily Music alle erforderlichen Berechtigungen hat, um zu funktionieren (die im [Einladungslink](%{InvitationLink}) verfügbaren). \nÜberprüfen Sie die Berechtigungen für :\n    - die Rolle des Bots\n    \n- den definierten Kanal (%{channel}). \nWenn eine Berechtigung fehlt, erhalten Sie die MDT nicht, und Ihr Server wird nach einigen Tagen aus der Datenbank gelöscht, wenn das Problem nicht behoben wird."
         },
         "advanced_card": {
-          "description": "Willkommen im erweiterten Konfigurationsmenü! 🤓 \n🃏 Sie müssen auswählen, welche Art von Karte Sie für die MDT möchten.\nFahren Sie fort, indem Sie auf das Menü unten klicken"
+          "description": "Willkommen im erweiterten Konfigurationsmenü! 🤓 \n🃏 Sie müssen wählen, welche Art von Karte Sie für die MDT möchten.\nFahren Sie fort, indem Sie auf das Menü unten klicken"
         },
         "advanced_trivia": {
-          "description": "Willkommen im erweiterten Konfigurationsmenü! 🤓\n🏆 Sie müssen auswählen, welche Art von Trivia-Spiel Sie möchten. \nFahren Sie fort, indem Sie eine der untenstehenden Optionen auswählen"
+          "description": "Willkommen im erweiterten Konfigurationsmenü! 🤓\n🏆 Sie müssen wählen, welche Art von Trivia-Spiel Sie möchten. \nFahren Sie fort, indem Sie eine der untenstehenden Optionen auswählen"
         },
         "vote_wumpus": {
           "description": "❌ Sie müssen auf [Wumpus.store](https://wumpus.store/bot/1115972980984516719/vote) abstimmen, um diese Funktion zu nutzen"
