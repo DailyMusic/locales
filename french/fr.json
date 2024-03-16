@@ -45,7 +45,7 @@
         },
         "other_guide": {
           "title": "Guide Supplémentaire",
-          "question_one_title": "🤔 Votre question n'a pas été répondue ?",
+          "question_one_title": "🤔 Votre question n'a pas trouvé de réponse ?",
           "question_one_description": "Vous pouvez poser votre question sur le serveur de support officiel en cliquant [ici](%SupportLink%)."
         }
       },
