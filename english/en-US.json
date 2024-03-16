@@ -30,18 +30,18 @@
         "debugging_guide": {
           "title": "Debugging Guide",
           "question_one_title": "Why don't I receive the Music Of The Day immediately after setting up?",
-          "question_one_description": "<@1115972980984516719> follows a specific schedule to send the MOTD, which is currently sent to all servers at **8:00** PM America/Toronto time. This schedule cannot be changed and is the same for everyone.",
+          "question_one_description": "<@1115972980984516719> follows a specific schedule to send the MOTD, which is currently sent to all servers at **9:00** PM America/Toronto time. This schedule cannot be changed and is the same for everyone.",
           "question_two_title": "Why don't I receive the Trivia Of The Day immediately after setting up?",
-          "question_two_description": "<@1115972980984516719> follows a specific schedule to send the TOTD, which is currently sent to all servers at **9:00** AM America/Toronto time. This schedule cannot be changed and is the same for everyone.",
+          "question_two_description": "<@1115972980984516719> follows a specific schedule to send the TOTD, which is currently sent to all servers at **10:00** AM America/Toronto time. This schedule cannot be changed and is the same for everyone.",
           "question_three_title": "The time to receive the MOTD / TOTD has passed but I haven't received anything. Why?",
           "question_three_description": "This is most likely due to a permissions issue. Check that the role of <@1115972980984516719> has the necessary permissions. Also check the permissions of the channel used for MOTD / TOTD. Still not receiving anything? Join the official support server by clicking [here](%SupportLink%)!"
         },
         "about_guide": {
           "title": "About Guide",
           "question_one_title": "What is the Music Of The Day?",
-          "question_one_description": "The Music Of The Day is a song that is chosen randomly by <@1115972980984516719> and sent to all servers at **8:00** PM America/Toronto time.",
+          "question_one_description": "The Music Of The Day is a song that is chosen randomly by <@1115972980984516719> and sent to all servers at **9:00** PM America/Toronto time.",
           "question_two_title": "What is the Trivia Of The Day?",
-          "question_two_description": "The Trivia Of The Day is a trivia question about music that is chosen randomly by <@1115972980984516719> and sent to all servers at **9:00** AM America/Toronto time."
+          "question_two_description": "The Trivia Of The Day is a trivia question about music that is chosen randomly by <@1115972980984516719> and sent to all servers at **10:00** AM America/Toronto time."
         },
         "other_guide": {
           "title": "Other Guide",
