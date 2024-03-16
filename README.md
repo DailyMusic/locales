@@ -12,7 +12,7 @@ This is the GitHub repository containing all Daily Music translation files.
 - Contributing several times to the fix of an existing language, or once to the addition of a new language grants you the role of Contributor on our [official server](https://discord.gg/adbFVVxdus).
 
 ## 👤 How to contribute?
-- Download the Translation File: Download the JSON file `en-GB` in the `/english` directory. Click on it, then click the "Download" icon to save it to your computer.
+- Download the Translation File: Download the JSON file `en-GB` in the `/english` directory. Click on it, then click the "Download" icon to save it to your device.
 - Translate the Content: Open the downloaded JSON file using a text editor or a JSON editor. Translate the content into your desired language while keeping the original structure intact
 > [!IMPORTANT]
 > **Do NOT** modify the "value" fields / links in any way, they must remain as they are.
@@ -23,7 +23,6 @@ This is the GitHub repository containing all Daily Music translation files.
 >
 > **Do NOT** change the case, if something is in upper case, write in upper case, if something is in lower case, write in lower case.
 - Validate Your JSON: Before submitting, ensure that your translated JSON file is valid. You can use online JSON validators or tools like [jsonlint](https://jsonlint.com/) to check for syntax errors.
-- Save Your Changes: Once you've completed the translation, save the file with your changes.
 - Upload your JSON: Please upload your JSON file to [npoint.io](https://www.npoint.io/).
-- Submit Your Translation: Return to the repository on GitHub. Click on the "Issues" tab and choose the template corresponding to your contribution.
+- Submit Your Translation: Return to the repository on GitHub. Click on the "Issues" tab and choose the template corresponding to your contribution, fill everything.
 - Wait for Review: A project maintainer will review your translation. If any changes are needed, they will provide feedback.
