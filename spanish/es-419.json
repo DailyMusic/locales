@@ -215,10 +215,10 @@
           "description": "¡Estás al **60**% del proceso! ¡Bien hecho! 🎉 \n📱 Necesitarás elegir un modo de visualización. Puedes ver cómo se ven haciendo clic en sus respectivos botones. \nContinúa haciendo clic en el menú a continuación."
         },
         "80%": {
-          "description": "Estás **80**% del camino hecho en el proceso. ¡Bien hecho! 🎉 \n🧵 Deberás elegir si quieres que el bot cree y administre automáticamente un hilo para el MDD. \nContinúa haciendo clic en uno de los botones a continuación."
+          "description": "Estás **80**% del camino hecho en el proceso. ¡Bien hecho! 🎉 \n🧵 Debe elegir si quieres que el bot cree y administre automáticamente un hilo para el MDD. \nContinúa haciendo clic en uno de los botones a continuación."
         },
         "+80%": {
-          "description": "Estás **+80**% del camino hecho en el proceso. ¡Bien hecho! 🎉 \n🏆 Deberás elegir si deseas recibir un juego de Trivia todos los días. \nEl concepto es simple: ¡todos los días recibirás un archivo de audio de música para escuchar y tendrás que adivinar su título! \nContinúa haciendo clic en uno de los botones a continuación."
+          "description": "Estás **+80**% del camino hecho en el proceso. ¡Bien hecho! 🎉 \n🏆 Debe elegir si deseas recibir un juego de Trivia todos los días. \nEl concepto es simple: ¡todos los días recibirás un archivo de audio de música para escuchar y tendrás que adivinar su título! \nContinúa haciendo clic en uno de los botones a continuación."
         },
         "100%_full": {
           "description": "¡Has terminado! Estás al **100**%. ¡Bien hecho! 🎉\n🎶 Tu servidor está listo para recibir el MDD y el TDD. \nAquí tienes un resumen rápido de tu configuración."
@@ -233,10 +233,10 @@
           "description": "⚠️ Asegúrate de que Daily Music tenga todos los permisos necesarios para funcionar (los disponibles en el [enlace de invitación](%{InvitationLink})). \nVerifica los permisos para:\n    - el rol del bot\n    \n- el canal definido (%{channel}). \nSi falta algún permiso, no recibirás el MDD, y tu servidor se eliminará de la base de datos después de unos días si el problema no se soluciona."
         },
         "advanced_card": {
-          "description": "¡Bienvenido al menú de configuración avanzada! 🤓 \n🃏 Deberás elegir qué tipo de tarjeta quieres para el MDD. \nContinúa haciendo clic en el menú a continuación."
+          "description": "¡Bienvenido al menú de configuración avanzada! 🤓 \n🃏 Debe elegir qué tipo de tarjeta quieres para el MDD. \nContinúa haciendo clic en el menú a continuación."
         },
         "advanced_trivia": {
-          "description": "¡Bienvenido al menú de configuración avanzada! 🤓\n🏆 Deberás elegir qué tipo de juego de Trivia deseas. \nContinúa haciendo clic en una de las opciones a continuación."
+          "description": "¡Bienvenido al menú de configuración avanzada! 🤓\n🏆 Debe elegir qué tipo de juego de Trivia deseas. \nContinúa haciendo clic en una de las opciones a continuación."
         },
         "vote_wumpus": {
           "description": "❌ Necesitas votar en [Wumpus.store](https://wumpus.store/bot/1115972980984516719/vote) para usar esta función"
