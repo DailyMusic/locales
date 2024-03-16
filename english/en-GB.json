@@ -565,27 +565,33 @@
         "options": {
           "pop": {
             "label": "Pop",
-            "description": "If you think the genre of this song is Pop."
+            "description": "If you think the genre of this song is Pop.",
+            "value": "pop"
           },
           "rock": {
             "label": "Rock",
-            "description": "If you think the genre of this song is Rock."
+            "description": "If you think the genre of this song is Rock.",
+            "value": "rock"
           },
           "electro": {
             "label": "Electro",
-            "description": "If you think the genre of this song is Electro."
+            "description": "If you think the genre of this song is Electro.",
+            "value": "electro"
           },
           "kpop": {
             "label": "KPOP",
-            "description": "If you think the genre of this song is KPOP."
+            "description": "If you think the genre of this song is KPOP.",
+            "value": "kpop"
           },
           "hardstyle": {
             "label": "Hardstyle",
-            "description": "If you think the genre of this song is Hardstyle."
+            "description": "If you think the genre of this song is Hardstyle.",
+            "value": "hardstyle"
           },
           "metal": {
             "label": "Metal",
-            "description": "If you think the genre of this song is Metal."
+            "description": "If you think the genre of this song is Metal.",
+            "value": "metal"
           }
         }
       }
