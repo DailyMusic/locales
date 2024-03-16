@@ -2,7 +2,7 @@
 name: New Translation File Submission
 about: Submit a new language for the project.
 title: "[FIX] Fixing an existing language"
-labels: enhancement
+labels: new
 assignees: blurwind
 
 ---
