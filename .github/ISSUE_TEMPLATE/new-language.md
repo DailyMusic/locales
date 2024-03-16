@@ -2,7 +2,7 @@
 name: New language
 about: Submit a new language for the project.
 title: ''
-labels: ''
+labels: enhancement
 assignees: ''
 
 ---
@@ -11,7 +11,7 @@ assignees: ''
 [Yes/No]
 
 **Language:**
-[Specify the language of the translation file, the [code (SET-1)](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) and the [full language name](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes)]
+[Specify the language of the translation file, the language code (French → fr) and the full language name] 
 
 **Translation File:**
 [Attach or link to the new translation file.]
