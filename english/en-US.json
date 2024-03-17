@@ -227,10 +227,10 @@
           "description": "You're done! You're at **100**%. Well done! 🎉\n🎶 Your server is ready to receive the MOTD. \nHere is a quick overview of your configuration"
         },
         "warning_100%_full": {
-          "description": "⚠️ Please ensure that Daily Music has all the necessary permissions to work (those available in the [invitation link](%{InvitationLink})). \nCheck the permissions for :\n    - the bot's role\n    \n- the defined channel (%{channel}). \nIf a permission is missing, you will not receive the MOTD and the TOTD and your server will be deleted from the database after a few days if the issue is not fixed."
+          "description": "⚠️ Please ensure that Daily Music has all the necessary permissions to work (those available in the [invitation link](%InvitationLink%)). \nCheck the permissions for :\n    - the bot's role\n    \n- the defined channel (%channel%). \nIf a permission is missing, you will not receive the MOTD and the TOTD and your server will be deleted from the database after a few days if the issue is not fixed."
         },
         "warning_100%_partial": {
-          "description": "⚠️ Please ensure that Daily Music has all the necessary permissions to work (those available in the [invitation link](%{InvitationLink})). \nCheck the permissions for :\n    - the bot's role\n    \n- the defined channel (%{channel}). \nIf a permission is missing, you will not receive the MOTD and your server will be deleted from the database after a few days if the issue is not fixed."
+          "description": "⚠️ Please ensure that Daily Music has all the necessary permissions to work (those available in the [invitation link](%InvitationLink%)). \nCheck the permissions for :\n    - the bot's role\n    \n- the defined channel (%channel%). \nIf a permission is missing, you will not receive the MOTD and your server will be deleted from the database after a few days if the issue is not fixed."
         },
         "advanced_card": {
           "description": "Welcome to the advanced configuration menu! 🤓 \n🃏 You need to choose what type of card you want for the MOTD.\nContinue by clicking on the menu below"
