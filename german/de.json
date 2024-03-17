@@ -227,10 +227,10 @@
           "description": "Du bist fertig! Du bist bei **100**%. Gut gemacht! 🎉\n🎶 Ihr Server ist bereit, die MDT zu empfangen. \nHier ist eine schnelle Übersicht über Ihre Konfiguration"
         },
         "warning_100%_full": {
-          "description": "⚠️ Bitte stellen Sie sicher, dass Daily Music alle erforderlichen Berechtigungen hat, um zu funktionieren (die im [Einladungslink](%{InvitationLink}) verfügbaren). \nÜberprüfen Sie die Berechtigungen für :\n    - die Rolle des Bots\n    \n- den definierten Kanal (%{channel}). \nWenn eine Berechtigung fehlt, erhalten Sie die MDT und die TDT nicht, und Ihr Server wird nach einigen Tagen aus der Datenbank gelöscht, wenn das Problem nicht behoben wird."
+          "description": "⚠️ Bitte stellen Sie sicher, dass Daily Music alle erforderlichen Berechtigungen hat, um zu funktionieren (die im [Einladungslink](%InvitationLink%) verfügbaren). \nÜberprüfen Sie die Berechtigungen für :\n    - die Rolle des Bots\n    \n- den definierten Kanal (%channel%). \nWenn eine Berechtigung fehlt, erhalten Sie die MDT und die TDT nicht, und Ihr Server wird nach einigen Tagen aus der Datenbank gelöscht, wenn das Problem nicht behoben wird."
         },
         "warning_100%_partial": {
-          "description": "⚠️ Bitte stellen Sie sicher, dass Daily Music alle erforderlichen Berechtigungen hat, um zu funktionieren (die im [Einladungslink](%{InvitationLink}) verfügbaren). \nÜberprüfen Sie die Berechtigungen für :\n    - die Rolle des Bots\n    \n- den definierten Kanal (%{channel}). \nWenn eine Berechtigung fehlt, erhalten Sie die MDT nicht, und Ihr Server wird nach einigen Tagen aus der Datenbank gelöscht, wenn das Problem nicht behoben wird."
+          "description": "⚠️ Bitte stellen Sie sicher, dass Daily Music alle erforderlichen Berechtigungen hat, um zu funktionieren (die im [Einladungslink](%InvitationLink%)) verfügbaren). \nÜberprüfen Sie die Berechtigungen für :\n    - die Rolle des Bots\n    \n- den definierten Kanal (%channel%). \nWenn eine Berechtigung fehlt, erhalten Sie die MDT nicht, und Ihr Server wird nach einigen Tagen aus der Datenbank gelöscht, wenn das Problem nicht behoben wird."
         },
         "advanced_card": {
           "description": "Willkommen im erweiterten Konfigurationsmenü! 🤓 \n🃏 Sie müssen wählen, welche Art von Karte Sie für die MDT möchten.\nFahren Sie fort, indem Sie auf das Menü unten klicken"
