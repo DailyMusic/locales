@@ -227,10 +227,10 @@
           "description": "Vous avez terminé ! Vous êtes à **100**%. Bien joué ! 🎉\n🎶 Votre serveur est prêt à recevoir la MDJ. \nVoici un aperçu rapide de votre configuration"
         },
         "warning_100%_full": {
-          "description": "⚠️ Veuillez vous assurer que Daily Music a toutes les permissions nécessaires pour fonctionner (celles disponibles dans le [lien d'invitation](%{InvitationLink})). \nVérifiez les permissions pour :\n    - le rôle du robot\n    \n- le canal défini (%{channel}). \nS'il manque une permission, vous ne recevrez pas la MDJ et le TDJ et votre serveur sera supprimé de la base de données après quelques jours si le problème n'est pas résolu."
+          "description": "⚠️ Veuillez vous assurer que Daily Music a toutes les permissions nécessaires pour fonctionner (celles disponibles dans le [lien d'invitation](%InvitationLink%)). \nVérifiez les permissions pour :\n    - le rôle du robot\n    \n- le canal défini (%channel%). \nS'il manque une permission, vous ne recevrez pas la MDJ et le TDJ et votre serveur sera supprimé de la base de données après quelques jours si le problème n'est pas résolu."
         },
         "warning_100%_partial": {
-          "description": "⚠️ Veuillez vous assurer que Daily Music a toutes les permissions nécessaires pour fonctionner (celles disponibles dans le [lien d'invitation](%{InvitationLink})). \nVérifiez les permissions pour :\n    - le rôle du robot\n    \n- le canal défini (%{channel}). \nS'il manque une permission, vous ne recevrez pas la MDJ et votre serveur sera supprimé de la base de données après quelques jours si le problème n'est pas résolu."
+          "description": "⚠️ Veuillez vous assurer que Daily Music a toutes les permissions nécessaires pour fonctionner (celles disponibles dans le [lien d'invitation](%InvitationLink%)). \nVérifiez les permissions pour :\n    - le rôle du robot\n    \n- le canal défini (%channel%). \nS'il manque une permission, vous ne recevrez pas la MDJ et votre serveur sera supprimé de la base de données après quelques jours si le problème n'est pas résolu."
         },
         "advanced_card": {
           "description": "Bienvenue dans le menu de configuration avancée ! 🤓 \n🃏 Vous devrez choisir quel type de carte vous voulez pour la MDJ.\nContinuez en cliquant sur le menu ci-dessous"
