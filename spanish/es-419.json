@@ -227,10 +227,10 @@
           "description": "¡Has terminado! Estás al **100**%. ¡Bien hecho! 🎉\n🎶 Tu servidor está listo para recibir el MDD. \nAquí tienes un resumen rápido de tu configuración."
         },
         "warning_100%_full": {
-          "description": "⚠️ Asegúrate de que Daily Music tenga todos los permisos necesarios para funcionar (los disponibles en el [enlace de invitación](%{InvitationLink})). \nVerifica los permisos para:\n    - el rol del bot\n    \n- el canal definido (%{channel}). \nSi falta algún permiso, no recibirás el MDD y el TDD, y tu servidor se eliminará de la base de datos después de unos días si el problema no se soluciona."
+          "description": "⚠️ Asegúrate de que Daily Music tenga todos los permisos necesarios para funcionar (los disponibles en el [enlace de invitación](%InvitationLink%)). \nVerifica los permisos para:\n    - el rol del bot\n    \n- el canal definido (%channel%). \nSi falta algún permiso, no recibirás el MDD y el TDD, y tu servidor se eliminará de la base de datos después de unos días si el problema no se soluciona."
         },
         "warning_100%_partial": {
-          "description": "⚠️ Asegúrate de que Daily Music tenga todos los permisos necesarios para funcionar (los disponibles en el [enlace de invitación](%{InvitationLink})). \nVerifica los permisos para:\n    - el rol del bot\n    \n- el canal definido (%{channel}). \nSi falta algún permiso, no recibirás el MDD, y tu servidor se eliminará de la base de datos después de unos días si el problema no se soluciona."
+          "description": "⚠️ Asegúrate de que Daily Music tenga todos los permisos necesarios para funcionar (los disponibles en el [enlace de invitación](%InvitationLink%)). \nVerifica los permisos para:\n    - el rol del bot\n    \n- el canal definido (%channel%). \nSi falta algún permiso, no recibirás el MDD, y tu servidor se eliminará de la base de datos después de unos días si el problema no se soluciona."
         },
         "advanced_card": {
           "description": "¡Bienvenido al menú de configuración avanzada! 🤓 \n🃏 Debe elegir qué tipo de tarjeta quieres para el MDD. \nContinúa haciendo clic en el menú a continuación."
