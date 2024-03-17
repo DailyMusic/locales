@@ -61,7 +61,7 @@ This is the GitHub repository containing all Daily Music translation files.
 | uk     | Ukrainian            | Українська          | ❌               |
 | hi     | Hindi                | हिन्दी              | ❌               |
 | th     | Thai                 | ไทย                 | ❌               |
-| zh-CN  | Chinese, China       | 中文                 | ❌               |
+| zh-CN  | Chinese, China       | 中文                 | ✅               |
 | ja     | Japanese             | 日本語                | ❌               |
 | zh-TW  | Chinese, Taiwan      | 繁體中文              | ❌               |
 | ko     | Korean               | 한국어                | ❌               |
