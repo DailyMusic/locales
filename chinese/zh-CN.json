@@ -1,0 +1,600 @@
+{
+  "general": {
+    "why": "🤔 为什么？",
+    "none": "无",
+    "unknown": "未知",
+    "by": "由",
+    "motd": "今日音乐 ：",
+    "totd": "今日小知识：您能猜到音乐是什么吗？"
+  },
+  "events": {
+    "interactionCreate": {
+      "error_messages": {
+        "guild_only": "❌ 该命令为公会专用命令!",
+        "dev_only": "❌ 此命令仅限开发人员使用。",
+        "cmd_not_found": "❌ 找不到该命令。",
+        "bot_permissions": "❌ 我需要拥有`%command.perms.BotPermissions.map((p) => p.toUpperCase()).join(', ')%` 权限才能使用该命令。",
+        "user_permissions": "❌ 您需要拥有 `%command.perms.UserPermissions.map((p) => p.toUpperCase()).join(', ')%` 权限才能使用此命令。",
+        "already_played_today": "❌ 你今天已经玩过了!"
+      },
+      "guides": {
+        "setup_guide": {
+          "title": "设置指南",
+          "question_one_title": "如何自动接收每日音乐？",
+          "question_one_description": "要自动接收今日音乐，请使用 </setup:1199447395700842526> 命令。然后，让进程引导您。",
+          "question_two_title": "我可以为 今日音乐",
+          "question_two_description": "Discord 上几乎所有类型的频道！\n- 文本频道\n- 属于文本频道的公共/私人主题\n- 公告频道\n- 属于公告频道的公共主题\n- 论坛帖子",
+          "question_three_title": "我怎样才能知道应向谁通知 今日音乐",
+          "question_three_description": "您需要确定谁会对今日音乐感兴趣。如果您的社区专注于音乐，那么您可以选择通知所有服务器成员共同拥有的角色（即 成员 角色）。否则，如果您的社区不是以音乐为主，您可以专门为对音乐感兴趣的人设置一个角色。"
+        },
+        "debugging_guide": {
+          "title": "调试指南",
+          "question_one_title": "为什么我没有收到 今日音乐 设置完成后立即运行？",
+          "question_one_description": "<@1115972980984516719> 遵循特定时间表发送今日音乐，目前是在美国/多伦多时间晚上***9:00**发送到所有服务器。该时间表不可更改，对每个人都一样。",
+          "question_two_title": "为什么我在设置后没有立即收到 每日琐事？",
+          "question_two_description": "<@1115972980984516719>按照特定的时间表发送 今日琐事，目前是在美国/多伦多时间上午**10:00**发送到所有服务器。该时间表不可更改，对每个人都一样。",
+          "question_three_title": "领取 今日音乐/今日琐事 的时间已过，但我什么也没收到。为什么？",
+          "question_three_description": "这很可能是权限问题。请检查 <@1115972980984516719> 的角色是否拥有必要的权限。同时检查用于今日音乐/今日琐事的频道的权限。仍未收到任何信息？点击 [此处](%SupportLink%)，加入官方支持服务器！"
+        },
+        "about_guide": {
+          "title": "关于指南",
+          "question_one_title": "今天的音乐是什么？",
+          "question_one_description": "每日音乐 是由 <@1115972980984516719> 随机选择的一首歌曲，于美国/多伦多时间晚上**9:00**发送到所有服务器。",
+          "question_two_title": "什么是 每日琐事？",
+          "question_two_description": "每日琐事 是由 <@1115972980984516719> 随机选出的有关音乐的琐事问题，于美国/多伦多时间上午**10:00**发送至所有服务器."
+        },
+        "other_guide": {
+          "title": "其他指南",
+          "question_one_title": "🤔 您的问题尚未得到答复？",
+          "question_one_description": "您可以点击[这里](%SupportLink%)在官方支持服务器上提问。"
+        }
+      },
+      "menus": {
+        "display_select_menu": {
+          "placeholder": "为今日音乐选择显示屏！",
+          "options": {
+            "complete": {
+              "label": "完整",
+              "description": "详细嵌入有关今日音乐和艺术家的信息。.",
+              "value": "complete"
+            },
+            "simple": {
+              "label": "简单",
+              "description": "整合今日音乐的 Spotify 链接.",
+              "value": "simple"
+            },
+            "card": {
+              "label": "卡片",
+              "description": "为今日音乐制作的精美卡片。",
+              "value": "card"
+            }
+          }
+        },
+        "card_mode_select_menu": {
+          "placeholder": "为今日音乐选择卡片模式！",
+          "options": {
+            "classic": {
+              "label": "经典",
+              "description": "经典贺卡.",
+              "value": "classic"
+            },
+            "pro": {
+              "label": "经典专业版",
+              "description": "经典贺卡，尽显专业风范.",
+              "value": "pro"
+            },
+            "mini": {
+              "label": "迷你专业版",
+              "description": "迷你贺卡，却充满专业气息.",
+              "value": "mini"
+            }
+          }
+        },
+        "trivia_mode_select_menu": {
+          "placeholder": "选择您的今日琐事模式！!",
+          "options": {
+            "audio_title": {
+              "label": "音频标题",
+              "description": "听一小段摘录，猜测音乐的标题。",
+              "value": "audio-title"
+            },
+            "audio_genre": {
+              "label": "音频类型",
+              "description": "听一小段音乐片段，猜测音乐类型。",
+              "value": "audio-genre"
+            },
+            "image_title": {
+              "label": "图片标题",
+              "description": "看封面猜音乐名称.",
+              "value": "image-title"
+            },
+            "image_genre": {
+              "label": "图像类型",
+              "description": "看封面猜音乐类型。",
+              "value": "image-genre"
+            }
+          }
+        }
+      },
+      "modals": {
+        "trivia_modal": {
+          "title": "猜音乐",
+          "input": "这首音乐的标题是什么？"
+        }
+      },
+      "buttons": {
+        "display_modes": {
+          "complete_display_preview": {
+            "label": "完整预览"
+          },
+          "simple_display_preview": {
+            "label": "简单预览"
+          },
+          "card_display_preview": {
+            "label": "卡片预览"
+          }
+        },
+        "card_modes": {
+          "classic_card_display": {
+            "label": "经典预览"
+          },
+          "pro_card_display": {
+            "label": "经典预览"
+          },
+          "mini_card_display": {
+            "label": "迷你版预览"
+          }
+        },
+        "threads": {
+          "threads_on": {
+            "label": "是"
+          },
+          "threads_off": {
+            "label": "没有"
+          }
+        },
+        "when": {
+          "when_motd": {
+            "label": "下一次 今日音乐 是什么时候？"
+          },
+          "when_totd": {
+            "label": "下一次 今日琐事 是什么时候？"
+          }
+        },
+        "vote": {
+          "unlock_feature": {
+            "label": "解锁此功能"
+          }
+        },
+        "artists": {
+          "are_you_an_artist": {
+            "label": "你是艺术家吗？"
+          }
+        }
+      },
+      "embeds": {
+        "audio_analysis": {
+          "description": "📊 这里是 %songOfTodayRequest['title']% 的音频分析，作者是 %songOfTodayRequest['artist']%：",
+          "fields": {
+            "field_title_one": "💃 适合跳舞吗？",
+            "field_description_one_true": "是的！%songOfTodayRequest['title']% 很适合与朋友一起跳舞！",
+            "field_description_one_false": "不行。%songOfTodayRequest['title']% 不适合与朋友共舞。",
+            "field_title_two": "⚡ 是否充满活力？?",
+            "field_description_two_true": "是的！%songOfTodayRequest['title']% 充满活力，低音强劲！",
+            "field_description_two_false": "没有。%songOfTodayRequest['title']% 没有能量。",
+            "field_title_three": "🚀 是现场直播吗？",
+            "field_description_three_true": "是的！%songOfTodayRequest['title']% 是现场演奏的。",
+            "field_description_three_false": "没有。%songOfTodayRequest['title']% 没有进行现场直播。",
+            "field_title_four": "📊 组成",
+            "field_description_four_true": "%songOfTodayRequest['title']% 主要由歌词组成。",
+            "field_description_four_false": "%songOfTodayRequest['title']% 主要由旋律组成。",
+            "field_title_five": "🔊 声学",
+            "field_description_five_true": "%songOfTodayRequest['title']% 主要使用原声乐器演奏。",
+            "field_description_five_false": "%songOfTodayRequest['title']% 并非主要用原声乐器演奏。",
+            "field_title_six": "🤪 情绪",
+            "field_description_six_true": "%songOfTodayRequest['title']% 是一首积极向上的音乐。",
+            "field_description_six_false": "%songOfTodayRequest['title']% 是一首情绪消极的音乐。"
+          }
+        },
+        "are_you_an_artist": {
+          "description": "您是音乐艺术家吗？如果是的话，您可以要求在预览信息中出现您的名字，比如您刚刚点击的这条。您不需要付费，这是免费的。\n➡️ 以下是要求",
+          "fields": {
+            "field_title_one": "🎧 在场",
+            "field_description_one": "在流媒体平台上（Spotify、Deezer、Apple Music、Soundcloud......）。",
+            "field_title_two": "🤚 证明您的身份",
+            "field_description_two": "证明你真的是你所声称的艺术家。",
+            "field_title_three": "🎵 有一个音乐流派",
+            "field_description_three": "这是机器人提出的建议之一（全球、流行、摇滚、电子、韩国流行音乐、硬式、金属、德语）。",
+            "field_title_four": "🤝 我们为什么要这样做？",
+            "field_description_four": "展示那些没有得到应有认可的人才，因为音乐是一个人人都应为其艺术贡献得到认可的世界。",
+            "field_title_five": "🤔 下一步是什么？",
+            "field_description_five": "加入我们的 [官方服务器](%SupportLink%) 并提出申请。如果您的申请被接受，您将出现在预览信息中，并获得我们服务器上的一个角色。"
+          }
+        },
+        "60%": {
+          "description": "你已经完成了整个过程的**60**%。干得好 🎉 \n📱 您需要选择一种显示模式。点击相应的按钮就能看到它们的样子。\n点击下面的菜单继续。"
+        },
+        "80%": {
+          "description": "你已经完成了整个过程的**80**%。干得好 🎉 \n🧵 您需要选择是否要由机器人为今日音乐自动创建和管理线程。\n点击以下按钮继续"
+        },
+        "+80%": {
+          "description": "你已经完成了整个过程的**+80**%。干得好 🎉 🏆您需要选择是否每天发送一个 小知识 游戏。\n概念很简单：每天您都会收到一个音乐音频文件，您必须猜出它的标题！\n点击下面的按钮继续"
+        },
+        "100%_full": {
+          "description": "大功告成！您现在处于**100**%。干的好！🎉 \n🎶 您的服务器已准备好接收 今日音乐 和 今日琐事.\n以下是配置的快速概述"
+        },
+        "100%_partial": {
+          "description": "大功告成！您现在处于**100**%。干的好！🎉 \n🎶 您的服务器已准备好接收今日音乐。\n以下是配置的快速概述"
+        },
+        "warning_100%_full": {
+          "description": "⚠️ 请确保 Daily Music 具有运行所需的所有权限（请查看[邀请链接](%InvitationLink%)中提供的权限）。\n检查以下权限：\n\n- 机器人的角色\n- 已定义的频道（%channel%）。 \n\n如果缺少某个权限，则将无法接收到 今日音乐 和 今日琐事，并且如果问题未解决，您的服务器将在几天后从数据库中删除。"
+        },
+        "warning_100%_partial": {
+          "description": "⚠️ 请确保 Daily Music 具有运行所需的所有权限（请查看[邀请链接](%InvitationLink%)中提供的权限）。\n检查以下权限：\n\n- 机器人的角色\n- 已定义的频道（%channel%）。 \n\n如果缺少某个权限，则将无法接收到 今日音乐，并且如果问题未解决，您的服务器将在几天后从数据库中删除。"
+        },
+        "advanced_card": {
+          "description": "欢迎来到高级配置菜单！🤓 \n🃏您需要为今日音乐选择什么类型的卡\n继续点击下面的菜单"
+        },
+        "advanced_trivia": {
+          "description": "欢迎来到高级配置菜单！🤓🏆您需要选择您想要的 小知识 游戏类型。\n继续点击以下选项之一"
+        },
+        "vote_wumpus": {
+          "description": "❌ 您需要在 [Wumpus.store](https://wumpus.store/bot/1115972980984516719/vote) 上投票才能使用此功能"
+        },
+        "voting_helps_us": {
+          "description": "为 Daily Music 投票能让我们更受欢迎，而且只需花费您 1 秒钟的时间，没有广告。"
+        },
+        "correct_title_trivia": {
+          "title": "您已找到标题",
+          "description": "ℹ️ 下面是一些关于音乐的信息。.",
+          "your_guess": "🤔 您的猜测",
+          "exact_guess": "🎯 准确猜测",
+          "similarity": "🤷‍♂️ 相似性",
+          "close_enough": "你已经很接近了！",
+          "message_ephemeral": "👏 GG！你找到了音乐的标题.",
+          "message_public": "👏 <@%interaction.user.id%>猜出了音乐的标题，精确度为**%Math.round(similar * 100)%**%！"
+        },
+        "wrong_title_trivia": {
+          "title": "你弄错了标题",
+          "description": "ℹ️ 以下是有关我们期待的音乐的一些信息.",
+          "your_guess": "🤔 您的猜测",
+          "expected_guess": "🎯 预期猜测",
+          "similarity": "🤷‍♂️ 相似性",
+          "close_enough": "你靠得还不够近！",
+          "message_ephemeral": "😬 呃... 你弄错了标题!",
+          "message_public": "😬 <@%interaction.user.id%> 没有猜到音乐的标题..."
+        },
+        "correct_genre_trivia": {
+          "title": "您找到了流派",
+          "message_ephemeral": "👏 GG！你找到了音乐的流派。",
+          "message_public": "👏 <@%interaction.user.id%> 猜出了音乐的类型！"
+        },
+        "wrong_genre_trivia": {
+          "title": "你搞错了流派",
+          "message_ephemeral": "😬 呃... 你搞错了流派!",
+          "message_public": "😬 <@%interaction.user.id%> 没有猜到音乐的类型..."
+        },
+        "hint": {
+          "description": "💡 以下是提示 : \n🤔 [提示未显示？ 点击此处查看](%songOfTodayRequest['previewUrl']%)"
+        }
+      }
+    }
+  },
+  "commands": {
+    "help": {
+      "menu": {
+        "placeholder": "您需要什么帮助？",
+        "options": {
+          "setting_up": {
+            "label": "设置",
+            "description": "配置 Daily Music 系统指南."
+          },
+          "debugging": {
+            "label": "调试",
+            "description": "最常见问题的解决方案."
+          },
+          "about": {
+            "label": "关于 今日音乐 / 今日琐事",
+            "description": "关于今日音乐和今日琐事的所有信息."
+          },
+          "other": {
+            "label": "其他",
+            "description": "这里没有回答的问题."
+          }
+        }
+      },
+      "embed": {
+        "description": "欢迎来到帮助菜单！👋 \n单击下面的菜单之一继续。⬇️",
+        "field_title_one": "🔧 设置",
+        "field_description_one": "配置 Daily Music 系统指南.",
+        "field_title_two": "🔍 调试",
+        "field_description_two": "最常见问题的解决方案.",
+        "field_title_three": "🎵 关于 今日音乐 / 今日琐事",
+        "field_description_three": "关于今日音乐和今日琐事的所有信息.",
+        "field_title_four": "❔ 其他",
+        "field_description_four": "这里没有回答的问题."
+      }
+    },
+    "setup": {
+      "error_messages": {
+        "invalid_role": "❌ 不能将机器人角色用于此命令..",
+        "invalid_everyone_here_role": "❌ 该命令不允许使用 %role% 角色.",
+        "invalid_role_hierarchy": "❌ 指定的角色必须低于您的最高角色和机器人的最高角色。",
+        "existing_configuration": "❌ 此服务器已有配置.",
+        "max_webhooks_exceeded": "❌ 此通道已拥有允许的最大网络钩子数量。请删除一个并重试."
+      },
+      "embed": {
+        "description": "欢迎来到配置系统！您现在可以配置***今日音乐*** (***今日音乐***) 系统！",
+        "configuration_exists": {
+          "fields": {
+            "field_title_one": "📰 频道",
+            "field_title_two": "🌐 朗",
+            "field_title_three": "🔔 角色",
+            "field_title_four": "🎵 类型",
+            "field_title_five": "📱 显示屏",
+            "field_title_six": "🧵 线程",
+            "field_title_seven": "🏆 小知识"
+          },
+          "threads": {
+            "enabled": "已启用",
+            "disabled": "残疾"
+          },
+          "display": {
+            "description": "%Display% | %CardMode%"
+          }
+        }
+      },
+      "menu": {
+        "placeholder": "为今日音乐选择您的流派！",
+        "options": {
+          "global": {
+            "label": "全球",
+            "description": "全球流派的当日音乐。",
+            "value": "global"
+          },
+          "pop": {
+            "label": "流行音乐",
+            "description": "当今流行音乐流派的音乐。.",
+            "value": "pop"
+          },
+          "rock": {
+            "label": "岩石",
+            "description": "当天的摇滚类型音乐。",
+            "value": "rock"
+          },
+          "electro": {
+            "label": "电",
+            "description": "当天的电音音乐。.",
+            "value": "electro"
+          },
+          "kpop": {
+            "label": "韩国流行音乐",
+            "description": "当天的 韩国流行音乐 音乐。",
+            "value": "kPOP"
+          },
+          "hardstyle": {
+            "label": "硬朗风格",
+            "description": "当天的 硬朗风格 音乐流派。",
+            "value": "hardstyle"
+          },
+          "metal": {
+            "label": "金属",
+            "description": "今天的金属音乐。",
+            "value": "metal"
+          },
+          "german": {
+            "label": "德国",
+            "description": "德国流派的音乐.",
+            "value": "german"
+          }
+        }
+      },
+      "why_answers": {
+        "prevent_abuse": {
+          "description": "防止滥用."
+        },
+        "logistical_reasons": {
+          "description": "由于后勤方面的原因."
+        },
+        "bot_role_mention": {
+          "description": "提机器人有什么用？"
+        }
+      }
+    },
+    "links": {
+      "buttons": {
+        "invite": {
+          "label": "添加到 Discord"
+        },
+        "server": {
+          "label": "加入支持服务器"
+        },
+        "docs": {
+          "label": "检查文件"
+        }
+      },
+      "embed": {
+        "description": "感谢您使用 Daily Music！❤️\n 以下是与机器人相关的所有链接。⬇️",
+        "field_title_one": "📥 添加机器人",
+        "field_description_one": "[点击这里](%InvitationLink%) 邀请 Daily Music 加入您的服务器。",
+        "field_title_two": "🚩 加入支持服务器",
+        "field_description_two": "[单击此处](%SupportLink%) 加入支持服务器。",
+        "field_title_three": "🗂️ 检查文件",
+        "field_description_three": "[单击此处](%DocumentationLink%)查看文档。"
+      }
+    },
+    "artistinfo": {
+      "error_messages": {
+        "artist_cant_be_found": "❌ 找不到这位艺术家."
+      },
+      "embed": {
+        "field_title_one": "🎺 听众",
+        "field_title_two": "🎵 播放次数",
+        "field_title_three": "🏷️ 标签",
+        "field_title_four": "🎶 同类艺术家",
+        "field_title_five": "📅 公布的数据"
+      },
+      "why_answers": {
+        "artist_does_not_exist": {
+          "description": "因为我们的数据库中不存在这位艺术家！也许您打错了他的名字。"
+        }
+      }
+    },
+    "date": {
+      "error_messages": {
+        "date_is_banned": "❌ 此日期已被禁用。请使用其他日期。.",
+        "date_format": "❌ 请使用 DD-MM-YYYY 日期格式",
+        "date_on_before": "❌ 请提供当前日期或之前的日期",
+        "date_feb_28": "❌ 请提供 2023 年 2 月 28 日或之后的日期。",
+        "day_not_valid": "❌ 请提供 %moment(month, 'MM').format('MMMM')% 的有效日期（01 至 %maxDaysInMonth%)",
+        "month_not_valid": "❌ 请提供有效月份（01 至 12）。",
+        "year_not_valid": "❌ 请提供有效年份（2023 至 %moment().year()%）。",
+        "no_song_info": "❌ 无歌曲信息.",
+        "no_artist_info": "❌ 无艺术家信息."
+      },
+      "embed": {
+        "field_title_one": "🎤 艺术家",
+        "field_title_two": "👀 标题",
+        "field_title_three": "💿 相册",
+        "field_title_four": "🎧 标签",
+        "field_title_five": "🎵 类型",
+        "field_title_six": "受欢迎程度",
+        "field_title_seven": "📆 日期"
+      },
+      "buttons": {
+        "preview": {
+          "label": "预览"
+        },
+        "play": {
+          "label": "在 Spotify 上播放"
+        },
+        "save": {
+          "label": "节省 Spotify 费用"
+        },
+        "follow": {
+          "label": "关注艺术家"
+        },
+        "analysis": {
+          "label": "音频分析"
+        },
+        "cover": {
+          "label": "封面"
+        },
+        "playlist": {
+          "label": "播放"
+        }
+      },
+      "why_answers": {
+        "no_music_generated": {
+          "description": "因为该日期没有生成音乐，很可能是由于事故或维护。."
+        },
+        "read_date_format": {
+          "description": "因为 Daily Music 只能读取 DD-MM-YYYY 格式的日期。"
+        },
+        "not_capable_future": {
+          "description": "因为我们没有能力为未来创作音乐！"
+        },
+        "service_didnt_exist": {
+          "description": "因为在那之前，我们使用的服务并不存在！"
+        },
+        "service_didnt_exist_2023": {
+          "description": "因为在 2023 年之前，我们使用的服务并不存在，也因为我们无法为未来生成音乐！"
+        },
+        "certain_numbers_of_day": {
+          "description": "因为一个月有一定的天数，所以我们不能为 12 月的第 111 天制作音乐！"
+        },
+        "certain_numbers_of_month": {
+          "description": "我真的需要解释吗？?"
+        },
+        "api_down": {
+          "description": "应用程序接口似乎已关闭."
+        }
+      }
+    },
+    "reset": {
+      "error_messages": {
+        "no_config": "❌ 未找到此服务器的配置."
+      },
+      "embed": {
+        "description": "✅ 该服务器的配置已成功重置。"
+      },
+      "why_answers": {
+        "no_data": {
+          "description": "这意味着 Daily Music 没有与您的服务器相连的数据。."
+        }
+      }
+    },
+    "settings": {
+      "embed": {
+        "description": "📚 以下是您的服务器设置摘要."
+      }
+    },
+    "stats": {
+      "embed": {
+        "description": "📊 以下是 Daily Music 为您提供的服务器统计摘要。",
+        "field_title_one": "🎶 发送的音乐数量",
+        "field_description_one": "Daily Music 共向该服务器发送了 **%data.TotalSongsSent%** 音乐。",
+        "field_title_two": "📆 最后发送的音乐",
+        "field_description_two_true": "最后一次向该服务器发送音乐的时间是 %timestamp:F% (%timestamp:R%)",
+        "field_description_two_false": "尚未向该服务器发送音乐."
+      }
+    },
+    "trivia": {
+      "buttons": {
+        "guess": {
+          "label": "猜测"
+        },
+        "hint": {
+          "label": "提示"
+        },
+        "extract": {
+          "label": "摘录"
+        },
+        "cover": {
+          "label": "封面"
+        }
+      },
+      "embed": {
+        "title": "猜音乐 🎵",
+        "description": "您能猜出 [这音乐](%songOfTodayRequest['previewUrl']%) 的 %guess% 吗？🤔",
+        "description_title": "标题",
+        "description_genre": "类型"
+      },
+      "menu": {
+        "placeholder": "选择一个流派！",
+        "options": {
+          "pop": {
+            "label": "流行音乐",
+            "description": "如果您认为这首歌的流派是流行乐。",
+            "value": "pop"
+          },
+          "rock": {
+            "label": "岩石",
+            "description": "如果您认为这首歌的流派是摇滚的话。",
+            "value": "rock"
+          },
+          "electro": {
+            "label": "电",
+            "description": "如果您认为这首歌的类型是电子乐.",
+            "value": "electro"
+          },
+          "kpop": {
+            "label": "韩国流行音乐",
+            "description": "如果您认为这首歌的类型是韩国流行音乐。",
+            "value": "kpop"
+          },
+          "hardstyle": {
+            "label": "硬朗风格",
+            "description": "如果您认为这首歌的类型是硬朗风格.",
+            "value": "hardstyle"
+          },
+          "metal": {
+            "label": "金属",
+            "description": "如果您认为这首歌的类型是金属乐.",
+            "value": "metal"
+          }
+        }
+      }
+    }
+  }
+}
