@@ -40,6 +40,7 @@ This is the GitHub repository containing all Daily Music translation files.
 | fr     | French                | Français             | ✅   |
 | de     | German                | Deutsch              | ✅   |
 | en-GB  | English, UK           | English, UK          | ✅   |
+| ru     | Russian               | Pусский              | ✅   |
 | pt-BR  | Portuguese, Brazilian | Português do Brasil | ❌   |
 | nl     | Dutch                 | Nederlands           | ❌   |
 | it     | Italian               | Italiano             | ❌   |
@@ -49,7 +50,6 @@ This is the GitHub repository containing all Daily Music translation files.
 | hi     | Hindi                 | हिन्दी               | ❌   |
 | ja     | Japanese              | 日本語                 | ❌   |
 | ko     | Korean                | 한국어                 | ❌   |
-| ru     | Russian               | Pусский              | ❌   |
 | uk     | Ukrainian             | Українська           | ❌   |
 | th     | Thai                  | ไทย                  | ❌   |
 | sv-SE  | Swedish               | Svenska              | ❌   |
