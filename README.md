@@ -41,12 +41,12 @@ This is the GitHub repository containing all Daily Music translation files.
 | de     | German                | Deutsch              | ✅   |
 | en-GB  | English, UK           | English, UK          | ✅   |
 | ru     | Russian               | Pусский              | ✅   |
+| tr     | Turkish               | Türkçe               | ✅   |
 | pt-BR  | Portuguese, Brazilian | Português do Brasil | ❌   |
 | nl     | Dutch                 | Nederlands           | ❌   |
 | it     | Italian               | Italiano             | ❌   |
 | pl     | Polish                | Polski               | ❌   |
 | vi     | Vietnamese            | Tiếng Việt          | ❌   |
-| tr     | Turkish               | Türkçe               | ❌   |
 | hi     | Hindi                 | हिन्दी               | ❌   |
 | ja     | Japanese              | 日本語                 | ❌   |
 | ko     | Korean                | 한국어                 | ❌   |
