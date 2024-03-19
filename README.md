@@ -42,10 +42,10 @@ This is the GitHub repository containing all Daily Music translation files.
 | en-GB  | English, UK           | English, UK          | ✅   |
 | ru     | Russian               | Pусский              | ✅   |
 | tr     | Turkish               | Türkçe               | ✅   |
+| pl     | Polish                | Polski               | ✅   |
 | pt-BR  | Portuguese, Brazilian | Português do Brasil | ❌   |
 | nl     | Dutch                 | Nederlands           | ❌   |
 | it     | Italian               | Italiano             | ❌   |
-| pl     | Polish                | Polski               | ❌   |
 | vi     | Vietnamese            | Tiếng Việt          | ❌   |
 | hi     | Hindi                 | हिन्दी               | ❌   |
 | ja     | Japanese              | 日本語                 | ❌   |
