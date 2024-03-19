@@ -1,0 +1,600 @@
+{
+  "general": {
+    "why": "🤔 Neden?",
+    "none": "Hiçbiri",
+    "unknown": "Bilinmeyen",
+    "by": "tarafından",
+    "motd": "Günün Müziği: ",
+    "totd": "Günün Bilgisi: Müziği tahmin edebilir misiniz?"
+  },
+  "events": {
+    "interactionCreate": {
+      "error_messages": {
+        "guild_only": "❌ Bu komut yalnızca bir sunucu içinde kullanılabilir!",
+        "dev_only": "❌ Bu komut yalnızca geliştirici tarafından kullanılabilir.",
+        "cmd_not_found": "❌ Bu komut bulunamadı.",
+        "bot_permissions": "❌ Bu komutu kullanabilmem için `%command.perms.BotPermissions.map((p) => p.toUpperCase()).join(', ')%` iznine ihtiyacım var.",
+        "user_permissions": "❌ Bu komutu kullanabilmek için `%command.perms.UserPermissions.map((p) => p.toUpperCase()).join(', ')%` iznine ihtiyacınız var.",
+        "already_played_today": "❌ Bugün zaten oynadınız!"
+      },
+      "guides": {
+        "setup_guide": {
+          "title": "Kurulum Kılavuzu",
+          "question_one_title": "Günün Müziğini nasıl otomatik olarak alabilirim?",
+          "question_one_description": "Günün Müziğini otomatik olarak almak için </setup:1199447395700842526> komutunu kullanın. Sonra, işlem sizi yönlendirecek.",
+          "question_two_title": "Günün Müziği için hangi tür kanalları seçebilirim?",
+          "question_two_description": "Neredeyse Discord'da mevcut her tür kanal!\n - metin kanalı\n- bir metin kanalına ait genel / özel konu\n- duyuru kanalı\n- duyuru kanalına ait genel konu\n- forum gönderisi",
+          "question_three_title": "Günün Müziği için kimin bildirileceğini nasıl bilebilirim?",
+          "question_three_description": "Günün Müziğinden ilgilenenlerin kim olduğunu belirlemeniz gerekir. Topluluğunuz müziğe odaklanmışsa, o zaman tüm sunucu üyelerinin ortak bir rolünü (örneğin, 'Üyeler' rolü) bildirim için seçebilirsiniz. Aksi takdirde, topluluğunuz müzik odaklı değilse, müzikle ilgilenen insanlar için özel bir rol belirleyebilirsiniz."
+        },
+        "debugging_guide": {
+          "title": "Hata Ayıklama Kılavuzu",
+          "question_one_title": "Kurulumdan hemen sonra neden Günün Müziğini hemen alamıyorum?",
+          "question_one_description": "<@1115972980984516719>, Günün Müziğini göndermek için belirli bir zaman çizelgesini takip eder, şu anda Amerika/Toronto saatine göre her sunucuya **9:00** PM'de gönderilir. Bu program herkes için aynıdır ve değiştirilemez.",
+          "question_two_title": "Kurulumdan hemen sonra neden Günün Trivia'sı hemen alamıyorum?",
+          "question_two_description": "<@1115972980984516719>, Günün Trivia'sı göndermek için belirli bir zaman çizelgesini takip eder, şu anda Amerika/Toronto saatine göre her sunucuya **10:00** AM'de gönderilir. Bu program herkes için aynıdır ve değiştirilemez.",
+          "question_three_title": "Günün Müziğini / Günün Trivia'sı almak için belirlenen zaman geçti ancak hiçbir şey alamadım. Neden?",
+          "question_three_description": "Bu muhtemelen bir izin sorunu nedeniyledir. <@1115972980984516719>'un rolünün gerekli izinlere sahip olduğunu kontrol edin. Ayrıca, Günün Müziği / Günün Bilgisi için kullanılan kanalın izinlerini kontrol edin. Hala bir şey alamıyor musunuz? Destek sunucusuna katılarak [buraya](%SupportLink%) tıklayın!"
+        },
+        "about_guide": {
+          "title": "Hakkında Kılavuzu",
+          "question_one_title": "Günün Müziği nedir?",
+          "question_one_description": "Günün Müziği, <@1115972980984516719> tarafından rastgele seçilen bir şarkıdır ve Amerika/Toronto saatine göre her sunucuya **9:00** PM'de gönderilir.",
+          "question_two_title": "Günün Bilgisi nedir?",
+          "question_two_description": "Günün Bilgisi, <@1115972980984516719> tarafından rastgele seçilen bir müzikle ilgili bir müzik bilgisi sorusudur ve Amerika/Toronto saatine göre her sunucuya **10:00** AM'de gönderilir."
+        },
+        "other_guide": {
+          "title": "Diğer Kılavuz",
+          "question_one_title": "🤔 Sorunuz yanıtlanmadı mı?",
+          "question_one_description": "Sorunuzu [buraya](%SupportLink%) tıklayarak resmi destek sunucusunda sorabilirsiniz."
+        }
+      },
+      "menus": {
+        "display_select_menu": {
+          "placeholder": "Günün Müziğini Seçin!",
+          "options": {
+            "complete": {
+              "label": "Tamamı",
+              "description": "GM ve sanatçı hakkında bilgiler içeren detaylı bir gömülü.",
+              "value": "complete"
+            },
+            "simple": {
+              "label": "Basit",
+              "description": "GM'nin Spotify bağlantısıyla entegrasyonu.",
+              "value": "simple"
+            },
+            "card": {
+              "label": "Kart",
+              "description": "GM için güzel bir kart.",
+              "value": "card"
+            }
+          }
+        },
+        "card_mode_select_menu": {
+          "placeholder": "GM için kart modunu seçin!",
+          "options": {
+            "classic": {
+              "label": "Klasik",
+              "description": "Klasik bir kart.",
+              "value": "classic"
+            },
+            "pro": {
+              "label": "Klasik Pro",
+              "description": "Profesyonel bir dokunuşla klasik bir kart.",
+              "value": "pro"
+            },
+            "mini": {
+              "label": "Mini Pro",
+              "description": "Küçük bir kart, ama profesyonel bir dokunuşla.",
+              "value": "mini"
+            }
+          }
+        },
+        "trivia_mode_select_menu": {
+          "placeholder": "GT'yi için bilgi yarışması modunu seçin!",
+          "options": {
+            "audio_title": {
+              "label": "Ses Başlığı",
+              "description": "Kısa bir bölüm dinleyerek müziğin başlığını tahmin edin.",
+              "value": "audio-title"
+            },
+            "audio_genre": {
+              "label": "Ses Türü",
+              "description": "Kısa bir bölüm dinleyerek müziğin türünü tahmin edin.",
+              "value": "audio-genre"
+            },
+            "image_title": {
+              "label": "Görüntü Başlığı",
+              "description": "Kapak fotoğrafına bakarak müziğin başlığını tahmin edin.",
+              "value": "image-title"
+            },
+            "image_genre": {
+              "label": "Görüntü Türü",
+              "description": "Kapak fotoğrafına bakarak müziğin türünü tahmin edin.",
+              "value": "image-genre"
+            }
+          }
+        }
+      },
+      "modals": {
+        "trivia_modal": {
+          "title": "Müziği Tahmin Edin!",
+          "input": "Bu müziğin başlığı nedir?"
+        }
+      },
+      "buttons": {
+        "display_modes": {
+          "complete_display_preview": {
+            "label": "Tamamı Önizleme"
+          },
+          "simple_display_preview": {
+            "label": "Basit Önizleme"
+          },
+          "card_display_preview": {
+            "label": "Kart Önizleme"
+          }
+        },
+        "card_modes": {
+          "classic_card_display": {
+            "label": "Klasik Önizleme"
+          },
+          "pro_card_display": {
+            "label": "Klasik Pro Önizleme"
+          },
+          "mini_card_display": {
+            "label": "Mini Pro Önizleme"
+          }
+        },
+        "threads": {
+          "threads_on": {
+            "label": "Evet"
+          },
+          "threads_off": {
+            "label": "Hayır"
+          }
+        },
+        "when": {
+          "when_motd": {
+            "label": "Sonraki GM ne zaman?"
+          },
+          "when_totd": {
+            "label": "Sonraki GT'yi ne zaman?"
+          }
+        },
+        "vote": {
+          "unlock_feature": {
+            "label": "Bu özelliği aç"
+          }
+        },
+        "artists": {
+          "are_you_an_artist": {
+            "label": "Bir sanatçı mısınız?"
+          }
+        }
+      },
+      "embeds": {
+        "audio_analysis": {
+          "description": "📊 İşte %songOfTodayRequest['artist']% tarafından %songOfTodayRequest['title']% adlı müzik için bir ses analizi:",
+          "fields": {
+            "field_title_one": "💃 Dans için uygun mu?",
+            "field_description_one_true": "Evet! %songOfTodayRequest['title']% arkadaşlarınla dans etmek için uygun!",
+            "field_description_one_false": "Hayır. %songOfTodayRequest['title']% arkadaşlarınla dans etmek için uygun değil.",
+            "field_title_two": "⚡ Enerjik mi?",
+            "field_description_two_true": "Evet! %songOfTodayRequest['title']% enerjik, bol baslı!",
+            "field_description_two_false": "Hayır. %songOfTodayRequest['title']% enerjik değil.",
+            "field_title_three": "🚀 Canlı mı?",
+            "field_description_three_true": "Evet! %songOfTodayRequest['title']% canlı olarak sunulmuştur.",
+            "field_description_three_false": "Hayır. %songOfTodayRequest['title']% canlı sunulmamıştır.",
+            "field_title_four": "📊 Kompozisyon",
+            "field_description_four_true": "%songOfTodayRequest['title']% çoğunlukla sözlerden oluşur.",
+            "field_description_four_false": "%songOfTodayRequest['title']% çoğunlukla melodiye dayanır.",
+            "field_title_five": "🔊 Akustiklik",
+            "field_description_five_true": "%songOfTodayRequest['title']% çoğunlukla akustik enstrümanlarla çalınır.",
+            "field_description_five_false": "%songOfTodayRequest['title']% çoğunlukla akustik enstrümanlarla çalınmaz.",
+            "field_title_six": "🤪 Mod",
+            "field_description_six_true": "%songOfTodayRequest['title']% pozitif bir ruh haline sahip bir müziktir.",
+            "field_description_six_false": "%songOfTodayRequest['title']% negatif bir ruh haline sahip bir müziktir."
+          }
+        },
+        "are_you_an_artist": {
+          "description": "Bir müzik sanatçısı mısınız? Eğer öyleyse, bu mesajda olduğu gibi önizleme mesajlarında yer almak için talepte bulunabilirsiniz. Ücret ödemenize gerek yoktur, ücretsizdir.\n➡️ İşte gereksinimler",
+          "fields": {
+            "field_title_one": "🎧 Var Olun",
+            "field_description_one": "(Spotify, Deezer, Apple Music, Soundcloud...) bir yayın platformunda bulunun.",
+            "field_title_two": "🤚 Kimliğinizi Kanıtlayın",
+            "field_description_two": "İddia ettiğiniz sanatçı olduğunuzu kanıtlayarak.",
+            "field_title_three": "🎵 Bir Müzik Türüne Sahip Olun",
+            "field_description_three": "Bot tarafından önerilenlerden biri (Küresel, Pop, Rock, Elektro, Kore pop, Sert stil, Metal, Alman).",
+            "field_title_four": "🤝 Bunun Nedeni Nedir?",
+            "field_description_four": "Herkese hak ettiği tanınmayı sağlamak ve çünkü müzik, herkesin sanatsal katkıları için tanınması gereken bir dünyadır.",
+            "field_title_five": "🤔 Sonraki Adım Ne?",
+            "field_description_five": "[Resmi sunucumuza](%SupportLink%) katılın ve bir talepte bulunun. Başvurunuz kabul edilirse, önizleme mesajlarında yer alacak ve sunucumuzda bir rol alacaksınız."
+          }
+        },
+        "60%": {
+          "description": "Sürecin **%60**'ındasınız. Bravo! 🎉 \n📱 Bir görüntüleme modu seçmelisiniz. Onların nasıl göründüğünü ilgili düğmelere tıklayarak görebilirsiniz. \nDevam etmek için aşağıdaki menüye tıkla."
+        },
+        "80%": {
+          "description": "Sürecin **%80**'ındasınız. Bravo! 🎉 \n🧵 GM için bot tarafından otomatik olarak oluşturulan ve yönetilen bir konu olup olmayacağını seçmelisiniz. \nDevam etmek için aşağıdaki düğmelerden birine tıklayın"
+        },
+        "+80%": {
+          "description": "Sürecin **+%80**'ındasınız. Bravo! 🎉 \n🏆 Her gün bir Bilgi yarışması gönderilmesini isteyip istemediğinizi seçmelisiniz. \nKonsept basittir: Her gün, dinlemek için bir müzik ses dosyası alırsınız ve başlığını tahmin etmeniz gerekir! \nDevam etmek için aşağıdaki düğmelerden birine tıklayın"
+        },
+        "100%_full": {
+          "description": "Tamamsınız! %100'üne ulaştınız. Bravo! 🎉\n🎶 Sunucunuz, GM ve GT'yi almak için hazır durumda. \nKonfigürasyonunuzun hızlı bir genel bakışı burada"
+        },
+        "100%_partial": {
+          "description": "Tamamsınız! %100'üne ulaştınız. Bravo! 🎉\n🎶 Sunucunuz, GM'yi almak için hazır durumda. \nKonfigürasyonunuzun hızlı bir genel bakışı burada"
+        },
+        "warning_100%_full": {
+          "description": "⚠️ Lütfen Günlük Müzik'in çalışması için gerekli tüm izinleri ( [davet bağlantısı](%InvitationLink%)'ndaki mevcut izinler) sağladığınızdan emin olun. \nKontrol edilmesi gereken izinler:\n    - botun rolü\n    \n- belirlenen kanal (%channel%) için izinler. \nEksik bir izin varsa, GM ve GT'yi alamazsınız ve sorun düzeltilmezse sunucunuz birkaç gün içinde veritabanından silinir."
+        },
+        "warning_100%_partial": {
+          "description": "⚠️ Lütfen Daily Music'in çalışması için gerekli tüm izinlerin olduğundan emin olun ([Davet Linki](%InvitationLink%)'nde mevcut olanlar). \nAşağıdakileri kontrol edin:\n    - botun rolü\n    \n- belirlenen kanal (%channel%). \nEksik bir izin varsa, GM almayacaksınız ve sorun düzeltilmezse sunucunuz birkaç gün sonra veritabanından silinecektir."
+        },
+        "advanced_card": {
+          "description": "Gelişmiş yapılandırma menüsüne hoş geldiniz! 🤓 \n🃏 GM için hangi tür kartı istediğinizi seçmelisiniz.\nDevam etmek için aşağıdaki menüye tıklayın"
+        },
+        "advanced_trivia": {
+          "description": "Gelişmiş yapılandırma menüsüne hoş geldiniz! 🤓\n🏆 Hangi tür Trivia oyununu istediğinizi seçmelisiniz. \nDevam etmek için aşağıdaki seçeneklerden birine tıklayın"
+        },
+        "vote_wumpus": {
+          "description": "❌ Bu özelliği kullanabilmek için [Wumpus.store](https://wumpus.store/bot/1115972980984516719/vote) adresinden oy vermeniz gerekmektedir"
+        },
+        "voting_helps_us": {
+          "description": "Daily Music'e oy vermek, popülerliğimizi artırır ve sadece 1 saniyenizi alır, reklamsızdır."
+        },
+        "correct_title_trivia": {
+          "title": "Başlığı buldunuz",
+          "description": "ℹ️ Müzik hakkında bazı bilgiler burada.",
+          "your_guess": "🤔 Tahmininiz",
+          "exact_guess": "🎯 Tam tahmin",
+          "similarity": "🤷‍♂️ Benzerlik",
+          "close_enough": "Yeterince yakınsınız!",
+          "message_ephemeral": "👏 Tebrikler! Müziğin başlığını buldunuz.",
+          "message_public": "👏 <@%interaction.user.id%> müziğin başlığını **%Math.round(similar * 100)%**% hassasiyetle tahmin etti!"
+        },
+        "wrong_title_trivia": {
+          "title": "Başlığı yanlış buldunuz",
+          "description": "ℹ️ Beklediğimiz müzik hakkında bazı bilgiler burada.",
+          "your_guess": "🤔 Tahmininiz",
+          "expected_guess": "🎯 Beklenen tahmin",
+          "similarity": "🤷‍♂️ Benzerlik",
+          "close_enough": "Yeterince yakın değilsiniz!",
+          "message_ephemeral": "😬 Üzgünüm... Başlığı yanlış buldunuz!",
+          "message_public": "😬 <@%interaction.user.id%> müziğin başlığını bulamadı..."
+        },
+        "correct_genre_trivia": {
+          "title": "Türü buldunuz",
+          "message_ephemeral": "👏 Tebrikler! Müziğin türünü buldunuz.",
+          "message_public": "👏 <@%interaction.user.id%> müziğin türünü tahmin etti!"
+        },
+        "wrong_genre_trivia": {
+          "title": "Türü yanlış buldunuz",
+          "message_ephemeral": "😬 Üzgünüm... Müziğin türünü yanlış buldunuz!",
+          "message_public": "😬 <@%interaction.user.id%> müziğin türünü tahmin edemedi..."
+        },
+        "hint": {
+          "description": "💡 İşte ipucu: \n🤔 [İpucu görüntülenmiyor mu? Görmek için buraya tıklayın.](%songOfTodayRequest['previewUrl']%)"
+        }
+      }
+    }
+  },
+  "commands": {
+    "help": {
+      "menu": {
+        "placeholder": "Nasıl yardımcı olabilirim?",
+        "options": {
+          "setting_up": {
+            "label": "Kurulum",
+            "description": "Daily Music sistemlerini yapılandırma kılavuzu."
+          },
+          "debugging": {
+            "label": "Hata Ayıklama",
+            "description": "En yaygın sorunların çözümü."
+          },
+          "about": {
+            "label": "GM / GT'yi Hakkında",
+            "description": "GM ve GT'yi hakkında bilmeniz gereken her şey."
+          },
+          "other": {
+            "label": "Diğer",
+            "description": "Burada yanıtlanmayan sorular."
+          }
+        }
+      },
+      "embed": {
+        "description": "Yardım menüsüne hoş geldiniz! 👋\nDevam etmek için aşağıdaki menülere tıklayın. ⬇️",
+        "field_title_one": "🔧 Kurulum",
+        "field_description_one": "Daily Music sistemlerini yapılandırma kılavuzu.",
+        "field_title_two": "🔍 Hata Ayıklama",
+        "field_description_two": "En yaygın sorunların çözümü.",
+        "field_title_three": "🎵 GM / GT'yi Hakkında",
+        "field_description_three": "GM ve GT'yi hakkında bilmeniz gereken her şey.",
+        "field_title_four": "❔ Diğer",
+        "field_description_four": "Burada yanıtlanmayan sorular."
+      }
+    },
+    "setup": {
+      "error_messages": {
+        "invalid_role": "❌ Bu komut için bir bot rolü kullanamazsınız.",
+        "invalid_everyone_here_role": "❌ Bu komut için %role% rolünü kullanamazsınız.",
+        "invalid_role_hierarchy": "❌ Belirtilen rolün en yüksek rolünüzden ve botun en yüksek rolünden daha düşük olması gerekir.",
+        "existing_configuration": "❌ Bu sunucu için zaten bir yapılandırma mevcut.",
+        "max_webhooks_exceeded": "❌ Bu kanal zaten izin verilen maksimum web kancasına sahip. Lütfen birini silip tekrar deneyin."
+      },
+      "embed": {
+        "description": "Yapılandırma sistemine hoş geldiniz! 👋\n🎵 Şimdi **GM** (**G**ünün **M**üziği) sistemini yapılandırabilirsiniz.\nDevam etmek için aşağıdaki menüye tıklayın!",
+        "configuration_exists": {
+          "fields": {
+            "field_title_one": "📰 Kanal",
+            "field_title_two": "🌐 Dil",
+            "field_title_three": "🔔 Rol",
+            "field_title_four": "🎵 Tür",
+            "field_title_five": "📱 Ekran",
+            "field_title_six": "🧵 Konular",
+            "field_title_seven": "🏆 Trivia"
+          },
+          "threads": {
+            "enabled": "Etkin",
+            "disabled": "Devre Dışı"
+          },
+          "display": {
+            "description": "%Display% | %CardMode%"
+          }
+        }
+      },
+      "menu": {
+        "placeholder": "Günün müziği için türünüzü seçin!",
+        "options": {
+          "global": {
+            "label": "Küresel",
+            "description": "Küresel tür için günün müziği.",
+            "value": "global"
+          },
+          "pop": {
+            "label": "Pop",
+            "description": "Pop türü için günün müziği.",
+            "value": "pop"
+          },
+          "rock": {
+            "label": "Rock",
+            "description": "Rock türü için günün müziği.",
+            "value": "rock"
+          },
+          "electro": {
+            "label": "Elektro",
+            "description": "Elektro türü için günün müziği.",
+            "value": "electro"
+          },
+          "kpop": {
+            "label": "Kore Pop",
+            "description": "Kore Pop türü için günün müziği.",
+            "value": "kPOP"
+          },
+          "hardstyle": {
+            "label": "Sert stil",
+            "description": "Sert stil türü için günün müziği.",
+            "value": "hardstyle"
+          },
+          "metal": {
+            "label": "Metal",
+            "description": "Metal türü için günün müziği.",
+            "value": "metal"
+          },
+          "german": {
+            "label": "Alman",
+            "description": "Alman türü için günün müziği.",
+            "value": "german"
+          }
+        }
+      },
+      "why_answers": {
+        "prevent_abuse": {
+          "description": "Kötüye kullanımı önlemek için."
+        },
+        "logistical_reasons": {
+          "description": "Lojistik nedenlerden dolayı."
+        },
+        "bot_role_mention": {
+          "description": "Bir botu neden etiketlemeliyim?"
+        }
+      }
+    },
+    "links": {
+      "buttons": {
+        "invite": {
+          "label": "Discord'a Ekle"
+        },
+        "server": {
+          "label": "Destek Sunucusuna Katıl"
+        },
+        "docs": {
+          "label": "Belgelere Göz At"
+        }
+      },
+      "embed": {
+        "description": "Daily Music'i kullandığınız için teşekkür ederiz! ❤️\nBot ile ilgili tüm bağlantılar burada. ⬇️",
+        "field_title_one": "📥 Botu ekle",
+        "field_description_one": "Daily Music'i sunucunuza davet etmek için [buraya tıklayın](%InvitationLink%).",
+        "field_title_two": "🚩 Destek sunucusuna katıl",
+        "field_description_two": "Destek sunucusuna katılmak için [buraya tıklayın](%SupportLink%).",
+        "field_title_three": "🗂️ Belgelere göz at",
+        "field_description_three": "Belgeleri kontrol etmek için [buraya tıklayın](%DocumentationLink%)."
+      }
+    },
+    "artistinfo": {
+      "error_messages": {
+        "artist_cant_be_found": "❌ Bu sanatçı bulunamadı."
+      },
+      "embed": {
+        "field_title_one": "🎺 Dinleyiciler",
+        "field_title_two": "🎵 Çalınma sayısı",
+        "field_title_three": "🏷️ Etiketler",
+        "field_title_four": "🎶 Benzer sanatçılar",
+        "field_title_five": "📅 Veri yayınlanma tarihi"
+      },
+      "why_answers": {
+        "artist_does_not_exist": {
+          "description": "Çünkü bu sanatçı veritabanımızda mevcut değil! Belki adını yanlış yazdınız."
+        }
+      }
+    },
+    "date": {
+      "error_messages": {
+        "date_is_banned": "❌ Bu tarih yasaklanmıştır. Lütfen başka bir tarih kullanın.",
+        "date_format": "❌ Lütfen DD-AA-YYYY tarih formatını kullanın",
+        "date_on_before": "❌ Lütfen mevcut tarihte veya daha öncesinde bir tarih girin",
+        "date_feb_28": "❌ Lütfen 28 Şubat 2023 tarihinden sonra veya aynı tarihte bir tarih girin.",
+        "day_not_valid": "❌ Lütfen %moment(month, 'MM').format('MMMM')% için geçerli bir gün sağlayın (%maxDaysInMonth% arasında 01).",
+        "month_not_valid": "❌ Lütfen geçerli bir ay girin (01 ile 12 arasında).",
+        "year_not_valid": "❌ Lütfen geçerli bir yıl girin (2023 ile %moment().year()% arasında).",
+        "no_song_info": "❌ Müzik bilgisi bulunamadı.",
+        "no_artist_info": "❌ Sanatçı bilgisi bulunamadı."
+      },
+      "embed": {
+        "field_title_one": "🎤 Sanatçı",
+        "field_title_two": "👀 Başlık",
+        "field_title_three": "💿 Albüm",
+        "field_title_four": "🎧 Etiket",
+        "field_title_five": "🎵 Tür",
+        "field_title_six": "Popülerlik",
+        "field_title_seven": "📆 Tarih"
+      },
+      "buttons": {
+        "preview": {
+          "label": "Önizleme"
+        },
+        "play": {
+          "label": "Spotify'da Çal"
+        },
+        "save": {
+          "label": "Spotify'da Kaydet"
+        },
+        "follow": {
+          "label": "Sanatçıyı Takip Et"
+        },
+        "analysis": {
+          "label": "Ses Analizi"
+        },
+        "cover": {
+          "label": "Kapak"
+        },
+        "playlist": {
+          "label": "Çalma Listesi"
+        }
+      },
+      "why_answers": {
+        "no_music_generated": {
+          "description": "Çünkü bu tarihte müzik oluşturulmadı, muhtemelen bir olay veya bakım nedeniyle."
+        },
+        "read_date_format": {
+          "description": "Çünkü Daily Music yalnızca DD-AA-YYYY formatındaki tarihleri okuyabilir."
+        },
+        "not_capable_future": {
+          "description": "Çünkü gelecek için müzik oluşturamıyoruz!"
+        },
+        "service_didnt_exist": {
+          "description": "Çünkü bu tarihten önce kullandığımız hizmet mevcut değildi!"
+        },
+        "service_didnt_exist_2023": {
+          "description": "Çünkü 2023'ten önce kullandığımız hizmet mevcut değildi ve çünkü gelecek için müzik oluşturamıyoruz!"
+        },
+        "certain_numbers_of_day": {
+          "description": "Çünkü bir ayda belirli bir gün sayısı vardır, Aralık'ın 111. günü için müzik oluşturamıyoruz!"
+        },
+        "certain_numbers_of_month": {
+          "description": "Gerçekten açıklamam mı gerekiyor?"
+        },
+        "api_down": {
+          "description": "API'nin çalışmadığı görünüyor."
+        }
+      }
+    },
+    "reset": {
+      "error_messages": {
+        "no_config": "❌ Bu sunucu için yapılandırma bulunamadı."
+      },
+      "embed": {
+        "description": "✅ Bu sunucunun yapılandırması başarıyla sıfırlandı."
+      },
+      "why_answers": {
+        "no_data": {
+          "description": "Bu, Daily Music'in sunucunuza bağlı veri bulunmadığı anlamına gelir."
+        }
+      }
+    },
+    "settings": {
+      "embed": {
+        "description": "📚 İşte sunucu ayarlarınızın özeti."
+      }
+    },
+    "stats": {
+      "embed": {
+        "description": "📊 Daily Music istatistiklerinin sunucunuz için özeti burada.",
+        "field_title_one": "🎶 Gönderilen müzik sayısı",
+        "field_description_one": "Daily Music bu sunucuya toplam **%data.TotalSongsSent%** müzik gönderdi.",
+        "field_title_two": "📆 Son gönderilen müzik",
+        "field_description_two_true": "Bu sunucuya en son gönderilen müzik %timestamp:F% tarihinde (%timestamp:R% tarihinde gönderildi)",
+        "field_description_two_false": "Bu sunucuya henüz müzik gönderilmedi."
+      }
+    },
+    "trivia": {
+      "buttons": {
+        "guess": {
+          "label": "Tahmin Et"
+        },
+        "hint": {
+          "label": "İpucu"
+        },
+        "extract": {
+          "label": "Çıkar"
+        },
+        "cover": {
+          "label": "Kapak"
+        }
+      },
+      "embed": {
+        "title": "Müziği tahmin et! 🎵",
+        "description": "[Bu müziğin](%songOfTodayRequest['previewUrl']%) %guess%ini tahmin edebilir misiniz? 🤔",
+        "description_title": "başlık",
+        "description_genre": "tür"
+      },
+      "menu": {
+        "placeholder": "Bir tür seçin!",
+        "options": {
+          "pop": {
+            "label": "Pop",
+            "description": "Bu şarkının türünün Pop olduğunu düşünüyorsanız.",
+            "value": "pop"
+          },
+          "rock": {
+            "label": "Rock",
+            "description": "Bu şarkının türünün Rock olduğunu düşünüyorsanız.",
+            "value": "rock"
+          },
+          "electro": {
+            "label": "Elektro",
+            "description": "Bu şarkının türünün Elektro olduğunu düşünüyorsanız.",
+            "value": "electro"
+          },
+          "kpop": {
+            "label": "Kore pop",
+            "description": "Bu şarkının türünün Kore pop olduğunu düşünüyorsanız.",
+            "value": "kPOP"
+          },
+          "hardstyle": {
+            "label": "Sert stil",
+            "description": "Bu şarkının türünün Sert stil olduğunu düşünüyorsanız.",
+            "value": "hardstyle"
+          },
+          "metal": {
+            "label": "Metal",
+            "description": "Bu şarkının türünün Metal olduğunu düşünüyorsanız.",
+            "value": "metal"
+          }
+        }
+      }
+    }
+  }
+}
