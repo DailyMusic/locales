@@ -370,7 +370,7 @@
 					"kpop": {
 						"label": "KPOP",
 						"description": "A música do dia para o gênero KPOP.",
-						"value": "KPOP"
+						"value": "kPOP"
 					},
 					"hardstyle": {
 						"label": "Hardstyle",
@@ -382,7 +382,7 @@
 						"description": "A música do dia para o gênero Metal.",
 						"value": "metal"
 					},
-					"alemão": {
+					"german": {
 						"label": "Alemão",
 						"description": "A música do dia para o gênero Alemão.",
 						"value": "german"
@@ -581,7 +581,7 @@
 					"kpop": {
 						"label": "KPOP",
 						"description": "Se você acha que o gênero desta música é KPOP.",
-						"value": "kpop"
+						"value": "kPOP"
 					},
 					"hardstyle": {
 						"label": "Hardstyle",
