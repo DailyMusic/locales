@@ -368,8 +368,8 @@
             "value": "electro"
           },
           "kpop": {
-            "label": "Kore Pop",
-            "description": "Kore Pop türü için günün müziği.",
+            "label": "KPOP",
+            "description": "KPOP türü için günün müziği.",
             "value": "kPOP"
           },
           "hardstyle": {
