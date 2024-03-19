@@ -5,7 +5,7 @@
     "unknown": "Nieznane",
     "by": "przez",
     "motd": "Muzyka dnia: ",
-    "totd": "Fakt dnia: Czy możesz zgadnąć utwór?"
+    "totd": "Ciekawostki dnia: Czy możesz zgadnąć utwór?"
   },
   "events": {
     "interactionCreate": {
@@ -40,8 +40,8 @@
           "title": "Przewodnik ogólny",
           "question_one_title": "Co to jest Muzyka Dnia?",
           "question_one_description": "Muzyka Dnia to utwór wybrany losowo przez <@1115972980984516719> i wysyłany do wszystkich serwerów o **21:00** czasu America/Toronto.",
-          "question_two_title": "Co to jest Fakt Dnia?",
-          "question_two_description": "Fakt Dnia to pytanie związane z muzyką, które jest wybierane losowo przez <@1115972980984516719> i wysyłane do wszystkich serwerów o **10:00** czasu America/Toronto."
+          "question_two_title": "Co to jest Ciekawostki dnia?",
+          "question_two_description": "Ciekawostki dnia to pytanie związane z muzyką, które jest wybierane losowo przez <@1115972980984516719> i wysyłane do wszystkich serwerów o **10:00** czasu America/Toronto."
         },
         "other_guide": {
           "title": "Inny przewodnik",
