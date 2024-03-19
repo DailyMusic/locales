@@ -21,20 +21,20 @@
 				"setup_guide": {
 					"title": "Guia de Configuração",
 					"question_one_title": "Como posso receber automaticamente a Música do Dia?",
-					"question_one_description": "Para receber a MOTD automaticamente, use o comando </setup:1199447395700842526>. Em seguida, siga o processo guiado.",
+					"question_one_description": "Para receber a MDD automaticamente, use o comando </setup:1199447395700842526>. Em seguida, siga o processo guiado.",
 					"question_two_title": "Quais tipos de canais posso selecionar para a Música do Dia?",
 					"question_two_description": "Quase todo tipo de canal disponível no Discord!\n - canal de texto\n- tópico público / privado pertencente a um canal de texto\n- canal de anúncios\n- tópico público pertencente a um canal de anúncios\n- postagem em fórum",
 					"question_three_title": "Como saber quem notificar para a Música do Dia?",
-					"question_three_description": "Você precisa determinar quem pode estar interessado na MOTD. Se sua comunidade é focada em música, então você pode escolher notificar um cargo que todos os membros do servidor têm em comum (ou seja, um cargo de 'Membros'). Caso contrário, se sua comunidade não é focada em música, você pode definir um cargo especificamente para pessoas interessadas em música."
+					"question_three_description": "Você precisa determinar quem pode estar interessado na MDD. Se sua comunidade é focada em música, então você pode escolher notificar um cargo que todos os membros do servidor têm em comum (ou seja, um cargo de 'Membros'). Caso contrário, se sua comunidade não é focada em música, você pode definir um cargo especificamente para pessoas interessadas em música."
 				},
 				"debugging_guide": {
 					"title": "Guia de Depuração",
 					"question_one_title": "Por que não recebo a Música do Dia imediatamente após configurar?",
-					"question_one_description": "<@1115972980984516719> segue um cronograma específico para enviar a MOTD, que é enviada para todos os servidores às **21:00** horário de America/Toronto. Este cronograma não pode ser alterado e é o mesmo para todos.",
+					"question_one_description": "<@1115972980984516719> segue um cronograma específico para enviar a MDD, que é enviada para todos os servidores às **21:00** horário de America/Toronto. Este cronograma não pode ser alterado e é o mesmo para todos.",
 					"question_two_title": "Por que não recebo a Curiosidade do Dia imediatamente após configurar?",
-					"question_two_description": "<@1115972980984516719> segue um cronograma específico para enviar a TOTD, que é enviada para todos os servidores às **10:00** horário de America/Toronto. Este cronograma não pode ser alterado e é o mesmo para todos.",
-					"question_three_title": "O horário para receber a MOTD / TOTD já passou, mas não recebi nada. Por quê?",
-					"question_three_description": "Isso provavelmente é devido a um problema de permissões. Verifique se o cargo de <@1115972980984516719> tem as permissões necessárias. Também verifique as permissões do canal usado para MOTD / TOTD. Ainda não está recebendo nada? Junte-se ao servidor de suporte oficial clicando [aqui](%SupportLink%)!"
+					"question_two_description": "<@1115972980984516719> segue um cronograma específico para enviar a CDD, que é enviada para todos os servidores às **10:00** horário de America/Toronto. Este cronograma não pode ser alterado e é o mesmo para todos.",
+					"question_three_title": "O horário para receber a MDD / CDD já passou, mas não recebi nada. Por quê?",
+					"question_three_description": "Isso provavelmente é devido a um problema de permissões. Verifique se o cargo de <@1115972980984516719> tem as permissões necessárias. Também verifique as permissões do canal usado para MDD / CDD. Ainda não está recebendo nada? Junte-se ao servidor de suporte oficial clicando [aqui](%SupportLink%)!"
 				},
 				"about_guide": {
 					"title": "Guia Sobre",
@@ -51,27 +51,27 @@
 			},
 			"menus": {
 				"display_select_menu": {
-					"placeholder": "Escolha a exibição para a MOTD!",
+					"placeholder": "Escolha a exibição para a MDD!",
 					"options": {
 						"complete": {
 							"label": "Completo",
-							"description": "Um embed detalhado com informações sobre a MOTD e o artista.",
+							"description": "Um embed detalhado com informações sobre a MDD e o artista.",
 							"value": "complete"
 						},
 						"simple": {
 							"label": "Simples",
-							"description": "Uma integração com o link do Spotify da MOTD.",
+							"description": "Uma integração com o link do Spotify da MDD.",
 							"value": "simple"
 						},
 						"card": {
 							"label": "Cartão",
-							"description": "Um cartão bonito para a MOTD.",
+							"description": "Um cartão bonito para a MDD.",
 							"value": "card"
 						}
 					}
 				},
 				"card_mode_select_menu": {
-					"placeholder": "Escolha seu modo de cartão para a MOTD!",
+					"placeholder": "Escolha seu modo de cartão para a MDD!",
 					"options": {
 						"classic": {
 							"label": "Clássico",
@@ -91,27 +91,27 @@
 					}
 				},
 				"trivia_mode_select_menu": {
-					"placeholder": "Escolha seu modo de curiosidade para a TOTD!",
+					"placeholder": "Escolha seu modo de curiosidade para a CDD!",
 					"options": {
 						"audio_title": {
 							"label": "Título de Áudio",
 							"description": "Adivinhe o título da música ouvindo um trecho curto.",
-							"value": "título_de_áudio"
+							"value": "audio-title"
 						},
 						"audio_genre": {
 							"label": "Gênero de Áudio",
 							"description": "Adivinhe o gênero da música ouvindo um trecho curto.",
-							"value": "gênero_de_áudio"
+							"value": "audio-genre"
 						},
 						"image_title": {
 							"label": "Título de Imagem",
 							"description": "Adivinhe o título da música olhando para a capa.",
-							"value": "título_de_imagem"
+							"value": "image-title"
 						},
 						"image_genre": {
 							"label": "Gênero de Imagem",
 							"description": "Adivinhe o gênero da música olhando para a capa.",
-							"value": "gênero_de_imagem"
+							"value": "image-genre"
 						}
 					}
 				}
@@ -155,10 +155,10 @@
 				},
 				"when": {
 					"when_motd": {
-						"label": "Quando é a próxima MOTD?"
+						"label": "Quando é a próxima MDD?"
 					},
 					"when_totd": {
-						"label": "Quando é a próxima TOTD?"
+						"label": "Quando é a próxima CDD?"
 					}
 				},
 				"vote": {
@@ -204,7 +204,7 @@
 						"field_title_two": "🤚 Prove sua identidade",
 						"field_description_two": "Fornecendo prova de que você realmente é o artista que afirma ser.",
 						"field_title_three": "🎵 Tenha um gênero musical",
-						"field_description_three": "Que seja um dos propostos pelo bot (Global, Pop, Rock, Electro, KPOP, Hardstyle, Metal, German).",
+						"field_description_three": "Que seja um dos propostos pelo bot (Global, Pop, Rock, Electro, KPOP, Hardstyle, Metal, Alemão).",
 						"field_title_four": "🤝 Por que estamos fazendo isso?",
 						"field_description_four": "Para mostrar talento que não recebe o reconhecimento que merece, e porque a música é um mundo onde todos devem ser reconhecidos por sua contribuição artística.",
 						"field_title_five": "🤔 O que vem depois?",
@@ -215,25 +215,25 @@
 					"description": "Você está **60**% do caminho. Parabéns! 🎉 \n📱 Você precisa escolher um modo de exibição. Você pode ver como eles são clicando nos respectivos botões. \nContinue clicando no menu abaixo."
 				},
 				"80%": {
-					"description": "Você está **80**% do caminho. Parabéns! 🎉 \n🧵 Você precisa escolher se deseja que um tópico seja criado e gerenciado automaticamente pelo bot para a MOTD. \nContinue clicando em um dos botões abaixo"
+					"description": "Você está **80**% do caminho. Parabéns! 🎉 \n🧵 Você precisa escolher se deseja que um tópico seja criado e gerenciado automaticamente pelo bot para a MDD. \nContinue clicando em um dos botões abaixo"
 				},
 				"+80%": {
 					"description": "Você está **+80**% do caminho. Parabéns! 🎉 \n🏆 Você precisa escolher se deseja que um jogo de Curiosidade seja enviado todos os dias. \nO conceito é simples: todos os dias, você recebe um arquivo de áudio de música para ouvir e precisa adivinhar seu título! \nContinue clicando em um dos botões abaixo"
 				},
 				"100%_full": {
-					"description": "Você terminou! Você está em **100**%. Parabéns! 🎉\n🎶 Seu servidor está pronto para receber a MOTD e a TOTD. \nAqui está uma rápida visão geral de sua configuração"
+					"description": "Você terminou! Você está em **100**%. Parabéns! 🎉\n🎶 Seu servidor está pronto para receber a MDD e a CDD. \nAqui está uma rápida visão geral de sua configuração"
 				},
 				"100%_partial": {
-					"description": "Você terminou! Você está em **100**%. Parabéns! 🎉\n🎶 Seu servidor está pronto para receber a MOTD. \nAqui está uma rápida visão geral de sua configuração"
+					"description": "Você terminou! Você está em **100**%. Parabéns! 🎉\n🎶 Seu servidor está pronto para receber a MDD. \nAqui está uma rápida visão geral de sua configuração"
 				},
 				"warning_100%_full": {
-					"description": "⚠️ Por favor, certifique-se de que o Daily Music tem todas as permissões necessárias para funcionar (aquelas disponíveis no [link de convite](%InvitationLink%)). \nVerifique as permissões para :\n    - o cargo do bot\n    \n- o canal definido (%channel%). \nSe faltar uma permissão, você não receberá a MOTD e a TOTD e seu servidor será excluído do banco de dados após alguns dias se o problema não for resolvido."
+					"description": "⚠️ Por favor, certifique-se de que o Daily Music tem todas as permissões necessárias para funcionar (aquelas disponíveis no [link de convite](%InvitationLink%)). \nVerifique as permissões para :\n    - o cargo do bot\n    \n- o canal definido (%channel%). \nSe faltar uma permissão, você não receberá a MDD e a CDD e seu servidor será excluído do banco de dados após alguns dias se o problema não for resolvido."
 				},
 				"warning_100%_partial": {
-					"description": "⚠️ Por favor, certifique-se de que o Daily Music tem todas as permissões necessárias para funcionar (aquelas disponíveis no [link de convite](%InvitationLink%)). \nVerifique as permissões para :\n    - o cargo do bot\n    \n- o canal definido (%channel%). \nSe faltar uma permissão, você não receberá a MOTD e seu servidor será excluído do banco de dados após alguns dias se o problema não for resolvido."
+					"description": "⚠️ Por favor, certifique-se de que o Daily Music tem todas as permissões necessárias para funcionar (aquelas disponíveis no [link de convite](%InvitationLink%)). \nVerifique as permissões para :\n    - o cargo do bot\n    \n- o canal definido (%channel%). \nSe faltar uma permissão, você não receberá a MDD e seu servidor será excluído do banco de dados após alguns dias se o problema não for resolvido."
 				},
 				"advanced_card": {
-					"description": "Bem-vindo ao menu de configuração avançada! 🤓 \n🃏 Você precisa escolher que tipo de cartão deseja para a MOTD.\nContinue clicando no menu abaixo"
+					"description": "Bem-vindo ao menu de configuração avançada! 🤓 \n🃏 Você precisa escolher que tipo de cartão deseja para a MDD.\nContinue clicando no menu abaixo"
 				},
 				"advanced_trivia": {
 					"description": "Bem-vindo ao menu de configuração avançada! 🤓\n🏆 Você precisa escolher que tipo de jogo de Curiosidade deseja. \nContinue clicando em uma das opções abaixo"
@@ -294,8 +294,8 @@
 						"description": "A solução para os problemas mais comuns."
 					},
 					"about": {
-						"label": "Sobre MOTD / TOTD",
-						"description": "Tudo o que você precisa saber sobre MOTD e TOTD."
+						"label": "Sobre MDD / CDD",
+						"description": "Tudo o que você precisa saber sobre MDD e CDD."
 					},
 					"other": {
 						"label": "Outros",
@@ -309,8 +309,8 @@
 				"field_description_one": "Um guia para configurar os sistemas do Daily Music.",
 				"field_title_two": "🔍 Depuração",
 				"field_description_two": "A solução para os problemas mais comuns.",
-				"field_title_three": "🎵 Sobre MOTD / TOTD",
-				"field_description_three": "Tudo o que você precisa saber sobre MOTD e TOTD.",
+				"field_title_three": "🎵 Sobre MDD / CDD",
+				"field_description_three": "Tudo o que você precisa saber sobre MDD e CDD.",
 				"field_title_four": "❔ Outros",
 				"field_description_four": "Perguntas que não são respondidas aqui."
 			}
@@ -324,7 +324,7 @@
 				"max_webhooks_exceeded": "❌ Este canal já atingiu o número máximo de webhooks permitidos. Por favor, exclua um e tente novamente."
 			},
 			"embed": {
-				"description": "Bem-vindo ao sistema de configuração! 👋\n🎵 Agora você pode configurar o sistema **MOTD** (**M**úsica **D**o **D**ia).\nContinue clicando no menu abaixo!",
+				"description": "Bem-vindo ao sistema de configuração! 👋\n🎵 Agora você pode configurar o sistema **MDD** (**M**úsica **D**o **D**ia).\nContinue clicando no menu abaixo!",
 				"configuration_exists": {
 					"fields": {
 						"field_title_one": "📰 Canal",
@@ -345,7 +345,7 @@
 				}
 			},
 			"menu": {
-				"placeholder": "Escolha o gênero para o MOTD!",
+				"placeholder": "Escolha o gênero para o MDD!",
 				"options": {
 					"global": {
 						"label": "Global",
@@ -370,7 +370,7 @@
 					"kpop": {
 						"label": "KPOP",
 						"description": "A música do dia para o gênero KPOP.",
-						"value": "kpop"
+						"value": "KPOP"
 					},
 					"hardstyle": {
 						"label": "Hardstyle",
@@ -382,7 +382,7 @@
 						"description": "A música do dia para o gênero Metal.",
 						"value": "metal"
 					},
-					"german": {
+					"alemão": {
 						"label": "Alemão",
 						"description": "A música do dia para o gênero Alemão.",
 						"value": "german"
