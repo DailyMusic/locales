@@ -47,7 +47,7 @@ This is the GitHub repository containing all Daily Music translation files.
 | tr     | Turkish               | Türkçe               | ✅   |
 | pl     | Polish                | Polski               | ✅   |
 | pt-BR  | Portuguese, Brazilian | Português do Brasil | ✅   |
-| nl     | Dutch                 | Nederlands           | ❌   |
+| nl     | Dutch                 | Nederlands           | ✅   |
 | it     | Italian               | Italiano             | ❌   |
 | vi     | Vietnamese            | Tiếng Việt          | ❌   |
 | hi     | Hindi                 | हिन्दी               | ❌   |
