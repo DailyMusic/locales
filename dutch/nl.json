@@ -1,0 +1,600 @@
+{
+  "general": {
+    "why": "🤔 Waarom?",
+    "none": "Geen",
+    "unknown": "Onbekend",
+    "by": "door",
+    "motd": "Muziek van de Dag: ",
+    "totd": "Trivia van de Dag: Kun je de muziek raden?"
+  },
+  "events": {
+    "interactionCreate": {
+      "error_messages": {
+        "guild_only": "❌ Dit commando is alleen voor guilds!",
+        "dev_only": "❌ Dit commando is alleen voor ontwikkelaars.",
+        "cmd_not_found": "❌ Dit commando kan niet worden gevonden.",
+        "bot_permissions": "❌ Ik heb de `%command.perms.BotPermissions.map((p) => p.toUpperCase()).join(', ')%` permissie nodig om dit commando te gebruiken.",
+        "user_permissions": "❌ Je hebt de `%command.perms.UserPermissions.map((p) => p.toUpperCase()).join(', ')%` permissie nodig om dit commando te gebruiken.",
+        "already_played_today": "❌ Je hebt vandaag al gespeeld!"
+      },
+      "guides": {
+        "setup_guide": {
+          "title": "Installatiegids",
+          "question_one_title": "Hoe kan ik automatisch de Muziek van de Dag ontvangen?",
+          "question_one_description": "Om de MVDD automatisch te ontvangen, gebruik het </setup:1199447395700842526> commando. Laat dan het proces je begeleiden.",
+          "question_two_title": "Welke soorten kanalen kan ik selecteren voor de Muziek van de Dag?",
+          "question_two_description": "Bijna elk soort kanaal beschikbaar op Discord!\n - tekstkanaal\n- openbare / privéthread behorend tot een tekstkanaal\n- aankondigingskanaal\n- openbare thread behorend tot een aankondigingskanaal\n- forumpost",
+          "question_three_title": "Hoe weet ik wie ik moet waarschuwen voor de Muziek van de Dag?",
+          "question_three_description": "Je moet bepalen wie mogelijk geïnteresseerd is in de MVDD. Als je gemeenschap zich richt op muziek, dan kun je ervoor kiezen om een rol te waarschuwen die alle serverleden gemeen hebben (bijv. een 'Leden' rol). Als je gemeenschap niet op muziek is gericht, kun je een rol instellen specifiek voor mensen die geïnteresseerd zijn in muziek."
+        },
+        "debugging_guide": {
+          "title": "Debugginggids",
+          "question_one_title": "Waarom ontvang ik de Muziek van de Dag niet onmiddellijk na het instellen?",
+          "question_one_description": "<@1115972980984516719> volgt een specifiek schema om de MVDD te verzenden, die momenteel om **9:00** PM Amerika/Toronto tijd naar alle servers wordt verzonden. Dit schema kan niet worden gewijzigd en is voor iedereen hetzelfde.",
+          "question_two_title": "Waarom ontvang ik de Trivia van de Dag niet onmiddellijk na het instellen?",
+          "question_two_description": "<@1115972980984516719> volgt een specifiek schema om de TVDD te verzenden, die momenteel om **10:00** AM Amerika/Toronto tijd naar alle servers wordt verzonden. Dit schema kan niet worden gewijzigd en is voor iedereen hetzelfde.",
+          "question_three_title": "De tijd om de MVDD / TVDD te ontvangen is verstreken maar ik heb niets ontvangen. Waarom?",
+          "question_three_description": "Dit is waarschijnlijk te wijten aan een permissieprobleem. Controleer of de rol van <@1115972980984516719> de nodige permissies heeft. Controleer ook de permissies van het kanaal dat wordt gebruikt voor MVDD / TVDD. Nog steeds niets ontvangen? Sluit je aan bij de officiële ondersteuningsserver door [hier te klikken](%SupportLink%)!"
+        },
+        "about_guide": {
+          "title": "Over Gids",
+          "question_one_title": "Wat is de Muziek van de Dag?",
+          "question_one_description": "De Muziek van de Dag is een nummer dat willekeurig wordt gekozen door <@1115972980984516719> en naar alle servers wordt verzonden om **9:00** PM Amerika/Toronto tijd.",
+          "question_two_title": "Wat is de Trivia van de Dag?",
+          "question_two_description": "De Trivia van de Dag is een muziektriviavraag die willekeurig wordt gekozen door <@1115972980984516719> en naar alle servers wordt verzonden om **10:00** AM Amerika/Toronto tijd."
+        },
+        "other_guide": {
+          "title": "Andere Gids",
+          "question_one_title": "🤔 Jouw vraag is niet beantwoord?",
+          "question_one_description": "Je kunt je vraag stellen in de officiële ondersteuningsserver door [hier te klikken](%SupportLink%)."
+        }
+      },
+      "menus": {
+        "display_select_menu": {
+          "placeholder": "Kies je weergave voor de MVDD!",
+          "options": {
+            "complete": {
+              "label": "Compleet",
+              "description": "Een gedetailleerde embed met informatie over MVDD en de artiest.",
+              "value": "complete"
+            },
+            "simple": {
+              "label": "Eenvoudig",
+              "description": "Een integratie met de Spotify-link van MVDD.",
+              "value": "simple"
+            },
+            "card": {
+              "label": "Kaart",
+              "description": "Een mooie kaart voor MVDD.",
+              "value": "card"
+            }
+          }
+        },
+        "card_mode_select_menu": {
+          "placeholder": "Kies je kaartmodus voor de MVDD!",
+          "options": {
+            "classic": {
+              "label": "Klassiek",
+              "description": "Een klassieke kaart.",
+              "value": "classic"
+            },
+            "pro": {
+              "label": "Klassiek Pro",
+              "description": "Een klassieke kaart, maar met een professionele touch.",
+              "value": "pro"
+            },
+            "mini": {
+              "label": "Mini Pro",
+              "description": "Een mini-kaart, maar met een professionele touch.",
+              "value": "mini"
+            }
+          }
+        },
+        "trivia_mode_select_menu": {
+          "placeholder": "Kies je trivia-modus voor de TVDD!",
+          "options": {
+            "audio_title": {
+              "label": "Audio Titel",
+              "description": "Raad de titel van de muziek door naar een kort fragment te luisteren.",
+              "value": "audio-titel"
+            },
+            "audio_genre": {
+              "label": "Audio Genre",
+              "description": "Raad het genre van de muziek door naar een kort fragment te luisteren.",
+              "value": "audio-genre"
+            },
+            "image_title": {
+              "label": "Afbeelding Titel",
+              "description": "Raad de titel van de muziek door naar de hoes te kijken.",
+              "value": "afbeelding-titel"
+            },
+            "image_genre": {
+              "label": "Afbeelding Genre",
+              "description": "Raad het genre van de muziek door naar de hoes te kijken.",
+              "value": "afbeelding-genre"
+            }
+          }
+        }
+      },
+      "modals": {
+        "trivia_modal": {
+          "title": "Raad de muziek!",
+          "input": "Wat is de titel van deze muziek?"
+        }
+      },
+      "buttons": {
+        "display_modes": {
+          "complete_display_preview": {
+            "label": "Volledige Voorbeeld"
+          },
+          "simple_display_preview": {
+            "label": "Eenvoudig Voorbeeld"
+          },
+          "card_display_preview": {
+            "label": "Kaartvoorbeeld"
+          }
+        },
+        "card_modes": {
+          "classic_card_display": {
+            "label": "Klassiek Voorbeeld"
+          },
+          "pro_card_display": {
+            "label": "Klassiek Pro Voorbeeld"
+          },
+          "mini_card_display": {
+            "label": "Mini Pro Voorbeeld"
+          }
+        },
+        "threads": {
+          "threads_on": {
+            "label": "Ja"
+          },
+          "threads_off": {
+            "label": "Nee"
+          }
+        },
+        "when": {
+          "when_motd": {
+            "label": "Wanneer is de volgende MVDD?"
+          },
+          "when_totd": {
+            "label": "Wanneer is de volgende TVDD?"
+          }
+        },
+        "vote": {
+          "unlock_feature": {
+            "label": "Deze functie ontgrendelen"
+          }
+        },
+        "artists": {
+          "are_you_an_artist": {
+            "label": "Ben je een artiest?"
+          }
+        }
+      },
+      "embeds": {
+        "audio_analysis": {
+          "description": "📊 Hier is een audiobeschrijving voor %songOfTodayRequest['title']% van %songOfTodayRequest['artist']%:",
+          "fields": {
+            "field_title_one": "💃 Is het goed om op te dansen?",
+            "field_description_one_true": "Ja! %songOfTodayRequest['title']% is goed om met je vrienden op te dansen!",
+            "field_description_one_false": "Nee. %songOfTodayRequest['title']% is niet goed om met je vrienden op te dansen.",
+            "field_title_two": "⚡ Is het energiek?",
+            "field_description_two_true": "Ja! %songOfTodayRequest['title']% is energiek, met veel bas!",
+            "field_description_two_false": "Nee. %songOfTodayRequest['title']% is niet energiek.",
+            "field_title_three": "🚀 Was het live uitgevoerd?",
+            "field_description_three_true": "Ja! %songOfTodayRequest['title']% werd live uitgevoerd.",
+            "field_description_three_false": "Nee. %songOfTodayRequest['title']% werd niet live uitgevoerd.",
+            "field_title_four": "📊 Samenstelling",
+            "field_description_four_true": "%songOfTodayRequest['title']% bestaat voornamelijk uit tekst.",
+            "field_description_four_false": "%songOfTodayRequest['title']% bestaat voornamelijk uit melodie.",
+            "field_title_five": "🔊 Akoestiek",
+            "field_description_five_true": "%songOfTodayRequest['title']% wordt voornamelijk gespeeld met akoestische instrumenten.",
+            "field_description_five_false": "%songOfTodayRequest['title']% wordt niet voornamelijk gespeeld met akoestische instrumenten.",
+            "field_title_six": "🤪 Stemming",
+            "field_description_six_true": "%songOfTodayRequest['title']% is een muziek met een positieve stemming.",
+            "field_description_six_false": "%songOfTodayRequest['title']% is een muziek met een negatieve stemming."
+          }
+        },
+        "are_you_an_artist": {
+          "description": "Ben je een muzikant? Zo ja, dan kun je vragen om op voorbeeldberichten te worden weergegeven, zoals degene waar je zojuist op hebt geklikt. Je hoeft niet te betalen om in de schijnwerpers te staan, het is gratis.\n➡️ Hier zijn de vereisten",
+          "fields": {
+            "field_title_one": "🎧 Aanwezig zijn",
+            "field_description_one": "Op een streamingplatform (Spotify, Deezer, Apple Music, Soundcloud...).",
+            "field_title_two": "🤚 Identiteit bewijzen",
+            "field_description_two": "Door bewijs te leveren dat je echt de artiest bent die je beweert te zijn.",
+            "field_title_three": "🎵 Heb een muzikaal genre",
+            "field_description_three": "Dat is een van die voorgestelde door de bot (Wereldwijd, Pop, Rock, Electro, KPOP, Harde stijl, Metaal, Duits).",
+            "field_title_four": "🤝 Waarom doen we dit?",
+            "field_description_four": "Om talent te laten zien dat niet de erkenning krijgt die het verdient, en omdat muziek een wereld is waar iedereen erkend moet worden voor zijn artistieke bijdrage.",
+            "field_title_five": "🤔 Wat is de volgende stap?",
+            "field_description_five": "Word lid van onze [officiële server](%SupportLink%) en doe een verzoek. Als je aanvraag wordt geaccepteerd, wordt je weergegeven op de voorbeeldberichten en krijg je een rol op onze server."
+          }
+        },
+        "60%": {
+          "description": "Je bent **60**% van het proces doorlopen. Goed gedaan! 🎉 \n📱 Je moet een weergavemodus kiezen. Je kunt zien hoe ze eruit zien door op de respectievelijke knoppen te klikken. \nGa verder door op het menu hieronder te klikken."
+        },
+        "80%": {
+          "description": "Je bent **80**% van het proces doorlopen. Goed gedaan! 🎉 \n🧵 Je moet kiezen of je wilt dat een draad automatisch wordt aangemaakt en beheerd door de bot voor het MVDD. \nGa verder door op een van de knoppen hieronder te klikken."
+        },
+        "+80%": {
+          "description": "Je bent **+80**% van het proces doorlopen. Goed gedaan! 🎉 \n🏆 Je moet kiezen of je elke dag een Trivia-spel wilt ontvangen. \nHet concept is eenvoudig: elke dag ontvang je een audiobestand van muziek om naar te luisteren, en je moet de titel raden! \nGa verder door op een van de knoppen hieronder te klikken."
+        },
+        "100%_full": {
+          "description": "Je bent klaar! Je bent op **100**%. Goed gedaan! 🎉\n🎶 Je server is klaar om het MVDD en de TVDD te ontvangen. \nHier is een snel overzicht van je configuratie"
+        },
+        "100%_partial": {
+          "description": "Je bent klaar! Je bent op **100**%. Goed gedaan! 🎉\n🎶 Je server is klaar om het MVDD te ontvangen. \nHier is een snel overzicht van je configuratie"
+        },
+        "warning_100%_full": {
+          "description": "⚠️ Zorg ervoor dat Daily Music alle benodigde machtigingen heeft om te werken (die beschikbaar zijn in de [uitnodigingslink](%InvitationLink%)). \nControleer de machtigingen voor :\n    - de rol van de bot\n    \n- het gedefinieerde kanaal (%channel%). \nAls er een machtiging ontbreekt, ontvang je het MVDD en de TVDD niet en wordt je server na enkele dagen uit de database verwijderd als het probleem niet is opgelost."
+        },
+        "warning_100%_partial": {
+          "description": "⚠️ Zorg ervoor dat Daily Music alle benodigde machtigingen heeft om te werken (die beschikbaar zijn in de [uitnodigingslink](%InvitationLink%)). \nControleer de machtigingen voor :\n    - de rol van de bot\n    \n- het gedefinieerde kanaal (%channel%). \nAls er een machtiging ontbreekt, ontvang je het MVDD niet en wordt je server na enkele dagen uit de database verwijderd als het probleem niet is opgelost."
+        },
+        "advanced_card": {
+          "description": "Welkom bij het geavanceerde configuratiemenu! 🤓 \n🃏 Je moet kiezen welk type kaart je wilt voor het MVDD.\nGa verder door op het menu hieronder te klikken"
+        },
+        "advanced_trivia": {
+          "description": "Welkom bij het geavanceerde configuratiemenu! 🤓\n🏆 Je moet kiezen welk type Trivia-spel je wilt. \nGa verder door op een van de opties hieronder te klikken"
+        },
+        "vote_wumpus": {
+          "description": "❌ Je moet stemmen op [Wumpus.store](https://wumpus.store/bot/1115972980984516719/vote) om deze functie te gebruiken"
+        },
+        "voting_helps_us": {
+          "description": "Stemmen voor Daily Music helpt ons populairder te worden, en het kost je slechts 1 seconde van je dag, zonder advertenties."
+        },
+        "correct_title_trivia": {
+          "title": "Je hebt de titel gevonden",
+          "description": "ℹ️ Hier is wat informatie over de muziek.",
+          "your_guess": "🤔 Jouw gok",
+          "exact_guess": "🎯 Exacte gok",
+          "similarity": "🤷‍♂️ Gelijkenis",
+          "close_enough": "Je zit dichtbij genoeg!",
+          "message_ephemeral": "👏 GG! Je hebt de titel van de muziek gevonden.",
+          "message_public": "👏 <@%interaction.user.id%> heeft de titel van de muziek geraden met een nauwkeurigheid van **%Math.round(similar * 100)%**%!"
+        },
+        "wrong_title_trivia": {
+          "title": "Je hebt de titel verkeerd",
+          "description": "ℹ️ Hier is wat informatie over de muziek die we verwachten.",
+          "your_guess": "🤔 Jouw gok",
+          "expected_guess": "🎯 Verwachte gok",
+          "similarity": "🤷‍♂️ Gelijkenis",
+          "close_enough": "Je zit niet dichtbij genoeg!",
+          "message_ephemeral": "😬 Eh... Je hebt de titel verkeerd!",
+          "message_public": "😬 <@%interaction.user.id%> heeft de titel van de muziek niet geraden..."
+        },
+        "correct_genre_trivia": {
+          "title": "Je hebt het genre gevonden",
+          "message_ephemeral": "👏 GG! Je hebt het genre van de muziek gevonden.",
+          "message_public": "👏 <@%interaction.user.id%> heeft het genre van de muziek geraden!"
+        },
+        "wrong_genre_trivia": {
+          "title": "Je hebt het genre verkeerd",
+          "message_ephemeral": "😬 Eh... Je hebt het genre verkeerd!",
+          "message_public": "😬 <@%interaction.user.id%> heeft het genre van de muziek niet geraden..."
+        },
+        "hint": {
+          "description": "💡 Hier is de tip: \n🤔 [De tip wordt niet weergegeven? Klik hier om deze te bekijken.](%songOfTodayRequest['previewUrl']%)"
+        }
+      }
+    }
+  },
+  "commands": {
+    "help": {
+      "menu": {
+        "placeholder": "Waar heb je hulp bij nodig?",
+        "options": {
+          "setting_up": {
+            "label": "Opzetten",
+            "description": "Een handleiding voor het configureren van de Daily Music-systemen."
+          },
+          "debugging": {
+            "label": "Debuggen",
+            "description": "De oplossing voor de meest voorkomende problemen."
+          },
+          "about": {
+            "label": "Over MVDD / TVDD",
+            "description": "Alles wat je moet weten over MVDD en TVDD."
+          },
+          "other": {
+            "label": "Overig",
+            "description": "Vragen die hier niet worden beantwoord."
+          }
+        }
+      },
+      "embed": {
+        "description": "Welkom bij het helpmenu! 👋\nGa verder door te klikken op een van de onderstaande menu's. ⬇️",
+        "field_title_one": "🔧 Opzetten",
+        "field_description_one": "Een handleiding voor het configureren van Daily Music-systemen.",
+        "field_title_two": "🔍 Debuggen",
+        "field_description_two": "De oplossing voor de meest voorkomende problemen.",
+        "field_title_three": "🎵 Over MVDD / TVDD",
+        "field_description_three": "Alles wat je moet weten over MVDD en TVDD.",
+        "field_title_four": "❔ Overig",
+        "field_description_four": "Vragen die hier niet worden beantwoord."
+      }
+    },
+    "setup": {
+      "error_messages": {
+        "invalid_role": "❌ Je kunt geen botrol gebruiken voor deze opdracht.",
+        "invalid_everyone_here_role": "❌ Je mag de rol %role% niet gebruiken voor deze opdracht.",
+        "invalid_role_hierarchy": "❌ De opgegeven rol moet lager zijn dan je hoogste rol en de hoogste rol van de bot.",
+        "existing_configuration": "❌ Er bestaat al een configuratie voor deze server.",
+        "max_webhooks_exceeded": "❌ Dit kanaal heeft al het maximale aantal toegestane webhooks. Verwijder er een en probeer het opnieuw."
+      },
+      "embed": {
+        "description": "Welkom bij het configuratiesysteem! 👋\n🎵 Je kunt nu het **MVDD** (**M**uziek **V**an **D**e **D**ag) systeem configureren.\nGa verder door te klikken op het menu hieronder!",
+        "configuration_exists": {
+          "fields": {
+            "field_title_one": "📰 Kanaal",
+            "field_title_two": "🌐 Taal",
+            "field_title_three": "🔔 Rol",
+            "field_title_four": "🎵 Genre",
+            "field_title_five": "📱 Weergave",
+            "field_title_six": "🧵 Draden",
+            "field_title_seven": "🏆 Trivia"
+          },
+          "threads": {
+            "enabled": "Ingeschakeld",
+            "disabled": "Uitgeschakeld"
+          },
+          "display": {
+            "description": "%Weergave% | %Kaartmodus%"
+          }
+        }
+      },
+      "menu": {
+        "placeholder": "Kies je genre voor de MVDD!",
+        "options": {
+          "global": {
+            "label": "Wereldwijd",
+            "description": "De muziek van de dag voor het Wereldwijd-genre.",
+            "value": "global"
+          },
+          "pop": {
+            "label": "Pop",
+            "description": "De muziek van de dag voor het Pop-genre.",
+            "value": "pop"
+          },
+          "rock": {
+            "label": "Rock",
+            "description": "De muziek van de dag voor het Rock-genre.",
+            "value": "rock"
+          },
+          "electro": {
+            "label": "Electro",
+            "description": "De muziek van de dag voor het Electro-genre.",
+            "value": "electro"
+          },
+          "kpop": {
+            "label": "KPOP",
+            "description": "De muziek van de dag voor het KPOP-genre.",
+            "value": "kPOP"
+          },
+          "hardstyle": {
+            "label": "Harde stijl",
+            "description": "De muziek van de dag voor het Harde stijl-genre.",
+            "value": "hardstyle"
+          },
+          "metal": {
+            "label": "Metaal",
+            "description": "De muziek van de dag voor het Metaal-genre.",
+            "value": "metal"
+          },
+          "german": {
+            "label": "Duits",
+            "description": "De muziek van de dag voor het Duitse genre.",
+            "value": "german"
+          }
+        }
+      },
+      "why_answers": {
+        "prevent_abuse": {
+          "description": "Om misbruik te voorkomen."
+        },
+        "logistical_reasons": {
+          "description": "Om logistieke redenen."
+        },
+        "bot_role_mention": {
+          "description": "Wat is het nut van het vermelden van een bot?"
+        }
+      }
+    },
+    "links": {
+      "buttons": {
+        "invite": {
+          "label": "Toevoegen aan Discord"
+        },
+        "server": {
+          "label": "Word lid van de ondersteuningsserver"
+        },
+        "docs": {
+          "label": "Bekijk de documentatie"
+        }
+      },
+      "embed": {
+        "description": "Bedankt voor het gebruik van Daily Music! ❤️\nHier zijn alle links gerelateerd aan de bot. ⬇️",
+        "field_title_one": "📥 Voeg de bot toe",
+        "field_description_one": "[Klik hier](%InvitationLink%) om Daily Music uit te nodigen voor je server.",
+        "field_title_two": "🚩 Word lid van de supportserver",
+        "field_description_two": "[Klik hier](%SupportLink%) om lid te worden van de supportserver.",
+        "field_title_three": "🗂️ Bekijk de documentatie",
+        "field_description_three": "[Klik hier](%DocumentationLink%) om de documentatie te bekijken."
+      }
+    },
+    "artistinfo": {
+      "error_messages": {
+        "artist_cant_be_found": "❌ Deze artiest kan niet worden gevonden."
+      },
+      "embed": {
+        "field_title_one": "🎺 Luisteraars",
+        "field_title_two": "🎵 Aantal keren afgespeeld",
+        "field_title_three": "🏷️ Tags",
+        "field_title_four": "🎶 Vergelijkbare artiesten",
+        "field_title_five": "📅 Gegevens gepubliceerd"
+      },
+      "why_answers": {
+        "artist_does_not_exist": {
+          "description": "Omdat deze artiest niet bestaat in onze database! Misschien heb je zijn naam verkeerd getypt."
+        }
+      }
+    },
+    "date": {
+      "error_messages": {
+        "date_is_banned": "❌ Deze datum is verboden. Gebruik alstublieft een andere datum.",
+        "date_format": "❌ Gebruik alstublieft het datumformaat DD-MM-JJJJ",
+        "date_on_before": "❌ Geef alstublieft een datum op op of voor de huidige datum",
+        "date_feb_28": "❌ Geef alstublieft een datum op op of na 28 februari 2023.",
+        "day_not_valid": "❌ Geef alstublieft een geldige dag op voor %moment(month, 'MM').format('MMMM')% (01 tot %maxDaysInMonth%)",
+        "month_not_valid": "❌ Geef alstublieft een geldige maand op (01 tot 12).",
+        "year_not_valid": "❌ Geef alstublieft een geldig jaar op (2023 tot %moment().year()%).",
+        "no_song_info": "❌ Geen liedinformatie beschikbaar.",
+        "no_artist_info": "❌ Geen artiestinformatie beschikbaar."
+      },
+      "embed": {
+        "field_title_one": "🎤 Artiest",
+        "field_title_two": "👀 Titel",
+        "field_title_three": "💿 Album",
+        "field_title_four": "🎧 Label",
+        "field_title_five": "🎵 Genre",
+        "field_title_six": "Populariteit",
+        "field_title_seven": "📆 Datum"
+      },
+      "buttons": {
+        "preview": {
+          "label": "Voorbeeld"
+        },
+        "play": {
+          "label": "Afspelen op Spotify"
+        },
+        "save": {
+          "label": "Opslaan op Spotify"
+        },
+        "follow": {
+          "label": "Volg de artiest"
+        },
+        "analysis": {
+          "label": "Audiometing"
+        },
+        "cover": {
+          "label": "Omslag"
+        },
+        "playlist": {
+          "label": "Afspeellijst"
+        }
+      },
+      "why_answers": {
+        "no_music_generated": {
+          "description": "Omdat er geen muziek is gegenereerd voor deze datum, hoogstwaarschijnlijk vanwege een incident of onderhoud."
+        },
+        "read_date_format": {
+          "description": "Omdat Daily Music alleen datums kan lezen in het formaat DD-MM-JJJJ."
+        },
+        "not_capable_future": {
+          "description": "Omdat we niet in staat zijn om muziek te genereren voor de toekomst!"
+        },
+        "service_didnt_exist": {
+          "description": "Omdat vóór die datum de service die we gebruiken niet bestond!"
+        },
+        "service_didnt_exist_2023": {
+          "description": "Omdat vóór 2023 de service die we gebruiken niet bestond, en omdat we geen muziek kunnen genereren voor de toekomst!"
+        },
+        "certain_numbers_of_day": {
+          "description": "Omdat er een bepaald aantal dagen in een maand zijn, kunnen we geen muziek genereren voor de 111e december!"
+        },
+        "certain_numbers_of_month": {
+          "description": "Moet ik dit echt uitleggen?"
+        },
+        "api_down": {
+          "description": "De API lijkt niet beschikbaar te zijn."
+        }
+      }
+    },
+    "reset": {
+      "error_messages": {
+        "no_config": "❌ Geen configuratie gevonden voor deze server."
+      },
+      "embed": {
+        "description": "✅ De configuratie van deze server is succesvol gereset."
+      },
+      "why_answers": {
+        "no_data": {
+          "description": "Dit betekent dat Daily Music geen gegevens heeft gekoppeld aan uw server."
+        }
+      }
+    },
+    "settings": {
+      "embed": {
+        "description": "📚 Hier is een samenvatting van uw serverinstellingen."
+      }
+    },
+    "stats": {
+      "embed": {
+        "description": "📊 Hier is een samenvatting van de statistieken van Daily Music voor uw server.",
+        "field_title_one": "🎶 Aantal verzonden muziekstukken",
+        "field_description_one": "Daily Music heeft in totaal **%data.TotalSongsSent%** muziekstukken naar deze server gestuurd.",
+        "field_title_two": "📆 Laatste verzonden muziekstuk",
+        "field_description_two_true": "Het laatste muziekstuk dat naar deze server is gestuurd, was op %timestamp:F% (%timestamp:R%)",
+        "field_description_two_false": "Er is nog geen muziekstuk naar deze server gestuurd."
+      }
+    },
+    "trivia": {
+      "buttons": {
+        "guess": {
+          "label": "Gokken"
+        },
+        "hint": {
+          "label": "Tip"
+        },
+        "extract": {
+          "label": "Fragment"
+        },
+        "cover": {
+          "label": "Omslag"
+        }
+      },
+      "embed": {
+        "title": "Raad de muziek! 🎵",
+        "description": "Kun je het %guess% van [deze muziek](%songOfTodayRequest['previewUrl']%) raden? 🤔",
+        "description_title": "titel",
+        "description_genre": "genre"
+      },
+      "menu": {
+        "placeholder": "Kies een genre!",
+        "options": {
+          "pop": {
+            "label": "Pop",
+            "description": "Als je denkt dat het genre van dit nummer Pop is.",
+            "value": "pop"
+          },
+          "rock": {
+            "label": "Rock",
+            "description": "Als je denkt dat het genre van dit nummer Rock is.",
+            "value": "rock"
+          },
+          "electro": {
+            "label": "Electro",
+            "description": "Als je denkt dat het genre van dit nummer Electro is.",
+            "value": "electro"
+          },
+          "kpop": {
+            "label": "KPOP",
+            "description": "Als je denkt dat het genre van dit nummer KPOP is.",
+            "value": "kpop"
+          },
+          "hardstyle": {
+            "label": "Harde stijl",
+            "description": "Als je denkt dat het genre van dit nummer Harde stijl is.",
+            "value": "hardstyle"
+          },
+          "metal": {
+            "label": "Metaal",
+            "description": "Als je denkt dat het genre van dit nummer Metaal is.",
+            "value": "metal"
+          }
+        }
+      }
+    }
+  }
+}
