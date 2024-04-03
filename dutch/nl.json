@@ -5,7 +5,8 @@
     "unknown": "Onbekend",
     "by": "door",
     "motd": "Muziek van de Dag: ",
-    "totd": "Trivia van de Dag: Kun je de muziek raden?"
+    "totd": "Trivia van de Dag: Kun je de muziek raden?",
+    "eotd": "Op deze dag in de muziekgeschiedenis: Ontdek wat er gebeurde!"
   },
   "events": {
     "interactionCreate": {
@@ -159,6 +160,9 @@
           },
           "when_totd": {
             "label": "Wanneer is de volgende TVDD?"
+          },
+          "when_eotd": {
+            "label": "Wanneer zijn de volgende EVDD?"
           }
         },
         "vote": {
@@ -211,26 +215,23 @@
             "field_description_five": "Word lid van onze [officiële server](%SupportLink%) en doe een verzoek. Als je aanvraag wordt geaccepteerd, wordt je weergegeven op de voorbeeldberichten en krijg je een rol op onze server."
           }
         },
+        "40%": {
+          "description": "Je bent **40**% van de weg door het proces. Goed gedaan! 🎉 \n📱 Je moet een weergavemodus kiezen. Je kunt zien hoe ze eruit zien door op de respectievelijke knoppen te klikken. \nGa verder door op het onderstaande menu te klikken."
+        },
         "60%": {
-          "description": "Je bent **60**% van het proces doorlopen. Goed gedaan! 🎉 \n📱 Je moet een weergavemodus kiezen. Je kunt zien hoe ze eruit zien door op de respectievelijke knoppen te klikken. \nGa verder door op het menu hieronder te klikken."
+          "description": "Je bent **60**% van de weg door het proces. Goed gedaan! 🎉 \n🧵 Je moet kiezen of je wilt dat er automatisch een thread wordt aangemaakt en beheerd door de bot voor de MVDD. \nGa verder door op een van de onderstaande knoppen te klikken."
         },
         "80%": {
-          "description": "Je bent **80**% van het proces doorlopen. Goed gedaan! 🎉 \n🧵 Je moet kiezen of je wilt dat een draad automatisch wordt aangemaakt en beheerd door de bot voor het MVDD. \nGa verder door op een van de knoppen hieronder te klikken."
+          "description": "Je bent **80**% van de weg door het proces. Goed gedaan! 🎉 \n🏆 Je moet kiezen of je elke dag een muziekquiz wilt ontvangen. \nHet concept is eenvoudig: elke dag ontvang je een audiobestand met muziek om naar te luisteren en je moet de titel raden! \nGa verder door op een van de onderstaande knoppen te klikken."
         },
-        "+80%": {
-          "description": "Je bent **+80**% van het proces doorlopen. Goed gedaan! 🎉 \n🏆 Je moet kiezen of je elke dag een Trivia-spel wilt ontvangen. \nHet concept is eenvoudig: elke dag ontvang je een audiobestand van muziek om naar te luisteren, en je moet de titel raden! \nGa verder door op een van de knoppen hieronder te klikken."
+        "90%": {
+          "description": "Je bent **90**% van de weg door het proces. Goed gedaan! 🎉 \n📆 Je moet kiezen of je de lijst met gebeurtenissen in de muziekwereld elke dag wilt ontvangen. \nHet concept is eenvoudig: elke dag ontvang je een lijst met gebeurtenissen die op deze dag in de muziekgeschiedenis hebben plaatsgevonden! \nGa verder door op een van de onderstaande knoppen te klikken."
         },
-        "100%_full": {
-          "description": "Je bent klaar! Je bent op **100**%. Goed gedaan! 🎉\n🎶 Je server is klaar om het MVDD en de TVDD te ontvangen. \nHier is een snel overzicht van je configuratie"
+        "100%": {
+          "description": "Je bent klaar! Je zit op **100**%. Goed gedaan! 🎉\n🎶 Je server is nu klaar. \nHier is een kort overzicht van je configuratie:"
         },
-        "100%_partial": {
-          "description": "Je bent klaar! Je bent op **100**%. Goed gedaan! 🎉\n🎶 Je server is klaar om het MVDD te ontvangen. \nHier is een snel overzicht van je configuratie"
-        },
-        "warning_100%_full": {
-          "description": "⚠️ Zorg ervoor dat Daily Music alle benodigde machtigingen heeft om te werken (die beschikbaar zijn in de [uitnodigingslink](%InvitationLink%)). \nControleer de machtigingen voor :\n    - de rol van de bot\n    \n- het gedefinieerde kanaal (%channel%). \nAls er een machtiging ontbreekt, ontvang je het MVDD en de TVDD niet en wordt je server na enkele dagen uit de database verwijderd als het probleem niet is opgelost."
-        },
-        "warning_100%_partial": {
-          "description": "⚠️ Zorg ervoor dat Daily Music alle benodigde machtigingen heeft om te werken (die beschikbaar zijn in de [uitnodigingslink](%InvitationLink%)). \nControleer de machtigingen voor :\n    - de rol van de bot\n    \n- het gedefinieerde kanaal (%channel%). \nAls er een machtiging ontbreekt, ontvang je het MVDD niet en wordt je server na enkele dagen uit de database verwijderd als het probleem niet is opgelost."
+        "warning_100%": {
+          "description": "⚠️ Zorg ervoor dat Daily Music alle benodigde rechten heeft om te werken (die beschikbaar zijn in de [uitnodigingslink](%InvitationLink%)). \nControleer de rechten voor de rol van de bot en het gedefinieerde kanaal (%channel%). \nAls er rechten ontbreken, ontvang je niets en wordt je server na een paar dagen verwijderd uit de database als het probleem niet verholpen is."
         },
         "advanced_card": {
           "description": "Welkom bij het geavanceerde configuratiemenu! 🤓 \n🃏 Je moet kiezen welk type kaart je wilt voor het MVDD.\nGa verder door op het menu hieronder te klikken"
@@ -333,7 +334,8 @@
             "field_title_four": "🎵 Genre",
             "field_title_five": "📱 Weergave",
             "field_title_six": "🧵 Draden",
-            "field_title_seven": "🏆 Trivia"
+            "field_title_seven": "🏆 Trivia",
+            "field_title_eight": "📆 Evenementen"
           },
           "threads": {
             "enabled": "Ingeschakeld",
@@ -531,12 +533,16 @@
     },
     "stats": {
       "embed": {
-        "description": "📊 Hier is een samenvatting van de statistieken van Daily Music voor uw server.",
-        "field_title_one": "🎶 Aantal verzonden muziekstukken",
-        "field_description_one": "Daily Music heeft in totaal **%data.TotalSongsSent%** muziekstukken naar deze server gestuurd.",
-        "field_title_two": "📆 Laatste verzonden muziekstuk",
-        "field_description_two_true": "Het laatste muziekstuk dat naar deze server is gestuurd, was op %timestamp:F% (%timestamp:R%)",
-        "field_description_two_false": "Er is nog geen muziekstuk naar deze server gestuurd."
+        "description": "📊 Hier is een samenvatting van de statistieken van Daily Music voor jouw server.",
+        "field_title_one": "🎶 Over MVDD",
+        "field_description_one_true": "Daily Music heeft in totaal **%data.TotalSongsSent%** %musicWord% naar deze server gestuurd, en de laatste was op %timestamp:F% (%timestamp:R%).",
+        "field_description_one_false": "Er is nog geen muziek naar deze server gestuurd.",
+        "field_title_two": "🏆 Over TVDD",
+        "field_description_two_true": "Daily Music heeft in totaal **%data.TotalTriviasSent%** %triviaWord% naar deze server gestuurd, en de laatste was op %timestamp:F% (%timestamp:R%).",
+        "field_description_two_false": "Er zijn nog geen trivia naar deze server gestuurd.",
+        "field_title_three": "📆 Over EVDD",
+        "field_description_three_true": "Daily Music heeft in totaal **%data.TotalEventsSent%** %eventWord% naar deze server gestuurd, en de laatste was op %timestamp:F% (%timestamp:R%).",
+        "field_description_three_false": "Er zijn nog geen evenementen naar deze server gestuurd."
       }
     },
     "trivia": {
@@ -594,6 +600,20 @@
             "value": "metal"
           }
         }
+      }
+    },
+    "onthisday": {
+      "error_messages": {
+        "no_event_info": "❌ Geen evenementinformatie beschikbaar."
+      },
+      "why_answers": {
+        "no_event_generated": {
+          "description": "Omdat er geen gebeurtenis is gegenereerd voor deze datum, waarschijnlijk door een incident of onderhoud."
+        }
+      },
+
+      "embed": {
+        "title": "Op deze dag in de muziekgeschiedenis"
       }
     }
   }
