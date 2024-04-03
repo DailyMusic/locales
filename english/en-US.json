@@ -34,15 +34,19 @@
           "question_one_description": "<@1115972980984516719> follows a specific schedule to send the MOTD, which is currently sent to all servers at **9:00** PM America/Toronto time. This schedule cannot be changed and is the same for everyone.",
           "question_two_title": "Why don't I receive the Trivia Of The Day immediately after setting up?",
           "question_two_description": "<@1115972980984516719> follows a specific schedule to send the TOTD, which is currently sent to all servers at **10:00** AM America/Toronto time. This schedule cannot be changed and is the same for everyone.",
-          "question_three_title": "The time to receive the MOTD / TOTD has passed but I haven't received anything. Why?",
-          "question_three_description": "This is most likely due to a permissions issue. Check that the role of <@1115972980984516719> has the necessary permissions. Also check the permissions of the channel used for MOTD / TOTD. Still not receiving anything? Join the official support server by clicking [here](%SupportLink%)!"
+          "question_three_title": "Why don't I receive the Events Of The Day immediately after setting up?",
+          "question_three_description": "<@1115972980984516719> follows a specific schedule to send the EOTD, which is currently sent to all servers at **06:00** AM America/Toronto time. This schedule cannot be changed and is the same for everyone.",
+          "question_four_title": "The time to receive the MOTD / TOTD / EOTD has passed but I haven't received anything. Why?",
+          "question_four_description": "This is most likely due to a permissions issue. Check that the role of <@1115972980984516719> has the necessary permissions. Also check the permissions of the channel used for MOTD / TOTD / EOTD. Still not receiving anything? Join the official support server by clicking [here](%SupportLink%)!"
         },
         "about_guide": {
           "title": "About Guide",
           "question_one_title": "What is the Music Of The Day?",
           "question_one_description": "The Music Of The Day is a song that is chosen randomly by <@1115972980984516719> and sent to all servers at **9:00** PM America/Toronto time.",
           "question_two_title": "What is the Trivia Of The Day?",
-          "question_two_description": "The Trivia Of The Day is a trivia question about music that is chosen randomly by <@1115972980984516719> and sent to all servers at **10:00** AM America/Toronto time."
+          "question_two_description": "The Trivia Of The Day is a trivia question about music that is chosen randomly by <@1115972980984516719> and sent to all servers at **10:00** AM America/Toronto time.",
+          "question_three_title": "What are the Events Of The Day?",
+          "question_three_description": "The Events Of The Day are a list of events that happened on this day in the history of music that is selected by <@1115972980984516719> and sent to all servers at **06:00** AM America/Toronto time."
         },
         "other_guide": {
           "title": "Other Guide",
@@ -295,8 +299,8 @@
             "description": "The solution to the most common problems."
           },
           "about": {
-            "label": "About MOTD / TOTD",
-            "description": "Everything you need to know about MOTD and TOTD."
+            "label": "About MOTD / TOTD / EOTD",
+            "description": "Everything you need to know about MOTD, TOTD and EOTD."
           },
           "other": {
             "label": "Other",
@@ -310,8 +314,8 @@
         "field_description_one": "A guide to configure Daily Music systems.",
         "field_title_two": "🔍 Debugging",
         "field_description_two": "The solution to the most common problems.",
-        "field_title_three": "🎵 About MOTD / TOTD",
-        "field_description_three": "Everything you need to know about MOTD and TOTD.",
+        "field_title_three": "🎵 About MOTD / TOTD / EOTD",
+        "field_description_three": "Everything you need to know about MOTD, TOTD and EOTD.",
         "field_title_four": "❔ Other",
         "field_description_four": "Questions that are not answered here."
       }
