@@ -5,7 +5,8 @@
     "unknown": "Unbekannt",
     "by": "von",
     "motd": "Musik des Tages : ",
-    "totd": "Trivia des Tages : Kannst du die Musik erraten?"
+    "totd": "Trivia des Tages : Kannst du die Musik erraten?",
+    "eotd": "An diesem Tag in der Geschichte der Musik: Finden Sie heraus, was passiert ist!"
   },
   "events": {
     "interactionCreate": {
@@ -159,6 +160,9 @@
           },
           "when_totd": {
             "label": "Wann ist die nächste TDT?"
+          },
+          "when_eotd": {
+            "label": "Wann sind die nächsten EDT?"
           }
         },
         "vote": {
@@ -211,26 +215,23 @@
             "field_description_five": "Trete unserem [offiziellen Server](%SupportLink%) bei und stelle eine Anfrage. Wenn deine Bewerbung akzeptiert wird, wirst du in den Vorschaunachrichten vorgestellt und erhältst eine Rolle auf unserem Server."
           }
         },
+        "40%": {
+          "description": "Sie haben **40** % des Prozesses hinter sich. Gut gemacht! 🎉 \n📱 Sie müssen einen Anzeigemodus auswählen. Sie können sehen, wie diese aussehen, wenn Sie auf die entsprechenden Schaltflächen klicken. \nFahren Sie fort, indem Sie auf das unten stehende Menü klicken."
+        },
         "60%": {
-          "description": "Du bist **60**% des Weges durch den Prozess. Gut gemacht! 🎉 \n📱 Du musst einen Anzeigemodus auswählen. Du kannst sehen, wie sie aussehen, indem du auf die entsprechenden Schaltflächen klickst. \nFahren Sie fort, indem Sie auf das Menü unten klicken."
+          "description": "Sie haben **60**% des Prozesses hinter sich. Gut gemacht! 🎉 \n🧵 Sie müssen auswählen, ob Sie möchten, dass der Bot automatisch einen Thread für die MDT erstellt und verwaltet. \nFahren Sie fort, indem Sie auf eine der Schaltflächen unten klicken."
         },
         "80%": {
-          "description": "Du bist **80**% des Weges durch den Prozess. Gut gemacht! 🎉 \n🧵 Sie müssen wählen, ob du einen Thread automatisch erstellen und von dem Bot für die MDT verwalten lassen möchtest. \nFahren Sie fort, indem Sie eine der untenstehenden Schaltflächen klicken"
+          "description": "Sie haben **80**% des Prozesses hinter sich. Gut gemacht! 🎉 \n🏆 Sie müssen wählen, ob Sie jeden Tag ein Musikquiz zugeschickt bekommen möchten. \nDas Konzept ist einfach: Jeden Tag erhalten Sie eine Audiodatei mit Musik, die Sie anhören und deren Titel Sie erraten müssen! \nFahren Sie fort, indem Sie auf eine der folgenden Schaltflächen klicken."
         },
-        "+80%": {
-          "description": "Du bist **+80**% des Weges durch den Prozess. Gut gemacht! 🎉 \n🏆 Sie müssen wählen, ob täglich ein Trivia-Spiel verschickt werden soll. \nDas Konzept ist einfach: Jeden Tag erhalten Sie eine Audiodatei mit Musik zum Anhören und müssen ihren Titel erraten! \nFahren Sie fort, indem Sie eine der untenstehenden Schaltflächen klicken"
+        "90%": {
+          "description": "Sie haben **90**% des Prozesses hinter sich. Gut gemacht! 🎉 \n📆 Sie müssen wählen, ob Sie die Liste der Ereignisse in der Musikwelt jeden Tag erhalten möchten. \nDas Konzept ist einfach: Jeden Tag erhalten Sie eine Liste von Ereignissen, die an diesem Tag in der Musikgeschichte passiert sind! \nFahren Sie fort, indem Sie auf eine der Schaltflächen unten klicken."
         },
-        "100%_full": {
-          "description": "Du bist fertig! Du bist bei **100**%. Gut gemacht! 🎉\n🎶 Ihr Server ist bereit, die MDT und die TDT zu empfangen. \nHier ist eine schnelle Übersicht über Ihre Konfiguration"
+        "100%": {
+          "description": "Sie sind fertig! Du bist bei **100**%. Gut gemacht! 🎉\n🎶 Ihr Server ist jetzt bereit. \nHier ein kurzer Überblick über Ihre Konfiguration:"
         },
-        "100%_partial": {
-          "description": "Du bist fertig! Du bist bei **100**%. Gut gemacht! 🎉\n🎶 Ihr Server ist bereit, die MDT zu empfangen. \nHier ist eine schnelle Übersicht über Ihre Konfiguration"
-        },
-        "warning_100%_full": {
-          "description": "⚠️ Bitte stellen Sie sicher, dass Daily Music alle erforderlichen Berechtigungen hat, um zu funktionieren (die im [Einladungslink](%InvitationLink%) verfügbaren). \nÜberprüfen Sie die Berechtigungen für :\n    - die Rolle des Bots\n    \n- den definierten Kanal (%channel%). \nWenn eine Berechtigung fehlt, erhalten Sie die MDT und die TDT nicht, und Ihr Server wird nach einigen Tagen aus der Datenbank gelöscht, wenn das Problem nicht behoben wird."
-        },
-        "warning_100%_partial": {
-          "description": "⚠️ Bitte stellen Sie sicher, dass Daily Music alle erforderlichen Berechtigungen hat, um zu funktionieren (die im [Einladungslink](%InvitationLink%)) verfügbaren). \nÜberprüfen Sie die Berechtigungen für :\n    - die Rolle des Bots\n    \n- den definierten Kanal (%channel%). \nWenn eine Berechtigung fehlt, erhalten Sie die MDT nicht, und Ihr Server wird nach einigen Tagen aus der Datenbank gelöscht, wenn das Problem nicht behoben wird."
+        "warning_100%": {
+          "description": "⚠️ Vergewissern Sie sich, dass Daily Music über alle erforderlichen Berechtigungen verfügt (die im [Einladungslink](%InvitationLink%) verfügbar sind). \nÜberprüfen Sie die Berechtigungen für :\n - die Rolle des Bots\n \n- den definierten Kanal (%channel%). \nWenn eine Berechtigung fehlt, erhalten Sie keine Einladungen und Ihr Server wird nach ein paar Tagen aus der Datenbank gelöscht, wenn das Problem nicht behoben wird."
         },
         "advanced_card": {
           "description": "Willkommen im erweiterten Konfigurationsmenü! 🤓 \n🃏 Sie müssen wählen, welche Art von Karte Sie für die MDT möchten.\nFahren Sie fort, indem Sie auf das Menü unten klicken"
@@ -328,12 +329,13 @@
         "configuration_exists": {
           "fields": {
             "field_title_one": "📰 Kanal",
-            "field_title_two": "🌐 Sprache", 
+            "field_title_two": "🌐 Sprache",
             "field_title_three": "🔔 Rolle",
             "field_title_four": "🎵 Genre",
             "field_title_five": "📱 Anzeige",
             "field_title_six": "🧵 Threads",
-            "field_title_seven": "🏆 Trivia"
+            "field_title_seven": "🏆 Trivia",
+            "field_title_eight": "📆 Veranstaltungen"
           },
           "threads": {
             "enabled": "Aktiviert",
@@ -531,12 +533,16 @@
     },
     "stats": {
       "embed": {
-        "description": "📊 Hier ist eine Zusammenfassung der Statistiken von Daily Music für Ihren Server.",
-        "field_title_one": "🎶 Anzahl der gesendeten Musikstücke",
-        "field_description_one": "Daily Music hat insgesamt **%data.TotalSongsSent%** Musikstücke an diesen Server gesendet.",
-        "field_title_two": "📆 Zuletzt gesendete Musik",
-        "field_description_two_true": "Die zuletzt an diesen Server gesendete Musik war am %timestamp:F% (%timestamp:R%)",
-        "field_description_two_false": "Es wurde noch keine Musik an diesen Server gesendet."
+        "description": "📊 Hier ist eine Zusammenfassung der Statistiken von Daily Music für deinen Server.",
+        "field_title_one": "🎶 Über MDT",
+        "field_description_one_true": "Daily Music hat insgesamt **%data.TotalSongsSent%** %musicWord% an diesen Server gesendet, und das letzte war am %timestamp:F% (%timestamp:R%).",
+        "field_description_one_false": "Bisher wurde keine Musik an diesen Server gesendet.",
+        "field_title_two": "🏆 Über TDT",
+        "field_description_two_true": "Daily Music hat insgesamt **%data.TotalTriviasSent%** %triviaWord% an diesen Server gesendet, und das letzte war am %timestamp:F% (%timestamp:R%).",
+        "field_description_two_false": "Bisher wurden keine Trivia an diesen Server gesendet.",
+        "field_title_three": "📆 Über EDT",
+        "field_description_three_true": "Daily Music hat insgesamt **%data.TotalEventsSent%** %eventWord% an diesen Server gesendet, und das letzte war am %timestamp:F% (%timestamp:R%).",
+        "field_description_three_false": "Bisher wurden keine Events an diesen Server gesendet."
       }
     },
     "trivia": {
@@ -594,6 +600,19 @@
             "value": "metal"
           }
         }
+      }
+    },
+    "onthisday": {
+      "error_messages": {
+        "no_event_info": "❌ Keine Informationen über das Ereignis verfügbar."
+      },
+      "why_answers": {
+        "no_event_generated": {
+          "description": "Weil für dieses Datum kein Ereignis generiert wurde, wahrscheinlich aufgrund eines Vorfalls oder einer Wartung."
+        }
+      },
+      "embed": {
+        "title": "An diesem Tag in der Musikgeschichte"
       }
     }
   }
