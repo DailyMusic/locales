@@ -35,7 +35,7 @@
           "question_two_title": "Pourquoi ne reçois-je pas le Trivia du Jour immédiatement après la configuration ?",
           "question_two_description": "<@1115972980984516719> suit un horaire spécifique pour envoyer le TDJ, qui est actuellement envoyée à tous les serveurs à **10:00** heure de l'Amérique/Toronto. Cet horaire ne peut pas être modifié et est le même pour tout le monde.",
           "question_three_title": "Pourquoi je ne reçois pas les Événements du Jour immédiatement après la configuration ?",
-          "question_three_description": "<@1115972980984516719> suit un horaire spécifique pour envoyer les EDJ, qui sont actuellement envoyés à tous les serveurs à **06h00** heure d'Amérique/Toronto. Ce calendrier ne peut pas être modifié et est le même pour tout le monde.",
+          "question_three_description": "<@1115972980984516719> suit un horaire spécifique pour envoyer les EDJ, qui sont actuellement envoyés à tous les serveurs à **06h00** heure de l'Amérique/Toronto. Ce calendrier ne peut pas être modifié et est le même pour tout le monde.",
           "question_four_title": "Le temps pour recevoir la MDJ / le TDJ / les EDJ est passé mais je n'ai rien reçu. Pourquoi ?",
           "question_four_description": "Cela est très probablement dû à un problème de permissions. Vérifiez que le rôle de <@1115972980984516719> a les permissions nécessaires. Vérifiez également les permissions du canal utilisé pour la MDJ / le TDJ / les EDJ. Vous ne recevez toujours rien ? Rejoignez le serveur de support officiel en cliquant [ici](%SupportLink%)!"
         },
@@ -46,7 +46,7 @@
           "question_two_title": "Qu'est-ce que le Trivia du Jour ?",
           "question_two_description": "Le Trivia du Jour est un challenge sur une musique choisie au hasard par <@1115972980984516719> envoyé à tous les serveurs à **10:00** heure de l'Amérique/Toronto.",
           "question_three_title": "Qu'est-ce que sont les Événements du Jour ?",
-          "question_three_description": "Les Événements du Jour sont une liste d'événements qui se sont produits aujourd'hui dans l'histoire de la musique, sélectionnés par <@1115972980984516719> et envoyés à tous les serveurs à **06h00** heure d'Amérique/Toronto."
+          "question_three_description": "Les Événements du Jour sont une liste d'événements qui se sont produits aujourd'hui dans l'histoire de la musique, sélectionnés par <@1115972980984516719> et envoyés à tous les serveurs à **06h00** heure de l'Amérique/Toronto."
         },
         "other_guide": {
           "title": "Guide Supplémentaire",
