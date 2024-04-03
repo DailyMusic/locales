@@ -5,7 +5,8 @@
     "unknown": "未知",
     "by": "由",
     "motd": "今日音乐 ：",
-    "totd": "今日小知识：您能猜到音乐是什么吗？"
+    "totd": "今日小知识：您能猜到音乐是什么吗？",
+    "eotd": "音乐史上的今天：了解发生了什么！"
   },
   "events": {
     "interactionCreate": {
@@ -159,6 +160,9 @@
           },
           "when_totd": {
             "label": "下一次 今日琐事 是什么时候？"
+          },
+          "when_eotd": {
+            "label": "今天的下一个活动是什么时候？"
           }
         },
         "vote": {
@@ -211,26 +215,23 @@
             "field_description_five": "加入我们的 [官方服务器](%SupportLink%) 并提出申请。如果您的申请被接受，您将出现在预览信息中，并获得我们服务器上的一个角色。"
           }
         },
-        "60%": {
+        "40%": {
           "description": "你已经完成了整个过程的**60**%。干得好 🎉 \n📱 您需要选择一种显示模式。点击相应的按钮就能看到它们的样子。\n点击下面的菜单继续。"
         },
-        "80%": {
+        "60%": {
           "description": "你已经完成了整个过程的**80**%。干得好 🎉 \n🧵 您需要选择是否要由机器人为今日音乐自动创建和管理线程。\n点击以下按钮继续"
         },
-        "+80%": {
-          "description": "你已经完成了整个过程的**+80**%。干得好 🎉 🏆您需要选择是否每天发送一个 小知识 游戏。\n概念很简单：每天您都会收到一个音乐音频文件，您必须猜出它的标题！\n点击下面的按钮继续"
+        "80%": {
+          "description": "你已经完成了整个过程的**80**%。干得好！🎉 \n🏆您需要选择是否希望每天都发送音乐问答。\n概念很简单：每天你都会收到一个音乐音频文件，你必须猜出它的标题！\n点击下面的按钮继续。"
         },
-        "100%_full": {
-          "description": "大功告成！您现在处于**100**%。干的好！🎉 \n🎶 您的服务器已准备好接收 今日音乐 和 今日琐事.\n以下是配置的快速概述"
+        "90%": {
+          "description": "你已经完成了整个过程的**90**%。干得好 🎉 \n📆您需要选择是否希望每天发送音乐世界事件列表。\n概念很简单：每天，您都会收到音乐史上这一天发生的事件列表！\n点击下面的按钮继续。"
         },
-        "100%_partial": {
-          "description": "大功告成！您现在处于**100**%。干的好！🎉 \n🎶 您的服务器已准备好接收今日音乐。\n以下是配置的快速概述"
+        "100%": {
+          "description": "你完成了！你达到了**100**%。干得好 您的服务器已经准备就绪。\n下面是您的配置概览："
         },
-        "warning_100%_full": {
-          "description": "⚠️ 请确保 Daily Music 具有运行所需的所有权限（请查看[邀请链接](%InvitationLink%)中提供的权限）。\n检查以下权限：\n\n- 机器人的角色\n- 已定义的频道（%channel%）。 \n\n如果缺少某个权限，则将无法接收到 今日音乐 和 今日琐事，并且如果问题未解决，您的服务器将在几天后从数据库中删除。"
-        },
-        "warning_100%_partial": {
-          "description": "⚠️ 请确保 Daily Music 具有运行所需的所有权限（请查看[邀请链接](%InvitationLink%)中提供的权限）。\n检查以下权限：\n\n- 机器人的角色\n- 已定义的频道（%channel%）。 \n\n如果缺少某个权限，则将无法接收到 今日音乐，并且如果问题未解决，您的服务器将在几天后从数据库中删除。"
+        "warning_100%": {
+          "description": "⚠️ 请确保 Daily Music 具有所有必要的权限才能正常工作（请查看[邀请链接](%InvitationLink%)中提供的权限）。 \n检查以下权限：\n    - 机器人的角色\n    - 已定义的频道（%channel%）\n如果缺少某个权限，您将无法收到任何内容，并且如果问题未解决，您的服务器将在几天后从数据库中删除。"
         },
         "advanced_card": {
           "description": "欢迎来到高级配置菜单！🤓 \n🃏您需要为今日音乐选择什么类型的卡\n继续点击下面的菜单"
@@ -333,7 +334,8 @@
             "field_title_four": "🎵 类型",
             "field_title_five": "📱 显示屏",
             "field_title_six": "🧵 线程",
-            "field_title_seven": "🏆 小知识"
+            "field_title_seven": "🏆 小知识",
+            "field_title_eight": "📆 活动"
           },
           "threads": {
             "enabled": "已启用",
@@ -531,12 +533,16 @@
     },
     "stats": {
       "embed": {
-        "description": "📊 以下是 Daily Music 为您提供的服务器统计摘要。",
-        "field_title_one": "🎶 发送的音乐数量",
-        "field_description_one": "Daily Music 共向该服务器发送了 **%data.TotalSongsSent%** 音乐。",
-        "field_title_two": "📆 最后发送的音乐",
-        "field_description_two_true": "最后一次向该服务器发送音乐的时间是 %timestamp:F% (%timestamp:R%)",
-        "field_description_two_false": "尚未向该服务器发送音乐."
+        "description": "📊 这是 Daily Music 对您的服务器的统计摘要。",
+        "field_title_one": "🎶 关于每日音乐",
+        "field_description_one_true": "Daily Music 已经向此服务器发送了总共 **%data.TotalSongsSent%** 条 %musicWord%，最后一条是在 %timestamp:F% (%timestamp:R%)。",
+        "field_description_one_false": "此服务器尚未收到任何音乐。",
+        "field_title_two": "🏆 关于每日琐事",
+        "field_description_two_true": "Daily Music 已经向此服务器发送了总共 **%data.TotalTriviasSent%** 条 %triviaWord%，最后一条是在 %timestamp:F% (%timestamp:R%)。",
+        "field_description_two_false": "此服务器尚未收到任何知识问答。",
+        "field_title_three": "📆 关于当天发生的事件",
+        "field_description_three_true": "Daily Music 已经向此服务器发送了总共 **%data.TotalEventsSent%** 条 %eventWord%，最后一条是在 %timestamp:F% (%timestamp:R%)。",
+        "field_description_three_false": "此服务器尚未收到任何事件。"
       }
     },
     "trivia": {
@@ -594,6 +600,19 @@
             "value": "metal"
           }
         }
+      }
+    },
+    "onthisday": {
+      "error_messages": {
+        "no_event_info": "❌ 无活动信息。"
+      },
+      "why_answers": {
+        "no_event_generated": {
+          "description": "因为该日期未生成任何事件，可能是由于事故或维护。"
+        }
+      },
+      "embed": {
+        "title": "音乐史上的这一天"
       }
     }
   }
