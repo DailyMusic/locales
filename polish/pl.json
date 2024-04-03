@@ -34,15 +34,19 @@
           "question_one_description": "<@1115972980984516719> stosuje określony harmonogram wysyłania MD, który obecnie jest wysyłany do wszystkich serwerów o **21:00** czasu America/Toronto. Ten harmonogram nie może być zmieniony i jest taki sam dla wszystkich.",
           "question_two_title": "Dlaczego nie otrzymuję Ciekawostki dnia natychmiast po konfiguracji?",
           "question_two_description": "<@1115972980984516719> stosuje określony harmonogram wysyłania CD, który obecnie jest wysyłany do wszystkich serwerów o **10:00** czasu America/Toronto. Ten harmonogram nie może być zmieniony i jest taki sam dla wszystkich.",
-          "question_three_title": "Czas otrzymania MD / CD minął, a ja nic nie otrzymałem. Dlaczego?",
-          "question_three_description": "Najprawdopodobniej jest to spowodowane problemem z uprawnieniami. Sprawdź, czy rola <@1115972980984516719> ma odpowiednie uprawnienia. Sprawdź także uprawnienia kanału używanego do MD / CD. Nadal nic nie otrzymujesz? Dołącz do oficjalnego serwera pomocy, klikając [tutaj](%SupportLink%)!"
+          "question_three_title": "Dlaczego nie otrzymuję Wydarzeń Dnia natychmiast po ustawieniu?",
+          "question_three_description": "<@1115972980984516719> stosuje określony harmonogram wysyłki WD, które są obecnie wysyłane do wszystkich serwerów o **06:00** rano czasu Ameryki/Toronto. Ten harmonogram nie może być zmieniony i jest taki sam dla wszystkich.",
+          "question_four_title": "Czas otrzymania MD / CD / WD minął, a ja nic nie otrzymałem. Dlaczego?",
+          "question_four_description": "Najprawdopodobniej jest to spowodowane problemem z uprawnieniami. Sprawdź, czy rola <@1115972980984516719> ma odpowiednie uprawnienia. Sprawdź także uprawnienia kanału używanego do MD / CD / WD. Nadal nic nie otrzymujesz? Dołącz do oficjalnego serwera pomocy, klikając [tutaj](%SupportLink%)!"
         },
         "about_guide": {
           "title": "Przewodnik ogólny",
           "question_one_title": "Co to jest Muzyka Dnia?",
           "question_one_description": "Muzyka Dnia to utwór wybrany losowo przez <@1115972980984516719> i wysyłany do wszystkich serwerów o **21:00** czasu America/Toronto.",
           "question_two_title": "Co to jest Ciekawostki dnia?",
-          "question_two_description": "Ciekawostki dnia to pytanie związane z muzyką, które jest wybierane losowo przez <@1115972980984516719> i wysyłane do wszystkich serwerów o **10:00** czasu America/Toronto."
+          "question_two_description": "Ciekawostki dnia to pytanie związane z muzyką, które jest wybierane losowo przez <@1115972980984516719> i wysyłane do wszystkich serwerów o **10:00** czasu America/Toronto.",
+          "question_three_title": "Co to są Wydarzenia Dnia?",
+          "question_three_description": "Wydarzenia Dnia to lista wydarzeń, które miały miejsce w historii muzyki tego dnia, wybranych przez <@1115972980984516719> i wysyłanych do wszystkich serwerów o **06:00** czasu Ameryki/Toronto."
         },
         "other_guide": {
           "title": "Inny przewodnik",
@@ -296,8 +300,8 @@
             "description": "Rozwiązanie najczęstszych problemów."
           },
           "about": {
-            "label": "O MD / CD",
-            "description": "Wszystko, co musisz wiedzieć o MD i CD."
+            "label": "O MD / CD / WD",
+            "description": "Wszystko, co musisz wiedzieć o MD, CD i WD."
           },
           "other": {
             "label": "Inne",
@@ -311,8 +315,8 @@
         "field_description_one": "Przewodnik po konfiguracji systemów Daily Music.",
         "field_title_two": "🔍 Debugowanie",
         "field_description_two": "Rozwiązanie najczęstszych problemów.",
-        "field_title_three": "🎵 O MD / CD",
-        "field_description_three": "Wszystko, co musisz wiedzieć o MD i CD.",
+        "field_title_three": "🎵 O MD / CD / WD",
+        "field_description_three": "Wszystko, co musisz wiedzieć o MD, CD i WD.",
         "field_title_four": "❔ Inne",
         "field_description_four": "Pytania, na które nie ma tu odpowiedzi."
       }
