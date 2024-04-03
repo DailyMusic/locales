@@ -29,20 +29,24 @@
           "question_three_description": "Sie müssen bestimmen, wer sich für die MDT interessieren könnte. Wenn Ihre Community sich auf Musik konzentriert, können Sie eine Rolle auswählen, die alle Servermitglieder gemeinsam haben (z. B. eine 'Mitglieder'-Rolle) und benachrichtigen. Andernfalls, wenn Ihre Community nicht auf Musik ausgerichtet ist, könnten Sie eine Rolle speziell für Personen interessiert an Musik einrichten."
         },
         "debugging_guide": {
-          "title": "Fehlerbehebungsanleitung",
+          "title": "Debugging-Leitfaden",
           "question_one_title": "Warum erhalte ich die Musik des Tages nicht sofort nach der Einrichtung?",
-          "question_one_description": "<@1115972980984516719> folgt einem bestimmten Zeitplan für den Versand der MDT, der derzeit um **21:00** Uhr (America/Toronto-Zeit) an alle Server gesendet wird. Dieser Zeitplan kann nicht geändert werden und gilt für alle.",
-          "question_two_title": "Warum erhalte ich die Trivia des Tages nicht sofort nach der Einrichtung?",
-          "question_two_description": "<@1115972980984516719> folgt einem bestimmten Zeitplan für den Versand der TDT, der derzeit um **10:00** Uhr (America/Toronto-Zeit) an alle Server gesendet wird. Dieser Zeitplan kann nicht geändert werden und gilt für alle.",
-          "question_three_title": "Die Zeit zum Erhalt der MDT / TDT ist abgelaufen, aber ich habe nichts erhalten. Warum?",
-          "question_three_description": "Dies liegt höchstwahrscheinlich an einem Berechtigungsproblem. Überprüfen Sie, ob die Rolle von <@1115972980984516719> die erforderlichen Berechtigungen hat. Überprüfen Sie auch die Berechtigungen des Kanals, der für MDT / TDT verwendet wird. Erhalten Sie immer noch nichts? Treten Sie dem offiziellen Support-Server bei, indem Sie [hier](%SupportLink%) klicken!"
+          "question_one_description": "<@1115972980984516719> folgt einem bestimmten Zeitplan zum Senden der MDT, die derzeit um **21:00** Uhr America/Toronto-Zeit an alle Server gesendet wird. Dieser Zeitplan kann nicht geändert werden und ist für alle gleich.",
+          "question_two_title": "Warum erhalte ich das Trivia des Tages nicht sofort nach der Einrichtung?",
+          "question_two_description": "<@1115972980984516719> folgt einem bestimmten Zeitplan zum Senden des TDT, das derzeit um **10:00** Uhr America/Toronto-Zeit an alle Server gesendet wird. Dieser Zeitplan kann nicht geändert werden und ist für alle gleich.",
+          "question_three_title": "Warum erhalte ich die Ereignisse des Tages nicht sofort nach der Einrichtung?",
+          "question_three_description": "<@1115972980984516719> folgt einem bestimmten Zeitplan zum Senden des EOTD, das derzeit um **06:00** Uhr America/Toronto-Zeit an alle Server gesendet wird. Dieser Zeitplan kann nicht geändert werden und ist für alle gleich.",
+          "question_four_title": "Die Zeit zum Empfangen der MDT / TDT / EDT ist abgelaufen, aber ich habe nichts erhalten. Warum?",
+          "question_four_description": "Dies liegt höchstwahrscheinlich an einem Berechtigungsproblem. Überprüfen Sie, ob die Rolle von <@1115972980984516719> über die erforderlichen Berechtigungen verfügt. Überprüfen Sie auch die Berechtigungen des Kanals, der für MDT / TDT / EDT verwendet wird. Erhalten Sie immer noch nichts? Treten Sie dem offiziellen Support-Server bei, indem Sie [hier](%SupportLink%) klicken!"
         },
         "about_guide": {
           "title": "Über Anleitung",
           "question_one_title": "Was ist die Musik des Tages?",
           "question_one_description": "Die Musik des Tages ist ein zufällig ausgewähltes Lied von <@1115972980984516719> und wird um **21:00** Uhr America/Toronto-Zeit an alle Server gesendet.",
           "question_two_title": "Was ist die Trivia des Tages?",
-          "question_two_description": "Die Trivia des Tages ist eine Musik-Triviafrage, die zufällig von <@1115972980984516719> ausgewählt und um **10:00** Uhr America/Toronto-Zeit an alle Server gesendet wird."
+          "question_two_description": "Die Trivia des Tages ist eine Musik-Triviafrage, die zufällig von <@1115972980984516719> ausgewählt und um **10:00** Uhr America/Toronto-Zeit an alle Server gesendet wird.",
+          "question_three_title": "Was sind die Ereignisse des Tages?",
+          "question_three_description": "Die Ereignisse des Tages sind eine Liste von Ereignissen, die an diesem Tag in der Musikgeschichte ausgewählt werden von <@1115972980984516719> und um **06:00** Uhr America/Toronto-Zeit an alle Server gesendet werden."
         },
         "other_guide": {
           "title": "Andere Anleitung",
@@ -295,8 +299,8 @@
             "description": "Die Lösung für die häufigsten Probleme."
           },
           "about": {
-            "label": "Über MDT / TDT",
-            "description": "Alles, was Sie über MDT und TDT wissen müssen."
+            "label": "Über MDT / TDT / EDT",
+            "description": "Alles, was Sie über MDT, TDT und EDT wissen müssen."
           },
           "other": {
             "label": "Andere",
@@ -310,8 +314,8 @@
         "field_description_one": "Eine Anleitung zur Konfiguration der Daily Music-Systeme.",
         "field_title_two": "🔍 Fehlersuche",
         "field_description_two": "Die Lösung für die häufigsten Probleme.",
-        "field_title_three": "🎵 Über MDT / TDT",
-        "field_description_three": "Alles, was Sie über MDT und TDT wissen müssen.",
+        "field_title_three": "🎵 Über MDT / TDT / EDT",
+        "field_description_three": "Alles, was Sie über MDT, TDT und EDT wissen müssen.",
         "field_title_four": "❔ Andere",
         "field_description_four": "Fragen, die hier nicht beantwortet werden."
       }
