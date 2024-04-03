@@ -32,17 +32,21 @@
           "title": "Guide de Débogage",
           "question_one_title": "Pourquoi ne reçois-je pas la Musique du Jour immédiatement après la configuration ?",
           "question_one_description": "<@1115972980984516719> suit un horaire spécifique pour envoyer la MDJ, qui est actuellement envoyée à tous les serveurs à **21:00** heure de l'Amérique/Toronto. Cet horaire ne peut pas être modifié et est le même pour tout le monde.",
-          "question_two_title": "Pourquoi ne reçois-je pas la Trivia du Jour immédiatement après la configuration ?",
-          "question_two_description": "<@1115972980984516719> suit un horaire spécifique pour envoyer la TDJ, qui est actuellement envoyée à tous les serveurs à **10:00** heure de l'Amérique/Toronto. Cet horaire ne peut pas être modifié et est le même pour tout le monde.",
-          "question_three_title": "Le temps pour recevoir la MDJ / le TDJ est passé mais je n'ai rien reçu. Pourquoi ?",
-          "question_three_description": "Cela est très probablement dû à un problème de permissions. Vérifiez que le rôle de <@1115972980984516719> a les permissions nécessaires. Vérifiez également les permissions du canal utilisé pour la MDJ / le TDJ. Vous ne recevez toujours rien ? Rejoignez le serveur de support officiel en cliquant [ici](%SupportLink%)!"
+          "question_two_title": "Pourquoi ne reçois-je pas le Trivia du Jour immédiatement après la configuration ?",
+          "question_two_description": "<@1115972980984516719> suit un horaire spécifique pour envoyer le TDJ, qui est actuellement envoyée à tous les serveurs à **10:00** heure de l'Amérique/Toronto. Cet horaire ne peut pas être modifié et est le même pour tout le monde.",
+          "question_three_title": "Pourquoi je ne reçois pas les Événements du Jour immédiatement après la configuration ?",
+          "question_three_description": "<@1115972980984516719> suit un horaire spécifique pour envoyer les EDJ, qui sont actuellement envoyés à tous les serveurs à **06h00** heure d'Amérique/Toronto. Ce calendrier ne peut pas être modifié et est le même pour tout le monde.",
+          "question_four_title": "Le temps pour recevoir la MDJ / le TDJ / les EDJ est passé mais je n'ai rien reçu. Pourquoi ?",
+          "question_four_description": "Cela est très probablement dû à un problème de permissions. Vérifiez que le rôle de <@1115972980984516719> a les permissions nécessaires. Vérifiez également les permissions du canal utilisé pour la MDJ / le TDJ / les EDJ. Vous ne recevez toujours rien ? Rejoignez le serveur de support officiel en cliquant [ici](%SupportLink%)!"
         },
         "about_guide": {
           "title": "Guide d'Information",
           "question_one_title": "Qu'est-ce que la Musique du Jour ?",
           "question_one_description": "La Musique du Jour est une chanson choisie au hasard par <@1115972980984516719> envoyée à tous les serveurs à **21:00** heure de l'Amérique/Toronto.",
-          "question_two_title": "Qu'est-ce que la Trivia du Jour ?",
-          "question_two_description": "Le Trivia du Jour est un challenge sur une musique choisie au hasard par <@1115972980984516719> envoyé à tous les serveurs à **10:00** heure de l'Amérique/Toronto."
+          "question_two_title": "Qu'est-ce que le Trivia du Jour ?",
+          "question_two_description": "Le Trivia du Jour est un challenge sur une musique choisie au hasard par <@1115972980984516719> envoyé à tous les serveurs à **10:00** heure de l'Amérique/Toronto.",
+          "question_three_title": "Qu'est-ce que sont les Événements du Jour ?",
+          "question_three_description": "Les Événements du Jour sont une liste d'événements qui se sont produits aujourd'hui dans l'histoire de la musique, sélectionnés par <@1115972980984516719> et envoyés à tous les serveurs à **06h00** heure d'Amérique/Toronto."
         },
         "other_guide": {
           "title": "Guide Supplémentaire",
@@ -295,8 +299,8 @@
             "description": "La solution aux problèmes les plus courants."
           },
           "about": {
-            "label": "À propos de la MDJ / du TDJ",
-            "description": "Tout ce que vous devez savoir sur la MDJ et le TDJ."
+            "label": "À propos de la MDJ / TDJ / EDJ",
+            "description": "Tout ce que vous devez savoir sur la MDJ, le TDJ et les EDJ."
           },
           "other": {
             "label": "Autre",
@@ -310,8 +314,8 @@
         "field_description_one": "Un guide pour configurer les systèmes de Daily Music.",
         "field_title_two": "🔍 Débogage",
         "field_description_two": "La solution aux problèmes les plus courants.",
-        "field_title_three": "🎵 À propos de la MDJ / du TDJ",
-        "field_description_three": "Tout ce que vous devez savoir sur la MDJ et le TDJ.",
+        "field_title_three": "🎵 À propos de la MDJ / TDJ / EDJ",
+        "field_description_three": "Tout ce que vous devez savoir sur la MDJ, le TDJ et les EDJ.",
         "field_title_four": "❔ Autre",
         "field_description_four": "Toutes les questions sans réponse."
       }
