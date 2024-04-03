@@ -34,15 +34,19 @@
           "question_one_description": "<@1115972980984516719>, Günün Müziğini göndermek için belirli bir zaman çizelgesini takip eder, şu anda Amerika/Toronto saatine göre her sunucuya **9:00** PM'de gönderilir. Bu program herkes için aynıdır ve değiştirilemez.",
           "question_two_title": "Kurulumdan hemen sonra neden Günün Trivia'sı hemen alamıyorum?",
           "question_two_description": "<@1115972980984516719>, Günün Trivia'sı göndermek için belirli bir zaman çizelgesini takip eder, şu anda Amerika/Toronto saatine göre her sunucuya **10:00** AM'de gönderilir. Bu program herkes için aynıdır ve değiştirilemez.",
-          "question_three_title": "Günün Müziğini / Günün Trivia'sı almak için belirlenen zaman geçti ancak hiçbir şey alamadım. Neden?",
-          "question_three_description": "Bu muhtemelen bir izin sorunu nedeniyledir. <@1115972980984516719>'un rolünün gerekli izinlere sahip olduğunu kontrol edin. Ayrıca, Günün Müziği / Günün Bilgisi için kullanılan kanalın izinlerini kontrol edin. Hala bir şey alamıyor musunuz? Destek sunucusuna katılarak [buraya](%SupportLink%) tıklayın!"
+          "question_three_title": "Kurulumdan hemen sonra Neden Olaylar Günü'nü alamıyorum?",
+          "question_three_description": "<@1115972980984516719>, GO'yu tüm sunuculara göndermek için belirli bir programa uyar ve şu anda **06:00** sabah Amerika/Toronto saatiyle gönderiliyor. Bu program değiştirilemez ve herkes için aynıdır.",
+          "question_four_title": "GM / GT'sı / GO almak için zaman geçti, ama hiçbir şey almadım. Neden?",
+          "question_four_description": "Büyük olasılıkla, bu bir izin sorunuyla ilgilidir. <@1115972980984516719> rolünün gerekli izinlere sahip olduğunu kontrol edin. Ayrıca, GM / GT'sı / GO için kullanılan kanalın izinlerini kontrol edin. Hala hiçbir şey alamıyor musunuz? Resmi destek sunucusuna katılmak için [buraya](%SupportLink%) tıklayın!"
         },
         "about_guide": {
           "title": "Hakkında Kılavuzu",
           "question_one_title": "Günün Müziği nedir?",
           "question_one_description": "Günün Müziği, <@1115972980984516719> tarafından rastgele seçilen bir şarkıdır ve Amerika/Toronto saatine göre her sunucuya **9:00** PM'de gönderilir.",
           "question_two_title": "Günün Bilgisi nedir?",
-          "question_two_description": "Günün Bilgisi, <@1115972980984516719> tarafından rastgele seçilen bir müzikle ilgili bir müzik bilgisi sorusudur ve Amerika/Toronto saatine göre her sunucuya **10:00** AM'de gönderilir."
+          "question_two_description": "Günün Bilgisi, <@1115972980984516719> tarafından rastgele seçilen bir müzikle ilgili bir müzik bilgisi sorusudur ve Amerika/Toronto saatine göre her sunucuya **10:00** AM'de gönderilir.",
+          "question_three_title": "Günün Olayları Nedir?",
+          "question_three_description": "Günün Olayları, müzik tarihinde bu gün gerçekleşen olayların bir listesidir. Bu olaylar <@1115972980984516719> tarafından seçilir ve tüm sunuculara **06:00** AM Amerika/Toronto saatiyle gönderilir."
         },
         "other_guide": {
           "title": "Diğer Kılavuz",
@@ -162,7 +166,7 @@
             "label": "Sonraki GT'yi ne zaman?"
           },
           "when_eotd": {
-            "label": "Sonraki GE ne zaman?"
+            "label": "Sonraki GO ne zaman?"
           }
         },
         "vote": {
@@ -295,8 +299,8 @@
             "description": "En yaygın sorunların çözümü."
           },
           "about": {
-            "label": "GM / GT'yi Hakkında",
-            "description": "GM ve GT'yi hakkında bilmeniz gereken her şey."
+            "label": "GM / GT'yi / GO Hakkında",
+            "description": "GM, GT'yi ve GO hakkında bilmeniz gereken her şey."
           },
           "other": {
             "label": "Diğer",
@@ -310,8 +314,8 @@
         "field_description_one": "Daily Music sistemlerini yapılandırma kılavuzu.",
         "field_title_two": "🔍 Hata Ayıklama",
         "field_description_two": "En yaygın sorunların çözümü.",
-        "field_title_three": "🎵 GM / GT'yi Hakkında",
-        "field_description_three": "GM ve GT'yi hakkında bilmeniz gereken her şey.",
+        "field_title_three": "🎵 GM / GT'yi / GO Hakkında",
+        "field_description_three": "GM, GT'yi ve GO hakkında bilmeniz gereken her şey.",
         "field_title_four": "❔ Diğer",
         "field_description_four": "Burada yanıtlanmayan sorular."
       }
