@@ -5,7 +5,8 @@
     "unknown": "Nieznane",
     "by": "przez",
     "motd": "Muzyka dnia: ",
-    "totd": "Ciekawostki dnia: Czy możesz zgadnąć utwór?"
+    "totd": "Ciekawostki dnia: Czy możesz zgadnąć utwór?",
+    "eotd": "W tym dniu w historii muzyki: Dowiedz się, co się wydarzyło!"
   },
   "events": {
     "interactionCreate": {
@@ -159,6 +160,9 @@
           },
           "when_totd": {
             "label": "Kiedy jest następne CD?"
+          },
+          "when_eotd": {
+            "label": "Kiedy odbędą się kolejne WD?"
           }
         },
         "vote": {
@@ -211,26 +215,24 @@
             "field_description_five": "Dołącz do naszego [oficjalnego serwera](%SupportLink%) i zrób zgłoszenie. Jeśli twoja aplikacja zostanie zaakceptowana, będziesz wyświetlany na wiadomościach podglądowych i otrzymasz rolę na naszym serwerze."
           }
         },
-        "60%": {
+        "40%": {
           "description": "Jesteś **60**% w procesie. Dobra robota! 🎉 \n📱 Musisz wybrać tryb wyświetlania. Możesz zobaczyć, jak wyglądają, klikając na odpowiednie przyciski. \nKontynuuj, klikając poniżej."
         },
-        "80%": {
+        "60%": {
           "description": "Jesteś **80**% w procesie. Dobra robota! 🎉 \n🧵 Musisz wybrać, czy chcesz, żeby wątek został automatycznie utworzony i zarządzany przez bota dla MD. \nKontynuuj, klikając jeden z przycisków poniżej"
         },
-        "+80%": {
-          "description": "Jesteś **+80**% w procesie. Dobra robota! 🎉 \n🏆 Musisz wybrać, czy chcesz, żeby codziennie wysyłano grę Ciekawostki. \nKoncept jest prosty: codziennie otrzymujesz plik audio z muzyką do wysłuchania, i musisz zgadnąć jej tytuł! \nKontynuuj, klikając jeden z przycisków poniżej"
+        "80%": {
+          "description": "Jesteś na **80**% drodze przez cały proces. Dobra robota! 🎉 \n🏆 Musisz wybrać, czy chcesz, aby quiz muzyczny był wysyłany codziennie. \nKoncepcja jest prosta: każdego dnia otrzymujesz plik audio z muzyką do odsłuchania i musisz odgadnąć jej tytuł! \nKontynuuj, klikając jeden z poniższych przycisków."
         },
-        "100%_full": {
-          "description": "Skończyłeś! Jesteś na **100**%. Dobra robota! 🎉\n🎶 Twój serwer jest gotowy do otrzymywania MD i CD. \nOto krótki przegląd twojej konfiguracji"
+        "90%": {
+          "description": "Jesteś na **90**% drogi przez cały proces. Dobra robota!🎉 \n📆 Musisz wybrać, czy chcesz, aby lista wydarzeń w świecie muzyki była wysyłana codziennie. \nKoncepcja jest prosta: każdego dnia otrzymujesz listę wydarzeń, które miały miejsce tego dnia w historii muzyki! \nKontynuuj, klikając jeden z poniższych przycisków."
         },
-        "100%_partial": {
-          "description": "Skończyłeś! Jesteś na **100**%. Dobra robota! 🎉\n🎶 Twój serwer jest gotowy do otrzymywania MD. \nOto krótki przegląd twojej konfiguracji"
+
+        "100%": {
+          "description": "Skończyłeś! Osiągnąłeś **100**%. Dobra robota!🎉\n🎶 Twój serwer jest teraz gotowy. \nOto krótki przegląd konfiguracji:"
         },
         "warning_100%_full": {
           "description": "⚠️ Upewnij się, że Daily Music ma wszystkie niezbędne uprawnienia do działania (dostępne w [linku zaproszenia](%InvitationLink%)). \nSprawdź uprawnienia dla :\n    - roli bota\n    \n- określonego kanału (%channel%). \nJeśli brakuje uprawnień, nie otrzymasz MD i CD, a twój serwer zostanie usunięty z bazy danych po kilku dniach, jeśli problem nie zostanie naprawiony."
-        },
-        "warning_100%_partial": {
-          "description": "⚠️ Upewnij się, że Daily Music ma wszystkie niezbędne uprawnienia do działania (dostępne w [linku zaproszenia](%InvitationLink%)). \nSprawdź uprawnienia dla :\n    - roli bota\n    \n- określonego kanału (%channel%). \nJeśli brakuje uprawnień, nie otrzymasz MD, a twój serwer zostanie usunięty z bazy danych po kilku dniach, jeśli problem nie zostanie naprawiony."
         },
         "advanced_card": {
           "description": "Witaj w zaawansowanym menu konfiguracji! 🤓 \n🃏 Musisz wybrać, jakiego rodzaju kartę chcesz dla MD.\nKontynuuj, klikając na poniższe menu"
@@ -333,7 +335,8 @@
             "field_title_four": "🎵 Gatunek",
             "field_title_five": "📱 Wyświetlacz",
             "field_title_six": "🧵 Nici",
-            "field_title_seven": "🏆 Ciekawostki"
+            "field_title_seven": "🏆 Ciekawostki",
+            "field_title_eight": "📆 Wydarzenia"
           },
           "threads": {
             "enabled": "Włączone",
@@ -532,11 +535,15 @@
     "stats": {
       "embed": {
         "description": "📊 Oto podsumowanie statystyk z Daily Music dla Twojego serwera.",
-        "field_title_one": "🎶 Liczba wysłanych utworów",
-        "field_description_one": "Daily Music wysłał na ten serwer łącznie **%data.TotalSongsSent%** utworów muzycznych.",
-        "field_title_two": "📆 Ostatni wysłany utwór",
-        "field_description_two_true": "Ostatni utwór wysłany na ten serwer był %timestamp:F% (%timestamp:R%)",
-        "field_description_two_false": "Na ten serwer jeszcze nie wysłano żadnego utworu."
+        "field_title_one": "🎶 O MD-ach",
+        "field_description_one_true": "Daily Music wysłał(a) w sumie **%data.TotalSongsSent%** %musicWord% na ten serwer, a ostatni został wysłany dnia %timestamp:F% (%timestamp:R%).",
+        "field_description_one_false": "Na ten serwer nie została jeszcze wysłana żadna muzyka.",
+        "field_title_two": "🏆 O CD-ach",
+        "field_description_two_true": "Daily Music wysłał(a) w sumie **%data.TotalTriviasSent%** %triviaWord% na ten serwer, a ostatni został wysłany dnia %timestamp:F% (%timestamp:R%).",
+        "field_description_two_false": "Na ten serwer nie zostały jeszcze wysłane żadne trivia.",
+        "field_title_three": "📆 O WD-ach",
+        "field_description_three_true": "Daily Music wysłał(a) w sumie **%data.TotalEventsSent%** %eventWord% na ten serwer, a ostatni został wysłany dnia %timestamp:F% (%timestamp:R%).",
+        "field_description_three_false": "Na ten serwer nie zostały jeszcze wysłane żadne wydarzenia."
       }
     },
     "trivia": {
@@ -594,6 +601,19 @@
             "value": "metal"
           }
         }
+      }
+    },
+    "onthisday": {
+      "error_messages": {
+        "no_event_info": "❌ Brak dostępnych informacji o wydarzeniu."
+      },
+      "why_answers": {
+        "no_event_generated": {
+          "description": "Ponieważ żadne zdarzenie nie zostało wygenerowane dla tej daty, prawdopodobnie z powodu incydentu lub konserwacji."
+        }
+      },
+      "embed": {
+        "title": "W tym dniu w historii muzyki"
       }
     }
   }
