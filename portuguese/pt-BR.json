@@ -5,7 +5,8 @@
     "unknown": "Desconhecido",
     "by": "por",
     "motd": "Música do Dia: ",
-    "totd": "Curiosidade do Dia: Consegue adivinhar a música?"
+    "totd": "Curiosidade do Dia: Consegue adivinhar a música?",
+    "eotd": "Neste dia na história da música: descubra o que aconteceu!"
   },
   "events": {
     "interactionCreate": {
@@ -159,6 +160,9 @@
           },
           "when_totd": {
             "label": "Quando é a próxima CDD?"
+          },
+          "when_eotd": {
+            "label": "Quando serão os próximos EDD?"
           }
         },
         "vote": {
@@ -211,26 +215,23 @@
             "field_description_five": "Junte-se ao nosso [servidor oficial](%SupportLink%) e faça uma solicitação. Se sua inscrição for aceita, você será apresentado nas mensagens de prévia e receberá um cargo em nosso servidor."
           }
         },
-        "60%": {
+        "40%": {
           "description": "Você está **60**% do caminho. Parabéns! 🎉 \n📱 Você precisa escolher um modo de exibição. Você pode ver como eles são clicando nos respectivos botões. \nContinue clicando no menu abaixo."
         },
-        "80%": {
+        "60%": {
           "description": "Você está **80**% do caminho. Parabéns! 🎉 \n🧵 Você precisa escolher se deseja que um tópico seja criado e gerenciado automaticamente pelo bot para a MDD. \nContinue clicando em um dos botões abaixo"
         },
-        "+80%": {
-          "description": "Você está **+80**% do caminho. Parabéns! 🎉 \n🏆 Você precisa escolher se deseja que um jogo de Curiosidade seja enviado todos os dias. \nO conceito é simples: todos os dias, você recebe um arquivo de áudio de música para ouvir e precisa adivinhar seu título! \nContinue clicando em um dos botões abaixo"
+        "80%": {
+          "description": "Você está **+80**% do caminho. Parabéns! 🎉 \n🏆 Você precisa escolher se deseja que um questionário sobre música seja enviado todos os dias. \nO conceito é simples: todos os dias, você recebe um arquivo de áudio de música para ouvir e precisa adivinhar seu título! \nContinue clicando em um dos botões abaixo"
         },
-        "100%_full": {
-          "description": "Você terminou! Você está em **100**%. Parabéns! 🎉\n🎶 Seu servidor está pronto para receber a MDD e a CDD. \nAqui está uma rápida visão geral de sua configuração"
+        "90%": {
+          "description": "Você está a **90**% do caminho. Parabéns! 🎉 \n📆 Você precisa escolher se deseja que a lista de eventos no mundo da música seja enviada todos os dias. \nO conceito é simples: todos os dias, você recebe uma lista de eventos que aconteceram nesse dia na história da música! \nContinue clicando em um dos botões abaixo."
         },
-        "100%_partial": {
-          "description": "Você terminou! Você está em **100**%. Parabéns! 🎉\n🎶 Seu servidor está pronto para receber a MDD. \nAqui está uma rápida visão geral de sua configuração"
+        "100%": {
+          "description": "Você terminou! Você atingiu **100**%. Muito bem! 🎉\n🎶 Seu servidor está pronto. \nAqui está uma visão geral rápida de sua configuração:"
         },
         "warning_100%_full": {
-          "description": "⚠️ Por favor, certifique-se de que o Daily Music tem todas as permissões necessárias para funcionar (aquelas disponíveis no [link de convite](%InvitationLink%)). \nVerifique as permissões para :\n    - o cargo do bot\n    \n- o canal definido (%channel%). \nSe faltar uma permissão, você não receberá a MDD e a CDD e seu servidor será excluído do banco de dados após alguns dias se o problema não for resolvido."
-        },
-        "warning_100%_partial": {
-          "description": "⚠️ Por favor, certifique-se de que o Daily Music tem todas as permissões necessárias para funcionar (aquelas disponíveis no [link de convite](%InvitationLink%)). \nVerifique as permissões para :\n    - o cargo do bot\n    \n- o canal definido (%channel%). \nSe faltar uma permissão, você não receberá a MDD e seu servidor será excluído do banco de dados após alguns dias se o problema não for resolvido."
+          "description": "⚠️ Por favor, certifique-se de que o Daily Music tenha todas as permissões necessárias para funcionar (aquelas disponíveis no [link de convite](%InvitationLink%)). \nVerifique as permissões para:\n - a função do bot\n \n- o canal definido (%channel%). \nSe uma permissão estiver ausente, você não receberá nada e seu servidor será excluído do banco de dados após alguns dias se o problema não for corrigido."
         },
         "advanced_card": {
           "description": "Bem-vindo ao menu de configuração avançada! 🤓 \n🃏 Você precisa escolher que tipo de cartão deseja para a MDD.\nContinue clicando no menu abaixo"
@@ -333,7 +334,8 @@
             "field_title_four": "🎵 Gênero",
             "field_title_five": "📱 Exibição",
             "field_title_six": "🧵 Tópicos",
-            "field_title_seven": "🏆 Curiosidade"
+            "field_title_seven": "🏆 Curiosidade",
+            "field_title_eight": "📆 Eventos"
           },
           "threads": {
             "enabled": "Habilitado",
@@ -532,11 +534,15 @@
     "stats": {
       "embed": {
         "description": "📊 Aqui está um resumo das estatísticas do Daily Music para o seu servidor.",
-        "field_title_one": "🎶 Número de músicas enviadas",
-        "field_description_one": "O Daily Music enviou um total de **%data.TotalSongsSent%** músicas para este servidor.",
-        "field_title_two": "📆 Última música enviada",
-        "field_description_two_true": "A última música enviada para este servidor foi em %timestamp:F% (%timestamp:R%)",
-        "field_description_two_false": "Nenhuma música foi enviada para este servidor ainda."
+        "field_title_one": "🎶 Sobre MDD",
+        "field_description_one_true": "O Daily Music enviou um total de **%data.TotalSongsSent%** %musicWord% para este servidor, e o último foi em %timestamp:F% (%timestamp:R%).",
+        "field_description_one_false": "Nenhuma música foi enviada para este servidor ainda.",
+        "field_title_two": "🏆 Sobre CDD",
+        "field_description_two_true": "O Daily Music enviou um total de **%data.TotalTriviasSent%** %triviaWord% para este servidor, e o último foi em %timestamp:F% (%timestamp:R%).",
+        "field_description_two_false": "Nenhuma trivia foi enviada para este servidor ainda.",
+        "field_title_three": "📆 Sobre EDD",
+        "field_description_three_true": "O Daily Music enviou um total de **%data.TotalEventsSent%** %eventWord% para este servidor, e o último foi em %timestamp:F% (%timestamp:R%).",
+        "field_description_three_false": "Nenhum evento foi enviado para este servidor ainda."
       }
     },
     "trivia": {
@@ -594,6 +600,19 @@
             "value": "metal"
           }
         }
+      }
+    },
+    "onthisday": {
+      "error_messages": {
+        "no_event_info": "❌ Não há informações disponíveis sobre o evento."
+      },
+      "why_answers": {
+        "no_event_generated": {
+          "description": "Porque nenhum evento foi gerado para essa data, provavelmente devido a um incidente ou manutenção."
+        }
+      },
+      "embed": {
+        "title": "Neste dia na história da música"
       }
     }
   }
