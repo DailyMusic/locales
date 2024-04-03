@@ -34,15 +34,19 @@
           "question_one_description": "<@1115972980984516719> segue um cronograma específico para enviar a MDD, que é enviada para todos os servidores às **21:00** horário de America/Toronto. Este cronograma não pode ser alterado e é o mesmo para todos.",
           "question_two_title": "Por que não recebo a Curiosidade do Dia imediatamente após configurar?",
           "question_two_description": "<@1115972980984516719> segue um cronograma específico para enviar a CDD, que é enviada para todos os servidores às **10:00** horário de America/Toronto. Este cronograma não pode ser alterado e é o mesmo para todos.",
-          "question_three_title": "O horário para receber a MDD / CDD já passou, mas não recebi nada. Por quê?",
-          "question_three_description": "Isso provavelmente é devido a um problema de permissões. Verifique se o cargo de <@1115972980984516719> tem as permissões necessárias. Também verifique as permissões do canal usado para MDD / CDD. Ainda não está recebendo nada? Junte-se ao servidor de suporte oficial clicando [aqui](%SupportLink%)!"
+          "question_three_title": "Por que não recebo os Eventos do Dia imediatamente após configurar?",
+          "question_three_description": "<@1115972980984516719> segue um cronograma específico para enviar os EDD, que atualmente são enviados para todos os servidores às **06:00** AM horário da América/Toronto. Este cronograma não pode ser alterado e é o mesmo para todos.",
+          "question_four_title": "O horário para receber a MDD / CDD / EDD já passou, mas não recebi nada. Por quê?",
+          "question_four_description": "Isso provavelmente é devido a um problema de permissões. Verifique se o cargo de <@1115972980984516719> tem as permissões necessárias. Também verifique as permissões do canal usado para MDD / CDD / EDD. Ainda não está recebendo nada? Junte-se ao servidor de suporte oficial clicando [aqui](%SupportLink%)!"
         },
         "about_guide": {
           "title": "Guia Sobre",
           "question_one_title": "O que é a Música do Dia?",
           "question_one_description": "A Música do Dia é uma música escolhida aleatoriamente por <@1115972980984516719> e enviada para todos os servidores às **21:00** horário de America/Toronto.",
           "question_two_title": "O que é a Curiosidade do Dia?",
-          "question_two_description": "A Curiosidade do Dia é uma pergunta de curiosidade sobre música escolhida aleatoriamente por <@1115972980984516719> e enviada para todos os servidores às **10:00** horário de America/Toronto."
+          "question_two_description": "A Curiosidade do Dia é uma pergunta de curiosidade sobre música escolhida aleatoriamente por <@1115972980984516719> e enviada para todos os servidores às **10:00** horário de America/Toronto.",
+          "question_three_title": "O que são os Eventos do Dia?",
+          "question_three_description": "Os Eventos do Dia são uma lista de eventos que aconteceram neste dia na história da música, selecionados por <@1115972980984516719> e enviados para todos os servidores às **06:00** AM horário de América/Toronto."
         },
         "other_guide": {
           "title": "Outro Guia",
@@ -295,8 +299,8 @@
             "description": "A solução para os problemas mais comuns."
           },
           "about": {
-            "label": "Sobre MDD / CDD",
-            "description": "Tudo o que você precisa saber sobre MDD e CDD."
+            "label": "Sobre MDD / CDD / EDD",
+            "description": "Tudo o que você precisa saber sobre MDD, CDD e EDD."
           },
           "other": {
             "label": "Outros",
@@ -310,8 +314,8 @@
         "field_description_one": "Um guia para configurar os sistemas do Daily Music.",
         "field_title_two": "🔍 Depuração",
         "field_description_two": "A solução para os problemas mais comuns.",
-        "field_title_three": "🎵 Sobre MDD / CDD",
-        "field_description_three": "Tudo o que você precisa saber sobre MDD e CDD.",
+        "field_title_three": "🎵 Sobre MDD / CDD / EDD",
+        "field_description_three": "Tudo o que você precisa saber sobre MDD, CDD e EDD.",
         "field_title_four": "❔ Outros",
         "field_description_four": "Perguntas que não são respondidas aqui."
       }
