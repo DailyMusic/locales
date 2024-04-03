@@ -5,7 +5,8 @@
     "unknown": "Unknown",
     "by": "by",
     "motd": "Music of the Day : ",
-    "totd": "Trivia of the Day : Can you guess the music?"
+    "totd": "Trivia of the Day : Can you guess the music?",
+    "eotd": "On this day in the history of music : Find out what happened!"
   },
   "events": {
     "interactionCreate": {
@@ -159,6 +160,9 @@
           },
           "when_totd": {
             "label": "When is the next TOTD?"
+          },
+          "when_eotd": {
+            "label": "When are the next EOTD?"
           }
         },
         "vote": {
@@ -211,26 +215,23 @@
             "field_description_five": "Join our [official server](%SupportLink%) and make a request. If your application is accepted, you will be featured on the preview messages and you will get a role on our server."
           }
         },
+        "40%": {
+          "description": "You are **40**% of the way through the process. Well done! 🎉 \n📱 You need to choose a display mode. You can see what they look like by clicking on their respective buttons. \nContinue by clicking on the menu below."
+        },
         "60%": {
-          "description": "You are **60**% of the way through the process. Well done! 🎉 \n📱 You need to choose a display mode. You can see what they look like by clicking on their respective buttons. \nContinue by clicking on the menu below."
+          "description": "You are **60**% of the way through the process. Well done! 🎉 \n🧵 You need to choose whether you want a thread to be automatically created and managed by the bot for the MOTD. \nContinue by clicking on one of the buttons below."
         },
         "80%": {
-          "description": "You are **80**% of the way through the process. Well done! 🎉 \n🧵 You need to choose whether you want a thread to be automatically created and managed by the bot for the MOTD. \nContinue by clicking on one of the buttons below"
+          "description": "You are **80**% of the way through the process. Well done! 🎉 \n🏆 You need to choose whether you want a music quiz to be sent every day. \nThe concept  is simple: every day, you receive an audio file of music to listen to, and you have to guess its title! \nContinue by clicking on one of the buttons below."
         },
-        "+80%": {
-          "description": "You are **+80**% of the way through the process. Well done! 🎉 \n🏆 You need to choose whether you want a Trivia game to be sent every day. \nThe concept  is simple: every day, you receive an audio file of music to listen to, and you have to guess its title! \nContinue by clicking on one of the buttons below"
+        "90%": {
+          "description": "You are **90**% of the way through the process. Well done! 🎉 \n📆 You need to choose whether you want the list of events in the music world to be sent every day. \nThe concept  is simple: every day, you receive a list of events that happened on this day in the music history! \nContinue by clicking on one of the buttons below."
         },
-        "100%_full": {
-          "description": "You're done! You're at **100**%. Well done! 🎉\n🎶 Your server is ready to receive the MOTD and the TOTD. \nHere is a quick overview of your configuration"
+        "100%": {
+          "description": "You're done! You're at **100**%. Well done! 🎉\n🎶 Your server is now ready. \nHere is a quick overview of your configuration:"
         },
-        "100%_partial": {
-          "description": "You're done! You're at **100**%. Well done! 🎉\n🎶 Your server is ready to receive the MOTD. \nHere is a quick overview of your configuration"
-        },
-        "warning_100%_full": {
-          "description": "⚠️ Please ensure that Daily Music has all the necessary permissions to work (those available in the [invitation link](%InvitationLink%)). \nCheck the permissions for :\n    - the bot's role\n    \n- the defined channel (%channel%). \nIf a permission is missing, you will not receive the MOTD and the TOTD and your server will be deleted from the database after a few days if the issue is not fixed."
-        },
-        "warning_100%_partial": {
-          "description": "⚠️ Please ensure that Daily Music has all the necessary permissions to work (those available in the [invitation link](%InvitationLink%)). \nCheck the permissions for :\n    - the bot's role\n    \n- the defined channel (%channel%). \nIf a permission is missing, you will not receive the MOTD and your server will be deleted from the database after a few days if the issue is not fixed."
+        "warning_100%": {
+          "description": "⚠️ Please ensure that Daily Music has all the necessary permissions to work (those available in the [invitation link](%InvitationLink%)). \nCheck the permissions for :\n    - the bot's role\n    \n- the defined channel (%channel%). \nIf a permission is missing, you will not receive anything and your server will be deleted from the database after a few days if the issue is not fixed."
         },
         "advanced_card": {
           "description": "Welcome to the advanced configuration menu! 🤓 \n🃏 You need to choose what type of card you want for the MOTD.\nContinue by clicking on the menu below"
@@ -333,7 +334,8 @@
             "field_title_four": "🎵 Genre",
             "field_title_five": "📱 Display",
             "field_title_six": "🧵 Threads",
-            "field_title_seven": "🏆 Trivia"
+            "field_title_seven": "🏆 Trivia",
+            "field_title_eight": "📆 Events"
           },
           "threads": {
             "enabled": "Enabled",
@@ -532,11 +534,15 @@
     "stats": {
       "embed": {
         "description": "📊 Here is a summary of the statistics from Daily Music for your server.",
-        "field_title_one": "🎶 Number of musics sent",
-        "field_description_one": "Daily Music has sent a total of **%data.TotalSongsSent%** musics to this server.",
-        "field_title_two": "📆 Last music sent",
-        "field_description_two_true": "The last music sent to this server was on %timestamp:F% (%timestamp:R%)",
-        "field_description_two_false": "No music has yet been sent to this server."
+        "field_title_one": "🎶 About MOTDs",
+        "field_description_one_true": "Daily Music has sent a total of **%data.TotalSongsSent%** %musicWord% to this server, and the last one was on %timestamp:F% (%timestamp:R%).",
+        "field_description_one_false": "No music has yet been sent to this server.",
+        "field_title_two": "🏆 About TOTDs",
+        "field_description_two_true": "Daily Music has sent a total of **%data.TotalTriviasSent%** %triviaWord% to this server, and the last one was on %timestamp:F% (%timestamp:R%).",
+        "field_description_two_false": "No trivia has yet been sent to this server.",
+        "field_title_three": "📆 About EOTDs",
+        "field_description_three_true": "Daily Music has sent a total of **%data.TotalEventsSent%** %eventWord% to this server, and the last one was on %timestamp:F% (%timestamp:R%).",
+        "field_description_three_false": "No events have yet been sent to this server."
       }
     },
     "trivia": {
@@ -594,6 +600,19 @@
             "value": "metal"
           }
         }
+      }
+    },
+    "onthisday": {
+      "error_messages": {
+        "no_event_info": "❌ No event information available."
+      },
+      "why_answers": {
+        "no_event_generated": {
+          "description": "Because no event has been generated for this date, probably due to an incident or maintenance."
+        }
+      },
+      "embed": {
+        "title": "On this day in the history of music"
       }
     }
   }
