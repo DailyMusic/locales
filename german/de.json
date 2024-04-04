@@ -35,7 +35,7 @@
           "question_two_title": "Warum erhalte ich das Trivia des Tages nicht sofort nach der Einrichtung?",
           "question_two_description": "<@1115972980984516719> folgt einem bestimmten Zeitplan zum Senden des TDT, das derzeit um **10:00** Uhr America/Toronto-Zeit an alle Server gesendet wird. Dieser Zeitplan kann nicht geändert werden und ist für alle gleich.",
           "question_three_title": "Warum erhalte ich die Ereignisse des Tages nicht sofort nach der Einrichtung?",
-          "question_three_description": "<@1115972980984516719> folgt einem bestimmten Zeitplan zum Senden des EOTD, das derzeit um **06:00** Uhr America/Toronto-Zeit an alle Server gesendet wird. Dieser Zeitplan kann nicht geändert werden und ist für alle gleich.",
+          "question_three_description": "<@1115972980984516719> folgt einem bestimmten Zeitplan zum Senden des EOTD, das derzeit um **11:00** Uhr America/Toronto-Zeit an alle Server gesendet wird. Dieser Zeitplan kann nicht geändert werden und ist für alle gleich.",
           "question_four_title": "Die Zeit zum Empfangen der MDT / TDT / EDT ist abgelaufen, aber ich habe nichts erhalten. Warum?",
           "question_four_description": "Dies liegt höchstwahrscheinlich an einem Berechtigungsproblem. Überprüfen Sie, ob die Rolle von <@1115972980984516719> über die erforderlichen Berechtigungen verfügt. Überprüfen Sie auch die Berechtigungen des Kanals, der für MDT / TDT / EDT verwendet wird. Erhalten Sie immer noch nichts? Treten Sie dem offiziellen Support-Server bei, indem Sie [hier](%SupportLink%) klicken!"
         },
@@ -46,7 +46,7 @@
           "question_two_title": "Was ist die Trivia des Tages?",
           "question_two_description": "Die Trivia des Tages ist eine Musik-Triviafrage, die zufällig von <@1115972980984516719> ausgewählt und um **10:00** Uhr America/Toronto-Zeit an alle Server gesendet wird.",
           "question_three_title": "Was sind die Ereignisse des Tages?",
-          "question_three_description": "Die Ereignisse des Tages sind eine Liste von Ereignissen, die an diesem Tag in der Musikgeschichte ausgewählt werden von <@1115972980984516719> und um **06:00** Uhr America/Toronto-Zeit an alle Server gesendet werden."
+          "question_three_description": "Die Ereignisse des Tages sind eine Liste von Ereignissen, die an diesem Tag in der Musikgeschichte ausgewählt werden von <@1115972980984516719> und um **11:00** Uhr America/Toronto-Zeit an alle Server gesendet werden."
         },
         "other_guide": {
           "title": "Andere Anleitung",
