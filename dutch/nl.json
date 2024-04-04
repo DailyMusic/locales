@@ -35,7 +35,7 @@
           "question_two_title": "Waarom ontvang ik de Trivia van de Dag niet onmiddellijk na het instellen?",
           "question_two_description": "<@1115972980984516719> volgt een specifiek schema om de TVDD te verzenden, die momenteel om **10:00** AM Amerika/Toronto tijd naar alle servers wordt verzonden. Dit schema kan niet worden gewijzigd en is voor iedereen hetzelfde.",
           "question_three_title": "Waarom ontvang ik de Evenementen van de Dag niet onmiddellijk na het instellen?",
-          "question_three_description": "<@1115972980984516719> volgt een specifiek schema om de EVDD te verzenden, die momenteel om **06:00** AM Amerika/Toronto-tijd naar alle servers wordt verzonden. Dit schema kan niet worden gewijzigd en is hetzelfde voor iedereen.",
+          "question_three_description": "<@1115972980984516719> volgt een specifiek schema om de EVDD te verzenden, die momenteel om **11:00** AM Amerika/Toronto-tijd naar alle servers wordt verzonden. Dit schema kan niet worden gewijzigd en is hetzelfde voor iedereen.",
           "question_four_title": "De tijd om de MVDD / TVDD / EVDD te ontvangen is verstreken maar ik heb niets ontvangen. Waarom?",
           "question_four_description": "Dit is waarschijnlijk te wijten aan een permissieprobleem. Controleer of de rol van <@1115972980984516719> de nodige permissies heeft. Controleer ook de permissies van het kanaal dat wordt gebruikt voor MVDD / TVDD / EVDD. Nog steeds niets ontvangen? Sluit je aan bij de officiële ondersteuningsserver door [hier te klikken](%SupportLink%)!"
         },
@@ -46,7 +46,7 @@
           "question_two_title": "Wat is de Trivia van de Dag?",
           "question_two_description": "De Trivia van de Dag is een muziektriviavraag die willekeurig wordt gekozen door <@1115972980984516719> en naar alle servers wordt verzonden om **10:00** AM Amerika/Toronto tijd.",
           "question_three_title": "Wat zijn de Evenementen van de Dag?",
-          "question_three_description": "De Evenementen van de Dag zijn een lijst van gebeurtenissen die op deze dag in de muziekgeschiedenis hebben plaatsgevonden, geselecteerd door <@1115972980984516719> en verzonden naar alle servers om **06:00** AM Amerika/Toronto tijd."
+          "question_three_description": "De Evenementen van de Dag zijn een lijst van gebeurtenissen die op deze dag in de muziekgeschiedenis hebben plaatsgevonden, geselecteerd door <@1115972980984516719> en verzonden naar alle servers om **11:00** AM Amerika/Toronto tijd."
         },
         "other_guide": {
           "title": "Andere Gids",
