@@ -35,7 +35,7 @@
           "question_two_title": "Kurulumdan hemen sonra neden Günün Trivia'sı hemen alamıyorum?",
           "question_two_description": "<@1115972980984516719>, Günün Trivia'sı göndermek için belirli bir zaman çizelgesini takip eder, şu anda Amerika/Toronto saatine göre her sunucuya **10:00** AM'de gönderilir. Bu program herkes için aynıdır ve değiştirilemez.",
           "question_three_title": "Kurulumdan hemen sonra Neden Olaylar Günü'nü alamıyorum?",
-          "question_three_description": "<@1115972980984516719>, GO'yu tüm sunuculara göndermek için belirli bir programa uyar ve şu anda **06:00** sabah Amerika/Toronto saatiyle gönderiliyor. Bu program değiştirilemez ve herkes için aynıdır.",
+          "question_three_description": "<@1115972980984516719>, GO'yu tüm sunuculara göndermek için belirli bir programa uyar ve şu anda **11:00** sabah Amerika/Toronto saatiyle gönderiliyor. Bu program değiştirilemez ve herkes için aynıdır.",
           "question_four_title": "GM / GT'sı / GO almak için zaman geçti, ama hiçbir şey almadım. Neden?",
           "question_four_description": "Büyük olasılıkla, bu bir izin sorunuyla ilgilidir. <@1115972980984516719> rolünün gerekli izinlere sahip olduğunu kontrol edin. Ayrıca, GM / GT'sı / GO için kullanılan kanalın izinlerini kontrol edin. Hala hiçbir şey alamıyor musunuz? Resmi destek sunucusuna katılmak için [buraya](%SupportLink%) tıklayın!"
         },
@@ -46,7 +46,7 @@
           "question_two_title": "Günün Bilgisi nedir?",
           "question_two_description": "Günün Bilgisi, <@1115972980984516719> tarafından rastgele seçilen bir müzikle ilgili bir müzik bilgisi sorusudur ve Amerika/Toronto saatine göre her sunucuya **10:00** AM'de gönderilir.",
           "question_three_title": "Günün Olayları Nedir?",
-          "question_three_description": "Günün Olayları, müzik tarihinde bu gün gerçekleşen olayların bir listesidir. Bu olaylar <@1115972980984516719> tarafından seçilir ve tüm sunuculara **06:00** AM Amerika/Toronto saatiyle gönderilir."
+          "question_three_description": "Günün Olayları, müzik tarihinde bu gün gerçekleşen olayların bir listesidir. Bu olaylar <@1115972980984516719> tarafından seçilir ve tüm sunuculara **11:00** AM Amerika/Toronto saatiyle gönderilir."
         },
         "other_guide": {
           "title": "Diğer Kılavuz",
