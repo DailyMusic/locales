@@ -35,7 +35,7 @@
           "question_two_title": "Por que não recebo a Curiosidade do Dia imediatamente após configurar?",
           "question_two_description": "<@1115972980984516719> segue um cronograma específico para enviar a CDD, que é enviada para todos os servidores às **10:00** horário de America/Toronto. Este cronograma não pode ser alterado e é o mesmo para todos.",
           "question_three_title": "Por que não recebo os Eventos do Dia imediatamente após configurar?",
-          "question_three_description": "<@1115972980984516719> segue um cronograma específico para enviar os EDD, que atualmente são enviados para todos os servidores às **06:00** AM horário da América/Toronto. Este cronograma não pode ser alterado e é o mesmo para todos.",
+          "question_three_description": "<@1115972980984516719> segue um cronograma específico para enviar os EDD, que atualmente são enviados para todos os servidores às **11:00** AM horário da América/Toronto. Este cronograma não pode ser alterado e é o mesmo para todos.",
           "question_four_title": "O horário para receber a MDD / CDD / EDD já passou, mas não recebi nada. Por quê?",
           "question_four_description": "Isso provavelmente é devido a um problema de permissões. Verifique se o cargo de <@1115972980984516719> tem as permissões necessárias. Também verifique as permissões do canal usado para MDD / CDD / EDD. Ainda não está recebendo nada? Junte-se ao servidor de suporte oficial clicando [aqui](%SupportLink%)!"
         },
@@ -46,7 +46,7 @@
           "question_two_title": "O que é a Curiosidade do Dia?",
           "question_two_description": "A Curiosidade do Dia é uma pergunta de curiosidade sobre música escolhida aleatoriamente por <@1115972980984516719> e enviada para todos os servidores às **10:00** horário de America/Toronto.",
           "question_three_title": "O que são os Eventos do Dia?",
-          "question_three_description": "Os Eventos do Dia são uma lista de eventos que aconteceram neste dia na história da música, selecionados por <@1115972980984516719> e enviados para todos os servidores às **06:00** AM horário de América/Toronto."
+          "question_three_description": "Os Eventos do Dia são uma lista de eventos que aconteceram neste dia na história da música, selecionados por <@1115972980984516719> e enviados para todos os servidores às **11:00** AM horário de América/Toronto."
         },
         "other_guide": {
           "title": "Outro Guia",
