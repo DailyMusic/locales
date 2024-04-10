@@ -108,6 +108,11 @@
               "description": "Devinez le genre de la musique en écoutant un court extrait.",
               "value": "audio-genre"
             },
+            "audio_artist": {
+              "label": "Artiste Audio",
+              "description": "Devinez l'artiste de la musique en écoutant un court extrait.",
+              "value": "audio-artist"
+            },
             "image_title": {
               "label": "Titre Image",
               "description": "Devinez le titre de la musique en regardant la pochette.",
@@ -117,6 +122,11 @@
               "label": "Genre Image",
               "description": "Devinez le genre de la musique en regardant la pochette.",
               "value": "image-genre"
+            },
+            "image_artist": {
+              "label": "Artiste Image",
+              "description": "Devinez l'artiste de la musique en regardant la pochette.",
+              "value": "image-artist"
             }
           }
         }
@@ -278,6 +288,16 @@
           "title": "Vous avez mal deviné le genre",
           "message_ephemeral": "😬 Errr... Vous avez mal deviné le genre !",
           "message_public": "😬 <@%interaction.user.id%> n'a pas deviné le genre de la musique..."
+        },
+        "correct_artist_trivia": {
+          "title": "Vous avez trouvé l'artiste",
+          "message_ephemeral": "👏 GG ! Vous avez trouvé l'artiste derrière la musique.",
+          "message_public": "👏 <@%interaction.user.id%> a deviné l'artiste derrière la musique !"
+        },
+        "wrong_artist_trivia": {
+          "title": "Vous avez mal deviné l'artiste",
+          "message_ephemeral": "😬 Errr... Vous avez mal deviné l'artiste !",
+          "message_public": "😬 <@%interaction.user.id%> n'a pas deviné l'artiste derrière la musique..."
         },
         "hint": {
           "description": "💡 Voici l'indice : \n🤔 [L'indice ne s'affiche pas ? Cliquez ici pour le voir.](%songOfTodayRequest['previewUrl']%)"
@@ -550,6 +570,9 @@
       }
     },
     "trivia": {
+      "error_messages": {
+        "genre_not_available_in_this_mode": "❌ Cette devinette ne permet pas de sélectionner le genre."
+      },
       "buttons": {
         "guess": {
           "label": "Devinez"
@@ -566,9 +589,10 @@
       },
       "embed": {
         "title": "Devinez la musique ! 🎵",
-        "description": "Pouvez-vous deviner le %guess% de [cette musique](%songOfTodayRequest['previewUrl']%) ? 🤔",
-        "description_title": "titre",
-        "description_genre": "genre"
+        "description": "Pouvez-vous deviner %guess% de [cette musique](%songOfTodayRequest['previewUrl']%) ? 🤔",
+        "description_artist": "l'artiste",
+        "description_title": "le titre",
+        "description_genre": "le genre"
       },
       "menu": {
         "placeholder": "Choisissez un genre !",
