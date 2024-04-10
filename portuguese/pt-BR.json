@@ -108,6 +108,11 @@
               "description": "Adivinhe o gênero da música ouvindo um trecho curto.",
               "value": "audio-genre"
             },
+            "audio_artist": {
+              "label": "Artista de Áudio",
+              "description": "Adivinhe o artista da música ouvindo um trecho curto.",
+              "value": "audio-artist"
+            },
             "image_title": {
               "label": "Título de Imagem",
               "description": "Adivinhe o título da música olhando para a capa.",
@@ -117,6 +122,11 @@
               "label": "Gênero de Imagem",
               "description": "Adivinhe o gênero da música olhando para a capa.",
               "value": "image-genre"
+            },
+            "image_artist": {
+              "label": "Artista de Imagem",
+              "description": "Adivinhe o artista da música olhando para a capa.",
+              "value": "image-artist"
             }
           }
         }
@@ -278,6 +288,16 @@
           "title": "Você errou o gênero",
           "message_ephemeral": "😬 Errr... Você errou o gênero!",
           "message_public": "😬 <@%interaction.user.id%> não adivinhou o gênero da música..."
+        },
+        "correct_artist_trivia": {
+          "title": "Você encontrou o artista",
+          "message_ephemeral": "👏 GG! Você encontrou o artista por trás da música.",
+          "message_public": "👏 <@%interaction.user.id%> adivinhou o artista por trás da música!"
+        },
+        "wrong_artist_trivia": {
+          "title": "Você errou o artista",
+          "message_ephemeral": "😬 Errr... Você errou o artista!",
+          "message_public": "😬 <@%interaction.user.id%> não adivinhou o artista por trás da música..."
         },
         "hint": {
           "description": "💡 Aqui está a dica : \n🤔 [A dica não está sendo exibida? Clique aqui para vê-la.](%songOfTodayRequest['previewUrl']%)"
@@ -550,6 +570,9 @@
       }
     },
     "trivia": {
+      "error_messages": {
+        "genre_not_available_in_this_mode": "❌ O gênero não pode ser selecionado com essa opção."
+      },
       "buttons": {
         "guess": {
           "label": "Adivinhar"
@@ -567,6 +590,7 @@
       "embed": {
         "title": "Adivinhe a música! 🎵",
         "description": "Você consegue adivinhar o %guess% de [esta música](%songOfTodayRequest['previewUrl']%) ? 🤔",
+        "description_artist": "artista",
         "description_title": "título",
         "description_genre": "gênero"
       },
