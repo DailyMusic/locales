@@ -108,6 +108,11 @@
               "description": "听一小段音乐片段，猜测音乐类型。",
               "value": "audio-genre"
             },
+            "audio_artist": {
+              "label": "音频艺术家",
+              "description": "听一小段音乐，猜猜音乐背后的艺术家是谁。",
+              "value": "audio-artist"
+            },
             "image_title": {
               "label": "图片标题",
               "description": "看封面猜音乐名称.",
@@ -117,6 +122,11 @@
               "label": "图像类型",
               "description": "看封面猜音乐类型。",
               "value": "image-genre"
+            },
+            "image_artist": {
+              "label": "形象艺术家",
+              "description": "通过封面猜测音乐背后的艺术家。.",
+              "value": "image-artist"
             }
           }
         }
@@ -278,6 +288,16 @@
           "title": "你搞错了流派",
           "message_ephemeral": "😬 呃... 你搞错了流派!",
           "message_public": "😬 <@%interaction.user.id%> 没有猜到音乐的类型..."
+        },
+        "correct_artist_trivia": {
+          "title": "你找到了艺术家",
+          "message_ephemeral": "👏 GG！你找到了音乐背后的艺术家。",
+          "message_public": "👏 <@%interaction.user.id%> 猜对了音乐背后的艺术家！"
+        },
+        "wrong_artist_trivia": {
+          "title": "你找错了艺术家",
+          "message_ephemeral": "😬 呃... 你找错了艺术家！",
+          "message_public": "😬 <@%interaction.user.id%> 没有猜到音乐背后的艺术家..."
         },
         "hint": {
           "description": "💡 以下是提示 : \n🤔 [提示未显示？ 点击此处查看](%songOfTodayRequest['previewUrl']%)"
@@ -550,6 +570,9 @@
       }
     },
     "trivia": {
+      "error_messages": {
+        "genre_not_available_in_this_mode": "❌ 该猜测无法选择流派."
+      },
       "buttons": {
         "guess": {
           "label": "猜测"
@@ -567,6 +590,7 @@
       "embed": {
         "title": "猜音乐 🎵",
         "description": "您能猜出 [这音乐](%songOfTodayRequest['previewUrl']%) 的 %guess% 吗？🤔",
+        "description_artist": "艺术家",
         "description_title": "标题",
         "description_genre": "类型"
       },
