@@ -108,6 +108,11 @@
               "description": "Raad het genre van de muziek door naar een kort fragment te luisteren.",
               "value": "audio-genre"
             },
+            "audio_artist": {
+              "label": "Audio Kunstenaar",
+              "description": "Raad de kunstenaar achter de muziek door naar een kort fragment te luisteren.",
+              "value": "audio-artist"
+            },
             "image_title": {
               "label": "Afbeelding Titel",
               "description": "Raad de titel van de muziek door naar de hoes te kijken.",
@@ -117,6 +122,11 @@
               "label": "Afbeelding Genre",
               "description": "Raad het genre van de muziek door naar de hoes te kijken.",
               "value": "afbeelding-genre"
+            },
+            "image_artist": {
+              "label": "Afbeelding Kunstenaar",
+              "description": "Raad de kunstenaar achter de muziek door naar de hoes te kijken.",
+              "value": "image-artist"
             }
           }
         }
@@ -278,6 +288,16 @@
           "title": "Je hebt het genre verkeerd",
           "message_ephemeral": "😬 Eh... Je hebt het genre verkeerd!",
           "message_public": "😬 <@%interaction.user.id%> heeft het genre van de muziek niet geraden..."
+        },
+        "correct_artist_trivia": {
+          "title": "Je hebt de artiest gevonden",
+          "message_ephemeral": "👏 GG! Je hebt de artiest achter de muziek gevonden.",
+          "message_public": "👏 <@%interaction.user.id%> heeft de artiest achter de muziek geraden!"
+        },
+        "wrong_artist_trivia": {
+          "title": "Je hebt de verkeerde artiest",
+          "message_ephemeral": "😬 Eh... Je hebt de verkeerde artiest!",
+          "message_public": "😬 <@%interaction.user.id%> heeft de artiest achter de muziek niet geraden..."
         },
         "hint": {
           "description": "💡 Hier is de tip: \n🤔 [De tip wordt niet weergegeven? Klik hier om deze te bekijken.](%songOfTodayRequest['previewUrl']%)"
@@ -550,6 +570,9 @@
       }
     },
     "trivia": {
+      "error_messages": {
+        "genre_not_available_in_this_mode": "❌ Het genre kan niet worden geselecteerd met deze gok."
+      },
       "buttons": {
         "guess": {
           "label": "Gokken"
@@ -567,7 +590,9 @@
       "embed": {
         "title": "Raad de muziek! 🎵",
         "description": "Kun je het %guess% van [deze muziek](%songOfTodayRequest['previewUrl']%) raden? 🤔",
+        "description_artist": "kunstenaar",
         "description_title": "titel",
+
         "description_genre": "genre"
       },
       "menu": {
