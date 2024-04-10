@@ -108,6 +108,11 @@
               "description": "Erraten Sie das Genre der Musik, indem Sie sich einen kurzen Ausschnitt anhören.",
               "value": "audio-genre"
             },
+            "audio_artist": {
+              "label": "Audio Artist",
+              "description": "Erraten Sie den Künstler hinter der Musik, indem Sie sich einen kurzen Ausschnitt anhören.",
+              "value": "audio-artist"
+            },
             "image_title": {
               "label": "Bildtitel",
               "description": "Erraten Sie den Titel der Musik, indem Sie sich das Cover ansehen.",
@@ -117,6 +122,11 @@
               "label": "Bildgenre",
               "description": "Erraten Sie das Genre der Musik, indem Sie sich das Cover ansehen.",
               "value": "image-genre"
+            },
+            "image_artist": {
+              "label": "Image Artist",
+              "description": "Errate den Künstler hinter der Musik anhand des Covers.",
+              "value": "image-artist"
             }
           }
         }
@@ -278,6 +288,16 @@
           "title": "Sie haben das Genre falsch",
           "message_ephemeral": "😬 Ähm... Sie haben das Genre falsch!",
           "message_public": "😬 <@%interaction.user.id%> hat das Genre der Musik nicht erraten..."
+        },
+        "correct_artist_trivia": {
+          "title": "Sie haben den Künstler gefunden",
+          "message_ephemeral": "👏 GG! Du hast den Künstler hinter der Musik gefunden.",
+          "message_public": "👏 <@%interaction.user.id%> hat den Künstler hinter der Musik erraten!"
+        },
+        "wrong_artist_trivia": {
+          "title": "Sie haben den Künstler falsch verstanden",
+          "message_ephemeral": "😬 Errr... Sie haben den Künstler falsch verstanden!",
+          "message_public": "😬 <@%interaction.user.id%> hat den Künstler hinter der Musik nicht erraten..."
         },
         "hint": {
           "description": "💡 Hier ist der Hinweis: \n🤔 [Der Hinweis wird nicht angezeigt? Klicken Sie hier, um ihn anzuzeigen.](%songOfTodayRequest['previewUrl']%)"
@@ -550,6 +570,9 @@
       }
     },
     "trivia": {
+      "error_messages": {
+        "genre_not_available_in_this_mode": "❌ Das Genre kann mit diesem Tipp nicht ausgewählt werden."
+      },
       "buttons": {
         "guess": {
           "label": "Raten"
@@ -567,6 +590,7 @@
       "embed": {
         "title": "Errate die Musik! 🎵",
         "description": "Kannst du den %guess% von [dieser Musik](%songOfTodayRequest['previewUrl']%) erraten? 🤔",
+        "description_artist": "Künstler",
         "description_title": "Titel",
         "description_genre": "Genre"
       },
