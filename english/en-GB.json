@@ -108,6 +108,11 @@
               "description": "Guess the genre of the music by listening to a short extract.",
               "value": "audio-genre"
             },
+            "audio_artist": {
+              "label": "Audio Artist",
+              "description": "Guess the artist behind the music by listening to a short extract.",
+              "value": "audio-artist"
+            },
             "image_title": {
               "label": "Image Title",
               "description": "Guess the title of the music by looking at the cover.",
@@ -117,6 +122,11 @@
               "label": "Image Genre",
               "description": "Guess the genre of the music by looking at the cover.",
               "value": "image-genre"
+            },
+            "image_artist": {
+              "label": "Image Artist",
+              "description": "Guess the artist behind the music by looking at the cover.",
+              "value": "image-artist"
             }
           }
         }
@@ -261,7 +271,7 @@
         },
         "wrong_title_trivia": {
           "title": "You've got the title wrong",
-          "description": "ℹ️ Here's some information about the music we're expecting.",
+          "description": "ℹ️ Here's some information about the music.",
           "your_guess": "🤔 Your guess",
           "expected_guess": "🎯 Expected guess",
           "similarity": "🤷‍♂️ Similarity",
@@ -278,6 +288,16 @@
           "title": "You've got the genre wrong",
           "message_ephemeral": "😬 Errr... You've got the genre wrong!",
           "message_public": "😬 <@%interaction.user.id%> didn't guess the genre of the music..."
+        },
+        "correct_artist_trivia": {
+          "title": "You've found the artist",
+          "message_ephemeral": "👏 GG! You've found the artist behind the music.",
+          "message_public": "👏 <@%interaction.user.id%> guessed the artist behind the music!"
+        },
+        "wrong_artist_trivia": {
+          "title": "You've got the artist wrong",
+          "message_ephemeral": "😬 Errr... You've got the artist wrong!",
+          "message_public": "😬 <@%interaction.user.id%> didn't guess the artist behind the music..."
         },
         "hint": {
           "description": "💡 Here is the hint : \n🤔 [The hint is not displayed? Click here to view it.](%songOfTodayRequest['previewUrl']%)"
@@ -550,6 +570,9 @@
       }
     },
     "trivia": {
+      "error_messages": {
+        "genre_not_available_in_this_mode": "❌ The genre cannot be selected with this guess."
+      },
       "buttons": {
         "guess": {
           "label": "Guess"
@@ -567,6 +590,7 @@
       "embed": {
         "title": "Guess the music! 🎵",
         "description": "Can you guess the %guess% of [this music](%songOfTodayRequest['previewUrl']%) ? 🤔",
+        "description_artist": "artist",
         "description_title": "title",
         "description_genre": "genre"
       },
