@@ -101,22 +101,32 @@
             "audio_title": {
               "label": "Título de Audio",
               "description": "Adivina el título de la música escuchando un breve extracto.",
-              "value": "titulo-audio"
+              "value": "audio-title"
             },
             "audio_genre": {
               "label": "Género de Audio",
               "description": "Adivina el género de la música escuchando un breve extracto.",
-              "value": "genero-audio"
+              "value": "audio-genre"
+            },
+            "audio_artist": {
+              "label": "Audio Artist",
+              "description": "Adivina el artista de la música escuchando un breve extracto.",
+              "value": "audio-artist"
             },
             "image_title": {
               "label": "Título de Imagen",
               "description": "Adivina el título de la música mirando la portada.",
-              "value": "titulo-imagen"
+              "value": "image-title"
             },
             "image_genre": {
               "label": "Género de Imagen",
               "description": "Adivina el género de la música mirando la portada.",
-              "value": "genero-imagen"
+              "value": "image-genre"
+            },
+            "image_artist": {
+              "label": "Image Artist",
+              "description": "Adivina el artista de la música mirando la portada",
+              "value": "image-artist"
             }
           }
         }
@@ -278,6 +288,16 @@
           "title": "Has obtenido el género incorrecto",
           "message_ephemeral": "😬 ¡Ups... Has obtenido el género incorrecto!",
           "message_public": "😬 <@%interaction.user.id%> no adivinó el género de la música..."
+        },
+        "correct_artist_trivia": {
+          "title": "Has encontrado al artista",
+          "message_ephemeral": "👏 ¡Felicidades! Has encontrado al artista detrás de la música.",
+          "message_public": "👏 ¡<@%interaction.user.id%> adivinó al artista detrás de la música!"
+        },
+        "wrong_artist_trivia": {
+          "title": "Has obtenido el artista incorrecto",
+          "message_ephemeral": "😬 ¡Ups... Has obtenido el artist incorrecto!",
+          "message_public": "😬 <@%interaction.user.id%> no ha adivinado al artista detrás de la música..."
         },
         "hint": {
           "description": "💡 Aquí tienes la pista: \n🤔 [¿La pista no se muestra? Haz clic aquí para verla.](%songOfTodayRequest['previewUrl']%)"
@@ -550,6 +570,9 @@
       }
     },
     "trivia": {
+      "error_messages": {
+        "genre_not_available_in_this_mode": "❌ No se puede seleccionar el género con esta suposición."
+      },
       "buttons": {
         "guess": {
           "label": "Adivinar"
@@ -567,6 +590,7 @@
       "embed": {
         "title": "¡Adivina la canción! 🎵",
         "description": "¿Puedes adivinar el %guess% de [esta canción](%songOfTodayRequest['previewUrl']%)? 🤔",
+        "description_artist": "artista",
         "description_title": "título",
         "description_genre": "género"
       },
