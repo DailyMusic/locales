@@ -108,6 +108,11 @@
               "description": "Kısa bir bölüm dinleyerek müziğin türünü tahmin edin.",
               "value": "audio-genre"
             },
+            "audio_artist": {
+              "label": "Ses Sanatçısı",
+              "description": "Kısa bir parçayı dinleyerek müziğin arkasındaki sanatçıyı tahmin edin.",
+              "value": "audio-artist"
+            },
             "image_title": {
               "label": "Görüntü Başlığı",
               "description": "Kapak fotoğrafına bakarak müziğin başlığını tahmin edin.",
@@ -117,6 +122,11 @@
               "label": "Görüntü Türü",
               "description": "Kapak fotoğrafına bakarak müziğin türünü tahmin edin.",
               "value": "image-genre"
+            },
+            "image_artist": {
+              "label": "Resim Sanatçısı",
+              "description": "Kapağa bakarak müziğin arkasındaki sanatçıyı tahmin edin.",
+              "value": "image-artist"
             }
           }
         }
@@ -278,6 +288,16 @@
           "title": "Türü yanlış buldunuz",
           "message_ephemeral": "😬 Üzgünüm... Müziğin türünü yanlış buldunuz!",
           "message_public": "😬 <@%interaction.user.id%> müziğin türünü tahmin edemedi..."
+        },
+        "correct_artist_trivia": {
+          "title": "Sanatçıyı buldunuz",
+          "message_ephemeral": "👏 Tebrikler! Müziğin arkasındaki sanatçıyı buldunuz.",
+          "message_public": "👏 <@%interaction.user.id%> müziğin arkasındaki sanatçıyı tahmin etti!"
+        },
+        "wrong_artist_trivia": {
+          "title": "Sanatçıyı yanlış buldunuz",
+          "message_ephemeral": "😬 Üzgünüm... Sanatçıyı yanlış buldunuz!",
+          "message_public": "😬 <@%interaction.user.id%> müziğin arkasındaki sanatçıyı tahmin edemedi..."
         },
         "hint": {
           "description": "💡 İşte ipucu: \n🤔 [İpucu görüntülenmiyor mu? Görmek için buraya tıklayın.](%songOfTodayRequest['previewUrl']%)"
@@ -550,6 +570,9 @@
       }
     },
     "trivia": {
+      "error_messages": {
+        "genre_not_available_in_this_mode": "❌ Bu tahmin ile tür seçilemez."
+      },
       "buttons": {
         "guess": {
           "label": "Tahmin Et"
@@ -567,6 +590,7 @@
       "embed": {
         "title": "Müziği tahmin et! 🎵",
         "description": "[Bu müziğin](%songOfTodayRequest['previewUrl']%) %guess%ini tahmin edebilir misiniz? 🤔",
+        "description_artist": "sanatçı",
         "description_title": "başlık",
         "description_genre": "tür"
       },
