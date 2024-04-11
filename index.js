@@ -65,6 +65,12 @@ module.exports = {
         "status": "✅",
         "filePath": "portuguese/pt-BR.json"
     },
+    "nl": {
+        "name": "Dutch",
+        "nativeName": "Nederlands",
+        "status": "✅",
+        "filePath": "dutch/nl.json"
+    },
     "it": {
         "name": "Italian",
         "nativeName": "Italiano",
