@@ -8,6 +8,24 @@
     "totd": "Curiosidade do Dia: Consegue adivinhar a música?",
     "eotd": "Neste dia na história da música: descubra o que aconteceu!"
   },
+  "acronyms": {
+    "motd": "MDD",
+    "totd": "CDD",
+    "eotd": "EDD"
+  },
+  "languages": {
+    "de": "Alemão",
+    "en-GB": "Inglês",
+    "en-US": "Inglês",
+    "es-419": "Espanhol",
+    "es-ES": "Espanhol",
+    "fr": "Francês",
+    "nl": "Holandês",
+    "pt-BR": "Português Brasileiro",
+    "ru": "Russo",
+    "tr": "Turco",
+    "zh-CN": "Chinês"
+  },
   "events": {
     "interactionCreate": {
       "error_messages": {
@@ -388,7 +406,7 @@
         "configuration_exists": {
           "fields": {
             "field_title_one": "📰 Canal",
-            "field_title_two": "🌐 Idioma",
+            "field_title_two": "🌎 Idioma",
             "field_title_three": "🔔 Cargo",
             "field_title_four": "🎵 Gênero",
             "field_title_five": "📱 Exibição",
