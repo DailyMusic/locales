@@ -8,6 +8,24 @@
     "totd": "Trivia of the Day : Can you guess the music?",
     "eotd": "On this day in the history of music : Find out what happened!"
   },
+  "acronyms": {
+    "motd": "MOTD",
+    "totd": "TOTD",
+    "eotd": "EOTD"
+  },
+  "languages": {
+    "de": "German",
+    "en-GB": "English",
+    "en-US": "English",
+    "es-419": "Spanish",
+    "es-ES": "Spanish",
+    "fr": "French",
+    "nl": "Dutch",
+    "pt-BR": "Portuguese Brazilian",
+    "ru": "Russian",
+    "tr": "Turkish",
+    "zh-CN": "Chinese"
+  },
   "events": {
     "interactionCreate": {
       "error_messages": {
@@ -389,7 +407,7 @@
         "configuration_exists": {
           "fields": {
             "field_title_one": "📰 Channel",
-            "field_title_two": "🌐 Lang",
+            "field_title_two": "🌎 Language",
             "field_title_three": "🔔 Role",
             "field_title_four": "🎵 Genre",
             "field_title_five": "📱 Display",
