@@ -127,6 +127,31 @@
               "label": "Resim Sanatçısı",
               "description": "Kapağa bakarak müziğin arkasındaki sanatçıyı tahmin edin.",
               "value": "image-artist"
+            },
+            "title_year": {
+              "label": "Başlık Yayın Yılı",
+              "description": "Başlığına göre müziğin yayın yılını tahmin edin.",
+              "value": "title-year"
+            }
+          }
+        },
+        "ping_for_select_menu": {
+          "placeholder": "İçin bildirim alın:",
+          "options": {
+            "motd": {
+              "label": "Günün Müziği",
+              "description": "Günün Müziği için bildirim alın.",
+              "value": "motd"
+            },
+            "totd": {
+              "label": "Günün Bilgisi",
+              "description": "Günün Bilgisi için bildirim alın.",
+              "value": "totd"
+            },
+            "eotd": {
+              "label": "Günün Etkinlikleri",
+              "description": "Günün Etkinlikleri için bildirim alın.",
+              "value": "eotd"
             }
           }
         }
@@ -134,7 +159,7 @@
       "modals": {
         "trivia_modal": {
           "title": "Müziği Tahmin Edin!",
-          "input": "Bu müziğin başlığı nedir?"
+          "input": "Bu müziğin %guess% nedir?"
         }
       },
       "buttons": {
@@ -298,6 +323,16 @@
           "title": "Sanatçıyı yanlış buldunuz",
           "message_ephemeral": "😬 Üzgünüm... Sanatçıyı yanlış buldunuz!",
           "message_public": "😬 <@%interaction.user.id%> müziğin arkasındaki sanatçıyı tahmin edemedi..."
+        },
+        "correct_year_trivia": {
+          "title": "Yayın yılını buldunuz",
+          "message_ephemeral": "👏 Tebrikler! Müziğin yayın yılını buldunuz.",
+          "message_public": "👏 <@%interaction.user.id%> müziğin yayın yılını tahmin etti!"
+        },
+        "wrong_year_trivia": {
+          "title": "Yayın yılını yanlış buldunuz",
+          "message_ephemeral": "😬 Üzgünüm... Yayın yılını yanlış buldunuz!",
+          "message_public": "😬 <@%interaction.user.id%> müziğin yayın yılını tahmin etmedi..."
         },
         "hint": {
           "description": "💡 İşte ipucu: \n🤔 [İpucu görüntülenmiyor mu? Görmek için buraya tıklayın.](%songOfTodayRequest['previewUrl']%)"
@@ -571,7 +606,8 @@
     },
     "trivia": {
       "error_messages": {
-        "genre_not_available_in_this_mode": "❌ Bu tahmin ile tür seçilemez."
+        "genre_not_available_in_this_mode": "❌ Bu tahminle tür seçilemez.",
+        "guess_not_available_in_this_mode": "❌ Bu tahmin bu modda seçilemez."
       },
       "buttons": {
         "guess": {
@@ -590,6 +626,7 @@
       "embed": {
         "title": "Müziği tahmin et! 🎵",
         "description": "[Bu müziğin](%songOfTodayRequest['previewUrl']%) %guess%ini tahmin edebilir misiniz? 🤔",
+        "description_year": "yıl",
         "description_artist": "sanatçı",
         "description_title": "başlık",
         "description_genre": "tür"
