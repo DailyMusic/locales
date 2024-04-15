@@ -127,6 +127,31 @@
               "label": "Image Artist",
               "description": "Adivina el artista de la música mirando la portada",
               "value": "image-artist"
+            },
+            "title_year": {
+              "label": "Año De Lanzamiento Del Título",
+              "description": "Adivina el año de lanzamiento de la música por su título.",
+              "value": "title-year"
+            }
+          }
+        },
+        "ping_for_select_menu": {
+          "placeholder": "Recibir notificaciones por:",
+          "options": {
+            "motd": {
+              "label": "Música del día",
+              "description": "Recibir notificaciones para la música del día.",
+              "value": "motd"
+            },
+            "totd": {
+              "label": "Trivia del día",
+              "description": "Recibir notificaciones para la trivia del día.",
+              "value": "totd"
+            },
+            "eotd": {
+              "label": "Eventos del día",
+              "description": "Recibir notificaciones para los eventos del día.",
+              "value": "eotd"
             }
           }
         }
@@ -134,7 +159,7 @@
       "modals": {
         "trivia_modal": {
           "title": "¡Adivina la música!",
-          "input": "¿Cuál es el título de esta música?"
+          "input": "¿Cuál es el %guess% de esta música?"
         }
       },
       "buttons": {
@@ -298,6 +323,16 @@
           "title": "Has obtenido el artista incorrecto",
           "message_ephemeral": "😬 ¡Ups... Has obtenido el artist incorrecto!",
           "message_public": "😬 <@%interaction.user.id%> no ha adivinado al artista detrás de la música..."
+        },
+        "correct_year_trivia": {
+          "title": "Has encontrado el año de lanzamiento",
+          "message_ephemeral": "👏 ¡Bien hecho! Has encontrado el año de lanzamiento de la música.",
+          "message_public": "👏 ¡<@%interaction.user.id%> ha adivinado el año de lanzamiento de la música!"
+        },
+        "wrong_year_trivia": {
+          "title": "Has obtenido el año de lanzamiento incorrecto",
+          "message_ephemeral": "😬 ¡Ups! Has obtenido el año de lanzamiento incorrecto.",
+          "message_public": "😬 <@%interaction.user.id%> no adivinó el año de lanzamiento de la música..."
         },
         "hint": {
           "description": "💡 Aquí tienes la pista: \n🤔 [¿La pista no se muestra? Haz clic aquí para verla.](%songOfTodayRequest['previewUrl']%)"
@@ -571,7 +606,8 @@
     },
     "trivia": {
       "error_messages": {
-        "genre_not_available_in_this_mode": "❌ No se puede seleccionar el género con esta suposición."
+        "genre_not_available_in_this_mode": "❌ El género no puede ser seleccionado con esta suposición.",
+        "guess_not_available_in_this_mode": "❌ Esta suposición no puede ser seleccionada con este modo."
       },
       "buttons": {
         "guess": {
@@ -590,6 +626,7 @@
       "embed": {
         "title": "¡Adivina la canción! 🎵",
         "description": "¿Puedes adivinar el %guess% de [esta canción](%songOfTodayRequest['previewUrl']%)? 🤔",
+        "description_year": "año",
         "description_artist": "artista",
         "description_title": "título",
         "description_genre": "género"
