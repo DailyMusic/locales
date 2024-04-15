@@ -127,6 +127,31 @@
               "label": "形象艺术家",
               "description": "通过封面猜测音乐背后的艺术家。.",
               "value": "image-artist"
+            },
+            "title_year": {
+              "label": "标题发布年份",
+              "description": "根据标题猜测音乐的发布年份。",
+              "value": "title-year"
+            }
+          }
+        },
+        "ping_for_select_menu": {
+          "placeholder": "获取通知：",
+          "options": {
+            "motd": {
+              "label": "每日音乐",
+              "description": "收到每日音乐通知。",
+              "value": "motd"
+            },
+            "totd": {
+              "label": "每日知识问答",
+              "description": "收到每日知识问答通知。",
+              "value": "totd"
+            },
+            "eotd": {
+              "label": "每日活动",
+              "description": "收到每日活动通知。",
+              "value": "eotd"
             }
           }
         }
@@ -134,7 +159,7 @@
       "modals": {
         "trivia_modal": {
           "title": "猜音乐",
-          "input": "这首音乐的标题是什么？"
+          "input": "这种音乐的%guess%是什么？"
         }
       },
       "buttons": {
@@ -298,6 +323,16 @@
           "title": "你找错了艺术家",
           "message_ephemeral": "😬 呃... 你找错了艺术家！",
           "message_public": "😬 <@%interaction.user.id%> 没有猜到音乐背后的艺术家..."
+        },
+        "correct_year_trivia": {
+          "title": "您找到了发行年份",
+          "message_ephemeral": "👏 GG！您找到了音乐的发行年份。",
+          "message_public": "👏 <@%interaction.user.id%> 猜到了音乐的发行年份！"
+        },
+        "wrong_year_trivia": {
+          "title": "您错误地找到了发行年份",
+          "message_ephemeral": "😬 呃...您错误地找到了发行年份！",
+          "message_public": "😬 <@%interaction.user.id%> 没有猜到音乐的发行年份..."
         },
         "hint": {
           "description": "💡 以下是提示 : \n🤔 [提示未显示？ 点击此处查看](%songOfTodayRequest['previewUrl']%)"
@@ -571,7 +606,8 @@
     },
     "trivia": {
       "error_messages": {
-        "genre_not_available_in_this_mode": "❌ 该猜测无法选择流派."
+        "genre_not_available_in_this_mode": "❌ 该猜测无法选择此类型。",
+        "guess_not_available_in_this_mode": "❌ 此猜测无法与此模式一起选择。"
       },
       "buttons": {
         "guess": {
@@ -590,6 +626,7 @@
       "embed": {
         "title": "猜音乐 🎵",
         "description": "您能猜出 [这音乐](%songOfTodayRequest['previewUrl']%) 的 %guess% 吗？🤔",
+        "description_year": "年",
         "description_artist": "艺术家",
         "description_title": "标题",
         "description_genre": "类型"
