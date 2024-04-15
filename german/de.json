@@ -127,6 +127,31 @@
               "label": "Image Artist",
               "description": "Errate den Künstler hinter der Musik anhand des Covers.",
               "value": "image-artist"
+            },
+            "title_year": {
+              "label": "Veröffentlichungsjahr-Titels",
+              "description": "Errate das Veröffentlichungsjahr der Musik anhand ihres Titels.",
+              "value": "title-year"
+            }
+          }
+        },
+        "ping_for_select_menu": {
+          "placeholder": "Erhalten Sie eine Benachrichtigung für:",
+          "options": {
+            "motd": {
+              "label": "Musik des Tages",
+              "description": "Benachrichtigung für die Musik des Tages erhalten.",
+              "value": "motd"
+            },
+            "totd": {
+              "label": "Trivia des Tages",
+              "description": "Benachrichtigung für die Trivia des Tages erhalten.",
+              "value": "totd"
+            },
+            "eotd": {
+              "label": "Veranstaltungen des Tages",
+              "description": "Benachrichtigung für die Veranstaltungen des Tages erhalten.",
+              "value": "eotd"
             }
           }
         }
@@ -134,7 +159,7 @@
       "modals": {
         "trivia_modal": {
           "title": "Erraten Sie die Musik!",
-          "input": "Was ist der Titel dieser Musik?"
+          "input": "Was ist der %guess% dieser Musik?"
         }
       },
       "buttons": {
@@ -298,6 +323,16 @@
           "title": "Sie haben den Künstler falsch verstanden",
           "message_ephemeral": "😬 Errr... Sie haben den Künstler falsch verstanden!",
           "message_public": "😬 <@%interaction.user.id%> hat den Künstler hinter der Musik nicht erraten..."
+        },
+        "correct_year_trivia": {
+          "title": "Du hast das Erscheinungsjahr gefunden",
+          "message_ephemeral": "👏 Glückwunsch! Du hast das Erscheinungsjahr der Musik gefunden.",
+          "message_public": "👏 <@%interaction.user.id%> hat das Erscheinungsjahr der Musik erraten!"
+        },
+        "wrong_year_trivia": {
+          "title": "Du hast das Erscheinungsjahr falsch",
+          "message_ephemeral": "😬 Ähm... Du hast das Erscheinungsjahr falsch!",
+          "message_public": "😬 <@%interaction.user.id%> hat das Erscheinungsjahr der Musik nicht erraten..."
         },
         "hint": {
           "description": "💡 Hier ist der Hinweis: \n🤔 [Der Hinweis wird nicht angezeigt? Klicken Sie hier, um ihn anzuzeigen.](%songOfTodayRequest['previewUrl']%)"
@@ -571,7 +606,8 @@
     },
     "trivia": {
       "error_messages": {
-        "genre_not_available_in_this_mode": "❌ Das Genre kann mit diesem Tipp nicht ausgewählt werden."
+        "genre_not_available_in_this_mode": "❌ Das Genre kann mit diesem Modus nicht ausgewählt werden.",
+        "guess_not_available_in_this_mode": "❌ Diese Vermutung kann mit diesem Modus nicht ausgewählt werden."
       },
       "buttons": {
         "guess": {
@@ -590,6 +626,7 @@
       "embed": {
         "title": "Errate die Musik! 🎵",
         "description": "Kannst du den %guess% von [dieser Musik](%songOfTodayRequest['previewUrl']%) erraten? 🤔",
+        "description_year": "Jahr",
         "description_artist": "Künstler",
         "description_title": "Titel",
         "description_genre": "Genre"
