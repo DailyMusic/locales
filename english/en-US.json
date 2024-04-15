@@ -127,6 +127,31 @@
               "label": "Image Artist",
               "description": "Guess the artist behind the music by looking at the cover.",
               "value": "image-artist"
+            },
+            "title_year": {
+              "label": "Title Release Year",
+              "description": "Guess the release year of the music by its title.",
+              "value": "title-year"
+            }
+          }
+        },
+        "ping_for_select_menu": {
+          "placeholder": "Get notified for:",
+          "options": {
+            "motd": {
+              "label": "Music Of The Day",
+              "description": "Get notified for the Music Of The Day.",
+              "value": "motd"
+            },
+            "totd": {
+              "label": "Trivia Of The Day",
+              "description": "Get notified for the Trivia Of The Day.",
+              "value": "totd"
+            },
+            "eotd": {
+              "label": "Events Of The Day",
+              "description": "Get notified for the Events Of The Day",
+              "value": "eotd"
             }
           }
         }
@@ -134,7 +159,7 @@
       "modals": {
         "trivia_modal": {
           "title": "Guess the music!",
-          "input": "What is the title of this music?"
+          "input": "What is the %guess% of this music?"
         }
       },
       "buttons": {
@@ -299,6 +324,17 @@
           "message_ephemeral": "😬 Errr... You've got the artist wrong!",
           "message_public": "😬 <@%interaction.user.id%> didn't guess the artist behind the music..."
         },
+        "correct_year_trivia": {
+          "title": "You've found the release year",
+          "message_ephemeral": "👏 GG! You've found the release year of the music.",
+          "message_public": "👏 <@%interaction.user.id%> guessed the release year of the music!"
+        },
+        "wrong_year_trivia": {
+          "title": "You've got the release year wrong",
+          "message_ephemeral": "😬 Errr... You've got the release year wrong!",
+          "message_public": "😬 <@%interaction.user.id%> didn't guess the release year of the music..."
+        },
+
         "hint": {
           "description": "💡 Here is the hint : \n🤔 [The hint is not displayed? Click here to view it.](%songOfTodayRequest['previewUrl']%)"
         }
@@ -571,7 +607,8 @@
     },
     "trivia": {
       "error_messages": {
-        "genre_not_available_in_this_mode": "❌ The genre cannot be selected with this guess."
+        "genre_not_available_in_this_mode": "❌ The genre cannot be selected with this guess.",
+        "guess_not_available_in_this_mode": "❌ This guess cannot be selected with this mode."
       },
       "buttons": {
         "guess": {
@@ -590,6 +627,7 @@
       "embed": {
         "title": "Guess the music! 🎵",
         "description": "Can you guess the %guess% of [this music](%songOfTodayRequest['previewUrl']%) ? 🤔",
+        "description_year": "year",
         "description_artist": "artist",
         "description_title": "title",
         "description_genre": "genre"
