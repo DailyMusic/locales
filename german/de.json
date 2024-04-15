@@ -8,6 +8,24 @@
     "totd": "Trivia des Tages : Kannst du die Musik erraten?",
     "eotd": "An diesem Tag in der Geschichte der Musik: Finden Sie heraus, was passiert ist!"
   },
+  "acronyms": {
+    "motd": "MDT",
+    "totd": "TDT",
+    "eotd": "EDT"
+  },
+  "languages": {
+    "de": "Deutsch",
+    "en-GB": "Englisch",
+    "en-US": "Englisch",
+    "es-419": "Spanisch",
+    "es-ES": "Spanisch",
+    "fr": "Französisch",
+    "nl": "Niederländisch",
+    "pt-BR": "Portugiesisch Brasilianisch",
+    "ru": "Russisch",
+    "tr": "Türkisch",
+    "zh-CN": "Chinesisch"
+  },
   "events": {
     "interactionCreate": {
       "error_messages": {
@@ -388,7 +406,7 @@
         "configuration_exists": {
           "fields": {
             "field_title_one": "📰 Kanal",
-            "field_title_two": "🌐 Sprache",
+            "field_title_two": "🌎 Sprache",
             "field_title_three": "🔔 Rolle",
             "field_title_four": "🎵 Genre",
             "field_title_five": "📱 Anzeige",
