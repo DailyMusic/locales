@@ -8,6 +8,24 @@
     "totd": "Trivia del Día: ¿Puedes adivinar la música?",
     "eotd": "En este día de la historia de la música : ¡Descubra qué pasó!"
   },
+  "acronyms": {
+    "motd": "MDD",
+    "totd": "TDD",
+    "eotd": "EDD"
+  },
+  "languages": {
+    "de": "Alemán",
+    "en-GB": "Inglés",
+    "en-US": "Inglés",
+    "es-419": "Español",
+    "es-ES": "Español",
+    "fr": "Francés",
+    "nl": "Holandés",
+    "pt-BR": "Portugués Brasileño",
+    "ru": "Ruso",
+    "tr": "Turco",
+    "zh-CN": "Chino"
+  },
   "events": {
     "interactionCreate": {
       "error_messages": {
@@ -388,7 +406,7 @@
         "configuration_exists": {
           "fields": {
             "field_title_one": "📰 Canal",
-            "field_title_two": "🌐 Idioma",
+            "field_title_two": "🌎 Idioma",
             "field_title_three": "🔔 Rol",
             "field_title_four": "🎵 Género",
             "field_title_five": "📱 Visualización",
