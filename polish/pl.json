@@ -8,6 +8,24 @@
     "totd": "Ciekawostki dnia: Czy możesz zgadnąć utwór?",
     "eotd": "W tym dniu w historii muzyki: Dowiedz się, co się wydarzyło!"
   },
+  "acronyms": {
+    "motd": "MD",
+    "totd": "CD",
+    "eotd": "WD"
+  },
+  "languages": {
+    "de": "Niemiecki",
+    "en-GB": "Angielski",
+    "en-US": "Angielski",
+    "es-419": "Hiszpański",
+    "es-ES": "Hiszpański",
+    "fr": "Francuski",
+    "nl": "Holenderski",
+    "pt-BR": "Portugalski Brazylijski",
+    "ru": "Rosyjski",
+    "tr": "Turecki",
+    "zh-CN": "Chiński"
+  },
   "events": {
     "interactionCreate": {
       "error_messages": {
@@ -389,7 +407,7 @@
         "configuration_exists": {
           "fields": {
             "field_title_one": "📰 Kanał",
-            "field_title_two": "🌐 Język",
+            "field_title_two": "🌎 Język",
             "field_title_three": "🔔 Rola",
             "field_title_four": "🎵 Gatunek",
             "field_title_five": "📱 Wyświetlacz",
