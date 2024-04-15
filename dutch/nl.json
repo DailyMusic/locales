@@ -8,6 +8,24 @@
     "totd": "Trivia van de Dag: Kun je de muziek raden?",
     "eotd": "Op deze dag in de muziekgeschiedenis: Ontdek wat er gebeurde!"
   },
+  "acronyms": {
+    "motd": "MVDD",
+    "totd": "TVDD",
+    "eotd": "EVDD"
+  },
+  "languages": {
+    "de": "Duits",
+    "en-GB": "Engels",
+    "en-US": "Engels",
+    "es-419": "Spaans",
+    "es-ES": "Spaans",
+    "fr": "Frans",
+    "nl": "Nederlands",
+    "pt-BR": "Braziliaans Portugees",
+    "ru": "Russisch",
+    "tr": "Turks",
+    "zh-CN": "Chinees"
+  },
   "events": {
     "interactionCreate": {
       "error_messages": {
@@ -388,7 +406,7 @@
         "configuration_exists": {
           "fields": {
             "field_title_one": "📰 Kanaal",
-            "field_title_two": "🌐 Taal",
+            "field_title_two": "🌎 Taal",
             "field_title_three": "🔔 Rol",
             "field_title_four": "🎵 Genre",
             "field_title_five": "📱 Weergave",
