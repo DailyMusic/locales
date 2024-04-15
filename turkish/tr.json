@@ -8,6 +8,24 @@
     "totd": "Günün Bilgisi: Müziği tahmin edebilir misiniz?",
     "eotd": "Müzik tarihinde bu gün: Neler olduğunu öğrenin!"
   },
+  "acronyms": {
+    "motd": "GM",
+    "totd": "GT'sı",
+    "eotd": "GO"
+  },
+  "languages": {
+    "de": "Almanca",
+    "en-GB": "İngilizce",
+    "en-US": "İngilizce",
+    "es-419": "İspanyolca",
+    "es-ES": "İspanyolca",
+    "fr": "Fransızca",
+    "nl": "Hollandaca",
+    "pt-BR": "Portekizce Brezilya",
+    "ru": "Rusça",
+    "tr": "Türkçe",
+    "zh-CN": "Çince"
+  },
   "events": {
     "interactionCreate": {
       "error_messages": {
@@ -388,7 +406,7 @@
         "configuration_exists": {
           "fields": {
             "field_title_one": "📰 Kanal",
-            "field_title_two": "🌐 Dil",
+            "field_title_two": "🌎 Dil",
             "field_title_three": "🔔 Rol",
             "field_title_four": "🎵 Tür",
             "field_title_five": "📱 Ekran",
