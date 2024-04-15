@@ -127,6 +127,31 @@
               "label": "Artysta obrazu",
               "description": "Zgadnij artysta muzyki, patrząc na okładkę.",
               "value": "image-artist"
+            },
+            "title_year": {
+              "label": "Rok Wydania Tytułu",
+              "description": "Zgadnij rok wydania muzyki po tytule.",
+              "value": "title-year"
+            }
+          }
+        },
+        "ping_for_select_menu": {
+          "placeholder": "Otrzymuj powiadomienia o:",
+          "options": {
+            "motd": {
+              "label": "Muzyka Dnia",
+              "description": "Otrzymuj powiadomienia o Muzyce Dnia.",
+              "value": "motd"
+            },
+            "totd": {
+              "label": "Trivia Dnia",
+              "description": "Otrzymuj powiadomienia o Trivii Dnia.",
+              "value": "totd"
+            },
+            "eotd": {
+              "label": "Wydarzenia Dnia",
+              "description": "Otrzymuj powiadomienia o Wydarzeniach Dnia.",
+              "value": "eotd"
             }
           }
         }
@@ -134,7 +159,7 @@
       "modals": {
         "trivia_modal": {
           "title": "Zgadnij muzykę!",
-          "input": "Jaki jest tytuł tej muzyki?"
+          "input": "Jaki jest %guess% tej muzyki?"
         }
       },
       "buttons": {
@@ -299,6 +324,16 @@
           "title": "Źle trafiłeś na artystę",
           "message_ephemeral": "😬 Errr... Źle trafiłeś na artystę!",
           "message_public": "😬 <@%interaction.user.id%> nie odgadł artysty odpowiedzialnego za muzykę..."
+        },
+        "correct_year_trivia": {
+          "title": "Znalazłeś rok wydania",
+          "message_ephemeral": "👏 GG! Znalazłeś rok wydania tej muzyki.",
+          "message_public": "👏 <@%interaction.user.id%> zgadł rok wydania tej muzyki!"
+        },
+        "wrong_year_trivia": {
+          "title": "Źle określiłeś rok wydania",
+          "message_ephemeral": "😬 Errr... Źle określiłeś rok wydania!",
+          "message_public": "😬 <@%interaction.user.id%> nie zgadł roku wydania tej muzyki..."
         },
         "hint": {
           "description": "💡 Oto wskazówka : \n🤔 [Wskazówka nie jest wyświetlana? Kliknij tutaj, aby ją zobaczyć.](%songOfTodayRequest['previewUrl']%)"
@@ -572,7 +607,8 @@
     },
     "trivia": {
       "error_messages": {
-        "genre_not_available_in_this_mode": "❌ Nie można wybrać gatunku za pomocą tej opcji."
+        "genre_not_available_in_this_mode": "❌ Gatunek nie może być wybrany tym odgadnięciem.",
+        "guess_not_available_in_this_mode": "❌ To odgadnięcie nie może być wybrane w tym trybie."
       },
       "buttons": {
         "guess": {
@@ -591,6 +627,7 @@
       "embed": {
         "title": "Zgadnij muzykę! 🎵",
         "description": "Czy możesz odgadnąć %guess% [tę muzykę](%songOfTodayRequest['previewUrl']%) ? 🤔",
+        "description_year": "rok",
         "description_artist": "artysta",
         "description_title": "tytuł",
         "description_genre": "gatunek"
