@@ -8,6 +8,24 @@
     "totd": "Trivia du Jour : Pouvez-vous deviner la musique ?",
     "eotd": "Ce jour-là dans l'histoire de la musique : découvrez ce qui s'est passé!"
   },
+  "acronyms": {
+    "motd": "MDJ",
+    "totd": "TDJ",
+    "eotd": "EDJ"
+  },
+  "languages": {
+    "de": "Allemand",
+    "en-GB": "Anglais",
+    "en-US": "Anglais",
+    "es-419": "Espagnol",
+    "es-ES": "Espagnol",
+    "fr": "Français",
+    "nl": "Néerlandais",
+    "pt-BR": "Portugais Brésilien",
+    "ru": "Russe",
+    "tr": "Turc",
+    "zh-CN": "Chinois"
+  },
   "events": {
     "interactionCreate": {
       "error_messages": {
@@ -388,7 +406,7 @@
         "configuration_exists": {
           "fields": {
             "field_title_one": "📰 Canal",
-            "field_title_two": "🌐 Langue",
+            "field_title_two": "🌎 Langue",
             "field_title_three": "🔔 Rôle",
             "field_title_four": "🎵 Genre",
             "field_title_five": "📱 Affichage",
