@@ -127,6 +127,31 @@
               "label": "Afbeelding Kunstenaar",
               "description": "Raad de kunstenaar achter de muziek door naar de hoes te kijken.",
               "value": "image-artist"
+            },
+            "title_year": {
+              "label": "Titeljaar Van Release",
+              "description": "Raad het releasejaar van de muziek op basis van de titel.",
+              "value": "title-year"
+            }
+          }
+        },
+        "ping_for_select_menu": {
+          "placeholder": "Ontvang meldingen voor:",
+          "options": {
+            "motd": {
+              "label": "Muziek Van De Dag",
+              "description": "Ontvang meldingen voor de Muziek Van De Dag.",
+              "value": "motd"
+            },
+            "totd": {
+              "label": "Trivia Van De Dag",
+              "description": "Ontvang meldingen voor de Trivia Van De Dag.",
+              "value": "totd"
+            },
+            "eotd": {
+              "label": "Evenementen Van De Dag",
+              "description": "Ontvang meldingen voor de Evenementen Van De Dag.",
+              "value": "eotd"
             }
           }
         }
@@ -134,7 +159,7 @@
       "modals": {
         "trivia_modal": {
           "title": "Raad de muziek!",
-          "input": "Wat is de titel van deze muziek?"
+          "input": "Wat is de %guess% van deze muziek?"
         }
       },
       "buttons": {
@@ -298,6 +323,16 @@
           "title": "Je hebt de verkeerde artiest",
           "message_ephemeral": "😬 Eh... Je hebt de verkeerde artiest!",
           "message_public": "😬 <@%interaction.user.id%> heeft de artiest achter de muziek niet geraden..."
+        },
+        "correct_year_trivia": {
+          "title": "Je hebt het releasejaar gevonden",
+          "message_ephemeral": "👏 Goed gedaan! Je hebt het releasejaar van de muziek gevonden.",
+          "message_public": "👏 <@%interaction.user.id%> heeft het releasejaar van de muziek geraden!"
+        },
+        "wrong_year_trivia": {
+          "title": "Je hebt het releasejaar fout",
+          "message_ephemeral": "😬 Eh... Je hebt het releasejaar fout!",
+          "message_public": "😬 <@%interaction.user.id%> heeft het releasejaar van de muziek niet geraden..."
         },
         "hint": {
           "description": "💡 Hier is de tip: \n🤔 [De tip wordt niet weergegeven? Klik hier om deze te bekijken.](%songOfTodayRequest['previewUrl']%)"
@@ -571,7 +606,8 @@
     },
     "trivia": {
       "error_messages": {
-        "genre_not_available_in_this_mode": "❌ Het genre kan niet worden geselecteerd met deze gok."
+        "genre_not_available_in_this_mode": "❌ Het genre kan niet worden geselecteerd met deze gok.",
+        "guess_not_available_in_this_mode": "❌ Deze veronderstelling kan niet worden geselecteerd in deze modus."
       },
       "buttons": {
         "guess": {
@@ -590,6 +626,7 @@
       "embed": {
         "title": "Raad de muziek! 🎵",
         "description": "Kun je het %guess% van [deze muziek](%songOfTodayRequest['previewUrl']%) raden? 🤔",
+        "description_year": "jaar",
         "description_artist": "kunstenaar",
         "description_title": "titel",
 
