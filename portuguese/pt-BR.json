@@ -287,7 +287,7 @@
         "100%": {
           "description": "Você terminou! Você atingiu **100**%. Muito bem! 🎉\n🎶 Seu servidor está pronto. \nAqui está uma visão geral rápida de sua configuração:"
         },
-        "warning_100%_full": {
+        "warning_100%": {
           "description": "⚠️ Por favor, certifique-se de que o Daily Music tenha todas as permissões necessárias para funcionar (aquelas disponíveis no [link de convite](%InvitationLink%)). \nVerifique as permissões para:\n - a função do bot\n \n- o canal definido (%channel%). \nSe uma permissão estiver ausente, você não receberá nada e seu servidor será excluído do banco de dados após alguns dias se o problema não for corrigido."
         },
         "advanced_card": {
