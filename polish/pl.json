@@ -284,11 +284,10 @@
         "90%": {
           "description": "Jesteś na **90**% drogi przez cały proces. Dobra robota!🎉 \n📆 Musisz wybrać, czy chcesz, aby lista wydarzeń w świecie muzyki była wysyłana codziennie. \nKoncepcja jest prosta: każdego dnia otrzymujesz listę wydarzeń, które miały miejsce tego dnia w historii muzyki! \nKontynuuj, klikając jeden z poniższych przycisków."
         },
-
         "100%": {
           "description": "Skończyłeś! Osiągnąłeś **100**%. Dobra robota!🎉\n🎶 Twój serwer jest teraz gotowy. \nOto krótki przegląd konfiguracji:"
         },
-        "warning_100%_full": {
+        "warning_100%": {
           "description": "⚠️ Upewnij się, że Daily Music ma wszystkie niezbędne uprawnienia do działania (dostępne w [linku zaproszenia](%InvitationLink%)). \nSprawdź uprawnienia dla :\n    - roli bota\n    \n- określonego kanału (%channel%). \nJeśli brakuje uprawnień, nie otrzymasz MD i CD, a twój serwer zostanie usunięty z bazy danych po kilku dniach, jeśli problem nie zostanie naprawiony."
         },
         "advanced_card": {
