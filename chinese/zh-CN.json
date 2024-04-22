@@ -428,43 +428,103 @@
         "options": {
           "global": {
             "label": "全球",
-            "description": "全球流派的当日音乐。",
+            "description": "全球流派音乐的音乐。",
             "value": "global"
           },
           "pop": {
-            "label": "流行音乐",
-            "description": "当今流行音乐流派的音乐。.",
+            "label": "流行",
+            "description": "流行流派音乐的音乐。",
             "value": "pop"
           },
+          "hip-hop": {
+            "label": "嘻哈",
+            "description": "嘻哈流派音乐的音乐。",
+            "value": "hip-Hop"
+          },
           "rock": {
-            "label": "岩石",
-            "description": "当天的摇滚类型音乐。",
+            "label": "摇滚",
+            "description": "摇滚流派音乐的音乐。",
             "value": "rock"
           },
+          "rap": {
+            "label": "说唱",
+            "description": "说唱流派音乐的音乐。",
+            "value": "rap"
+          },
           "electro": {
-            "label": "电",
-            "description": "当天的电音音乐。.",
+            "label": "电子",
+            "description": "电子流派音乐的音乐。",
             "value": "electro"
           },
           "kpop": {
-            "label": "韩国流行音乐",
-            "description": "当天的 韩国流行音乐 音乐。",
+            "label": "韩流",
+            "description": "韩流流派音乐的音乐。",
             "value": "kPOP"
           },
+          "latino": {
+            "label": "拉丁",
+            "description": "拉丁流派音乐的音乐。",
+            "value": "latino"
+          },
+          "german": {
+            "label": "德国",
+            "description": "德国流派音乐的音乐。",
+            "value": "german"
+          },
+          "country": {
+            "label": "乡村",
+            "description": "乡村流派音乐的音乐。",
+            "value": "country"
+          },
+          "jazz": {
+            "label": "爵士",
+            "description": "爵士流派音乐的音乐。",
+            "value": "jazz"
+          },
+          "lofi": {
+            "label": "放松音乐",
+            "description": "放松音乐流派音乐的音乐。",
+            "value": "lofi"
+          },
+          "anime": {
+            "label": "动漫",
+            "description": "动漫流派音乐的音乐。",
+            "value": "anime"
+          },
+          "reggae": {
+            "label": "雷鬼",
+            "description": "雷鬼流派音乐的音乐。",
+            "value": "reggae"
+          },
           "hardstyle": {
-            "label": "硬朗风格",
-            "description": "当天的 硬朗风格 音乐流派。",
+            "label": "硬核",
+            "description": "硬核流派音乐的音乐。",
             "value": "hardstyle"
           },
           "metal": {
             "label": "金属",
-            "description": "今天的金属音乐。",
+            "description": "金属流派音乐的音乐。",
             "value": "metal"
           },
-          "german": {
-            "label": "德国",
-            "description": "德国流派的音乐.",
-            "value": "german"
+          "60s": {
+            "label": "60年代",
+            "description": "60年代流派音乐的音乐。",
+            "value": "60s"
+          },
+          "70s": {
+            "label": "70年代",
+            "description": "70年代流派音乐的音乐。",
+            "value": "70s"
+          },
+          "80s": {
+            "label": "80年代",
+            "description": "80年代流派音乐的音乐。",
+            "value": "80s"
+          },
+          "90s": {
+            "label": "90年代",
+            "description": "90年代流派音乐的音乐。",
+            "value": "90s"
           }
         }
       },
@@ -653,34 +713,94 @@
         "placeholder": "选择一个流派！",
         "options": {
           "pop": {
-            "label": "流行音乐",
-            "description": "如果您认为这首歌的流派是流行乐。",
+            "label": "流行",
+            "description": "如果你认为这首歌的流派是流行音乐。",
             "value": "pop"
           },
+          "hip-hop": {
+            "label": "嘻哈",
+            "description": "如果你认为这首歌的流派是嘻哈音乐。",
+            "value": "hip-Hop"
+          },
           "rock": {
-            "label": "岩石",
-            "description": "如果您认为这首歌的流派是摇滚的话。",
+            "label": "摇滚",
+            "description": "如果你认为这首歌的流派是摇滚音乐。",
             "value": "rock"
           },
+          "rap": {
+            "label": "说唱",
+            "description": "如果你认为这首歌的流派是说唱音乐。",
+            "value": "rap"
+          },
           "electro": {
-            "label": "电",
-            "description": "如果您认为这首歌的类型是电子乐.",
+            "label": "电子",
+            "description": "如果你认为这首歌的流派是电子音乐。",
             "value": "electro"
           },
           "kpop": {
-            "label": "韩国流行音乐",
-            "description": "如果您认为这首歌的类型是韩国流行音乐。",
+            "label": "韩流",
+            "description": "如果你认为这首歌的流派是韩国流行音乐。",
             "value": "kpop"
           },
+          "latino": {
+            "label": "拉丁",
+            "description": "如果你认为这首歌的流派是拉丁音乐。",
+            "value": "latino"
+          },
+          "country": {
+            "label": "乡村",
+            "description": "如果你认为这首歌的流派是乡村音乐。",
+            "value": "country"
+          },
+          "jazz": {
+            "label": "爵士",
+            "description": "如果你认为这首歌的流派是爵士音乐。",
+            "value": "jazz"
+          },
+          "lofi": {
+            "label": "放松音乐",
+            "description": "如果你认为这首歌的流派是放松音乐。",
+            "value": "lofi"
+          },
+          "anime": {
+            "label": "动漫",
+            "description": "如果你认为这首歌的流派是动漫音乐。",
+            "value": "anime"
+          },
+          "reggae": {
+            "label": "雷鬼",
+            "description": "如果你认为这首歌的流派是雷鬼音乐。",
+            "value": "reggae"
+          },
           "hardstyle": {
-            "label": "硬朗风格",
-            "description": "如果您认为这首歌的类型是硬朗风格.",
+            "label": "硬核",
+            "description": "如果你认为这首歌的流派是硬核音乐。",
             "value": "hardstyle"
           },
           "metal": {
             "label": "金属",
-            "description": "如果您认为这首歌的类型是金属乐.",
+            "description": "如果你认为这首歌的流派是金属音乐。",
             "value": "metal"
+          },
+          "60s": {
+            "label": "60年代",
+            "description": "如果你认为这首歌是60年代的音乐。",
+            "value": "60s"
+          },
+          "70s": {
+            "label": "70年代",
+            "description": "如果你认为这首歌是70年代的音乐。",
+            "value": "70s"
+          },
+          "80s": {
+            "label": "80年代",
+            "description": "如果你认为这首歌是80年代的音乐。",
+            "value": "80s"
+          },
+          "90s": {
+            "label": "90年代",
+            "description": "如果你认为这首歌是90年代的音乐。",
+            "value": "90s"
           }
         }
       }
