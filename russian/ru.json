@@ -427,7 +427,7 @@
         "placeholder": "Выберите свой жанр для Музыка дня!",
         "options": {
           "global": {
-            "label": "Глобальный",
+            "label": "Глобальная",
             "description": "Музыка дня для жанра Глобальная.",
             "value": "global"
           },
@@ -436,10 +436,20 @@
             "description": "Музыка дня для жанра Поп.",
             "value": "pop"
           },
+          "hip-hop": {
+            "label": "Хип-хоп",
+            "description": "Музыка дня для жанра Хип-хоп.",
+            "value": "hip-Hop"
+          },
           "rock": {
             "label": "Рок",
             "description": "Музыка дня для жанра Рок.",
             "value": "rock"
+          },
+          "rap": {
+            "label": "Рэп",
+            "description": "Музыка дня для жанра Рэп.",
+            "value": "rap"
           },
           "electro": {
             "label": "Электро",
@@ -447,9 +457,44 @@
             "value": "electro"
           },
           "kpop": {
-            "label": "Корейская поп-музыка",
-            "description": "Музыка дня для жанра Корейская поп-музыка.",
+            "label": "KPOP",
+            "description": "Музыка дня для жанра KPOP.",
             "value": "kPOP"
+          },
+          "latino": {
+            "label": "Латино",
+            "description": "Музыка дня для жанра Латино.",
+            "value": "latino"
+          },
+          "german": {
+            "label": "Немецкая",
+            "description": "Музыка дня для жанра Немецкая.",
+            "value": "german"
+          },
+          "country": {
+            "label": "Кантри",
+            "description": "Музыка дня для жанра Кантри.",
+            "value": "country"
+          },
+          "jazz": {
+            "label": "Джаз",
+            "description": "Музыка дня для жанра Джаз.",
+            "value": "jazz"
+          },
+          "lofi": {
+            "label": "Лоу-фай",
+            "description": "Музыка дня для жанра Лоу-фай.",
+            "value": "lofi"
+          },
+          "anime": {
+            "label": "Аниме",
+            "description": "Музыка дня для жанра Аниме.",
+            "value": "anime"
+          },
+          "reggae": {
+            "label": "Регги",
+            "description": "Музыка дня для жанра Регги.",
+            "value": "reggae"
           },
           "hardstyle": {
             "label": "Хардстайл",
@@ -457,14 +502,29 @@
             "value": "hardstyle"
           },
           "metal": {
-            "label": "Метал",
-            "description": "Музыка дня для жанра Метал.",
+            "label": "Металл",
+            "description": "Музыка дня для жанра Металл.",
             "value": "metal"
           },
-          "german": {
-            "label": "Немецкий",
-            "description": "Музыка дня для жанра Немецкий.",
-            "value": "german"
+          "60s": {
+            "label": "60-е",
+            "description": "Музыка дня для жанра 1960-х.",
+            "value": "60s"
+          },
+          "70s": {
+            "label": "70-е",
+            "description": "Музыка дня для жанра 1970-х.",
+            "value": "70s"
+          },
+          "80s": {
+            "label": "80-е",
+            "description": "Музыка дня для жанра 1980-х.",
+            "value": "80s"
+          },
+          "90s": {
+            "label": "90-е",
+            "description": "Музыка дня для жанра 1990-х.",
+            "value": "90s"
           }
         }
       },
@@ -657,10 +717,20 @@
             "description": "Если вы думаете, что жанр этой песни - Поп.",
             "value": "pop"
           },
+          "hip-hop": {
+            "label": "Хип-хоп",
+            "description": "Если вы думаете, что жанр этой песни - Хип-хоп.",
+            "value": "hip-Hop"
+          },
           "rock": {
             "label": "Рок",
             "description": "Если вы думаете, что жанр этой песни - Рок.",
             "value": "rock"
+          },
+          "rap": {
+            "label": "Рэп",
+            "description": "Если вы думаете, что жанр этой песни - Рэп.",
+            "value": "rap"
           },
           "electro": {
             "label": "Электро",
@@ -668,9 +738,39 @@
             "value": "electro"
           },
           "kpop": {
-            "label": "Корейская поп-музыка",
-            "description": "Если вы думаете, что жанр этой песни - Корейская поп-музыка.",
+            "label": "KPOP",
+            "description": "Если вы думаете, что жанр этой песни - KPOP.",
             "value": "kpop"
+          },
+          "latino": {
+            "label": "Латино",
+            "description": "Если вы думаете, что жанр этой песни - Латино.",
+            "value": "latino"
+          },
+          "country": {
+            "label": "Кантри",
+            "description": "Если вы думаете, что жанр этой песни - Кантри.",
+            "value": "country"
+          },
+          "jazz": {
+            "label": "Джаз",
+            "description": "Если вы думаете, что жанр этой песни - Джаз.",
+            "value": "jazz"
+          },
+          "lofi": {
+            "label": "Лоу-фай",
+            "description": "Если вы думаете, что жанр этой песни - Лоу-фай.",
+            "value": "lofi"
+          },
+          "anime": {
+            "label": "Аниме",
+            "description": "Если вы думаете, что жанр этой песни - Аниме.",
+            "value": "anime"
+          },
+          "reggae": {
+            "label": "Регги",
+            "description": "Если вы думаете, что жанр этой песни - Регги.",
+            "value": "reggae"
           },
           "hardstyle": {
             "label": "Хардстайл",
@@ -678,9 +778,29 @@
             "value": "hardstyle"
           },
           "metal": {
-            "label": "Метал",
-            "description": "Если вы думаете, что жанр этой песни - Метал.",
+            "label": "Металл",
+            "description": "Если вы думаете, что жанр этой песни - Металл.",
             "value": "metal"
+          },
+          "60s": {
+            "label": "60-е",
+            "description": "Если вы думаете, что эта песня из 1960-х годов.",
+            "value": "60s"
+          },
+          "70s": {
+            "label": "70-е",
+            "description": "Если вы думаете, что эта песня из 1970-х годов.",
+            "value": "70s"
+          },
+          "80s": {
+            "label": "80-е",
+            "description": "Если вы думаете, что эта песня из 1980-х годов.",
+            "value": "80s"
+          },
+          "90s": {
+            "label": "90-е",
+            "description": "Если вы думаете, что эта песня из 1990-х годов.",
+            "value": "90s"
           }
         }
       }
