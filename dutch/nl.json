@@ -427,44 +427,104 @@
         "placeholder": "Kies je genre voor de MVDD!",
         "options": {
           "global": {
-            "label": "Wereldwijd",
-            "description": "De muziek van de dag voor het Wereldwijd-genre.",
+            "label": "Wereldmuziek",
+            "description": "De muziek van de dag voor het genre Wereldmuziek.",
             "value": "global"
           },
           "pop": {
             "label": "Pop",
-            "description": "De muziek van de dag voor het Pop-genre.",
+            "description": "De muziek van de dag voor het genre Pop.",
             "value": "pop"
+          },
+          "hip-hop": {
+            "label": "Hip-Hop",
+            "description": "De muziek van de dag voor het genre Hip-Hop.",
+            "value": "hip-Hop"
           },
           "rock": {
             "label": "Rock",
-            "description": "De muziek van de dag voor het Rock-genre.",
+            "description": "De muziek van de dag voor het genre Rock.",
             "value": "rock"
           },
+          "rap": {
+            "label": "Rap",
+            "description": "De muziek van de dag voor het genre Rap.",
+            "value": "rap"
+          },
           "electro": {
-            "label": "Electro",
-            "description": "De muziek van de dag voor het Electro-genre.",
+            "label": "Elektro",
+            "description": "De muziek van de dag voor het genre Elektro.",
             "value": "electro"
           },
           "kpop": {
-            "label": "KPOP",
-            "description": "De muziek van de dag voor het KPOP-genre.",
+            "label": "K-pop",
+            "description": "De muziek van de dag voor het genre K-pop.",
             "value": "kPOP"
           },
-          "hardstyle": {
-            "label": "Harde stijl",
-            "description": "De muziek van de dag voor het Harde stijl-genre.",
-            "value": "hardstyle"
-          },
-          "metal": {
-            "label": "Metaal",
-            "description": "De muziek van de dag voor het Metaal-genre.",
-            "value": "metal"
+          "latino": {
+            "label": "Latino",
+            "description": "De muziek van de dag voor het genre Latino.",
+            "value": "latino"
           },
           "german": {
             "label": "Duits",
-            "description": "De muziek van de dag voor het Duitse genre.",
+            "description": "De muziek van de dag voor het genre Duits.",
             "value": "german"
+          },
+          "country": {
+            "label": "Country",
+            "description": "De muziek van de dag voor het genre Country.",
+            "value": "country"
+          },
+          "jazz": {
+            "label": "Jazz",
+            "description": "De muziek van de dag voor het genre Jazz.",
+            "value": "jazz"
+          },
+          "lofi": {
+            "label": "Lofi",
+            "description": "De muziek van de dag voor het genre Lofi.",
+            "value": "lofi"
+          },
+          "anime": {
+            "label": "Animatie",
+            "description": "De muziek van de dag voor het genre Animatie.",
+            "value": "anime"
+          },
+          "reggae": {
+            "label": "Reggae",
+            "description": "De muziek van de dag voor het genre Reggae.",
+            "value": "reggae"
+          },
+          "hardstyle": {
+            "label": "Hardstyle",
+            "description": "De muziek van de dag voor het genre Hardstyle.",
+            "value": "hardstyle"
+          },
+          "metal": {
+            "label": "Metal",
+            "description": "De muziek van de dag voor het genre Metal.",
+            "value": "metal"
+          },
+          "60s": {
+            "label": "Jaren '60",
+            "description": "De muziek van de dag voor het genre Jaren '60.",
+            "value": "60s"
+          },
+          "70s": {
+            "label": "Jaren '70",
+            "description": "De muziek van de dag voor het genre Jaren '70.",
+            "value": "70s"
+          },
+          "80s": {
+            "label": "Jaren '80",
+            "description": "De muziek van de dag voor het genre Jaren '80.",
+            "value": "80s"
+          },
+          "90s": {
+            "label": "Jaren '90",
+            "description": "De muziek van de dag voor het genre Jaren '90.",
+            "value": "90s"
           }
         }
       },
@@ -658,10 +718,20 @@
             "description": "Als je denkt dat het genre van dit nummer Pop is.",
             "value": "pop"
           },
+          "hip-hop": {
+            "label": "Hip-Hop",
+            "description": "Als je denkt dat het genre van dit nummer Hip-Hop is.",
+            "value": "hip-Hop"
+          },
           "rock": {
             "label": "Rock",
             "description": "Als je denkt dat het genre van dit nummer Rock is.",
             "value": "rock"
+          },
+          "rap": {
+            "label": "Rap",
+            "description": "Als je denkt dat het genre van dit nummer Rap is.",
+            "value": "rap"
           },
           "electro": {
             "label": "Electro",
@@ -673,15 +743,65 @@
             "description": "Als je denkt dat het genre van dit nummer KPOP is.",
             "value": "kpop"
           },
+          "latino": {
+            "label": "Latino",
+            "description": "Als je denkt dat het genre van dit nummer Latino is.",
+            "value": "latino"
+          },
+          "country": {
+            "label": "Country",
+            "description": "Als je denkt dat het genre van dit nummer Country is.",
+            "value": "country"
+          },
+          "jazz": {
+            "label": "Jazz",
+            "description": "Als je denkt dat het genre van dit nummer Jazz is.",
+            "value": "jazz"
+          },
+          "lofi": {
+            "label": "Lofi",
+            "description": "Als je denkt dat het genre van dit nummer Lofi is.",
+            "value": "lofi"
+          },
+          "anime": {
+            "label": "Animatie",
+            "description": "Als je denkt dat het genre van dit nummer Animatie is.",
+            "value": "anime"
+          },
+          "reggae": {
+            "label": "Reggae",
+            "description": "Als je denkt dat het genre van dit nummer Reggae is.",
+            "value": "reggae"
+          },
           "hardstyle": {
-            "label": "Harde stijl",
-            "description": "Als je denkt dat het genre van dit nummer Harde stijl is.",
+            "label": "Hardstyle",
+            "description": "Als je denkt dat het genre van dit nummer Hardstyle is.",
             "value": "hardstyle"
           },
           "metal": {
-            "label": "Metaal",
-            "description": "Als je denkt dat het genre van dit nummer Metaal is.",
+            "label": "Metal",
+            "description": "Als je denkt dat het genre van dit nummer Metal is.",
             "value": "metal"
+          },
+          "60s": {
+            "label": "Jaren '60",
+            "description": "Als je denkt dat dit nummer uit de jaren '60 komt.",
+            "value": "60s"
+          },
+          "70s": {
+            "label": "Jaren '70",
+            "description": "Als je denkt dat dit nummer uit de jaren '70 komt.",
+            "value": "70s"
+          },
+          "80s": {
+            "label": "Jaren '80",
+            "description": "Als je denkt dat dit nummer uit de jaren '80 komt.",
+            "value": "80s"
+          },
+          "90s": {
+            "label": "Jaren '90",
+            "description": "Als je denkt dat dit nummer uit de jaren '90 komt.",
+            "value": "90s"
           }
         }
       }
