@@ -437,10 +437,20 @@
             "description": "The music of the day for the Pop genre.",
             "value": "pop"
           },
+          "hip-hop": {
+            "label": "Hip-Hop",
+            "description": "The music of the day for the Hip-Hop genre.",
+            "value": "hip-Hop"
+          },
           "rock": {
             "label": "Rock",
             "description": "The music of the day for the Rock genre.",
             "value": "rock"
+          },
+          "rap": {
+            "label": "Rap",
+            "description": "The music of the day for the Rap genre.",
+            "value": "rap"
           },
           "electro": {
             "label": "Electro",
@@ -452,6 +462,41 @@
             "description": "The music of the day for the KPOP genre.",
             "value": "kPOP"
           },
+          "latino": {
+            "label": "Latino",
+            "description": "The music of the day for the Latino genre.",
+            "value": "latino"
+          },
+          "german": {
+            "label": "German",
+            "description": "The music of the day for the German genre.",
+            "value": "german"
+          },
+          "country": {
+            "label": "Country",
+            "description": "The music of the day for the Country genre.",
+            "value": "country"
+          },
+          "jazz": {
+            "label": "Jazz",
+            "description": "The music of the day for the Jazz genre.",
+            "value": "jazz"
+          },
+          "lofi": {
+            "label": "Lofi",
+            "description": "The music of the day for the Jazz genre.",
+            "value": "lofi"
+          },
+          "anime": {
+            "label": "Anime",
+            "description": "The music of the day for the Anime genre.",
+            "value": "anime"
+          },
+          "reggae": {
+            "label": "Reggae",
+            "description": "The music of the day for the Reggae genre.",
+            "value": "reggae"
+          },
           "hardstyle": {
             "label": "Hardstyle",
             "description": "The music of the day for the Hardstyle genre.",
@@ -462,10 +507,25 @@
             "description": "The music of the day for the Metal genre.",
             "value": "metal"
           },
-          "german": {
-            "label": "German",
-            "description": "The music of the day for the German genre.",
-            "value": "german"
+          "60s": {
+            "label": "60s",
+            "description": "The music of the day for the 1960s genre.",
+            "value": "60s"
+          },
+          "70s": {
+            "label": "70s",
+            "description": "The music of the day for the 1970s genre.",
+            "value": "70s"
+          },
+          "80s": {
+            "label": "80s",
+            "description": "The music of the day for the 1980s genre.",
+            "value": "80s"
+          },
+          "90s": {
+            "label": "90s",
+            "description": "The music of the day for the 1990s genre.",
+            "value": "90s"
           }
         }
       },
@@ -658,10 +718,20 @@
             "description": "If you think the genre of this song is Pop.",
             "value": "pop"
           },
+          "hip-hop": {
+            "label": "Hip-Hop",
+            "description": "If you think the genre of this song is Hip-Hop.",
+            "value": "hip-Hop"
+          },
           "rock": {
             "label": "Rock",
             "description": "If you think the genre of this song is Rock.",
             "value": "rock"
+          },
+          "rap": {
+            "label": "Rap",
+            "description": "If you think the genre of this song is Rap.",
+            "value": "rap"
           },
           "electro": {
             "label": "Electro",
@@ -673,6 +743,36 @@
             "description": "If you think the genre of this song is KPOP.",
             "value": "kpop"
           },
+          "latino": {
+            "label": "Latino",
+            "description": "If you think the genre of this song is Latino.",
+            "value": "latino"
+          },
+          "country": {
+            "label": "Country",
+            "description": "If you think the genre of this song is Country.",
+            "value": "country"
+          },
+          "jazz": {
+            "label": "Jazz",
+            "description": "If you think the genre of this song is Jazz.",
+            "value": "jazz"
+          },
+          "lofi": {
+            "label": "Lofi",
+            "description": "If you think the genre of this song is Lofi.",
+            "value": "lofi"
+          },
+          "anime": {
+            "label": "Anime",
+            "description": "If you think the genre of this song is Anime.",
+            "value": "anime"
+          },
+          "reggae": {
+            "label": "Reggae",
+            "description": "If you think the genre of this song is Reggae.",
+            "value": "reggae"
+          },
           "hardstyle": {
             "label": "Hardstyle",
             "description": "If you think the genre of this song is Hardstyle.",
@@ -682,6 +782,26 @@
             "label": "Metal",
             "description": "If you think the genre of this song is Metal.",
             "value": "metal"
+          },
+          "60s": {
+            "label": "60s",
+            "description": "If you think this song is from the 1960s.",
+            "value": "60s"
+          },
+          "70s": {
+            "label": "70s",
+            "description": "If you think this song is from the 1970s.",
+            "value": "70s"
+          },
+          "80s": {
+            "label": "80s",
+            "description": "If you think this song is from the 1980s.",
+            "value": "80s"
+          },
+          "90s": {
+            "label": "90s",
+            "description": "If you think this song is from the 1990s.",
+            "value": "90s"
           }
         }
       }
