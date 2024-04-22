@@ -436,10 +436,20 @@
             "description": "Die Musik des Tages für das Pop-Genre.",
             "value": "pop"
           },
+          "hip-hop": {
+            "label": "Hip-Hop",
+            "description": "Die Musik des Tages für das Hip-Hop-Genre.",
+            "value": "hip-Hop"
+          },
           "rock": {
             "label": "Rock",
             "description": "Die Musik des Tages für das Rock-Genre.",
             "value": "rock"
+          },
+          "rap": {
+            "label": "Rap",
+            "description": "Die Musik des Tages für das Rap-Genre.",
+            "value": "rap"
           },
           "electro": {
             "label": "Electro",
@@ -451,6 +461,41 @@
             "description": "Die Musik des Tages für das KPOP-Genre.",
             "value": "kPOP"
           },
+          "latino": {
+            "label": "Latino",
+            "description": "Die Musik des Tages für das Latino-Genre.",
+            "value": "latino"
+          },
+          "german": {
+            "label": "Deutsch",
+            "description": "Die Musik des Tages für das Deutsche-Genre.",
+            "value": "german"
+          },
+          "country": {
+            "label": "Country",
+            "description": "Die Musik des Tages für das Country-Genre.",
+            "value": "country"
+          },
+          "jazz": {
+            "label": "Jazz",
+            "description": "Die Musik des Tages für das Jazz-Genre.",
+            "value": "jazz"
+          },
+          "lofi": {
+            "label": "Lofi",
+            "description": "Die Musik des Tages für das Jazz-Genre.",
+            "value": "lofi"
+          },
+          "anime": {
+            "label": "Anime",
+            "description": "Die Musik des Tages für das Anime-Genre.",
+            "value": "anime"
+          },
+          "reggae": {
+            "label": "Reggae",
+            "description": "Die Musik des Tages für das Reggae-Genre.",
+            "value": "reggae"
+          },
           "hardstyle": {
             "label": "Hardstyle",
             "description": "Die Musik des Tages für das Hardstyle-Genre.",
@@ -461,10 +506,25 @@
             "description": "Die Musik des Tages für das Metal-Genre.",
             "value": "metal"
           },
-          "german": {
-            "label": "Deutsch",
-            "description": "Die Musik des Tages für das Deutsche Genre.",
-            "value": "german"
+          "60s": {
+            "label": "60er",
+            "description": "Die Musik des Tages für das 1960er-Genre.",
+            "value": "60s"
+          },
+          "70s": {
+            "label": "70er",
+            "description": "Die Musik des Tages für das 1970er-Genre.",
+            "value": "70s"
+          },
+          "80s": {
+            "label": "80er",
+            "description": "Die Musik des Tages für das 1980er-Genre.",
+            "value": "80s"
+          },
+          "90s": {
+            "label": "90er",
+            "description": "Die Musik des Tages für das 1990er-Genre.",
+            "value": "90s"
           }
         }
       },
@@ -654,33 +714,93 @@
         "options": {
           "pop": {
             "label": "Pop",
-            "description": "Wenn du denkst, dass das Genre dieses Liedes Pop ist.",
+            "description": "Wenn du denkst, dass das Genre dieses Songs Pop ist.",
             "value": "pop"
+          },
+          "hip-hop": {
+            "label": "Hip-Hop",
+            "description": "Wenn du denkst, dass das Genre dieses Songs Hip-Hop ist.",
+            "value": "hip-Hop"
           },
           "rock": {
             "label": "Rock",
-            "description": "Wenn du denkst, dass das Genre dieses Liedes Rock ist.",
+            "description": "Wenn du denkst, dass das Genre dieses Songs Rock ist.",
             "value": "rock"
           },
+          "rap": {
+            "label": "Rap",
+            "description": "Wenn du denkst, dass das Genre dieses Songs Rap ist.",
+            "value": "rap"
+          },
           "electro": {
-            "label": "Elektro",
-            "description": "Wenn du denkst, dass das Genre dieses Liedes Electro ist.",
+            "label": "Electro",
+            "description": "Wenn du denkst, dass das Genre dieses Songs Electro ist.",
             "value": "electro"
           },
           "kpop": {
             "label": "KPOP",
-            "description": "Wenn du denkst, dass das Genre dieses Liedes KPOP ist.",
+            "description": "Wenn du denkst, dass das Genre dieses Songs KPOP ist.",
             "value": "kpop"
+          },
+          "latino": {
+            "label": "Latino",
+            "description": "Wenn du denkst, dass das Genre dieses Songs Latino ist.",
+            "value": "latino"
+          },
+          "country": {
+            "label": "Country",
+            "description": "Wenn du denkst, dass das Genre dieses Songs Country ist.",
+            "value": "country"
+          },
+          "jazz": {
+            "label": "Jazz",
+            "description": "Wenn du denkst, dass das Genre dieses Songs Jazz ist.",
+            "value": "jazz"
+          },
+          "lofi": {
+            "label": "Lofi",
+            "description": "Wenn du denkst, dass das Genre dieses Songs Lofi ist.",
+            "value": "lofi"
+          },
+          "anime": {
+            "label": "Anime",
+            "description": "Wenn du denkst, dass das Genre dieses Songs Anime ist.",
+            "value": "anime"
+          },
+          "reggae": {
+            "label": "Reggae",
+            "description": "Wenn du denkst, dass das Genre dieses Songs Reggae ist.",
+            "value": "reggae"
           },
           "hardstyle": {
             "label": "Hardstyle",
-            "description": "Wenn du denkst, dass das Genre dieses Liedes Hardstyle ist.",
+            "description": "Wenn du denkst, dass das Genre dieses Songs Hardstyle ist.",
             "value": "hardstyle"
           },
           "metal": {
             "label": "Metal",
-            "description": "Wenn du denkst, dass das Genre dieses Liedes Metal ist.",
+            "description": "Wenn du denkst, dass das Genre dieses Songs Metal ist.",
             "value": "metal"
+          },
+          "60s": {
+            "label": "60er",
+            "description": "Wenn du denkst, dass dieser Song aus den 1960er Jahren stammt.",
+            "value": "60s"
+          },
+          "70s": {
+            "label": "70er",
+            "description": "Wenn du denkst, dass dieser Song aus den 1970er Jahren stammt.",
+            "value": "70s"
+          },
+          "80s": {
+            "label": "80er",
+            "description": "Wenn du denkst, dass dieser Song aus den 1980er Jahren stammt.",
+            "value": "80s"
+          },
+          "90s": {
+            "label": "90er",
+            "description": "Wenn du denkst, dass dieser Song aus den 1990er Jahren stammt.",
+            "value": "90s"
           }
         }
       }
