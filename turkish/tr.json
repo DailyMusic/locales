@@ -428,43 +428,103 @@
         "options": {
           "global": {
             "label": "Küresel",
-            "description": "Küresel tür için günün müziği.",
+            "description": "Günün müziği için Küresel türü.",
             "value": "global"
           },
           "pop": {
             "label": "Pop",
-            "description": "Pop türü için günün müziği.",
+            "description": "Günün müziği için Pop türü.",
             "value": "pop"
+          },
+          "hip-hop": {
+            "label": "Hip-Hop",
+            "description": "Günün müziği için Hip-Hop türü.",
+            "value": "hip-Hop"
           },
           "rock": {
             "label": "Rock",
-            "description": "Rock türü için günün müziği.",
+            "description": "Günün müziği için Rock türü.",
             "value": "rock"
+          },
+          "rap": {
+            "label": "Rap",
+            "description": "Günün müziği için Rap türü.",
+            "value": "rap"
           },
           "electro": {
             "label": "Elektro",
-            "description": "Elektro türü için günün müziği.",
+            "description": "Günün müziği için Elektro türü.",
             "value": "electro"
           },
           "kpop": {
             "label": "KPOP",
-            "description": "KPOP türü için günün müziği.",
+            "description": "Günün müziği için KPOP türü.",
             "value": "kPOP"
           },
+          "latino": {
+            "label": "Latino",
+            "description": "Günün müziği için Latino türü.",
+            "value": "latino"
+          },
+          "german": {
+            "label": "Alman",
+            "description": "Günün müziği için Alman türü.",
+            "value": "german"
+          },
+          "country": {
+            "label": "Country",
+            "description": "Günün müziği için Country türü.",
+            "value": "country"
+          },
+          "jazz": {
+            "label": "Caz",
+            "description": "Günün müziği için Caz türü.",
+            "value": "jazz"
+          },
+          "lofi": {
+            "label": "Lofi",
+            "description": "Günün müziği için Lofi türü.",
+            "value": "lofi"
+          },
+          "anime": {
+            "label": "Barındırılan",
+            "description": "Günün müziği için Barındırılan türü.",
+            "value": "anime"
+          },
+          "reggae": {
+            "label": "Reggae",
+            "description": "Günün müziği için Reggae türü.",
+            "value": "reggae"
+          },
           "hardstyle": {
-            "label": "Sert stil",
-            "description": "Sert stil türü için günün müziği.",
+            "label": "Hardstyle",
+            "description": "Günün müziği için Hardstyle türü.",
             "value": "hardstyle"
           },
           "metal": {
             "label": "Metal",
-            "description": "Metal türü için günün müziği.",
+            "description": "Günün müziği için Metal türü.",
             "value": "metal"
           },
-          "german": {
-            "label": "Alman",
-            "description": "Alman türü için günün müziği.",
-            "value": "german"
+          "60s": {
+            "label": "60'lar",
+            "description": "Günün müziği için 1960'lar türü.",
+            "value": "60s"
+          },
+          "70s": {
+            "label": "70'ler",
+            "description": "Günün müziği için 1970'ler türü.",
+            "value": "70s"
+          },
+          "80s": {
+            "label": "80'ler",
+            "description": "Günün müziği için 1980'ler türü.",
+            "value": "80s"
+          },
+          "90s": {
+            "label": "90'lar",
+            "description": "Günün müziği için 1990'lar türü.",
+            "value": "90s"
           }
         }
       },
@@ -654,33 +714,93 @@
         "options": {
           "pop": {
             "label": "Pop",
-            "description": "Bu şarkının türünün Pop olduğunu düşünüyorsanız.",
+            "description": "Bu şarkının türü Pop ise.",
             "value": "pop"
+          },
+          "hip-hop": {
+            "label": "Hip-Hop",
+            "description": "Bu şarkının türü Hip-Hop ise.",
+            "value": "hip-Hop"
           },
           "rock": {
             "label": "Rock",
-            "description": "Bu şarkının türünün Rock olduğunu düşünüyorsanız.",
+            "description": "Bu şarkının türü Rock ise.",
             "value": "rock"
+          },
+          "rap": {
+            "label": "Rap",
+            "description": "Bu şarkının türü Rap ise.",
+            "value": "rap"
           },
           "electro": {
             "label": "Elektro",
-            "description": "Bu şarkının türünün Elektro olduğunu düşünüyorsanız.",
+            "description": "Bu şarkının türü Elektro ise.",
             "value": "electro"
           },
           "kpop": {
-            "label": "Kore pop",
-            "description": "Bu şarkının türünün Kore pop olduğunu düşünüyorsanız.",
-            "value": "kPOP"
+            "label": "KPOP",
+            "description": "Bu şarkının türü KPOP ise.",
+            "value": "kpop"
+          },
+          "latino": {
+            "label": "Latino",
+            "description": "Bu şarkının türü Latino ise.",
+            "value": "latino"
+          },
+          "country": {
+            "label": "Country",
+            "description": "Bu şarkının türü Country ise.",
+            "value": "country"
+          },
+          "jazz": {
+            "label": "Caz",
+            "description": "Bu şarkının türü Caz ise.",
+            "value": "jazz"
+          },
+          "lofi": {
+            "label": "Lofi",
+            "description": "Bu şarkının türü Lofi ise.",
+            "value": "lofi"
+          },
+          "anime": {
+            "label": "Barındırılan",
+            "description": "Bu şarkının türü Barındırılan ise.",
+            "value": "anime"
+          },
+          "reggae": {
+            "label": "Reggae",
+            "description": "Bu şarkının türü Reggae ise.",
+            "value": "reggae"
           },
           "hardstyle": {
-            "label": "Sert stil",
-            "description": "Bu şarkının türünün Sert stil olduğunu düşünüyorsanız.",
+            "label": "Hardstyle",
+            "description": "Bu şarkının türü Hardstyle ise.",
             "value": "hardstyle"
           },
           "metal": {
             "label": "Metal",
-            "description": "Bu şarkının türünün Metal olduğunu düşünüyorsanız.",
+            "description": "Bu şarkının türü Metal ise.",
             "value": "metal"
+          },
+          "60s": {
+            "label": "60'lar",
+            "description": "Bu şarkının 1960'lardan olduğunu düşünüyorsanız.",
+            "value": "60s"
+          },
+          "70s": {
+            "label": "70'ler",
+            "description": "Bu şarkının 1970'lerden olduğunu düşünüyorsanız.",
+            "value": "70s"
+          },
+          "80s": {
+            "label": "80'ler",
+            "description": "Bu şarkının 1980'lerden olduğunu düşünüyorsanız.",
+            "value": "80s"
+          },
+          "90s": {
+            "label": "90'lar",
+            "description": "Bu şarkının 1990'lardan olduğunu düşünüyorsanız.",
+            "value": "90s"
           }
         }
       }
