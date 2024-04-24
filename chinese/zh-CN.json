@@ -234,6 +234,9 @@
         }
       },
       "embeds": {
+        "ping_for": {
+          "description": "✅ 将通知 %role% 的角色： \n- %motd% \n- %totd% \n- %eotd%"
+        },
         "audio_analysis": {
           "description": "📊 这里是 %songOfTodayRequest['title']% 的音频分析，作者是 %songOfTodayRequest['artist']%：",
           "fields": {
