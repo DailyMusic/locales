@@ -234,6 +234,9 @@
         }
       },
       "embeds": {
+        "ping_for": {
+          "description": "✅ Rol %role% için bildirimde bulunulacaktır: \n- %motd% \n- %totd% \n- %eotd%"
+        },
         "audio_analysis": {
           "description": "📊 İşte %songOfTodayRequest['artist']% tarafından %songOfTodayRequest['title']% adlı müzik için bir ses analizi:",
           "fields": {
