@@ -234,6 +234,9 @@
         }
       },
       "embeds": {
+        "ping_for": {
+          "description": "✅ Die Rolle %role% wird benachrichtigt für: \n- %motd% \n- %totd% \n- %eotd%"
+        },
         "audio_analysis": {
           "description": "📊 Hier ist eine Audioanalyse für %songOfTodayRequest['title']% von %songOfTodayRequest['artist']%:",
           "fields": {
