@@ -234,6 +234,9 @@
         }
       },
       "embeds": {
+        "ping_for": {
+          "description": "✅ De rol %rol% wordt gemeld voor: \n- %motd% \n- %totd% \n- %eotd%"
+        },
         "audio_analysis": {
           "description": "📊 Hier is een audiobeschrijving voor %songOfTodayRequest['title']% van %songOfTodayRequest['artist']%:",
           "fields": {
