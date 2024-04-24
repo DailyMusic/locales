@@ -116,6 +116,11 @@
         "trivia_mode_select_menu": {
           "placeholder": "Choose your trivia mode for the TOTD!",
           "options": {
+            "random": {
+              "label": "Random",
+              "description": "Let the bot randomly choose a trivia mode each day.",
+              "value": "random"
+            },
             "audio_title": {
               "label": "Audio Title",
               "description": "Guess the title of the music by listening to a short extract.",
@@ -234,6 +239,9 @@
         }
       },
       "embeds": {
+        "ping_for": {
+          "description": "✅ The role %role% will be notified for: \n- %motd% \n- %totd% \n- %eotd%"
+        },
         "audio_analysis": {
           "description": "📊 Here is an audio analysis for %songOfTodayRequest['title']% by %songOfTodayRequest['artist']%:",
           "fields": {
