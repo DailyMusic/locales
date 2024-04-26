@@ -116,6 +116,11 @@
         "trivia_mode_select_menu": {
           "placeholder": "GT'yi için bilgi yarışması modunu seçin!",
           "options": {
+            "random": {
+              "label": "Rastgele",
+              "description": "Botun her gün rastgele bir trivia modu seçmesine izin verin.",
+              "value": "random"
+            },
             "audio_title": {
               "label": "Ses Başlığı",
               "description": "Kısa bir bölüm dinleyerek müziğin başlığını tahmin edin.",
@@ -299,11 +304,11 @@
         "advanced_trivia": {
           "description": "Gelişmiş yapılandırma menüsüne hoş geldiniz! 🤓\n🏆 Hangi tür Trivia oyununu istediğinizi seçmelisiniz. \nDevam etmek için aşağıdaki seçeneklerden birine tıklayın"
         },
-        "vote_wumpus": {
-          "description": "❌ Bu özelliği kullanabilmek için [Wumpus.store](https://wumpus.store/bot/1115972980984516719/vote) adresinden oy vermeniz gerekmektedir"
+        "vote": {
+          "description": "❌ Bu özelliği kullanmak için %platform% 'da oy kullanmanız gerekir."
         },
         "voting_helps_us": {
-          "description": "Daily Music'e oy vermek, popülerliğimizi artırır ve sadece 1 saniyenizi alır, reklamsızdır."
+          "description": "Daily Music'e oy vererek, geliştiricimin beni daha popüler hale getirmesine yardımcı oluyor ve çalışmalarını ücretsiz olarak destekliyorsunuz."
         },
         "correct_title_trivia": {
           "title": "Başlığı buldunuz",
@@ -429,6 +434,11 @@
       "menu": {
         "placeholder": "Günün müziği için türünüzü seçin!",
         "options": {
+          "random": {
+            "label": "Rastgele",
+            "description": "Botun rastgele bir tür seçmesine izin verin.",
+            "value": "random"
+        },
           "global": {
             "label": "Küresel",
             "description": "Günün müziği için Küresel türü.",
@@ -687,8 +697,7 @@
     },
     "trivia": {
       "error_messages": {
-        "genre_not_available_in_this_mode": "❌ Bu tahminle tür seçilemez.",
-        "guess_not_available_in_this_mode": "❌ Bu tahmin bu modda seçilemez."
+        "genre_not_available_in_this_mode": "❌ Bu mod ile tür seçilemez."
       },
       "buttons": {
         "guess": {
