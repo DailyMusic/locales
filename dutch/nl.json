@@ -116,6 +116,11 @@
         "trivia_mode_select_menu": {
           "placeholder": "Kies je trivia-modus voor de TVDD!",
           "options": {
+            "random": {
+              "label": "Willekeurig",
+              "description": "Laat de bot elke dag willekeurig een triviamodus kiezen.",
+              "value": "random"
+            },
             "audio_title": {
               "label": "Audio Titel",
               "description": "Raad de titel van de muziek door naar een kort fragment te luisteren.",
@@ -299,11 +304,11 @@
         "advanced_trivia": {
           "description": "Welkom bij het geavanceerde configuratiemenu! 🤓\n🏆 Je moet kiezen welk type Trivia-spel je wilt. \nGa verder door op een van de opties hieronder te klikken"
         },
-        "vote_wumpus": {
-          "description": "❌ Je moet stemmen op [Wumpus.store](https://wumpus.store/bot/1115972980984516719/vote) om deze functie te gebruiken"
+        "vote": {
+          "description": "❌ Je moet stemmen op %platform% om deze functie te gebruiken."
         },
         "voting_helps_us": {
-          "description": "Stemmen voor Daily Music helpt ons populairder te worden, en het kost je slechts 1 seconde van je dag, zonder advertenties."
+          "description": "Door te stemmen op Daily Music help je mijn ontwikkelaar om me populairder te maken en ondersteun je zijn werk gratis."
         },
         "correct_title_trivia": {
           "title": "Je hebt de titel gevonden",
@@ -429,6 +434,11 @@
       "menu": {
         "placeholder": "Kies je genre voor de MVDD!",
         "options": {
+          "random": {
+            "label": "Willekeurig",
+            "description": "Laat de bot willekeurig een genre kiezen.",
+            "value": "random"
+        },
           "global": {
             "label": "Wereldmuziek",
             "description": "De muziek van de dag voor het genre Wereldmuziek.",
@@ -687,8 +697,7 @@
     },
     "trivia": {
       "error_messages": {
-        "genre_not_available_in_this_mode": "❌ Het genre kan niet worden geselecteerd met deze gok.",
-        "guess_not_available_in_this_mode": "❌ Deze veronderstelling kan niet worden geselecteerd in deze modus."
+        "genre_not_available_in_this_mode": "❌ Het genre kan niet worden geselecteerd met deze modus."
       },
       "buttons": {
         "guess": {
