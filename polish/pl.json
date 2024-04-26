@@ -116,6 +116,11 @@
         "trivia_mode_select_menu": {
           "placeholder": "Wybierz tryb gry dla CD!",
           "options": {
+            "random": {
+              "label": "Losowo",
+              "description": "Niech bot losowo wybiera tryb ciekawostki każdego dnia.",
+              "value": "random"
+            },
             "audio_title": {
               "label": "Tytuł audio",
               "description": "Zgadnij tytuł muzyki, słuchając krótkiego fragmentu.",
@@ -299,11 +304,11 @@
         "advanced_trivia": {
           "description": "Witaj w zaawansowanym menu konfiguracji! 🤓\n🏆 Musisz wybrać, jaki rodzaj gry Ciekawostki chcesz. \nKontynuuj, klikając jedną z opcji poniżej"
         },
-        "vote_wumpus": {
-          "description": "❌ Musisz zagłosować na [Wumpus.store](https://wumpus.store/bot/1115972980984516719/vote), aby użyć tej funkcji"
+        "vote": {
+          "description": "❌ Aby korzystać z tej funkcji, musisz zagłosować na %platform%."
         },
         "voting_helps_us": {
-          "description": "Głosowanie na Daily Music pomaga nam stać się popularniejszymi, a zajmuje to tylko 1 sekundę twojego dnia, bez reklam."
+          "description": "Głosując na Daily Music, pomagasz mojemu programiście zwiększyć popularność i wspierasz jego pracę za darmo."
         },
         "correct_title_trivia": {
           "title": "Znalazłeś tytuł",
@@ -429,6 +434,11 @@
       "menu": {
         "placeholder": "Wybierz swój gatunek muzyczny dla MD!",
         "options": {
+          "random": {
+            "label": "Losowy",
+            "description": "Pozwól, aby bot losowo wybrał gatunek.",
+            "value": "random"
+        },
           "global": {
             "label": "Globalna",
             "description": "Muzyka dnia dla gatunku Globalna.",
@@ -687,8 +697,7 @@
     },
     "trivia": {
       "error_messages": {
-        "genre_not_available_in_this_mode": "❌ Gatunek nie może być wybrany tym odgadnięciem.",
-        "guess_not_available_in_this_mode": "❌ To odgadnięcie nie może być wybrane w tym trybie."
+        "genre_not_available_in_this_mode": "❌ Gatunek nie może być wybrany tym trybie."
       },
       "buttons": {
         "guess": {
