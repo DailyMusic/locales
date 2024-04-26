@@ -114,8 +114,13 @@
           }
         },
         "trivia_mode_select_menu": {
-          "placeholder": "选择您的今日琐事模式！!",
+          "placeholder": "选择您的今日琐事模式!",
           "options": {
+            "random": {
+              "label": "随机",
+              "description": "让机器人每天随机选择一种琐事模式.",
+              "value": "random"
+            },
             "audio_title": {
               "label": "音频标题",
               "description": "听一小段摘录，猜测音乐的标题。",
@@ -299,11 +304,11 @@
         "advanced_trivia": {
           "description": "欢迎来到高级配置菜单！🤓🏆您需要选择您想要的 小知识 游戏类型。\n继续点击以下选项之一"
         },
-        "vote_wumpus": {
-          "description": "❌ 您需要在 [Wumpus.store](https://wumpus.store/bot/1115972980984516719/vote) 上投票才能使用此功能"
+        "vote": {
+          "description": "❌ 您需要在 %platform% 上投票才能使用此功能."
         },
         "voting_helps_us": {
-          "description": "为 Daily Music 投票能让我们更受欢迎，而且只需花费您 1 秒钟的时间，没有广告。"
+          "description": "为 Daily Music 投票，就是帮助我的开发人员提高我的知名度，就是免费支持他的工作。"
         },
         "correct_title_trivia": {
           "title": "您已找到标题",
@@ -429,6 +434,11 @@
       "menu": {
         "placeholder": "为今日音乐选择您的流派！",
         "options": {
+          "random": {
+            "label": "随机",
+            "description": "让机器人随机选择一个类型。",
+            "value": "random"
+          },
           "global": {
             "label": "全球",
             "description": "全球流派音乐的音乐。",
@@ -687,8 +697,7 @@
     },
     "trivia": {
       "error_messages": {
-        "genre_not_available_in_this_mode": "❌ 该猜测无法选择此类型。",
-        "guess_not_available_in_this_mode": "❌ 此猜测无法与此模式一起选择。"
+        "genre_not_available_in_this_mode": "❌ 该模式下无法选择流派"
       },
       "buttons": {
         "guess": {
