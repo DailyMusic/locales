@@ -116,6 +116,11 @@
         "trivia_mode_select_menu": {
           "placeholder": "¡Elige tu modo de trivia para la TDD!",
           "options": {
+            "random": {
+              "label": "Aleatorio",
+              "description": "Deja que el bot elija aleatoriamente un modo de trivial cada día.",
+              "value": "random"
+            },
             "audio_title": {
               "label": "Título de Audio",
               "description": "Adivina el título de la música escuchando un breve extracto.",
@@ -299,11 +304,11 @@
         "advanced_trivia": {
           "description": "¡Bienvenido al menú de configuración avanzada! 🤓\n🏆 Debe elegir qué tipo de juego de Trivia deseas. \nContinúa haciendo clic en una de las opciones a continuación."
         },
-        "vote_wumpus": {
-          "description": "❌ Necesitas votar en [Wumpus.store](https://wumpus.store/bot/1115972980984516719/vote) para usar esta función"
+        "vote": {
+          "description": "❌ Tienes que votar en %platform% para utilizar esta función."
         },
         "voting_helps_us": {
-          "description": "Votar por Daily Music nos ayuda a ser más populares, y solo te cuesta 1 segundo de tu día, sin anuncios."
+          "description": "Al votar por Daily Music, estás ayudando a mi desarrollador a hacerme más popular y estás apoyando su trabajo de forma gratuita."
         },
         "correct_title_trivia": {
           "title": "Has encontrado el título",
@@ -429,6 +434,11 @@
       "menu": {
         "placeholder": "¡Elige tu género para el MDD!",
         "options": {
+          "random": {
+            "label": "Aleatorio",
+            "description": "Permite que el bot elija aleatoriamente un género.",
+            "value": "random"
+        },
           "global": {
             "label": "Global",
             "description": "La música del día para el género Global.",
@@ -687,8 +697,7 @@
     },
     "trivia": {
       "error_messages": {
-        "genre_not_available_in_this_mode": "❌ El género no puede ser seleccionado con esta suposición.",
-        "guess_not_available_in_this_mode": "❌ Esta suposición no puede ser seleccionada con este modo."
+        "genre_not_available_in_this_mode": "❌ El género no puede ser seleccionado con este modo."
       },
       "buttons": {
         "guess": {
