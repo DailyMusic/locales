@@ -304,11 +304,11 @@
         "advanced_trivia": {
           "description": "Welcome to the advanced configuration menu! 🤓\n🏆 You need to choose which type of Trivia game you want. \nContinue by clicking on one of the options below"
         },
-        "vote_wumpus": {
-          "description": "❌ You need to vote on [Wumpus.store](https://wumpus.store/bot/1115972980984516719/vote) to use this feature"
+        "vote": {
+          "description": "❌ You need to vote on %platform% to use this feature."
         },
         "voting_helps_us": {
-          "description": "Voting for Daily Music helps us to become more popular, and it only costs you 1 second of your day, with no ads."
+          "description": "By voting for Daily Music, you're helping my developer to make me more popular and you're supporting his work for free."
         },
         "correct_title_trivia": {
           "title": "You've found the title",
@@ -435,6 +435,11 @@
       "menu": {
         "placeholder": "Choose your genre for the MOTD!",
         "options": {
+          "random": {
+            "label": "Random",
+            "description": "Let the bot randomly choose a genre.",
+            "value": "random"
+          },
           "global": {
             "label": "Global",
             "description": "The music of the day for the Global genre.",
@@ -693,8 +698,7 @@
     },
     "trivia": {
       "error_messages": {
-        "genre_not_available_in_this_mode": "❌ The genre cannot be selected with this guess.",
-        "guess_not_available_in_this_mode": "❌ This guess cannot be selected with this mode."
+        "genre_not_available_in_this_mode": "❌ The genre cannot be selected with this mode."
       },
       "buttons": {
         "guess": {
