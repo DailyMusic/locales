@@ -116,6 +116,11 @@
         "trivia_mode_select_menu": {
           "placeholder": "Wählen Sie Ihren Trivia-Modus für die TDT aus!",
           "options": {
+            "random": {
+              "label": "Zufällig",
+              "description": "Lassen Sie den Bot jeden Tag nach dem Zufallsprinzip einen Trivia-Modus auswählen.",
+              "value": "random"
+            },
             "audio_title": {
               "label": "Audio-Titel",
               "description": "Erraten Sie den Titel der Musik, indem Sie sich einen kurzen Ausschnitt anhören.",
@@ -299,11 +304,11 @@
         "advanced_trivia": {
           "description": "Willkommen im erweiterten Konfigurationsmenü! 🤓\n🏆 Sie müssen wählen, welche Art von Trivia-Spiel Sie möchten. \nFahren Sie fort, indem Sie eine der untenstehenden Optionen auswählen"
         },
-        "vote_wumpus": {
-          "description": "❌ Sie müssen auf [Wumpus.store](https://wumpus.store/bot/1115972980984516719/vote) abstimmen, um diese Funktion zu nutzen"
+        "vote": {
+          "description": "❌ Sie müssen auf %platform% abstimmen, um diese Funktion nutzen zu können."
         },
         "voting_helps_us": {
-          "description": "Das Abstimmen für Daily Music hilft uns, bekannter zu werden, und es kostet Sie nur 1 Sekunde Ihres Tages, ohne Werbung."
+          "description": "Indem du für Daily Music stimmst, hilfst du meinem Entwickler, mich populärer zu machen, und du unterstützt seine Arbeit kostenlos."
         },
         "correct_title_trivia": {
           "title": "Sie haben den Titel gefunden",
@@ -429,6 +434,11 @@
       "menu": {
         "placeholder": "Wählen Sie Ihr Genre für das MDT aus!",
         "options": {
+          "random": {
+            "label": "Zufällig",
+            "description": "Lassen Sie den Bot ein Genre zufällig auswählen.",
+            "value": "random"
+          },
           "global": {
             "label": "Global",
             "description": "Die Musik des Tages für das Global-Genre.",
@@ -687,8 +697,7 @@
     },
     "trivia": {
       "error_messages": {
-        "genre_not_available_in_this_mode": "❌ Das Genre kann mit diesem Modus nicht ausgewählt werden.",
-        "guess_not_available_in_this_mode": "❌ Diese Vermutung kann mit diesem Modus nicht ausgewählt werden."
+        "genre_not_available_in_this_mode": "❌ Das Genre kann mit diesem Modus nicht ausgewählt modus."
       },
       "buttons": {
         "guess": {
