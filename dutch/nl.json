@@ -8,6 +8,16 @@
     "totd": "Trivia van de Dag: Kun je de muziek raden?",
     "eotd": "Op deze dag in de muziekgeschiedenis: Ontdek wat er gebeurde!"
   },
+  "poll": {
+    "title": "Wat vind je van het MVDD?",
+    "answers": {
+      "answer_one_title": "Al bekend mee!",
+      "answer_two_title": "Nieuw voor mij, interessant!",
+      "answer_three_title": "Toegevoegd aan mijn afspeellijst, geweldig!",
+      "answer_four_title": "Niet echt mijn stijl...",
+      "answer_five_title": "Het is oké, niets meer."
+    }
+  },
   "acronyms": {
     "motd": "MVDD",
     "totd": "TVDD",
@@ -273,7 +283,7 @@
             "field_title_two": "🤚 Identiteit bewijzen",
             "field_description_two": "Door bewijs te leveren dat je echt de artiest bent die je beweert te zijn.",
             "field_title_three": "🎵 Heb een muzikaal genre",
-            "field_description_three": "Dat is een van die voorgestelde door de bot (Wereldwijd, Pop, Rock, Electro, KPOP, Harde stijl, Metaal, Duits).",
+            "field_description_three": "Dat is een van die voorgestelde door de bot  (Wereldwijd, Pop, Hip-Hop, Rock, Rap, Elektro, KPOP, Latino, Duits, Country, Jazz, Lofi, Animatie, Reggae, Hardstyle, Metal, Jaren '60, Jaren '70, Jaren '80, Jaren '90).",
             "field_title_four": "🤝 Waarom doen we dit?",
             "field_description_four": "Om talent te laten zien dat niet de erkenning krijgt die het verdient, en omdat muziek een wereld is waar iedereen erkend moet worden voor zijn artistieke bijdrage.",
             "field_title_five": "🤔 Wat is de volgende stap?",
@@ -291,6 +301,9 @@
         },
         "90%": {
           "description": "Je bent **90**% van de weg door het proces. Goed gedaan! 🎉 \n📆 Je moet kiezen of je de lijst met gebeurtenissen in de muziekwereld elke dag wilt ontvangen. \nHet concept is eenvoudig: elke dag ontvang je een lijst met gebeurtenissen die op deze dag in de muziekgeschiedenis hebben plaatsgevonden! \nGa verder door op een van de onderstaande knoppen te klikken."
+        },
+        "95%": {
+          "description": "Je bent **95**% van de weg door het proces. Goed gedaan! 🎉 \n📊 Je moet kiezen of je na elke MVDD een peiling wilt ontvangen om erachter te komen wat je gemeenschap denkt. \nGa verder door op een van de onderstaande knoppen te klikken."
         },
         "100%": {
           "description": "Je bent klaar! Je zit op **100**%. Goed gedaan! 🎉\n🎶 Je server is nu klaar. \nHier is een kort overzicht van je configuratie:"
@@ -420,7 +433,8 @@
             "field_title_five": "📱 Weergave",
             "field_title_six": "🧵 Draden",
             "field_title_seven": "🏆 Trivia",
-            "field_title_eight": "📆 Evenementen"
+            "field_title_eight": "📆 Evenementen",
+            "field_title_nine": "📊 Peilingen"
           },
           "threads": {
             "enabled": "Ingeschakeld",
@@ -438,7 +452,7 @@
             "label": "Willekeurig",
             "description": "Laat de bot willekeurig een genre kiezen.",
             "value": "random"
-        },
+          },
           "global": {
             "label": "Wereldmuziek",
             "description": "De muziek van de dag voor het genre Wereldmuziek.",
@@ -470,8 +484,8 @@
             "value": "electro"
           },
           "kpop": {
-            "label": "K-pop",
-            "description": "De muziek van de dag voor het genre K-pop.",
+            "label": "KPOP",
+            "description": "De muziek van de dag voor het genre KPOP.",
             "value": "kPOP"
           },
           "latino": {
@@ -682,6 +696,16 @@
       }
     },
     "stats": {
+      "words": {
+        "motd_one": "muziek",
+        "motd_two": "muzieks",
+        "totd_one": "trivia",
+        "totd_two": "trivia's",
+        "eotd_one": "evenement",
+        "eotd_two": "evenementen",
+        "potd_one": "peiling",
+        "potd_two": "peilingen"
+      },
       "embed": {
         "description": "📊 Hier is een samenvatting van de statistieken van Daily Music voor jouw server.",
         "field_title_one": "🎶 Over MVDD",
@@ -692,7 +716,10 @@
         "field_description_two_false": "Er zijn nog geen trivia naar deze server gestuurd.",
         "field_title_three": "📆 Over EVDD",
         "field_description_three_true": "Daily Music heeft in totaal **%data.TotalEventsSent%** %eventWord% naar deze server gestuurd, en de laatste was op %timestamp:F% (%timestamp:R%).",
-        "field_description_three_false": "Er zijn nog geen evenementen naar deze server gestuurd."
+        "field_description_three_false": "Er zijn nog geen evenementen naar deze server gestuurd.",
+        "field_title_four": "📊 Over PVDD",
+        "field_description_four_true": "Daily Music heeft in totaal **%data.TotalPollsSent%** %pollWord% naar deze server gestuurd, en de laatste was op %timestamp:F% (%timestamp:R%).",
+        "field_description_four_false": "Er zijn nog geen peiling naar deze server verzonden."
       }
     },
     "trivia": {
