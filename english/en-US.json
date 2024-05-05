@@ -8,6 +8,16 @@
     "totd": "Trivia of the Day : Can you guess the music?",
     "eotd": "On this day in the history of music : Find out what happened!"
   },
+  "poll": {
+    "title": "Your thoughts on the MOTD?",
+    "answers": {
+      "answer_one_title": "Familiar with it already!",
+      "answer_two_title": "New to me, interesting!",
+      "answer_three_title": "Added it to my playlist, love it!",
+      "answer_four_title": "Not really my style...",
+      "answer_five_title": "It's okay, nothing more."
+    }
+  },
   "acronyms": {
     "motd": "MOTD",
     "totd": "TOTD",
@@ -273,7 +283,7 @@
             "field_title_two": "🤚 Prove your identity",
             "field_description_two": "By providing proof that you really are the artist you claim to be.",
             "field_title_three": "🎵 Have a musical genre",
-            "field_description_three": "That is one of those proposed by the bot (Global, Pop, Rock, Electro, KPOP, Hardstyle, Metal, German).",
+            "field_description_three": "That is one of those proposed by the bot  (Global, Pop, Hip-Hop, Rock, Rap, Electro, KPOP, Latino, German, Country, Jazz, Lofi, Anime, Reggae, Hardstyle, Metal, 60s, 70s, 80s, 90s).",
             "field_title_four": "🤝 Why are we doing this?",
             "field_description_four": "To showcase talent that doesn't get the recognition it deserves, and because music is a world where everyone should be recognised for their artistic contribution.",
             "field_title_five": "🤔 What's next?",
@@ -291,6 +301,9 @@
         },
         "90%": {
           "description": "You are **90**% of the way through the process. Well done! 🎉 \n📆 You need to choose whether you want the list of events in the music world to be sent every day. \nThe concept  is simple: every day, you receive a list of events that happened on this day in the music history! \nContinue by clicking on one of the buttons below."
+        },
+        "95%": {
+          "description": "You are **95**% of the way through the process. Well done! 🎉 \n📊 You need to choose whether you want to receive a poll after each MOTD to find out what your community thinks. \nContinue by clicking on one of the buttons below."
         },
         "100%": {
           "description": "You're done! You're at **100**%. Well done! 🎉\n🎶 Your server is now ready. \nHere is a quick overview of your configuration:"
@@ -420,8 +433,9 @@
             "field_title_four": "🎵 Genre",
             "field_title_five": "📱 Display",
             "field_title_six": "🧵 Threads",
-            "field_title_seven": "🏆 Trivia",
-            "field_title_eight": "📆 Events"
+            "field_title_seven": "🏆 Trivias",
+            "field_title_eight": "📆 Events",
+            "field_title_nine": "📊 Polls"
           },
           "threads": {
             "enabled": "Enabled",
@@ -683,17 +697,30 @@
       }
     },
     "stats": {
+      "words": {
+        "motd_one": "music",
+        "motd_two": "musics",
+        "totd_one": "trivia",
+        "totd_two": "trivias",
+        "eotd_one": "event",
+        "eotd_two": "events",
+        "potd_one": "poll",
+        "potd_two": "polls"
+      },
       "embed": {
         "description": "📊 Here is a summary of the statistics from Daily Music for your server.",
-        "field_title_one": "🎶 About MOTDs",
+        "field_title_one": "🎶 About MOTD",
         "field_description_one_true": "Daily Music has sent a total of **%data.TotalSongsSent%** %musicWord% to this server, and the last one was on %timestamp:F% (%timestamp:R%).",
         "field_description_one_false": "No music has yet been sent to this server.",
-        "field_title_two": "🏆 About TOTDs",
+        "field_title_two": "🏆 About TOTD",
         "field_description_two_true": "Daily Music has sent a total of **%data.TotalTriviasSent%** %triviaWord% to this server, and the last one was on %timestamp:F% (%timestamp:R%).",
         "field_description_two_false": "No trivia has yet been sent to this server.",
-        "field_title_three": "📆 About EOTDs",
+        "field_title_three": "📆 About EOTD",
         "field_description_three_true": "Daily Music has sent a total of **%data.TotalEventsSent%** %eventWord% to this server, and the last one was on %timestamp:F% (%timestamp:R%).",
-        "field_description_three_false": "No events have yet been sent to this server."
+        "field_description_three_false": "No events have yet been sent to this server.",
+        "field_title_four": "📊 About POTD",
+        "field_description_four_true": "Daily Music has sent a total of **%data.TotalPollsSent%** %pollWord% to this server, and the last one was on %timestamp:F% (%timestamp:R%).",
+        "field_description_four_false": "No polls have yet been sent to this server."
       }
     },
     "trivia": {
