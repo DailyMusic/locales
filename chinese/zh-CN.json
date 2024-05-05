@@ -8,6 +8,16 @@
     "totd": "今日小知识：您能猜到音乐是什么吗？",
     "eotd": "音乐史上的今天：了解发生了什么！"
   },
+  "poll": {
+    "title": "你对 今日音乐 有什么看法？",
+    "answers": {
+      "answer_one_title": "已经很熟悉了！",
+      "answer_two_title": "对我来说是新鲜事物，很有趣！",
+      "answer_three_title": "已加入我的播放列表，我喜欢！",
+      "answer_four_title": "不太符合我的风格...",
+      "answer_five_title": "还好，没有更多了。"
+    }
+  },
   "acronyms": {
     "motd": "今日音乐",
     "totd": "今日琐事",
@@ -273,7 +283,7 @@
             "field_title_two": "🤚 证明您的身份",
             "field_description_two": "证明你真的是你所声称的艺术家。",
             "field_title_three": "🎵 有一个音乐流派",
-            "field_description_three": "这是机器人提出的建议之一（全球、流行、摇滚、电子、韩国流行音乐、硬式、金属、德语）。",
+            "field_description_three": "这是机器人提出的建议之一 (全球, 流行, 嘻哈, 摇滚, 说唱, 电子, 韩流, 拉丁, 德国, 乡村, 爵士, 放松音乐, 动漫, 雷鬼, 硬核, 金属, 60年代, 70年代, 80年代, 90年代)。",
             "field_title_four": "🤝 我们为什么要这样做？",
             "field_description_four": "展示那些没有得到应有认可的人才，因为音乐是一个人人都应为其艺术贡献得到认可的世界。",
             "field_title_five": "🤔 下一步是什么？",
@@ -281,16 +291,19 @@
           }
         },
         "40%": {
-          "description": "你已经完成了整个过程的**60**%。干得好 🎉 \n📱 您需要选择一种显示模式。点击相应的按钮就能看到它们的样子。\n点击下面的菜单继续。"
+          "description": "你已经完成了整个过程的**60**%。干得好! 🎉 \n📱 您需要选择一种显示模式。点击相应的按钮就能看到它们的样子。\n点击下面的菜单继续。"
         },
         "60%": {
-          "description": "你已经完成了整个过程的**80**%。干得好 🎉 \n🧵 您需要选择是否要由机器人为今日音乐自动创建和管理线程。\n点击以下按钮继续"
+          "description": "你已经完成了整个过程的**80**%。干得好! 🎉 \n🧵 您需要选择是否要由机器人为今日音乐自动创建和管理线程。\n点击以下按钮继续"
         },
         "80%": {
           "description": "你已经完成了整个过程的**80**%。干得好！🎉 \n🏆您需要选择是否希望每天都发送音乐问答。\n概念很简单：每天你都会收到一个音乐音频文件，你必须猜出它的标题！\n点击下面的按钮继续。"
         },
         "90%": {
-          "description": "你已经完成了整个过程的**90**%。干得好 🎉 \n📆您需要选择是否希望每天发送音乐世界事件列表。\n概念很简单：每天，您都会收到音乐史上这一天发生的事件列表！\n点击下面的按钮继续。"
+          "description": "你已经完成了整个过程的**95**%。干得好! 🎉 \n📆您需要选择是否希望每天发送音乐世界事件列表。\n概念很简单：每天，您都会收到音乐史上这一天发生的事件列表！\n点击下面的按钮继续。"
+        },
+        "95%": {
+          "description": "您已完成了**95**%的过程。干得好！🎉 \n📊 您需要选择是否希望在每个今日音乐后收到一项调查，了解您的社区的想法。 \n请继续点击下面的按钮。"
         },
         "100%": {
           "description": "你完成了！你达到了**100**%。干得好 您的服务器已经准备就绪。\n下面是您的配置概览："
@@ -420,7 +433,8 @@
             "field_title_five": "📱 显示屏",
             "field_title_six": "🧵 线程",
             "field_title_seven": "🏆 小知识",
-            "field_title_eight": "📆 活动"
+            "field_title_eight": "📆 活动",
+            "field_title_nine": "📊 民意调查"
           },
           "threads": {
             "enabled": "已启用",
@@ -682,6 +696,16 @@
       }
     },
     "stats": {
+      "words": {
+        "motd_one": "音乐",
+        "motd_two": "音乐",
+        "totd_one": "问答",
+        "totd_two": "问答",
+        "eotd_one": "活动",
+        "eotd_two": "活动",
+        "potd_one": "投票",
+        "potd_two": "投票"
+      },
       "embed": {
         "description": "📊 这是 Daily Music 对您的服务器的统计摘要。",
         "field_title_one": "🎶 关于每日音乐",
@@ -692,7 +716,10 @@
         "field_description_two_false": "此服务器尚未收到任何知识问答。",
         "field_title_three": "📆 关于当天发生的事件",
         "field_description_three_true": "Daily Music 已经向此服务器发送了总共 **%data.TotalEventsSent%** 条 %eventWord%，最后一条是在 %timestamp:F% (%timestamp:R%)。",
-        "field_description_three_false": "此服务器尚未收到任何事件。"
+        "field_description_three_false": "此服务器尚未收到任何事件。",
+        "field_title_four": "📊 关于 今日投票",
+        "field_description_four_true": "Daily Music 已经向此服务器发送了总共 **%data.TotalPollsSent%** 条 %pollWord%，最后一条是在 %timestamp:F%（%timestamp:R%）。",
+        "field_description_four_false": "此服务器尚未收到任何调查。"
       }
     },
     "trivia": {
