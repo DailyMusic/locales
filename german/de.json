@@ -8,6 +8,16 @@
     "totd": "Trivia des Tages : Kannst du die Musik erraten?",
     "eotd": "An diesem Tag in der Geschichte der Musik: Finden Sie heraus, was passiert ist!"
   },
+  "poll": {
+    "title": "Was denken Sie über das MDT?",
+    "answers": {
+      "answer_one_title": "Schon bekannt!",
+      "answer_two_title": "Neu für mich, interessant!",
+      "answer_three_title": "Habe es meiner Playlist hinzugefügt, liebe es!",
+      "answer_four_title": "Nicht wirklich mein Stil...",
+      "answer_five_title": "Es ist okay, nicht mehr."
+    }
+  },
   "acronyms": {
     "motd": "MDT",
     "totd": "TDT",
@@ -273,7 +283,7 @@
             "field_title_two": "🤚 Identität nachweisen",
             "field_description_two": "Indem du nachweist, dass du wirklich der Künstler bist, für den du dich ausgibst.",
             "field_title_three": "🎵 Ein musikalisches Genre haben",
-            "field_description_three": "Das ist eines der vom Bot vorgeschlagenen (Global, Pop, Rock, Electro, KPOP, Hardstyle, Metal, Deutsch).",
+            "field_description_three": "Das ist eines der vom Bot vorgeschlagenen  (Global, Pop, Hip-Hop, Rock, Rap, Electro, KPOP, Latino, Deutsch, Country, Jazz, Lofi, Anime, Reggae, Hardstyle, Metal, 60er, 70er, 80er, 90er).",
             "field_title_four": "🤝 Warum machen wir das?",
             "field_description_four": "Um Talente zu präsentieren, die nicht die Anerkennung bekommen, die sie verdienen, und weil Musik eine Welt ist, in der jeder für seinen künstlerischen Beitrag anerkannt werden sollte.",
             "field_title_five": "🤔 Was kommt als nächstes?",
@@ -291,6 +301,9 @@
         },
         "90%": {
           "description": "Sie haben **90**% des Prozesses hinter sich. Gut gemacht! 🎉 \n📆 Sie müssen wählen, ob Sie die Liste der Ereignisse in der Musikwelt jeden Tag erhalten möchten. \nDas Konzept ist einfach: Jeden Tag erhalten Sie eine Liste von Ereignissen, die an diesem Tag in der Musikgeschichte passiert sind! \nFahren Sie fort, indem Sie auf eine der Schaltflächen unten klicken."
+        },
+        "95%": {
+          "description": "Sie sind **95**% des Weges durch den Prozess. Gut gemacht! 🎉 \n📊 Sie müssen wählen, ob Sie nach jeder MVDD eine Umfrage erhalten möchten, um herauszufinden, was Ihre Gemeinschaft denkt. \nFahren Sie fort, indem Sie auf eine der unten stehenden Schaltflächen klicken."
         },
         "100%": {
           "description": "Sie sind fertig! Du bist bei **100**%. Gut gemacht! 🎉\n🎶 Ihr Server ist jetzt bereit. \nHier ein kurzer Überblick über Ihre Konfiguration:"
@@ -419,8 +432,9 @@
             "field_title_four": "🎵 Genre",
             "field_title_five": "📱 Anzeige",
             "field_title_six": "🧵 Threads",
-            "field_title_seven": "🏆 Trivia",
-            "field_title_eight": "📆 Veranstaltungen"
+            "field_title_seven": "🏆 Trivias",
+            "field_title_eight": "📆 Veranstaltungen",
+            "field_title_nine": "📊 Umfragen"
           },
           "threads": {
             "enabled": "Aktiviert",
@@ -682,6 +696,16 @@
       }
     },
     "stats": {
+      "words": {
+        "motd_one": "Musik",
+        "motd_two": "Musiks",
+        "totd_one": "Trivia",
+        "totd_two": "Trivias",
+        "eotd_one": "Veranstaltung",
+        "eotd_two": "Veranstaltungen",
+        "potd_one": "Umfrage",
+        "potd_two": "Umfragen"
+      },
       "embed": {
         "description": "📊 Hier ist eine Zusammenfassung der Statistiken von Daily Music für deinen Server.",
         "field_title_one": "🎶 Über MDT",
@@ -692,7 +716,10 @@
         "field_description_two_false": "Bisher wurden keine Trivia an diesen Server gesendet.",
         "field_title_three": "📆 Über EDT",
         "field_description_three_true": "Daily Music hat insgesamt **%data.TotalEventsSent%** %eventWord% an diesen Server gesendet, und das letzte war am %timestamp:F% (%timestamp:R%).",
-        "field_description_three_false": "Bisher wurden keine Events an diesen Server gesendet."
+        "field_description_three_false": "Bisher wurden keine Events an diesen Server gesendet.",
+        "field_title_four": "📊 Über UDT",
+        "field_description_four_true": "Daily Music hat insgesamt **%data.TotalPollsSent%** %pollWord% an diesen Server gesendet, und der letzte war am %timestamp:F% (%timestamp:R%).",
+        "field_description_four_false": "Es wurden noch keine Umfragen an diesen Server gesendet."
       }
     },
     "trivia": {
