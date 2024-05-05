@@ -8,6 +8,16 @@
     "totd": "Günün Bilgisi: Müziği tahmin edebilir misiniz?",
     "eotd": "Müzik tarihinde bu gün: Neler olduğunu öğrenin!"
   },
+  "poll": {
+    "title": "GM hakkında düşünceleriniz neler?",
+    "answers": {
+      "answer_one_title": "Zaten tanıdık!",
+      "answer_two_title": "Benim için yeni, ilginç!",
+      "answer_three_title": "Çalma listeme ekledim, seviyorum!",
+      "answer_four_title": "Benim tarzım değil...",
+      "answer_five_title": "Tamam, başka bir şey değil."
+    }
+  },
   "acronyms": {
     "motd": "GM",
     "totd": "GT'sı",
@@ -273,7 +283,7 @@
             "field_title_two": "🤚 Kimliğinizi Kanıtlayın",
             "field_description_two": "İddia ettiğiniz sanatçı olduğunuzu kanıtlayarak.",
             "field_title_three": "🎵 Bir Müzik Türüne Sahip Olun",
-            "field_description_three": "Bot tarafından önerilenlerden biri (Küresel, Pop, Rock, Elektro, Kore pop, Sert stil, Metal, Alman).",
+            "field_description_three": "Bot tarafından önerilenlerden biri (Küresel, Pop, Hip-Hop, Rock, Rap, Elektro, KPOP, Latino, Alman, Country, Caz, Lofi, Barındırılan, Reggae, Hardstyle, Metal, 60'lar, 70'ler, 80'ler, 90'lar)",
             "field_title_four": "🤝 Bunun Nedeni Nedir?",
             "field_description_four": "Herkese hak ettiği tanınmayı sağlamak ve çünkü müzik, herkesin sanatsal katkıları için tanınması gereken bir dünyadır.",
             "field_title_five": "🤔 Sonraki Adım Ne?",
@@ -287,10 +297,13 @@
           "description": "Sürecin **%80**'ındasınız. Bravo! 🎉 \n🧵 GM için bot tarafından otomatik olarak oluşturulan ve yönetilen bir konu olup olmayacağını seçmelisiniz. \nDevam etmek için aşağıdaki düğmelerden birine tıklayın"
         },
         "80%": {
-          "description": "Sürecin %80**'ini tamamlamış durumdasınız. Aferin size! 🎉 \n🏆 Her gün bir müzik testi gönderilmesini isteyip istemediğinizi seçmeniz gerekiyor. \nKonsept basit: her gün dinlemeniz için bir müzik ses dosyası alıyorsunuz ve adını tahmin etmeniz gerekiyor! \nAşağıdaki düğmelerden birine tıklayarak devam edin."
+          "description": "Sürecin **%80**'ini tamamlamış durumdasınız. Aferin size! 🎉 \n🏆 Her gün bir müzik testi gönderilmesini isteyip istemediğinizi seçmeniz gerekiyor. \nKonsept basit: her gün dinlemeniz için bir müzik ses dosyası alıyorsunuz ve adını tahmin etmeniz gerekiyor! \nAşağıdaki düğmelerden birine tıklayarak devam edin."
         },
         "90%": {
-          "description": "Sürecin %90**'ını tamamlamış durumdasınız. Aferin size! 🎉 \n📆 Müzik dünyasındaki olayların listesinin her gün gönderilmesini isteyip istemediğinizi seçmeniz gerekiyor. \nKonsept basit: Her gün, müzik tarihinde o gün gerçekleşen olayların bir listesini alırsınız! \nAşağıdaki düğmelerden birine tıklayarak devam edin."
+          "description": "Sürecin **%90**'ını tamamlamış durumdasınız. Aferin size! 🎉 \n📆 Müzik dünyasındaki olayların listesinin her gün gönderilmesini isteyip istemediğinizi seçmeniz gerekiyor. \nKonsept basit: Her gün, müzik tarihinde o gün gerçekleşen olayların bir listesini alırsınız! \nAşağıdaki düğmelerden birine tıklayarak devam edin."
+        },
+        "95%": {
+          "description": "Sürecin **95**%'ini tamamladınız durumdasınız. Aferin size! 🎉 \n📊 Topluluğunuzun ne düşündüğünü öğrenmek için her GM'dan sonra bir anket almak isteyip istemediğinizi seçmeniz gerekiyor. \nDevam etmek için aşağıdaki düğmelerden birine tıklayın."
         },
         "100%": {
           "description": "İşiniz bitti! Yüzde **100**'desiniz. Aferin size! 🎉\n🎶 Sunucunuz artık hazır. \nİşte yapılandırmanıza hızlı bir genel bakış:"
@@ -420,7 +433,8 @@
             "field_title_five": "📱 Ekran",
             "field_title_six": "🧵 Konular",
             "field_title_seven": "🏆 Trivia",
-            "field_title_eight": "📆 Etkinlikler"
+            "field_title_eight": "📆 Etkinlikler",
+            "field_title_nine": "📊 Anketler"
           },
           "threads": {
             "enabled": "Etkin",
@@ -438,7 +452,7 @@
             "label": "Rastgele",
             "description": "Botun rastgele bir tür seçmesine izin verin.",
             "value": "random"
-        },
+          },
           "global": {
             "label": "Küresel",
             "description": "Günün müziği için Küresel türü.",
@@ -682,17 +696,30 @@
       }
     },
     "stats": {
+      "words": {
+        "motd_one": "müzik",
+        "motd_two": "müzikler",
+        "totd_one": "bilgi yarışması",
+        "totd_two": "bilgi yarışmaları",
+        "eotd_one": "etkinlik",
+        "eotd_two": "etkinlikler",
+        "potd_one": "anket",
+        "potd_two": "anketler"
+      },
       "embed": {
-        "description": "📊 İşte sunucunuz için Günlük Müzik istatistiklerinin özeti.",
+        "description": "📊 İşte sunucunuz için Daily Music istatistiklerinin özeti.",
         "field_title_one": "🎶 Günün müziği'ler Hakkında",
-        "field_description_one_true": "Günlük Müzik bu sunucuya toplam **%data.TotalSongsSent%** %musicWord% gönderdi ve sonuncusu %timestamp:F% (%timestamp:R%) tarihinde oldu.",
+        "field_description_one_true": "Daily Music bu sunucuya toplam **%data.TotalSongsSent%** %musicWord% gönderdi ve sonuncusu %timestamp:F% (%timestamp:R%) tarihinde oldu.",
         "field_description_one_false": "Bu sunucuya henüz hiç müzik gönderilmedi.",
         "field_title_two": "🏆 Günün önemsiz bilgileri'ler Hakkında",
-        "field_description_two_true": "Günlük Müzik bu sunucuya toplam **%data.TotalTriviasSent%** %triviaWord% gönderdi ve sonuncusu %timestamp:F% (%timestamp:R%) tarihinde oldu.",
+        "field_description_two_true": "Daily Music bu sunucuya toplam **%data.TotalTriviasSent%** %triviaWord% gönderdi ve sonuncusu %timestamp:F% (%timestamp:R%) tarihinde oldu.",
         "field_description_two_false": "Bu sunucuya henüz hiç trivia gönderilmedi.",
         "field_title_three": "📆 Günün Olayları'ler Hakkında",
-        "field_description_three_true": "Günlük Müzik bu sunucuya toplam **%data.TotalEventsSent%** %eventWord% gönderdi ve sonuncusu %timestamp:F% (%timestamp:R%) tarihinde oldu.",
-        "field_description_three_false": "Bu sunucuya henüz hiç etkinlik gönderilmedi."
+        "field_description_three_true": "Daily Music bu sunucuya toplam **%data.TotalEventsSent%** %eventWord% gönderdi ve sonuncusu %timestamp:F% (%timestamp:R%) tarihinde oldu.",
+        "field_description_three_false": "Bu sunucuya henüz hiç etkinlik gönderilmedi.",
+        "field_title_four": "📊 Günün Anketleri Hakkında",
+        "field_description_four_true": "Daily Music bu sunucuya toplam **%data.TotalPollsSent%** %pollWord% gönderdi ve sonuncusu %timestamp:F% (%timestamp:R%) tarihindeydi oldu.",
+        "field_description_four_false": "Bu sunucuya henüz hiç anket gönderilmedi."
       }
     },
     "trivia": {
