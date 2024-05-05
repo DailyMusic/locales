@@ -8,6 +8,16 @@
     "totd": "Trivia du Jour : Pouvez-vous deviner la musique ?",
     "eotd": "Ce jour-là dans l'histoire de la musique : découvrez ce qui s'est passé!"
   },
+  "poll": {
+    "title": "Que pensez-vous de la MDJ?",
+    "answers": {
+      "answer_one_title": "Déjà familier !",
+      "answer_two_title": "Nouveau pour moi, intéressant !",
+      "answer_three_title": "Ajouté à ma playlist, j'adore !",
+      "answer_four_title": "Pas vraiment mon style...",
+      "answer_five_title": "C'est correct, sans plus."
+    }
+  },
   "acronyms": {
     "motd": "MDJ",
     "totd": "TDJ",
@@ -273,7 +283,7 @@
             "field_title_two": "🤚 Prouvez votre identité",
             "field_description_two": "En fournissant la preuve que vous êtes vraiment l'artiste que vous prétendez être.",
             "field_title_three": "🎵 Avoir un genre musical",
-            "field_description_three": "Qui est l'un de ceux proposés par le robot (Global, Pop, Rock, Electro, KPOP, Hardstyle, Métal, Allemand).",
+            "field_description_three": "Qui est l'un de ceux proposés par le robot  (Global, Pop, Hip-Hop, Rock, Rap, Électro, KPOP, Latino, Allemand, Country, Jazz, Lofi, Animé, Reggae, Hardstyle, Métal, Années 60, Années 70, Années 80, Années 90).",
             "field_title_four": "🤝 Pourquoi faisons-nous cela ?",
             "field_description_four": "Pour mettre en valeur les talents qui ne reçoivent pas la reconnaissance qu'ils méritent, et parce que la musique est un monde où tout le monde devrait être reconnu pour sa contribution artistique.",
             "field_title_five": "🤔 Et ensuite ?",
@@ -291,6 +301,9 @@
         },
         "90%": {
           "description": "Vous êtes à **90**% du processus. Bravo ! 🎉 \n📆 Vous devez choisir si vous voulez que la liste des événements dans le monde de la musique soit envoyée tous les jours. \nLe concept est simple : chaque jour, vous recevez une liste d'événements qui se sont produits ce jour-là dans l'histoire de la musique ! \nContinuez en cliquant sur l'un des boutons ci-dessous."
+        },
+        "95%": {
+          "description": "Vous êtes à **95**% du processus. Bravo ! 🎉 \n📊 Vous devez choisir si vous souhaitez recevoir un sondage après chaque MDJ pour savoir ce que votre communauté pense. \nContinuez en cliquant sur l'un des boutons ci-dessous."
         },
         "100%": {
           "description": "Vous avez terminé ! Vous êtes à **100**%. Bravo ! 🎉\n🎶 Votre serveur est maintenant prêt. \nVoici un aperçu rapide de votre configuration :"
@@ -419,8 +432,9 @@
             "field_title_four": "🎵 Genre",
             "field_title_five": "📱 Affichage",
             "field_title_six": "🧵 Fils",
-            "field_title_seven": "🏆 Trivia",
-            "field_title_eight": "📆 Événements"
+            "field_title_seven": "🏆 Trivias",
+            "field_title_eight": "📆 Événements",
+            "field_title_nine": "📊 Sondages"
           },
           "threads": {
             "enabled": "Activé",
@@ -438,7 +452,7 @@
             "label": "Aléatoire",
             "description": "Laissez le robot choisir aléatoirement un genre.",
             "value": "random"
-        },
+          },
           "global": {
             "label": "Global",
             "description": "La musique du jour pour le genre Global.",
@@ -682,17 +696,30 @@
       }
     },
     "stats": {
+      "words": {
+        "motd_one": "musique",
+        "motd_two": "musiques",
+        "totd_one": "trivia",
+        "totd_two": "trivias",
+        "eotd_one": "événement",
+        "eotd_two": "événements",
+        "potd_one": "sondage",
+        "potd_two": "sondages"
+      },
       "embed": {
         "description": "📊 Voici un résumé des statistiques de Daily Music pour votre serveur.",
         "field_title_one": "🎶 À propos des MDJ",
         "field_description_one_true": "Daily Music a envoyé un total de **%data.TotalSongsSent%** %musicWord% sur ce serveur, et le dernier était le %timestamp:F% (%timestamp:R%).",
-        "field_description_one_false": "Aucune musique n'a encore été envoyée à ce serveur.",
+        "field_description_one_false": "Aucune musique n'a encore été envoyée sur ce serveur.",
         "field_title_two": "🏆 À propos des TDJ",
         "field_description_two_true": "Daily Music a envoyé un total de **%data.TotalTriviasSent%** %triviaWord% sur ce serveur, et le dernier était le %timestamp:F% (%timestamp:R%).",
-        "field_description_two_false": "Aucune trivia n'a encore été envoyée à ce serveur.",
+        "field_description_two_false": "Aucune trivia n'a encore été envoyée sur ce serveur.",
         "field_title_three": "📆 À propos des EDJ",
         "field_description_three_true": "Daily Music a envoyé un total de **%data.TotalEventsSent%** %eventWord% sur ce serveur, et le dernier était le %timestamp:F% (%timestamp:R%).",
-        "field_description_three_false": "Aucun événement n'a encore été envoyé à ce serveur."
+        "field_description_three_false": "Aucun événement n'a encore été envoyé sur ce serveur.",
+        "field_title_four": "📊 À propos des SDJ",
+        "field_description_four_true": "Daily Music a envoyé un total de **%data.TotalPollsSent%** %pollWord% sur ce serveur, et le dernier était le %timestamp:F% (%timestamp:R%).",
+        "field_description_four_false": "Aucun sondage n'a encore été envoyé sur ce serveur."
       }
     },
     "trivia": {
