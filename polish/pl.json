@@ -8,6 +8,16 @@
     "totd": "Ciekawostki dnia: Czy możesz zgadnąć utwór?",
     "eotd": "W tym dniu w historii muzyki: Dowiedz się, co się wydarzyło!"
   },
+  "poll": {
+    "title": "Co sądzisz o MD?",
+    "answers": {
+      "answer_one_title": "Już znam!",
+      "answer_two_title": "Nowość dla mnie, ciekawe!",
+      "answer_three_title": "Dodałem do mojej playlisty, uwielbiam!",
+      "answer_four_title": "Nie do końca mój styl...",
+      "answer_five_title": "Jest ok, nic więcej."
+    }
+  },
   "acronyms": {
     "motd": "MD",
     "totd": "CD",
@@ -273,7 +283,7 @@
             "field_title_two": "🤚 Udowodnij swoją tożsamość",
             "field_description_two": "Poprzez dostarczenie dowodu, że naprawdę jesteś artystą, za którego się podajesz.",
             "field_title_three": "🎵 Miej gatunek muzyczny",
-            "field_description_three": "Jeden z tych zaproponowanych przez bota (Global, Pop, Rock, Electro, KPOP, Hardstyle, Metal, German).",
+            "field_description_three": "Jeden z tych zaproponowanych przez bota  (Globalna, Pop, Hip-Hop, Rock, Rap, Electro, KPOP, Latino, Niemiecka, Country, Jazz, Lofi, Hostowany, Reggae, Hardstyle, Metal, Lata 60, Lata 70, Lata 80, Lata 90).",
             "field_title_four": "🤝 Dlaczego to robimy?",
             "field_description_four": "Aby pokazać talent, który nie dostaje zasłużonego uznania, i dlatego że muzyka to świat, w którym każdy powinien być doceniony za swój artystyczny wkład.",
             "field_title_five": "🤔 Co dalej?",
@@ -291,6 +301,9 @@
         },
         "90%": {
           "description": "Jesteś na **90**% drogi przez cały proces. Dobra robota!🎉 \n📆 Musisz wybrać, czy chcesz, aby lista wydarzeń w świecie muzyki była wysyłana codziennie. \nKoncepcja jest prosta: każdego dnia otrzymujesz listę wydarzeń, które miały miejsce tego dnia w historii muzyki! \nKontynuuj, klikając jeden z poniższych przycisków."
+        },
+        "95%": {
+          "description": "Jesteś na **95**% drogi przez cały proces. Dobra robota! 🎉 \n📊 Musisz wybrać, czy chcesz otrzymać ankietę po każdym MD, aby dowiedzieć się, co myśli Twoja społeczność. \nKontynuuj, klikając jeden z poniższych przycisków."
         },
         "100%": {
           "description": "Skończyłeś! Osiągnąłeś **100**%. Dobra robota!🎉\n🎶 Twój serwer jest teraz gotowy. \nOto krótki przegląd konfiguracji:"
@@ -420,7 +433,8 @@
             "field_title_five": "📱 Wyświetlacz",
             "field_title_six": "🧵 Nici",
             "field_title_seven": "🏆 Ciekawostki",
-            "field_title_eight": "📆 Wydarzenia"
+            "field_title_eight": "📆 Wydarzenia",
+            "field_title_nine": "📊 Sondaże"
           },
           "threads": {
             "enabled": "Włączone",
@@ -438,7 +452,7 @@
             "label": "Losowy",
             "description": "Pozwól, aby bot losowo wybrał gatunek.",
             "value": "random"
-        },
+          },
           "global": {
             "label": "Globalna",
             "description": "Muzyka dnia dla gatunku Globalna.",
@@ -682,6 +696,16 @@
       }
     },
     "stats": {
+      "words": {
+        "motd_one": "muzyka",
+        "motd_two": "muzyki",
+        "totd_one": "trivia",
+        "totd_two": "trivias",
+        "eotd_one": "wydarzenie",
+        "eotd_two": "wydarzenia",
+        "potd_one": "sondaż",
+        "potd_two": "sondażes"
+      },
       "embed": {
         "description": "📊 Oto podsumowanie statystyk z Daily Music dla Twojego serwera.",
         "field_title_one": "🎶 O MD-ach",
@@ -692,7 +716,10 @@
         "field_description_two_false": "Na ten serwer nie zostały jeszcze wysłane żadne trivia.",
         "field_title_three": "📆 O WD-ach",
         "field_description_three_true": "Daily Music wysłał(a) w sumie **%data.TotalEventsSent%** %eventWord% na ten serwer, a ostatni został wysłany dnia %timestamp:F% (%timestamp:R%).",
-        "field_description_three_false": "Na ten serwer nie zostały jeszcze wysłane żadne wydarzenia."
+        "field_description_three_false": "Na ten serwer nie zostały jeszcze wysłane żadne wydarzenia.",
+        "field_title_four": "📊 O SD-ach",
+        "field_description_four_true": "Daily Music wysłał(a) w sumie **%data.TotalPollsSent%** %pollWord% na ten serwer, a ostatni został wysłany dnia %timestamp:F% (%timestamp:R%).",
+        "field_description_four_false": "Na ten serwer nie zostały jeszcze wysłane żadne sondaż."
       }
     },
     "trivia": {
