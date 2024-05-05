@@ -8,6 +8,16 @@
     "totd": "Curiosidade do Dia: Consegue adivinhar a música?",
     "eotd": "Neste dia na história da música: descubra o que aconteceu!"
   },
+  "poll": {
+    "title": "O que você acha do MDD?",
+    "answers": {
+      "answer_one_title": "Já conheço!",
+      "answer_two_title": "Novidade para mim, interessante!",
+      "answer_three_title": "Adicionei à minha playlist, adoro!",
+      "answer_four_title": "Não é muito o meu estilo...",
+      "answer_five_title": "Está ok, nada mais."
+    }
+  },
   "acronyms": {
     "motd": "MDD",
     "totd": "CDD",
@@ -273,7 +283,7 @@
             "field_title_two": "🤚 Prove sua identidade",
             "field_description_two": "Fornecendo prova de que você realmente é o artista que afirma ser.",
             "field_title_three": "🎵 Tenha um gênero musical",
-            "field_description_three": "Que seja um dos propostos pelo bot (Global, Pop, Rock, Electro, KPOP, Hardstyle, Metal, Alemão).",
+            "field_description_three": "Que seja um dos propostos pelo bot  (Global, Pop, Hip-Hop, Rock, Rap, Electro, KPOP, Latino, Alemão, Country, Jazz, Lofi, Animação, Reggae, Hardstyle, Metal, Anos 60, Anos 70, Anos 80, Anos 90).",
             "field_title_four": "🤝 Por que estamos fazendo isso?",
             "field_description_four": "Para mostrar talento que não recebe o reconhecimento que merece, e porque a música é um mundo onde todos devem ser reconhecidos por sua contribuição artística.",
             "field_title_five": "🤔 O que vem depois?",
@@ -291,6 +301,9 @@
         },
         "90%": {
           "description": "Você está a **90**% do caminho. Parabéns! 🎉 \n📆 Você precisa escolher se deseja que a lista de eventos no mundo da música seja enviada todos os dias. \nO conceito é simples: todos os dias, você recebe uma lista de eventos que aconteceram nesse dia na história da música! \nContinue clicando em um dos botões abaixo."
+        },
+        "95%": {
+          "description": "Você está **95**% do caminho. Parabéns! 🎉 \n📊 Você precisa escolher se deseja receber uma pesquisa após cada MDD para saber o que sua comunidade pensa. \nContinue clicando em um dos botões abaixo."
         },
         "100%": {
           "description": "Você terminou! Você atingiu **100**%. Muito bem! 🎉\n🎶 Seu servidor está pronto. \nAqui está uma visão geral rápida de sua configuração:"
@@ -419,8 +432,9 @@
             "field_title_four": "🎵 Gênero",
             "field_title_five": "📱 Exibição",
             "field_title_six": "🧵 Tópicos",
-            "field_title_seven": "🏆 Curiosidade",
-            "field_title_eight": "📆 Eventos"
+            "field_title_seven": "🏆 Curiosidades",
+            "field_title_eight": "📆 Eventos",
+            "field_title_nine": "📊 Pesquisas"
           },
           "threads": {
             "enabled": "Habilitado",
@@ -682,6 +696,16 @@
       }
     },
     "stats": {
+      "words": {
+        "motd_one": "música",
+        "motd_two": "músicas",
+        "totd_one": "curiosidade",
+        "totd_two": "curiosidades",
+        "eotd_one": "evento",
+        "eotd_two": "eventos",
+        "potd_one": "pesquisa",
+        "potd_two": "pesquisas"
+      },
       "embed": {
         "description": "📊 Aqui está um resumo das estatísticas do Daily Music para o seu servidor.",
         "field_title_one": "🎶 Sobre MDD",
@@ -692,7 +716,10 @@
         "field_description_two_false": "Nenhuma trivia foi enviada para este servidor ainda.",
         "field_title_three": "📆 Sobre EDD",
         "field_description_three_true": "O Daily Music enviou um total de **%data.TotalEventsSent%** %eventWord% para este servidor, e o último foi em %timestamp:F% (%timestamp:R%).",
-        "field_description_three_false": "Nenhum evento foi enviado para este servidor ainda."
+        "field_description_three_false": "Nenhum evento foi enviado para este servidor ainda.",
+        "field_title_four": "📊 Sobre SDD",
+        "field_description_four_true": "O Daily Music enviou um total de **%data.TotalPollsSent%** %pollWord% para este servidor, e o último foi em %timestamp:F% (%timestamp:R%).",
+        "field_description_four_false": "Nenhuma pesquisa foi enviada para este servidor ainda."
       }
     },
     "trivia": {
