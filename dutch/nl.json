@@ -18,6 +18,13 @@
       "answer_five_title": "Het is oké, niets meer."
     }
   },
+  "webhook": {
+    "reason_creation": "Het systeem van Daily Music is geïnitialiseerd op deze server.",
+    "reason_deletion": "Het Daily Music-systeem is opnieuw ingesteld op deze server."
+  },
+  "thread": {
+    "reason_creation": "De optie Threads is ingeschakeld op deze server."
+  },
   "acronyms": {
     "motd": "MVDD",
     "totd": "TVDD",
@@ -115,11 +122,26 @@
               "label": "Klassiek Pro",
               "description": "Een klassieke kaart, maar met een professionele touch.",
               "value": "pro"
+            }
+          }
+        },
+        "thread_mode_select_menu": {
+          "placeholder": "Kies je thread-modus!",
+          "options": {
+            "use": {
+              "label": "Maken & Gebruiken",
+              "description": "De bot zal berichten maken en verzenden in deze thread.",
+              "value": "use"
             },
-            "mini": {
-              "label": "Mini Pro",
-              "description": "Een mini-kaart, maar met een professionele touch.",
-              "value": "mini"
+            "create": {
+              "label": "Maken",
+              "description": "De bot zal een thread maken en berichten verzenden in het gedefinieerde kanaal.",
+              "value": "create"
+            },
+            "attach": {
+              "label": "Bijvoegen",
+              "description": "De bot zal een thread maken en berichten verzenden in het gedefinieerde kanaal.",
+              "value": "attach"
             }
           }
         },
@@ -193,6 +215,10 @@
         "trivia_modal": {
           "title": "Raad de muziek!",
           "input": "Wat is de %guess% van deze muziek?"
+        },
+        "customise_my_card_modal": {
+          "title": "Pas uw kaart aan",
+          "input": "Wat is uw afbeeldingslink?"
         }
       },
       "buttons": {
@@ -213,9 +239,23 @@
           },
           "pro_card_display": {
             "label": "Klassiek Pro Voorbeeld"
+          }
+        },
+        "customize_my_card": {
+          "customize_my_card": {
+            "label": "Mijn kaart aanpassen"
           },
-          "mini_card_display": {
-            "label": "Mini Pro Voorbeeld"
+          "continue_configuration": {
+            "label": "Doorgaan"
+          },
+          "delete_continue_configuration": {
+            "label": "Verwijderen en doorgaan"
+          },
+          "confirm": {
+            "label": "Bevestigen"
+          },
+          "change": {
+            "label": "Wijzigen"
           }
         },
         "threads": {
@@ -290,6 +330,12 @@
             "field_description_five": "Word lid van onze [officiële server](%SupportLink%) en doe een verzoek. Als je aanvraag wordt geaccepteerd, wordt je weergegeven op de voorbeeldberichten en krijg je een rol op onze server."
           }
         },
+        "customize_my_card": {
+          "error_messages": {
+            "image_invalid": "❌ De link die u heeft opgegeven is ongeldig. De geaccepteerde formaten zijn:\n- JPG\n- JPEG\n- PNG\n- WEBP",
+            "nsfw_not_allowed": "❌ Deze afbeelding bevat NSFW-inhoud."
+          }
+        },
         "40%": {
           "description": "Je bent **40**% van de weg door het proces. Goed gedaan! 🎉 \n📱 Je moet een weergavemodus kiezen. Je kunt zien hoe ze eruit zien door op de respectievelijke knoppen te klikken. \nGa verder door op het onderstaande menu te klikken."
         },
@@ -313,6 +359,12 @@
         },
         "advanced_card": {
           "description": "Welkom bij het geavanceerde configuratiemenu! 🤓 \n🃏 Je moet kiezen welk type kaart je wilt voor het MVDD.\nGa verder door op het menu hieronder te klikken"
+        },
+        "advanced_cardmode": {
+          "description": "Wilt u de achtergrond van uw kaart aanpassen? 🖼️ \n✅ Ja?\n- Klik op de knop \"Mijn kaart aanpassen\".\n- Bereid een afbeeldingslink voor en kopieer deze naar uw klembord.\n❌ Nee?\n- Klik op de knop \"Doorgaan\"."
+        },
+        "advanced_thread": {
+          "description": "Welkom bij het geavanceerde configuratiemenu! 🤓 \n🃏 Je moet kiezen welk type thread je wilt. \nGa verder door hieronder op het menu te klikken"
         },
         "advanced_trivia": {
           "description": "Welkom bij het geavanceerde configuratiemenu! 🤓\n🏆 Je moet kiezen welk type Trivia-spel je wilt. \nGa verder door op een van de opties hieronder te klikken"
