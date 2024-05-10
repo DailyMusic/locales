@@ -18,6 +18,13 @@
       "answer_five_title": "It's okay, nothing more."
     }
   },
+  "webhook": {
+    "reason_creation": "The system of Daily Music has been initialised on this server.",
+    "reason_deletion": "The system of Daily Music has been reset on this server."
+  },
+  "thread": {
+    "reason_creation": "The Threads option is enabled on this server."
+  },
   "acronyms": {
     "motd": "MOTD",
     "totd": "TOTD",
@@ -115,11 +122,26 @@
               "label": "Classic Pro",
               "description": "A classic card, but with a professional touch.",
               "value": "pro"
+            }
+          }
+        },
+        "thread_mode_select_menu": {
+          "placeholder": "Choose your thread mode!",
+          "options": {
+            "use": {
+              "label": "Create & Use",
+              "description": "The bot will create a thread and send messages in it for the daily messages.",
+              "value": "use"
             },
-            "mini": {
-              "label": "Mini Pro",
-              "description": "A mini card, but with a professional touch.",
-              "value": "mini"
+            "create": {
+              "label": "Create",
+              "description": "The bot will create a thread and send messages in the defined channel.",
+              "value": "create"
+            },
+            "attach": {
+              "label": "Attach",
+              "description": "The bot will create a thread and send messages in the defined channel.",
+              "value": " attach"
             }
           }
         },
@@ -193,6 +215,10 @@
         "trivia_modal": {
           "title": "Guess the music!",
           "input": "What is the %guess% of this music?"
+        },
+        "customise_my_card_modal": {
+          "title": "Customise your card",
+          "input": "What is your image link?"
         }
       },
       "buttons": {
@@ -213,9 +239,23 @@
           },
           "pro_card_display": {
             "label": "Classic Pro Preview"
+          }
+        },
+        "customize_my_card": {
+          "customize_my_card": {
+            "label": "Customize My Card"
           },
-          "mini_card_display": {
-            "label": "Mini Pro Preview"
+          "continue_configuration": {
+            "label": "Continue"
+          },
+          "delete_continue_configuration": {
+            "label": "Delete and continue"
+          },
+          "confirm": {
+            "label": "Confirm"
+          },
+          "change": {
+            "label": "Change"
           }
         },
         "threads": {
@@ -290,6 +330,12 @@
             "field_description_five": "Join our [official server](%SupportLink%) and make a request. If your application is accepted, you will be featured on the preview messages and you will get a role on our server."
           }
         },
+        "customize_my_card": {
+          "error_messages": {
+            "image_invalid": "❌ The link you provided is invalid. The accepted formats are:\n- JPG\n- JPEG\n- PNG\n- WEBP",
+            "nsfw_not_allowed": "❌ This image contains NSFW content."
+          }
+        },
         "40%": {
           "description": "You are **40**% of the way through the process. Well done! 🎉 \n📱 You need to choose a display mode. You can see what they look like by clicking on their respective buttons. \nContinue by clicking on the menu below."
         },
@@ -313,6 +359,12 @@
         },
         "advanced_card": {
           "description": "Welcome to the advanced configuration menu! 🤓 \n🃏 You need to choose what type of card you want for the MOTD.\nContinue by clicking on the menu below"
+        },
+        "advanced_cardmode": {
+          "description": "Would you like to customise the background of your card? 🖼️ \n✅ Yes?\n- Click on the \"Customise my card\" button.\n- Prepare an image link and copy it to your clipboard.\n❌ No?\n- Click on the \"Continue\" button."
+        },
+        "advanced_thread": {
+          "description": "Welcome to the advanced configuration menu! 🤓 \n🃏 You need to choose what type of thread you want.\nContinue by clicking on the menu below"
         },
         "advanced_trivia": {
           "description": "Welcome to the advanced configuration menu! 🤓\n🏆 You need to choose which type of Trivia game you want. \nContinue by clicking on one of the options below"
