@@ -18,6 +18,13 @@
       "answer_five_title": "C'est correct, sans plus."
     }
   },
+  "webhook": {
+    "reason_creation": "Le système de Daily Music a été initialisé sur ce serveur.",
+    "reason_deletion": "Le système de Daily Music a été réinitialisé sur ce serveur."
+  },
+  "thread": {
+    "reason_creation": "L'option de fils de discussion est activée sur ce serveur."
+  },
   "acronyms": {
     "motd": "MDJ",
     "totd": "TDJ",
@@ -115,11 +122,26 @@
               "label": "Classique Pro",
               "description": "Une carte classique, mais avec une touche professionnelle.",
               "value": "pro"
+            }
+          }
+        },
+        "thread_mode_select_menu": {
+          "placeholder": "Choisissez votre mode de fil de discussion !",
+          "options": {
+            "use": {
+              "label": "Créer & Utiliser",
+              "description": "Le bot créera et enverra des messages dans ce fil de discussion.",
+              "value": "use"
             },
-            "mini": {
-              "label": "Mini Pro",
-              "description": "Une mini carte, mais avec une touche professionnelle.",
-              "value": "mini"
+            "create": {
+              "label": "Créer",
+              "description": "Le bot créera un fil de discussion et enverra des messages dans le canal défini.",
+              "value": "create"
+            },
+            "attach": {
+              "label": "Attacher",
+              "description": "Le bot créera un fil de discussion et enverra des messages dans le canal défini.",
+              "value": "attach"
             }
           }
         },
@@ -193,6 +215,10 @@
         "trivia_modal": {
           "title": "Devinez la musique !",
           "input": "Quel est le %guess% de cette musique ?"
+        },
+        "customise_my_card_modal": {
+          "title": "Customise your card",
+          "input": "What is your image link?"
         }
       },
       "buttons": {
@@ -213,9 +239,23 @@
           },
           "pro_card_display": {
             "label": "Aperçu Classique Pro"
+          }
+        },
+        "customize_my_card": {
+          "customize_my_card": {
+            "label": "Personnaliser ma carte"
           },
-          "mini_card_display": {
-            "label": "Aperçu Mini Pro"
+          "continue_configuration": {
+            "label": "Continuer"
+          },
+          "delete_continue_configuration": {
+            "label": "Supprimer et continuer"
+          },
+          "confirm": {
+            "label": "Confirmer"
+          },
+          "change": {
+            "label": "Modifier"
           }
         },
         "threads": {
@@ -290,6 +330,12 @@
             "field_description_five": "Rejoignez notre [serveur officiel](%SupportLink%) et faites une demande. Si votre candidature est acceptée, vous serez mis en avant sur les messages de prévisualisation et vous obtiendrez un rôle sur notre serveur."
           }
         },
+        "customize_my_card": {
+          "error_messages": {
+            "image_invalid": "❌ Le lien que vous avez fourni est invalide. Les formats acceptés sont :\n- JPG\n- JPEG\n- PNG\n- WEBP",
+            "nsfw_not_allowed": "❌ Cette image contient du contenu NSFW."
+          }
+        },
         "40%": {
           "description": "Vous êtes à **40**% du processus. Bravo ! 🎉 \n📱 Vous devez choisir un mode d'affichage. Vous pouvez voir à quoi ils ressemblent en cliquant sur leurs boutons respectifs. \nContinuez en cliquant sur le menu ci-dessous."
         },
@@ -313,6 +359,12 @@
         },
         "advanced_card": {
           "description": "Bienvenue dans le menu de configuration avancée ! 🤓 \n🃏 Vous devrez choisir quel type de carte vous voulez pour la MDJ.\nContinuez en cliquant sur le menu ci-dessous"
+        },
+        "advanced_cardmode": {
+          "description": "Souhaitez-vous personnaliser le fond de votre carte ? 🖼️ \n✅ Oui?\n- Cliquez sur le bouton \"Personnaliser ma carte\".\n- Préparez un lien d'image et copiez-le dans votre presse-papiers.\n❌ Non?\n- Cliquez sur le bouton \"Continuer\"."
+        },
+        "advanced_thread": {
+          "description": "Bienvenue dans le menu de configuration avancée ! 🤓 \n🃏 Vous devrez choisir le type de fil de discussion que vous souhaitez. \nContinuez en cliquant sur le menu ci-dessous"
         },
         "advanced_trivia": {
           "description": "Bienvenue dans le menu de configuration avancée ! 🤓\n🏆 Vous devrez choisir quel type de jeu Trivia vous voulez. \nContinuez en cliquant sur l'une des options ci-dessous"
