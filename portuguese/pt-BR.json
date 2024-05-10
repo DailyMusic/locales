@@ -18,6 +18,13 @@
       "answer_five_title": "Está ok, nada mais."
     }
   },
+  "webhook": {
+    "reason_creation": "O sistema do Daily Music foi inicializado neste servidor.",
+    "reason_deletion": "O sistema Daily Music foi reiniciado neste servidor."
+  },
+  "thread": {
+    "reason_creation": "A opção Threads está habilitada neste servidor."
+  },
   "acronyms": {
     "motd": "MDD",
     "totd": "CDD",
@@ -115,11 +122,26 @@
               "label": "Clássico Pro",
               "description": "Um cartão clássico, mas com um toque profissional.",
               "value": "pro"
+            }
+          }
+        },
+        "thread_mode_select_menu": {
+          "placeholder": "Escolha o seu modo de tópico!",
+          "options": {
+            "use": {
+              "label": "Criar & Usar",
+              "description": "O bot criará e enviará mensagens neste tópico.",
+              "value": "use"
             },
-            "mini": {
-              "label": "Mini Pro",
-              "description": "Um mini cartão, mas com um toque profissional.",
-              "value": "mini"
+            "create": {
+              "label": "Criar",
+              "description": "O bot criará um tópico e enviará mensagens no canal definido.",
+              "value": "create"
+            },
+            "attach": {
+              "label": "Anexar",
+              "description": "O bot criará um tópico e enviará mensagens no canal definido.",
+              "value": "attach"
             }
           }
         },
@@ -193,6 +215,10 @@
         "trivia_modal": {
           "title": "Adivinhe a música!",
           "input": "Qual é o %guess% desta música?"
+        },
+        "customise_my_card_modal": {
+          "title": "Personalize seu cartão",
+          "input": "Qual é o link da sua imagem?"
         }
       },
       "buttons": {
@@ -213,9 +239,23 @@
           },
           "pro_card_display": {
             "label": "Prévia Clássica Pro"
+          }
+        },
+        "customize_my_card": {
+          "customize_my_card": {
+            "label": "Personalizar meu cartão"
           },
-          "mini_card_display": {
-            "label": "Prévia Mini Pro"
+          "continue_configuration": {
+            "label": "Continuar"
+          },
+          "delete_continue_configuration": {
+            "label": "Excluir e continuar"
+          },
+          "confirm": {
+            "label": "Confirmar"
+          },
+          "change": {
+            "label": "Alterar"
           }
         },
         "threads": {
@@ -290,6 +330,12 @@
             "field_description_five": "Junte-se ao nosso [servidor oficial](%SupportLink%) e faça uma solicitação. Se sua inscrição for aceita, você será apresentado nas mensagens de prévia e receberá um cargo em nosso servidor."
           }
         },
+        "customize_my_card": {
+          "error_messages": {
+            "image_invalid": "❌ O link fornecido é inválido. Os formatos aceitos são:\n- JPG\n- JPEG\n- PNG\n- WEBP",
+            "nsfw_not_allowed": "❌ Esta imagem contém conteúdo NSFW."
+          }
+        },
         "40%": {
           "description": "Você está **60**% do caminho. Parabéns! 🎉 \n📱 Você precisa escolher um modo de exibição. Você pode ver como eles são clicando nos respectivos botões. \nContinue clicando no menu abaixo."
         },
@@ -313,6 +359,12 @@
         },
         "advanced_card": {
           "description": "Bem-vindo ao menu de configuração avançada! 🤓 \n🃏 Você precisa escolher que tipo de cartão deseja para a MDD.\nContinue clicando no menu abaixo"
+        },
+        "advanced_cardmode": {
+          "description": "Хотите настроить фон вашей карты? 🖼️ \n✅ Да?\n- Нажмите кнопку \"Настроить мою карту\".\n- Подготовьте ссылку на изображение и скопируйте ее в буфер обмена.\n❌ Нет?\n- Нажмите кнопку \"Продолжить\"."
+        },
+        "advanced_thread": {
+          "description": "Bem-vindo ao menu de configuração avançada! 🤓 \n🃏 Você precisa escolher que tipo de tópico deseja. \nContinue clicando no menu abaixo"
         },
         "advanced_trivia": {
           "description": "Bem-vindo ao menu de configuração avançada! 🤓\n🏆 Você precisa escolher que tipo de jogo de Curiosidade deseja. \nContinue clicando em uma das opções abaixo"
