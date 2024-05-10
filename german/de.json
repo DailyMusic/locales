@@ -18,6 +18,13 @@
       "answer_five_title": "Es ist okay, nicht mehr."
     }
   },
+  "webhook": {
+    "reason_creation": "Das System von Daily Music ist auf diesem Server initialisiert worden.",
+    "reason_deletion": "Das System von Daily Music wurde auf diesem Server zurückgesetzt."
+  },
+  "thread": {
+    "reason_creation": "Die Option Threads ist auf diesem Server aktiviert."
+  },
   "acronyms": {
     "motd": "MDT",
     "totd": "TDT",
@@ -115,11 +122,27 @@
               "label": "Klassisch Pro",
               "description": "Eine klassische Karte, aber mit professionellem Touch.",
               "value": "pro"
+            }
+          }
+        },
+
+        "thread_mode_select_menu": {
+          "placeholder": "Wähle deinen Thread-Modus!",
+          "options": {
+            "use": {
+              "label": "Erstellen & Nutzen",
+              "description": "Der Bot wird Nachrichten in diesem Thread erstellen und senden.",
+              "value": "use"
             },
-            "mini": {
-              "label": "Mini Pro",
-              "description": "Eine Mini-Karte, aber mit professionellem Touch.",
-              "value": "mini"
+            "create": {
+              "label": "Erstellen",
+              "description": "Der Bot wird einen Thread erstellen und Nachrichten im definierten Kanal senden.",
+              "value": "create"
+            },
+            "attach": {
+              "label": "Anhängen",
+              "description": "Der Bot wird einen Thread erstellen und Nachrichten im definierten Kanal senden.",
+              "value": "attach"
             }
           }
         },
@@ -193,6 +216,10 @@
         "trivia_modal": {
           "title": "Erraten Sie die Musik!",
           "input": "Was ist der %guess% dieser Musik?"
+        },
+        "customise_my_card_modal": {
+          "title": "Passen Sie Ihre Karte an",
+          "input": "Was ist Ihr Bildlink?"
         }
       },
       "buttons": {
@@ -213,9 +240,23 @@
           },
           "pro_card_display": {
             "label": "Profi-Vorschau"
+          }
+        },
+        "customize_my_card": {
+          "customize_my_card": {
+            "label": "Meine Karte anpassen"
           },
-          "mini_card_display": {
-            "label": "Mini-Profi-Vorschau"
+          "continue_configuration": {
+            "label": "Fortfahren"
+          },
+          "delete_continue_configuration": {
+            "label": "Löschen und fortfahren"
+          },
+          "confirm": {
+            "label": "Bestätigen"
+          },
+          "change": {
+            "label": "Ändern"
           }
         },
         "threads": {
@@ -290,6 +331,12 @@
             "field_description_five": "Trete unserem [offiziellen Server](%SupportLink%) bei und stelle eine Anfrage. Wenn deine Bewerbung akzeptiert wird, wirst du in den Vorschaunachrichten vorgestellt und erhältst eine Rolle auf unserem Server."
           }
         },
+        "customize_my_card": {
+          "error_messages": {
+            "image_invalid": "❌ Der von Ihnen angegebene Link ist ungültig. Die akzeptierten Formate sind:\n- JPG\n- JPEG\n- PNG\n- WEBP",
+            "nsfw_not_allowed": "❌ Dieses Bild enthält NSFW-Inhalte."
+          }
+        },
         "40%": {
           "description": "Sie haben **40** % des Prozesses hinter sich. Gut gemacht! 🎉 \n📱 Sie müssen einen Anzeigemodus auswählen. Sie können sehen, wie diese aussehen, wenn Sie auf die entsprechenden Schaltflächen klicken. \nFahren Sie fort, indem Sie auf das unten stehende Menü klicken."
         },
@@ -313,6 +360,12 @@
         },
         "advanced_card": {
           "description": "Willkommen im erweiterten Konfigurationsmenü! 🤓 \n🃏 Sie müssen wählen, welche Art von Karte Sie für die MDT möchten.\nFahren Sie fort, indem Sie auf das Menü unten klicken"
+        },
+        "advanced_cardmode": {
+          "description": "Möchten Sie den Hintergrund Ihrer Karte anpassen? 🖼️ \n✅ Ja?\n- Klicken Sie auf die Schaltfläche \"Meine Karte anpassen\".\n- Bereiten Sie einen Bildlink vor und kopieren Sie ihn in Ihre Zwischenablage.\n❌ Nein?\n- Klicken Sie auf die Schaltfläche \"Weiter\"."
+        },
+        "advanced_thread": {
+          "description": "Willkommen im erweiterten Konfigurationsmenü! 🤓 \n🃏 Sie müssen wählen, welchen Thread-Typ möchten. \nFahren Sie fort, indem Sie auf das Menü unten klicken"
         },
         "advanced_trivia": {
           "description": "Willkommen im erweiterten Konfigurationsmenü! 🤓\n🏆 Sie müssen wählen, welche Art von Trivia-Spiel Sie möchten. \nFahren Sie fort, indem Sie eine der untenstehenden Optionen auswählen"
