@@ -18,6 +18,14 @@
       "answer_five_title": "Tamam, başka bir şey değil."
     }
   },
+  "webhook": {
+    "reason_creation": "Daily Music sistemi bu sunucuda başlatıldı.",
+    "reason_deletion": "Bu sunucuda Günlük Müzik sistemi sıfırlanmıştır."
+
+  },
+  "thread": {
+    "reason_creation": "Bu sunucuda Konular seçeneği etkinleştirildi."
+  },
   "acronyms": {
     "motd": "GM",
     "totd": "GT'sı",
@@ -115,11 +123,26 @@
               "label": "Klasik Pro",
               "description": "Profesyonel bir dokunuşla klasik bir kart.",
               "value": "pro"
+            }
+          }
+        },
+        "thread_mode_select_menu": {
+          "placeholder": "Konu modunu seçin!",
+          "options": {
+            "use": {
+              "label": "Oluştur & Kullan",
+              "description": "Bot bu konuda mesajlar oluşturacak ve gönderecek.",
+              "value": "use"
             },
-            "mini": {
-              "label": "Mini Pro",
-              "description": "Küçük bir kart, ama profesyonel bir dokunuşla.",
-              "value": "mini"
+            "create": {
+              "label": "Oluştur",
+              "description": "Bot bir konu oluşturacak ve belirlenen kanalda mesajlar gönderecek.",
+              "value": "create"
+            },
+            "attach": {
+              "label": "Ekle",
+              "description": "Bot bir konu oluşturacak ve belirlenen kanalda mesajlar gönderecek.",
+              "value": "attach"
             }
           }
         },
@@ -193,6 +216,10 @@
         "trivia_modal": {
           "title": "Müziği Tahmin Edin!",
           "input": "Bu müziğin %guess% nedir?"
+        },
+        "customise_my_card_modal": {
+          "title": "Kartınızı Özelleştirin",
+          "input": "Resminiz için bağlantı nedir?"
         }
       },
       "buttons": {
@@ -213,9 +240,23 @@
           },
           "pro_card_display": {
             "label": "Klasik Pro Önizleme"
+          }
+        },
+        "customize_my_card": {
+          "customize_my_card": {
+            "label": "Kartımı Özelleştir"
           },
-          "mini_card_display": {
-            "label": "Mini Pro Önizleme"
+          "continue_configuration": {
+            "label": "Devam"
+          },
+          "delete_continue_configuration": {
+            "label": "Sil ve devam et"
+          },
+          "confirm": {
+            "label": "Onayla"
+          },
+          "change": {
+            "label": "Değiştir"
           }
         },
         "threads": {
@@ -290,6 +331,12 @@
             "field_description_five": "[Resmi sunucumuza](%SupportLink%) katılın ve bir talepte bulunun. Başvurunuz kabul edilirse, önizleme mesajlarında yer alacak ve sunucumuzda bir rol alacaksınız."
           }
         },
+        "customize_my_card": {
+          "error_messages": {
+            "image_invalid": "❌ Sağladığınız bağlantı geçersiz. Kabul edilen formatlar:\n- JPG\n- JPEG\n- PNG\n- WEBP",
+            "nsfw_not_allowed": "❌ Bu görsel müstehcen içeriklidir."
+          }
+        },
         "40%": {
           "description": "Sürecin **%60**'ındasınız. Bravo! 🎉 \n📱 Bir görüntüleme modu seçmelisiniz. Onların nasıl göründüğünü ilgili düğmelere tıklayarak görebilirsiniz. \nDevam etmek için aşağıdaki menüye tıkla."
         },
@@ -313,6 +360,12 @@
         },
         "advanced_card": {
           "description": "Gelişmiş yapılandırma menüsüne hoş geldiniz! 🤓 \n🃏 GM için hangi tür kartı istediğinizi seçmelisiniz.\nDevam etmek için aşağıdaki menüye tıklayın"
+        },
+        "advanced_cardmode": {
+          "description": "Kartınızın arka planını özelleştirmek ister misiniz? 🖼️ \n✅ Evet mi?\n- \"Kartımı Özelleştir\" düğmesine tıklayın.\n- Bir resim bağlantısı hazırlayın ve panonuza kopyalayın.\n❌ Hayır mı?\n- \"Devam\" düğmesine tıklayın."
+        },
+        "advanced_thread": {
+          "description": "Gelişmiş yapılandırma menüsüne hoş geldiniz! 🤓 \n🃏 Hangi tür konu istediğinizi seçmeniz gerekiyor. \nDevam etmek için aşağıdaki menüye tıklayın"
         },
         "advanced_trivia": {
           "description": "Gelişmiş yapılandırma menüsüne hoş geldiniz! 🤓\n🏆 Hangi tür Trivia oyununu istediğinizi seçmelisiniz. \nDevam etmek için aşağıdaki seçeneklerden birine tıklayın"
