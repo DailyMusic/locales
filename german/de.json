@@ -51,7 +51,8 @@
         "cmd_not_found": "❌ Dieser Befehl konnte nicht gefunden werden.",
         "bot_permissions": "❌ Ich benötige die Berechtigung `%command.perms.BotPermissions.map((p) => p.toUpperCase()).join(', ')%`, um diesen Befehl zu verwenden.",
         "user_permissions": "❌ Du benötigst die Berechtigung `%command.perms.UserPermissions.map((p) => p.toUpperCase()).join(', ')%`, um diesen Befehl zu verwenden.",
-        "already_played_today": "❌ Du hast heute bereits gespielt!"
+        "already_played_today": "❌ Du hast heute bereits gespielt!",
+        "invalid_year": "❌ Dies ist kein gültiges Jahr!"
       },
       "guides": {
         "setup_guide": {
