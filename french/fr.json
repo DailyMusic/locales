@@ -51,7 +51,8 @@
         "cmd_not_found": "❌ Cette commande est introuvable.",
         "bot_permissions": "❌ J'ai besoin de la permission `%command.perms.BotPermissions.map((p) => p.toUpperCase()).join(', ')%` pour utiliser cette commande.",
         "user_permissions": "❌ Vous devez avoir la permission `%command.perms.UserPermissions.map((p) => p.toUpperCase()).join(', ')%` pour utiliser cette commande.",
-        "already_played_today": "❌ Vous avez déjà joué aujourd'hui !"
+        "already_played_today": "❌ Vous avez déjà joué aujourd'hui !",
+        "invalid_year": "❌ Cette année n'est pas valide !"
       },
       "guides": {
         "setup_guide": {
