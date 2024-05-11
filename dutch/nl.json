@@ -51,7 +51,8 @@
         "cmd_not_found": "❌ Dit commando kan niet worden gevonden.",
         "bot_permissions": "❌ Ik heb de `%command.perms.BotPermissions.map((p) => p.toUpperCase()).join(', ')%` permissie nodig om dit commando te gebruiken.",
         "user_permissions": "❌ Je hebt de `%command.perms.UserPermissions.map((p) => p.toUpperCase()).join(', ')%` permissie nodig om dit commando te gebruiken.",
-        "already_played_today": "❌ Je hebt vandaag al gespeeld!"
+        "already_played_today": "❌ Je hebt vandaag al gespeeld!",
+        "invalid_year": "❌ Dit is geen geldig jaar!"
       },
       "guides": {
         "setup_guide": {
