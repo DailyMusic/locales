@@ -51,7 +51,8 @@
         "cmd_not_found": "❌ 找不到该命令。",
         "bot_permissions": "❌ 我需要拥有`%command.perms.BotPermissions.map((p) => p.toUpperCase()).join(', ')%` 权限才能使用该命令。",
         "user_permissions": "❌ 您需要拥有 `%command.perms.UserPermissions.map((p) => p.toUpperCase()).join(', ')%` 权限才能使用此命令。",
-        "already_played_today": "❌ 你今天已经玩过了!"
+        "already_played_today": "❌ 你今天已经玩过了!",
+        "invalid_year": "❌ 这不是一个有效年份!"
       },
       "guides": {
         "setup_guide": {
