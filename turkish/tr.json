@@ -21,7 +21,6 @@
   "webhook": {
     "reason_creation": "Daily Music sistemi bu sunucuda başlatıldı.",
     "reason_deletion": "Bu sunucuda Günlük Müzik sistemi sıfırlanmıştır."
-
   },
   "thread": {
     "reason_creation": "Bu sunucuda Konular seçeneği etkinleştirildi."
@@ -52,7 +51,8 @@
         "cmd_not_found": "❌ Bu komut bulunamadı.",
         "bot_permissions": "❌ Bu komutu kullanabilmem için `%command.perms.BotPermissions.map((p) => p.toUpperCase()).join(', ')%` iznine ihtiyacım var.",
         "user_permissions": "❌ Bu komutu kullanabilmek için `%command.perms.UserPermissions.map((p) => p.toUpperCase()).join(', ')%` iznine ihtiyacınız var.",
-        "already_played_today": "❌ Bugün zaten oynadınız!"
+        "already_played_today": "❌ Bugün zaten oynadınız!",
+        "invalid_year": "❌ Bu geçerli bir yıl değil!"
       },
       "guides": {
         "setup_guide": {
